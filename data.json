@@ -1,14 +1,47 @@
 {
-  "generatedAt": "2026-07-18T20:30Z",
+  "generatedAt": "2026-07-18T21:00Z",
   "days": [
     {
       "date": "2026-07-18",
       "label": "samedi 18 juillet 2026",
+      "notes": "Sources primaires : aucune en français aujourd'hui (vivier FR limité). Articles EN : 2 seulement respectant les critères qualité/date. Sujet dominant dédupliqué : les annonces de modèles sont regroupées en Sources primaires.",
+      "primaires": [
+        {
+          "titre": "Moonshot AI releases Kimi K3",
+          "source": "AI Release Tracker",
+          "lang": "en",
+          "date": "16/07/2026",
+          "lien": "https://aireleasetracker.com/latest",
+          "resume": "Kimi K3, latest tracked frontier model; later adds Standard/High/Max reasoning-effort levels on web and mobile."
+        },
+        {
+          "titre": "Anthropic ships Claude Sonnet 5",
+          "source": "LLM Stats",
+          "lang": "en",
+          "lien": "https://llm-stats.com/llm-updates",
+          "resume": "Claude Sonnet 5: stronger long-run coding, tool use and debugging at a lower price ($2/$10 per M tokens until 31 Aug 2026)."
+        },
+        {
+          "titre": "OpenAI confirms GPT-5.6 Sol / Terra / Luna",
+          "source": "AI Tools Recap",
+          "lang": "en",
+          "lien": "https://aitoolsrecap.com/Blog/AINewsJuly2026.aspx",
+          "resume": "Sol sets a new SOTA on Terminal-Bench 2.1; Terra matches GPT-5.5 at 2x lower cost; Luna is the fastest and cheapest."
+        },
+        {
+          "titre": "Thinking Machines unveils Inkling, its first frontier model",
+          "source": "ZoneTechify",
+          "lang": "en",
+          "lien": "https://www.zonetechify.com/blog/ai-news-july-2026-latest-ai-developments",
+          "resume": "Mira Murati's lab ships Inkling as an open-weight, general-purpose reasoning and coding model."
+        }
+      ],
       "articles": [
         {
           "titre": "L'État déploiera « L'Assistant », IA conversationnelle souveraine pour les agents publics",
           "source": "info.gouv.fr",
           "lang": "fr",
+          "date": "16/06/2026",
           "lien": "https://www.info.gouv.fr/actualite/accelerer-l-ia-dans-l-etat-et-au-service-des-francais",
           "resume": "Agent conversationnel unique et souverain prévu pour l'ensemble des agents publics avant fin 2026."
         },
@@ -16,6 +49,7 @@
           "titre": "Un chatbot santé public prévu sur Ameli.fr",
           "source": "info.gouv.fr",
           "lang": "fr",
+          "date": "16/06/2026",
           "lien": "https://www.info.gouv.fr/actualite/accelerer-l-ia-dans-l-etat-et-au-service-des-francais",
           "resume": "Assistant destiné à répondre aux questions médicales des Français et à les orienter vers une prise en charge."
         },
@@ -23,6 +57,7 @@
           "titre": "Pionniers de l'IA : 28 nouvelles start-ups sélectionnées par l'État",
           "source": "Le Monde Informatique",
           "lang": "fr",
+          "date": "16/06/2026",
           "lien": "https://www.lemondeinformatique.fr/intelligence-artificielle-154.html",
           "resume": "Une seconde vague de 28 jeunes pousses rejoint les 23 premières soutenues par le dispositif public."
         },
@@ -30,6 +65,7 @@
           "titre": "IA : 655 M€ via France 2030 pour accélérer la stratégie nationale",
           "source": "info.gouv.fr",
           "lang": "fr",
+          "date": "16/06/2026",
           "lien": "https://www.info.gouv.fr/actualite/accelerer-l-ia-dans-l-etat-et-au-service-des-francais",
           "resume": "Investissement annoncé pour renforcer la stratégie nationale en intelligence artificielle."
         },
@@ -41,16 +77,10 @@
           "resume": "Plateforme d'IA générative et agentique pensée pour les environnements critiques."
         },
         {
-          "titre": "AI Act : bascule opérationnelle au 2 août pour les entreprises",
-          "source": "L'Usine Digitale",
-          "lang": "fr",
-          "lien": "https://www.usine-digitale.fr/intelligence-artificielle/",
-          "resume": "À l'approche du 2 août, l'AI Act devient une réalité opérationnelle pour les entreprises non conformes."
-        },
-        {
           "titre": "Microsoft dévoile Project Perception, outil de sécurité IA multi-modèles",
           "source": "Crypto Integrated",
           "lang": "en",
+          "date": "18/07/2026",
           "lien": "https://www.cryptointegrat.com/p/ai-news-july-18-2026",
           "resume": "Microsoft ships Project Perception, a multi-model AI security tool (Anthropic, OpenAI, in-house), pitched as a cheaper Mythos 5 alternative."
         },
@@ -58,29 +88,9 @@
           "titre": "Oracle to cut up to 30,000 jobs to fund the $500B Stargate build-out",
           "source": "Crypto Integrated",
           "lang": "en",
+          "date": "18/07/2026",
           "lien": "https://www.cryptointegrat.com/p/ai-news-july-18-2026",
           "resume": "Oracle reportedly cuts up to 30,000 roles to help fund the $500B Stargate AI infrastructure partnership."
-        },
-        {
-          "titre": "Kimi K3 adds Standard, High and Max reasoning levels",
-          "source": "Crypto Integrated",
-          "lang": "en",
-          "lien": "https://www.cryptointegrat.com/p/ai-news-july-18-2026",
-          "resume": "Moonshot AI's Kimi K3 now offers three selectable reasoning-effort levels on web and mobile."
-        },
-        {
-          "titre": "OpenAI confirms GPT-5.6 Sol / Terra / Luna",
-          "source": "AI Tools Recap",
-          "lang": "en",
-          "lien": "https://aitoolsrecap.com/Blog/AINewsJuly2026.aspx",
-          "resume": "Sol sets a new SOTA on Terminal-Bench 2.1; Terra matches GPT-5.5 at 2x lower cost; Luna is the fastest and cheapest."
-        },
-        {
-          "titre": "Anthropic ships Claude Sonnet 5",
-          "source": "LLM Stats",
-          "lang": "en",
-          "lien": "https://llm-stats.com/llm-updates",
-          "resume": "Claude Sonnet 5 brings stronger long-run coding, tool use and debugging at a lower price ($2/$10 per million tokens until 31 August 2026)."
         }
       ],
       "podcasts": [
