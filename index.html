@@ -9,15 +9,15 @@
   :root {
     --bg:#fbfcfd; --surface:#ffffff; --surface-2:#f4f6f9; --ink:#16202b;
     --muted:#5a6875; --faint:#8996a3; --border:#e4e9ef; --accent:#2d6be0;
-    --accent-ink:#1b4fb0; --accent-bg:#eaf1fd; --warn-bg:#fff4e0; --warn-ink:#8a5a00;
+    --accent-ink:#1b4fb0; --accent-bg:#eaf1fd;
     --shadow:0 1px 2px rgba(20,32,43,.04), 0 10px 30px -20px rgba(20,32,43,.35);
   }
   @media (prefers-color-scheme: dark) {
     :root {
       --bg:#0e141b; --surface:#151e28; --surface-2:#1b2632; --ink:#e7edf3;
       --muted:#97a3b1; --faint:#6c7885; --border:#26313f; --accent:#5b93f5;
-      --accent-ink:#a9c8fb; --accent-bg:#17263c; --warn-bg:#2a2210; --warn-ink:#e6c583;
-      --shadow:0 1px 2px rgba(0,0,0,.3), 0 12px 34px -22px rgba(0,0,0,.85);
+      --accent-ink:#a9c8fb; --accent-bg:#17263c;
+      --shadow:0 1px 2px rgba(0,0,0,.3), 0 12px 34px -20px rgba(0,0,0,.85);
     }
   }
   * { box-sizing:border-box; }
@@ -31,13 +31,12 @@
   main { max-width:1000px; margin:0 auto; padding:clamp(1.5rem,4vw,3.5rem) clamp(1.1rem,4vw,2rem) 4rem; }
   .eyebrow { font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; font-weight:600; color:var(--accent); margin:0 0 .6rem; }
   h1.title { font-size:clamp(1.6rem,4vw,2.2rem); line-height:1.15; letter-spacing:-.02em; margin:0 0 .5rem; text-wrap:balance; }
-  .intro { color:var(--muted); font-size:1.02rem; margin:0 0 1.6rem; max-width:60ch; }
+  .intro { color:var(--muted); font-size:1.02rem; margin:0 0 1.6rem; max-width:62ch; }
 
   /* ---- Onglets (un par jour, du plus récent au plus ancien) ---- */
   .tabs {
     display:flex; gap:.4rem; overflow-x:auto; padding-bottom:.5rem;
-    border-bottom:1px solid var(--border); margin-bottom:1.6rem;
-    scrollbar-width:thin;
+    border-bottom:1px solid var(--border); margin-bottom:1.1rem; scrollbar-width:thin;
   }
   .tab {
     flex:0 0 auto; cursor:pointer; border:1px solid var(--border);
@@ -47,18 +46,33 @@
     transition:background .15s ease, color .15s ease, border-color .15s ease;
   }
   .tab:hover { border-color:var(--accent); color:var(--ink); }
-  .tab[aria-selected="true"] {
-    background:var(--accent); color:#fff; border-color:var(--accent);
-  }
+  .tab[aria-selected="true"] { background:var(--accent); color:#fff; border-color:var(--accent); }
   .tab .badge { font-weight:500; opacity:.75; margin-left:.35rem; }
+
+  /* ---- Filtre Tout / Articles / Podcasts ---- */
+  .filter { display:flex; align-items:center; gap:.5rem; flex-wrap:wrap; margin:0 0 1.6rem; }
+  .filter-label { font-size:.75rem; letter-spacing:.08em; text-transform:uppercase; color:var(--faint); font-weight:600; }
+  .segmented { display:inline-flex; background:var(--surface-2); border:1px solid var(--border); border-radius:10px; padding:3px; gap:2px; }
+  .seg {
+    cursor:pointer; border:none; background:transparent; color:var(--muted);
+    padding:.4rem .8rem; border-radius:8px; font-size:.85rem; font-weight:600;
+    transition:background .15s ease, color .15s ease;
+  }
+  .seg:hover { color:var(--ink); }
+  .seg[aria-pressed="true"] { background:var(--surface); color:var(--accent); box-shadow:var(--shadow); }
 
   .panel { display:none; }
   .panel.active { display:block; animation:fade .2s ease; }
   @keyframes fade { from { opacity:0; transform:translateY(4px); } to { opacity:1; transform:none; } }
   @media (prefers-reduced-motion:reduce) { .panel.active { animation:none; } }
 
+  /* Application du filtre : on masque le volet non sélectionné dans tous les panneaux */
+  #panels[data-filter="articles"] .sec-podcasts { display:none; }
+  #panels[data-filter="podcasts"] .sec-articles { display:none; }
+
   .panel-date { font-size:.9rem; color:var(--faint); margin:0 0 1.2rem; }
-  h2.section { font-size:1.15rem; margin:1.8rem 0 .7rem; letter-spacing:-.01em; }
+  h2.section { font-size:1.15rem; margin:1.8rem 0 .5rem; letter-spacing:-.01em; }
+  .section-note { font-size:.78rem; color:var(--faint); margin:0 0 .7rem; }
   .table-wrap { overflow-x:auto; border:1px solid var(--border); border-radius:12px; box-shadow:var(--shadow); }
   table { width:100%; border-collapse:collapse; min-width:640px; font-size:.9rem; }
   thead th {
@@ -66,19 +80,21 @@
     font-weight:600; font-size:.75rem; letter-spacing:.05em; text-transform:uppercase;
     padding:.7rem .9rem; border-bottom:1px solid var(--border); white-space:nowrap;
   }
+  thead th.rang { width:2.5rem; text-align:right; }
   tbody td { padding:.8rem .9rem; border-bottom:1px solid var(--border); vertical-align:top; }
   tbody tr:last-child td { border-bottom:none; }
   tbody tr:hover { background:var(--surface-2); }
+  td.rang { text-align:right; color:var(--faint); font-variant-numeric:tabular-nums; }
   td.titre { font-weight:600; color:var(--ink); min-width:180px; }
   td.source { color:var(--muted); white-space:nowrap; }
   td a { color:var(--accent); text-decoration:none; font-weight:500; }
   td a:hover { text-decoration:underline; }
-  td.resume { color:var(--muted); max-width:340px; }
+  td.resume { color:var(--muted); max-width:320px; }
   .empty { color:var(--faint); font-style:italic; padding:.4rem 0; }
   .loading, .error { color:var(--muted); padding:2rem 0; }
   .error { color:#d64545; }
   footer { margin-top:3rem; padding-top:1.3rem; border-top:1px solid var(--border); font-size:.78rem; color:var(--faint); }
-  .tab:focus-visible, .tab:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+  .tab:focus-visible, .seg:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
 </style>
 </head>
 <body>
@@ -86,19 +102,31 @@
   <main>
     <p class="eyebrow">Veille quotidienne · Intelligence artificielle</p>
     <h1 class="title">Veille IA francophone</h1>
-    <p class="intro">Historique des veilles, un onglet par jour (du plus récent au plus ancien). L'onglet le plus récent est affiché par défaut.</p>
+    <p class="intro">Historique des veilles, un onglet par jour (du plus récent au plus ancien). Chaque jour affiche les <strong>10 items les plus pertinents</strong> par volet (les plus lus / consultés).</p>
 
     <div id="tabs" class="tabs" role="tablist" aria-label="Journées de veille"></div>
+
+    <div class="filter">
+      <span class="filter-label">Filtre</span>
+      <div class="segmented" role="group" aria-label="Filtrer par type de contenu">
+        <button class="seg" data-filter="all" aria-pressed="true">Tout</button>
+        <button class="seg" data-filter="articles" aria-pressed="false">Articles</button>
+        <button class="seg" data-filter="podcasts" aria-pressed="false">Podcasts</button>
+      </div>
+    </div>
+
     <div id="panels">
       <p class="loading">Chargement de l'historique…</p>
     </div>
 
     <footer>
-      Veille IA francophone · historique conservé dans <code>data.json</code>.
+      Veille IA francophone · historique conservé dans <code>data.json</code> · 10 items max par volet.
     </footer>
   </main>
 
 <script>
+  var MAX_ITEMS = 10; // on ne remonte que les 10 plus pertinents par volet
+
   var esc = function (s) {
     return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
       return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c];
@@ -106,14 +134,16 @@
   };
 
   function tableHTML(items, action) {
-    if (!items || !items.length) {
+    var list = (items || []).slice(0, MAX_ITEMS); // top 10 (data.json trié par pertinence décroissante)
+    if (!list.length) {
       return '<p class="empty">Aucune nouveauté récente sur ce volet ce jour-là.</p>';
     }
-    var rows = items.map(function (it) {
+    var rows = list.map(function (it, i) {
       var lien = it.lien
         ? '<a href="' + esc(it.lien) + '" target="_blank" rel="noopener">' + (action || 'Ouvrir') + '</a>'
         : '<span class="empty">—</span>';
       return '<tr>' +
+        '<td class="rang">' + (i + 1) + '</td>' +
         '<td class="titre">' + esc(it.titre) + '</td>' +
         '<td class="source">' + esc(it.source) + '</td>' +
         '<td>' + lien + '</td>' +
@@ -121,13 +151,20 @@
       '</tr>';
     }).join('');
     return '<div class="table-wrap"><table><thead><tr>' +
-      '<th>Titre</th><th>Source</th><th>Lien vers l\'item</th><th>Résumé</th>' +
+      '<th class="rang">#</th><th>Titre</th><th>Source</th><th>Lien vers l\'item</th><th>Résumé</th>' +
       '</tr></thead><tbody>' + rows + '</tbody></table></div>';
+  }
+
+  function sectionNote(items) {
+    var n = (items || []).length;
+    if (n > MAX_ITEMS) {
+      return '<p class="section-note">' + MAX_ITEMS + ' items les plus pertinents affichés (sur ' + n + ').</p>';
+    }
+    return '';
   }
 
   function render(data) {
     var days = (data && data.days) ? data.days.slice() : [];
-    // Tri décroissant : la date la plus récente en premier
     days.sort(function (a, b) { return (b.date || '').localeCompare(a.date || ''); });
 
     var tabs = document.getElementById('tabs');
@@ -142,7 +179,8 @@
 
     days.forEach(function (day, i) {
       var id = 'jour-' + (day.date || i);
-      var count = (day.articles ? day.articles.length : 0) + (day.podcasts ? day.podcasts.length : 0);
+      var nbA = Math.min((day.articles || []).length, MAX_ITEMS);
+      var nbP = Math.min((day.podcasts || []).length, MAX_ITEMS);
 
       var tab = document.createElement('button');
       tab.className = 'tab';
@@ -151,7 +189,7 @@
       tab.setAttribute('aria-controls', 'panel-' + id);
       tab.setAttribute('aria-selected', i === 0 ? 'true' : 'false');
       tab.tabIndex = i === 0 ? 0 : -1;
-      tab.innerHTML = esc(day.label || day.date) + '<span class="badge">' + count + '</span>';
+      tab.innerHTML = esc(day.label || day.date) + '<span class="badge">' + (nbA + nbP) + '</span>';
       tabs.appendChild(tab);
 
       var panel = document.createElement('section');
@@ -161,40 +199,53 @@
       panel.setAttribute('aria-labelledby', 'tab-' + id);
       panel.innerHTML =
         '<p class="panel-date">Veille du ' + esc(day.label || day.date) + '</p>' +
-        '<h2 class="section">Articles</h2>' + tableHTML(day.articles, 'Ouvrir') +
-        '<h2 class="section">Podcasts (Audible)</h2>' + tableHTML(day.podcasts, 'Écouter');
+        '<div class="sec-articles">' +
+          '<h2 class="section">Articles</h2>' + sectionNote(day.articles) + tableHTML(day.articles, 'Ouvrir') +
+        '</div>' +
+        '<div class="sec-podcasts">' +
+          '<h2 class="section">Podcasts (Audible)</h2>' + sectionNote(day.podcasts) + tableHTML(day.podcasts, 'Écouter') +
+        '</div>';
       panels.appendChild(panel);
 
       tab.addEventListener('click', function () { select(id); });
     });
 
-    // Navigation clavier entre onglets
     tabs.addEventListener('keydown', function (e) {
       if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
       var list = Array.prototype.slice.call(tabs.querySelectorAll('.tab'));
       var cur = list.indexOf(document.activeElement);
       if (cur === -1) return;
       var next = e.key === 'ArrowRight' ? (cur + 1) % list.length : (cur - 1 + list.length) % list.length;
-      list[next].focus();
-      list[next].click();
-      e.preventDefault();
+      list[next].focus(); list[next].click(); e.preventDefault();
     });
   }
 
   function select(id) {
-    var tabs = document.querySelectorAll('.tab');
-    var panels = document.querySelectorAll('.panel');
-    tabs.forEach(function (t) {
+    document.querySelectorAll('.tab').forEach(function (t) {
       var on = t.id === 'tab-' + id;
       t.setAttribute('aria-selected', on ? 'true' : 'false');
       t.tabIndex = on ? 0 : -1;
     });
-    panels.forEach(function (p) {
+    document.querySelectorAll('.panel').forEach(function (p) {
       p.classList.toggle('active', p.id === 'panel-' + id);
     });
   }
 
-  // Chargement des données (cache-buster pour éviter un data.json obsolète en cache)
+  // Filtre Tout / Articles / Podcasts (persistant à travers les onglets)
+  (function () {
+    var panels = document.getElementById('panels');
+    document.querySelectorAll('.seg').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var f = btn.getAttribute('data-filter');
+        panels.setAttribute('data-filter', f);
+        document.querySelectorAll('.seg').forEach(function (b) {
+          b.setAttribute('aria-pressed', b === btn ? 'true' : 'false');
+        });
+      });
+    });
+    panels.setAttribute('data-filter', 'all');
+  })();
+
   fetch('data.json?_=' + Date.now(), { cache: 'no-store' })
     .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
     .then(render)
