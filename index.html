@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Veille IA — accès protégé</title>
+<style>
+  :root {
+    --bg:#fbfcfd; --surface:#ffffff; --surface-2:#f4f6f9; --ink:#16202b;
+    --muted:#5a6875; --faint:#8996a3; --border:#e4e9ef; --accent:#2d6be0;
+    --accent-ink:#1b4fb0; --accent-bg:#eaf1fd; --warn-bg:#fff4e0; --warn-ink:#8a5a00;
+    --shadow:0 1px 2px rgba(20,32,43,.04), 0 10px 30px -20px rgba(20,32,43,.35);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:#0e141b; --surface:#151e28; --surface-2:#1b2632; --ink:#e7edf3;
+      --muted:#97a3b1; --faint:#6c7885; --border:#26313f; --accent:#5b93f5;
+      --accent-ink:#a9c8fb; --accent-bg:#17263c; --warn-bg:#2a2210; --warn-ink:#e6c583;
+      --shadow:0 1px 2px rgba(0,0,0,.3), 0 12px 34px -22px rgba(0,0,0,.85);
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.6; -webkit-font-smoothing:antialiased;
+  }
+
+  /* ---- Portail mot de passe ---- */
+  #gate {
+    position:fixed; inset:0; z-index:50;
+    display:flex; align-items:center; justify-content:center; padding:1.2rem;
+    background:var(--bg);
+  }
+  .gate-card {
+    width:100%; max-width:380px; background:var(--surface);
+    border:1px solid var(--border); border-radius:16px;
+    padding:2rem 1.7rem; box-shadow:var(--shadow); text-align:center;
+  }
+  .gate-card .lock { font-size:2rem; }
+  .gate-card h1 { font-size:1.25rem; margin:.6rem 0 .3rem; letter-spacing:-.01em; }
+  .gate-card p { color:var(--muted); font-size:.9rem; margin:0 0 1.3rem; }
+  .gate-form { display:flex; flex-direction:column; gap:.7rem; }
+  #pwd {
+    width:100%; padding:.7rem .85rem; font-size:1rem;
+    border:1px solid var(--border); border-radius:10px;
+    background:var(--surface-2); color:var(--ink);
+  }
+  #pwd:focus { outline:2px solid var(--accent); outline-offset:1px; border-color:var(--accent); }
+  .gate-form button {
+    padding:.7rem 1rem; font-size:.95rem; font-weight:600; cursor:pointer;
+    color:#fff; background:var(--accent); border:none; border-radius:10px;
+    transition:filter .15s ease;
+  }
+  .gate-form button:hover { filter:brightness(1.07); }
+  #err { color:#d64545; font-size:.85rem; min-height:1.1em; margin:0; }
+
+  /* ---- Contenu ---- */
+  #content { display:none; max-width:1000px; margin:0 auto; padding:clamp(1.5rem,4vw,3.5rem) clamp(1.1rem,4vw,2rem) 4rem; }
+  .eyebrow { font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; font-weight:600; color:var(--accent); margin:0 0 .6rem; }
+  h2.title { font-size:clamp(1.6rem,4vw,2.2rem); line-height:1.15; letter-spacing:-.02em; margin:0 0 .5rem; text-wrap:balance; }
+  .intro { color:var(--muted); font-size:1.02rem; margin:0 0 .4rem; max-width:60ch; }
+  .banner {
+    background:var(--warn-bg); color:var(--warn-ink); border-radius:10px;
+    padding:.7rem 1rem; font-size:.86rem; margin:1.2rem 0 2rem; font-weight:500;
+  }
+  h3.section { font-size:1.2rem; margin:2.2rem 0 .8rem; letter-spacing:-.01em; }
+  .table-wrap { overflow-x:auto; border:1px solid var(--border); border-radius:12px; box-shadow:var(--shadow); }
+  table { width:100%; border-collapse:collapse; min-width:640px; font-size:.9rem; }
+  thead th {
+    text-align:left; background:var(--surface-2); color:var(--muted);
+    font-weight:600; font-size:.75rem; letter-spacing:.05em; text-transform:uppercase;
+    padding:.7rem .9rem; border-bottom:1px solid var(--border); white-space:nowrap;
+  }
+  tbody td { padding:.8rem .9rem; border-bottom:1px solid var(--border); vertical-align:top; }
+  tbody tr:last-child td { border-bottom:none; }
+  tbody tr:hover { background:var(--surface-2); }
+  td.titre { font-weight:600; color:var(--ink); min-width:180px; }
+  td.source { color:var(--muted); white-space:nowrap; }
+  td a { color:var(--accent); text-decoration:none; font-weight:500; }
+  td a:hover { text-decoration:underline; }
+  td.resume { color:var(--muted); max-width:340px; }
+  footer { margin-top:3rem; padding-top:1.3rem; border-top:1px solid var(--border); font-size:.78rem; color:var(--faint); }
+</style>
+</head>
+<body>
+
+  <!-- Portail mot de passe (protection dissuasive côté navigateur, non forte) -->
+  <div id="gate">
+    <div class="gate-card">
+      <div class="lock">🔒</div>
+      <h1>Accès protégé</h1>
+      <p>Saisissez le mot de passe pour afficher la veille.</p>
+      <form class="gate-form" id="gate-form" autocomplete="off">
+        <input type="password" id="pwd" placeholder="Mot de passe" aria-label="Mot de passe" autofocus>
+        <button type="submit">Déverrouiller</button>
+        <p id="err" role="alert"></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Contenu masqué jusqu'à saisie du bon mot de passe -->
+  <main id="content">
+    <p class="eyebrow">Veille quotidienne · Intelligence artificielle</p>
+    <h2 class="title">Veille IA francophone</h2>
+    <p class="intro" id="intro">Sélection du jour.</p>
+
+    <div class="banner">⚠️ Page de TEST — les données ci-dessous sont <strong>fictives</strong> et servent uniquement à valider la chaîne de publication. Elles seront remplacées par la veille réelle générée automatiquement chaque matin.</div>
+
+    <h3 class="section">Articles</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Titre</th><th>Source</th><th>Lien vers l'item</th><th>Résumé</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="titre">Un modèle multimodal open source rivalise avec les leaders</td>
+            <td class="source">Actu IA (fictif)</td>
+            <td><a href="https://example.com/article-1" target="_blank" rel="noopener">Ouvrir</a></td>
+            <td class="resume">Un laboratoire européen publie un modèle libre performant en vision et langage. (donnée fictive)</td>
+          </tr>
+          <tr>
+            <td class="titre">L'AI Act précise ses obligations pour les PME</td>
+            <td class="source">Le Numérique (fictif)</td>
+            <td><a href="https://example.com/article-2" target="_blank" rel="noopener">Ouvrir</a></td>
+            <td class="resume">Nouvelles lignes directrices sur la conformité avant l'échéance d'août. (donnée fictive)</td>
+          </tr>
+          <tr>
+            <td class="titre">Une startup française lève 40 M€ pour ses agents IA</td>
+            <td class="source">Tech &amp; Co (fictif)</td>
+            <td><a href="https://example.com/article-3" target="_blank" rel="noopener">Ouvrir</a></td>
+            <td class="resume">Tour de table pour industrialiser des agents autonomes métier. (donnée fictive)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="section">Podcasts (Audible)</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Titre</th><th>Source</th><th>Lien vers l'item</th><th>Résumé</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="titre">IA au quotidien — épisode 42</td>
+            <td class="source">Audible (fictif)</td>
+            <td><a href="https://example.com/podcast-1" target="_blank" rel="noopener">Écouter</a></td>
+            <td class="resume">Décryptage des usages de l'IA générative en entreprise. (donnée fictive)</td>
+          </tr>
+          <tr>
+            <td class="titre">Comprendre les modèles de langage</td>
+            <td class="source">Audible (fictif)</td>
+            <td><a href="https://example.com/podcast-2" target="_blank" rel="noopener">Écouter</a></td>
+            <td class="resume">Série pédagogique francophone sur le fonctionnement des LLM. (donnée fictive)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <footer>
+      Page générée à titre de test · protection par mot de passe côté navigateur (dissuasive uniquement).
+    </footer>
+  </main>
+
+<script>
+  // Date du jour en français dans l'intro
+  (function () {
+    try {
+      var d = new Date();
+      var s = d.toLocaleDateString('fr-FR', { weekday:'long', day:'numeric', month:'long', year:'numeric' });
+      document.getElementById('intro').textContent =
+        'Sélection de veille IA du ' + s + ' (données fictives de test).';
+    } catch (e) {}
+  })();
+
+  // Protection par mot de passe (dissuasive, comparaison côté client)
+  var PASSWORD = 'fvCs3pMY2hzwhbnTgeZW';
+  var gate = document.getElementById('gate');
+  var content = document.getElementById('content');
+  var form = document.getElementById('gate-form');
+  var input = document.getElementById('pwd');
+  var err = document.getElementById('err');
+
+  function unlock() {
+    gate.style.display = 'none';
+    content.style.display = 'block';
+  }
+  // Réafficher sans redemander pendant la session de navigation
+  try { if (sessionStorage.getItem('veille_ok') === '1') unlock(); } catch (e) {}
+
+  form.addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    if (input.value === PASSWORD) {
+      try { sessionStorage.setItem('veille_ok', '1'); } catch (e) {}
+      err.textContent = '';
+      unlock();
+    } else {
+      err.textContent = 'Mot de passe incorrect.';
+      input.value = '';
+      input.focus();
+    }
+  });
+</script>
+</body>
+</html>
