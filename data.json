@@ -50,21 +50,15 @@
           "resume": "Anis Ayari décrypte l'IA et la deep tech avec chercheurs, ingénieurs et entrepreneurs."
         },
         {
-          "titre": "Le Comptoir IA",
-          "source": "Sélection Codeur 2026",
-          "lien": "https://www.codeur.com/blog/top-podcast-ia-2026/",
-          "resume": "Nicolas Guyon interviewe experts et métiers bouleversés par l'IA ; vulgarisation pointue."
-        },
-        {
           "titre": "Tech Café",
-          "source": "Sélection Codeur 2026",
-          "lien": "https://www.codeur.com/blog/top-podcast-ia-2026/",
-          "resume": "Actualité tech et IA au sens large, animé par Guillaume Vendé depuis 2014."
+          "source": "Audible",
+          "lien": "https://www.audible.fr/podcast/Tech-Cafe/B08K5WH53Y",
+          "resume": "Actualité tech et IA au sens large, animé par Guillaume Vendé."
         },
         {
-          "titre": "Data Driven 101",
-          "source": "Sélection Codeur 2026",
-          "lien": "https://www.codeur.com/blog/top-podcast-ia-2026/",
+          "titre": "Data Driven 101 — Le podcast IA & Data",
+          "source": "Audible",
+          "lien": "https://www.audible.fr/podcast/Data-Driven-101-Le-podcast-IA-Data/B0BLTBPTFV",
           "resume": "Marc Sanselme décrypte IA et data science ; interviews d'experts, format accessible."
         }
       ]
