@@ -44,22 +44,28 @@
       ],
       "podcasts": [
         {
-          "titre": "Hot Tech — le podcast qui décrypte l'IA",
-          "source": "Audible",
-          "lien": "https://www.audible.com/podcast/Hot-Tech-le-podcast-qui-decrypte-lIA/B0H6BCWMR8",
-          "resume": "Anis Ayari décrypte l'IA et la deep tech avec chercheurs, ingénieurs et entrepreneurs."
+          "titre": "Le Comptoir IA",
+          "source": "Spotify",
+          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
+          "resume": "Nicolas Guyon interviewe experts et métiers bouleversés par l'IA ; vulgarisation pointue."
         },
         {
           "titre": "Tech Café",
-          "source": "Audible",
-          "lien": "https://www.audible.fr/podcast/Tech-Cafe/B08K5WH53Y",
+          "source": "Spotify",
+          "lien": "https://open.spotify.com/show/1MidB71rbYIRDIrcej073j",
           "resume": "Actualité tech et IA au sens large, animé par Guillaume Vendé."
         },
         {
           "titre": "Data Driven 101 — Le podcast IA & Data",
-          "source": "Audible",
-          "lien": "https://www.audible.fr/podcast/Data-Driven-101-Le-podcast-IA-Data/B0BLTBPTFV",
+          "source": "Spotify",
+          "lien": "https://open.spotify.com/show/5YkpBdd4Si06ghOpcPmqux",
           "resume": "Marc Sanselme décrypte IA et data science ; interviews d'experts, format accessible."
+        },
+        {
+          "titre": "Hot Tech — le podcast qui décrypte l'IA",
+          "source": "Audible",
+          "lien": "https://www.audible.com/pd/B0H6BCWMR8",
+          "resume": "Anis Ayari décrypte l'IA et la deep tech avec chercheurs, ingénieurs et entrepreneurs."
         }
       ]
     }
