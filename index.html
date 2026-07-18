@@ -120,12 +120,13 @@
   tbody tr:last-child td { border-bottom:none; }
   td.rang { text-align:right; color:var(--faint); font-variant-numeric:tabular-nums; }
   td.titre { font-weight:600; color:var(--ink); }
+  td.titre .go { color:var(--faint); font-weight:400; margin-left:.3rem; transition:color .15s ease; }
   td.source { color:var(--muted); }
-  td .lien { color:var(--accent); font-weight:500; white-space:nowrap; }
   td.resume { color:var(--muted); }
   tr.row-link { cursor:pointer; }
   tr.row-link:hover { background:var(--accent-bg); }
-  tr.row-link:hover .lien { text-decoration:underline; }
+  tr.row-link:hover .titre { color:var(--accent-ink); }
+  tr.row-link:hover .titre .go { color:var(--accent); }
   tr.row-link:focus-visible { outline:2px solid var(--accent); outline-offset:-2px; }
 
   /* =========================================================
@@ -159,7 +160,7 @@
   html[data-view="cards"] td.source { font-size:.82rem; color:var(--faint); }
   html[data-view="cards"] td.source::before { content:"Source · "; }
   html[data-view="cards"] td.resume { margin-top:.35rem; font-size:.92rem; }
-  html[data-view="cards"] td .lien { display:inline-block; margin-top:.55rem; font-size:.9rem; }
+  html[data-view="cards"] td.titre .go { color:var(--accent); }
   html[data-view="cards"] tr.row-link:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
 
   .empty { color:var(--faint); font-style:italic; padding:.4rem 0; }
@@ -214,23 +215,20 @@
     }
     var rows = list.map(function (it, i) {
       var hasLink = !!it.lien;
-      var lien = hasLink
-        ? '<span class="lien">' + (action || 'Ouvrir') + ' ↗</span>'
-        : '<span class="empty">—</span>';
+      var go = hasLink ? ' <span class="go" aria-hidden="true">↗</span>' : '';
       var attrs = hasLink
         ? ' class="row-link" data-href="' + esc(it.lien) + '" tabindex="0" role="link"' +
           ' aria-label="' + esc((action || 'Ouvrir') + ' : ' + it.titre) + '"'
         : '';
       return '<tr' + attrs + '>' +
         '<td class="rang" data-label="Rang">' + (i + 1) + '</td>' +
-        '<td class="titre" data-label="Titre">' + esc(it.titre) + '</td>' +
+        '<td class="titre" data-label="Titre">' + esc(it.titre) + go + '</td>' +
         '<td class="source" data-label="Source">' + esc(it.source) + '</td>' +
-        '<td data-label="Lien">' + lien + '</td>' +
         '<td class="resume" data-label="Résumé">' + esc(it.resume) + '</td>' +
       '</tr>';
     }).join('');
     return '<div class="table-wrap"><table><thead><tr>' +
-      '<th class="rang">#</th><th>Titre</th><th>Source</th><th>Lien vers l\'item</th><th>Résumé</th>' +
+      '<th class="rang">#</th><th>Titre</th><th>Source</th><th>Résumé</th>' +
       '</tr></thead><tbody>' + rows + '</tbody></table></div>';
   }
 
