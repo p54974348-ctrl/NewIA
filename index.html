@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Veille IA — accès protégé</title>
+<title>Veille IA francophone</title>
 <style>
   :root {
     --bg:#fbfcfd; --surface:#ffffff; --surface-2:#f4f6f9; --ink:#16202b;
@@ -28,45 +28,15 @@
     line-height:1.6; -webkit-font-smoothing:antialiased;
   }
 
-  /* ---- Portail mot de passe ---- */
-  #gate {
-    position:fixed; inset:0; z-index:50;
-    display:flex; align-items:center; justify-content:center; padding:1.2rem;
-    background:var(--bg);
-  }
-  .gate-card {
-    width:100%; max-width:380px; background:var(--surface);
-    border:1px solid var(--border); border-radius:16px;
-    padding:2rem 1.7rem; box-shadow:var(--shadow); text-align:center;
-  }
-  .gate-card .lock { font-size:2rem; }
-  .gate-card h1 { font-size:1.25rem; margin:.6rem 0 .3rem; letter-spacing:-.01em; }
-  .gate-card p { color:var(--muted); font-size:.9rem; margin:0 0 1.3rem; }
-  .gate-form { display:flex; flex-direction:column; gap:.7rem; }
-  #pwd {
-    width:100%; padding:.7rem .85rem; font-size:1rem;
-    border:1px solid var(--border); border-radius:10px;
-    background:var(--surface-2); color:var(--ink);
-  }
-  #pwd:focus { outline:2px solid var(--accent); outline-offset:1px; border-color:var(--accent); }
-  .gate-form button {
-    padding:.7rem 1rem; font-size:.95rem; font-weight:600; cursor:pointer;
-    color:#fff; background:var(--accent); border:none; border-radius:10px;
-    transition:filter .15s ease;
-  }
-  .gate-form button:hover { filter:brightness(1.07); }
-  #err { color:#d64545; font-size:.85rem; min-height:1.1em; margin:0; }
-
-  /* ---- Contenu ---- */
-  #content { display:none; max-width:1000px; margin:0 auto; padding:clamp(1.5rem,4vw,3.5rem) clamp(1.1rem,4vw,2rem) 4rem; }
+  main { max-width:1000px; margin:0 auto; padding:clamp(1.5rem,4vw,3.5rem) clamp(1.1rem,4vw,2rem) 4rem; }
   .eyebrow { font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; font-weight:600; color:var(--accent); margin:0 0 .6rem; }
-  h2.title { font-size:clamp(1.6rem,4vw,2.2rem); line-height:1.15; letter-spacing:-.02em; margin:0 0 .5rem; text-wrap:balance; }
+  h1.title { font-size:clamp(1.6rem,4vw,2.2rem); line-height:1.15; letter-spacing:-.02em; margin:0 0 .5rem; text-wrap:balance; }
   .intro { color:var(--muted); font-size:1.02rem; margin:0 0 .4rem; max-width:60ch; }
   .banner {
     background:var(--warn-bg); color:var(--warn-ink); border-radius:10px;
     padding:.7rem 1rem; font-size:.86rem; margin:1.2rem 0 2rem; font-weight:500;
   }
-  h3.section { font-size:1.2rem; margin:2.2rem 0 .8rem; letter-spacing:-.01em; }
+  h2.section { font-size:1.2rem; margin:2.2rem 0 .8rem; letter-spacing:-.01em; }
   .table-wrap { overflow-x:auto; border:1px solid var(--border); border-radius:12px; box-shadow:var(--shadow); }
   table { width:100%; border-collapse:collapse; min-width:640px; font-size:.9rem; }
   thead th {
@@ -87,29 +57,14 @@
 </head>
 <body>
 
-  <!-- Portail mot de passe (protection dissuasive côté navigateur, non forte) -->
-  <div id="gate">
-    <div class="gate-card">
-      <div class="lock">🔒</div>
-      <h1>Accès protégé</h1>
-      <p>Saisissez le mot de passe pour afficher la veille.</p>
-      <form class="gate-form" id="gate-form" autocomplete="off">
-        <input type="password" id="pwd" placeholder="Mot de passe" aria-label="Mot de passe" autofocus>
-        <button type="submit">Déverrouiller</button>
-        <p id="err" role="alert"></p>
-      </form>
-    </div>
-  </div>
-
-  <!-- Contenu masqué jusqu'à saisie du bon mot de passe -->
-  <main id="content">
+  <main>
     <p class="eyebrow">Veille quotidienne · Intelligence artificielle</p>
-    <h2 class="title">Veille IA francophone</h2>
+    <h1 class="title">Veille IA francophone</h1>
     <p class="intro" id="intro">Sélection du jour.</p>
 
     <div class="banner">⚠️ Page de TEST — les données ci-dessous sont <strong>fictives</strong> et servent uniquement à valider la chaîne de publication. Elles seront remplacées par la veille réelle générée automatiquement chaque matin.</div>
 
-    <h3 class="section">Articles</h3>
+    <h2 class="section">Articles</h2>
     <div class="table-wrap">
       <table>
         <thead>
@@ -138,7 +93,7 @@
       </table>
     </div>
 
-    <h3 class="section">Podcasts (Audible)</h3>
+    <h2 class="section">Podcasts (Audible)</h2>
     <div class="table-wrap">
       <table>
         <thead>
@@ -162,7 +117,7 @@
     </div>
 
     <footer>
-      Page générée à titre de test · protection par mot de passe côté navigateur (dissuasive uniquement).
+      Page générée à titre de test · veille IA francophone.
     </footer>
   </main>
 
@@ -176,34 +131,6 @@
         'Sélection de veille IA du ' + s + ' (données fictives de test).';
     } catch (e) {}
   })();
-
-  // Protection par mot de passe (dissuasive, comparaison côté client)
-  var PASSWORD = 'fvCs3pMY2hzwhbnTgeZW';
-  var gate = document.getElementById('gate');
-  var content = document.getElementById('content');
-  var form = document.getElementById('gate-form');
-  var input = document.getElementById('pwd');
-  var err = document.getElementById('err');
-
-  function unlock() {
-    gate.style.display = 'none';
-    content.style.display = 'block';
-  }
-  // Réafficher sans redemander pendant la session de navigation
-  try { if (sessionStorage.getItem('veille_ok') === '1') unlock(); } catch (e) {}
-
-  form.addEventListener('submit', function (ev) {
-    ev.preventDefault();
-    if (input.value === PASSWORD) {
-      try { sessionStorage.setItem('veille_ok', '1'); } catch (e) {}
-      err.textContent = '';
-      unlock();
-    } else {
-      err.textContent = 'Mot de passe incorrect.';
-      input.value = '';
-      input.focus();
-    }
-  });
 </script>
 </body>
 </html>
