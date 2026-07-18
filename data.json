@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-18T20:10Z (via API GitHub)",
+  "generatedAt": "2026-07-18T20:30Z",
   "days": [
     {
       "date": "2026-07-18",
@@ -17,7 +17,21 @@
           "source": "info.gouv.fr",
           "lang": "fr",
           "lien": "https://www.info.gouv.fr/actualite/accelerer-l-ia-dans-l-etat-et-au-service-des-francais",
-          "resume": "Assistant destiné à répondre aux questions médicales des Français et à orienter vers une prise en charge."
+          "resume": "Assistant destiné à répondre aux questions médicales des Français et à les orienter vers une prise en charge."
+        },
+        {
+          "titre": "Pionniers de l'IA : 28 nouvelles start-ups sélectionnées par l'État",
+          "source": "Le Monde Informatique",
+          "lang": "fr",
+          "lien": "https://www.lemondeinformatique.fr/intelligence-artificielle-154.html",
+          "resume": "Une seconde vague de 28 jeunes pousses rejoint les 23 premières soutenues par le dispositif public."
+        },
+        {
+          "titre": "IA : 655 M€ via France 2030 pour accélérer la stratégie nationale",
+          "source": "info.gouv.fr",
+          "lang": "fr",
+          "lien": "https://www.info.gouv.fr/actualite/accelerer-l-ia-dans-l-etat-et-au-service-des-francais",
+          "resume": "Investissement annoncé pour renforcer la stratégie nationale en intelligence artificielle."
         },
         {
           "titre": "Atos lance MogwAI, plateforme d'IA générative et agentique",
@@ -27,20 +41,6 @@
           "resume": "Plateforme d'IA générative et agentique pensée pour les environnements critiques."
         },
         {
-          "titre": "Un fleuron français dévoile un modèle de navigation robotique sans Lidar",
-          "source": "L'Usine Digitale",
-          "lang": "fr",
-          "lien": "https://www.usine-digitale.fr/intelligence-artificielle/",
-          "resume": "Navigation robotique avec une simple caméra, sans Lidar ni capteur de profondeur."
-        },
-        {
-          "titre": "Adoption de l'IA générative : 47,8 % des actifs français, 5e rang mondial",
-          "source": "Bpifrance — Big Media",
-          "lang": "fr",
-          "lien": "https://bigmedia.bpifrance.fr/nos-dossiers/nouvelles-tendances-ia-ce-qui-va-transformer-2026",
-          "resume": "Près d'un actif français sur deux utilise des outils d'IA générative, 5e place mondiale."
-        },
-        {
           "titre": "AI Act : bascule opérationnelle au 2 août pour les entreprises",
           "source": "L'Usine Digitale",
           "lang": "fr",
@@ -48,32 +48,39 @@
           "resume": "À l'approche du 2 août, l'AI Act devient une réalité opérationnelle pour les entreprises non conformes."
         },
         {
-          "titre": "Anthropic ships Claude Sonnet 5",
-          "source": "LLM Stats",
+          "titre": "Microsoft dévoile Project Perception, outil de sécurité IA multi-modèles",
+          "source": "Crypto Integrated",
           "lang": "en",
-          "lien": "https://llm-stats.com/llm-updates",
-          "resume": "Claude Sonnet 5 brings stronger long-run coding, tool use and debugging at a lower price ($2/$10 per million tokens until 31 August 2026)."
+          "lien": "https://www.cryptointegrat.com/p/ai-news-july-18-2026",
+          "resume": "Microsoft ships Project Perception, a multi-model AI security tool (Anthropic, OpenAI, in-house), pitched as a cheaper Mythos 5 alternative."
         },
         {
-          "titre": "Moonshot AI releases Kimi K3",
-          "source": "AI Release Tracker",
+          "titre": "Oracle to cut up to 30,000 jobs to fund the $500B Stargate build-out",
+          "source": "Crypto Integrated",
           "lang": "en",
-          "lien": "https://aireleasetracker.com/latest",
-          "resume": "Kimi K3 (16 July 2026) is the latest tracked frontier model in a busy month of AI launches."
+          "lien": "https://www.cryptointegrat.com/p/ai-news-july-18-2026",
+          "resume": "Oracle reportedly cuts up to 30,000 roles to help fund the $500B Stargate AI infrastructure partnership."
+        },
+        {
+          "titre": "Kimi K3 adds Standard, High and Max reasoning levels",
+          "source": "Crypto Integrated",
+          "lang": "en",
+          "lien": "https://www.cryptointegrat.com/p/ai-news-july-18-2026",
+          "resume": "Moonshot AI's Kimi K3 now offers three selectable reasoning-effort levels on web and mobile."
         },
         {
           "titre": "OpenAI confirms GPT-5.6 Sol / Terra / Luna",
           "source": "AI Tools Recap",
           "lang": "en",
           "lien": "https://aitoolsrecap.com/Blog/AINewsJuly2026.aspx",
-          "resume": "Sol sets a new SOTA on Terminal-Bench 2.1; Terra matches GPT-5.5 at 2x lower cost; Luna is the fastest and cheapest of the three."
+          "resume": "Sol sets a new SOTA on Terminal-Bench 2.1; Terra matches GPT-5.5 at 2x lower cost; Luna is the fastest and cheapest."
         },
         {
-          "titre": "Thinking Machines unveils Inkling, its first frontier model",
-          "source": "ZoneTechify",
+          "titre": "Anthropic ships Claude Sonnet 5",
+          "source": "LLM Stats",
           "lang": "en",
-          "lien": "https://www.zonetechify.com/blog/ai-news-july-2026-latest-ai-developments",
-          "resume": "Mira Murati's new lab ships Inkling as an open-weight, general-purpose reasoning and coding model."
+          "lien": "https://llm-stats.com/llm-updates",
+          "resume": "Claude Sonnet 5 brings stronger long-run coding, tool use and debugging at a lower price ($2/$10 per million tokens until 31 August 2026)."
         }
       ],
       "podcasts": [
