@@ -87,9 +87,13 @@
   td.rang { text-align:right; color:var(--faint); font-variant-numeric:tabular-nums; }
   td.titre { font-weight:600; color:var(--ink); min-width:180px; }
   td.source { color:var(--muted); white-space:nowrap; }
-  td a { color:var(--accent); text-decoration:none; font-weight:500; }
-  td a:hover { text-decoration:underline; }
+  td .lien { color:var(--accent); font-weight:500; white-space:nowrap; }
   td.resume { color:var(--muted); max-width:320px; }
+  /* Ligne entière cliquable */
+  tr.row-link { cursor:pointer; }
+  tr.row-link:hover { background:var(--accent-bg); }
+  tr.row-link:hover .lien { text-decoration:underline; }
+  tr.row-link:focus-visible { outline:2px solid var(--accent); outline-offset:-2px; }
   .empty { color:var(--faint); font-style:italic; padding:.4rem 0; }
   .loading, .error { color:var(--muted); padding:2rem 0; }
   .error { color:#d64545; }
@@ -140,10 +144,15 @@
       return '<p class="empty">Aucune nouveauté récente sur ce volet ce jour-là.</p>';
     }
     var rows = list.map(function (it, i) {
-      var lien = it.lien
-        ? '<a href="' + esc(it.lien) + '" target="_blank" rel="noopener">' + (action || 'Ouvrir') + '</a>'
+      var hasLink = !!it.lien;
+      var lien = hasLink
+        ? '<span class="lien">' + (action || 'Ouvrir') + ' ↗</span>'
         : '<span class="empty">—</span>';
-      return '<tr>' +
+      var attrs = hasLink
+        ? ' class="row-link" data-href="' + esc(it.lien) + '" tabindex="0" role="link"' +
+          ' aria-label="' + esc((action || 'Ouvrir') + ' : ' + it.titre) + '"'
+        : '';
+      return '<tr' + attrs + '>' +
         '<td class="rang">' + (i + 1) + '</td>' +
         '<td class="titre">' + esc(it.titre) + '</td>' +
         '<td class="source">' + esc(it.source) + '</td>' +
@@ -246,6 +255,21 @@
       });
     });
     panels.setAttribute('data-filter', 'all');
+
+    // Ligne entière cliquable : ouvre le lien de l'item (souris + clavier)
+    function openRow(row) {
+      var href = row && row.getAttribute('data-href');
+      if (href) window.open(href, '_blank', 'noopener');
+    }
+    panels.addEventListener('click', function (e) {
+      var row = e.target.closest('tr.row-link');
+      if (row) openRow(row);
+    });
+    panels.addEventListener('keydown', function (e) {
+      if (e.key !== 'Enter' && e.key !== ' ') return;
+      var row = e.target.closest('tr.row-link');
+      if (row) { e.preventDefault(); openRow(row); }
+    });
   })();
 
   fetch('data.json?_=' + Date.now(), { cache: 'no-store' })
