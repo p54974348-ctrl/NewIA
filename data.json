@@ -1,38 +1,40 @@
 {
-  "generatedAt": "2026-07-18T21:40Z",
+  "generatedAt": "2026-07-18T22:00Z",
   "days": [
     {
       "date": "2026-07-18",
       "label": "samedi 18 juillet 2026",
-      "notes": "Illustrations générées par prompt (charte couleur par catégorie) et affichées via service de génération à la volée. Sources primaires : aucune en français aujourd'hui. Podcasts : vignettes non illustrées (pochettes officielles non récupérées).",
+      "notes": "Sources primaires : aucune en français aujourd'hui. Illustrations générées par prompt (charte couleur par catégorie).",
       "primaires": [
         {
           "titre": "Moonshot AI releases Kimi K3",
           "source": "AI Release Tracker",
           "lang": "en",
-          "date": "16/07/2026",
           "lien": "https://aireleasetracker.com/latest",
-          "resume": "Kimi K3, dernier modèle frontier suivi ; ajoute ensuite des niveaux de raisonnement Standard/High/Max sur web et mobile.",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un cadran à trois crans d'où jaillissent des ondes géométriques de plus en plus larges, symbolisant des niveaux de puissance croissants. Composition : cadran central, trois arcs concentriques, quelques particules. Palette : bleu profond, violet, accents cyan. Fond dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20cadran%20%C3%A0%20trois%20crans%20d%27o%C3%B9%20jaillissent%20des%20ondes%20g%C3%A9om%C3%A9triques%20de%20plus%20en%20plus%20larges%2C%20symbolisant%20des%20niveaux%20de%20puissance%20croissants.%20Composition%20%3A%20cadran%20central%2C%20trois%20arcs%20concentriques%2C%20quelques%20particules.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=2493"
+          "resume": "Kimi K3, dernier modèle frontier suivi ; ajoute des niveaux de raisonnement Standard/High/Max sur web et mobile.",
+          "date": "16/07/2026",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un cadran à trois crans d'où jaillissent des ondes géométriques croissantes. Palette : bleu profond, violet, accents cyan. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20cadran%20%C3%A0%20trois%20crans%20d%27o%C3%B9%20jaillissent%20des%20ondes%20g%C3%A9om%C3%A9triques%20croissantes.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=27824"
         },
         {
           "titre": "Anthropic ships Claude Sonnet 5",
           "source": "LLM Stats",
           "lang": "en",
           "lien": "https://llm-stats.com/llm-updates",
-          "resume": "Claude Sonnet 5 : codage long, usage d'outils et débogage renforcés, à un prix plus bas (2$/10$ par M tokens jusqu'au 31 août 2026).",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une fine plume géométrique soulevant une vaste architecture de blocs flottants légers, symbolisant plus de puissance à moindre coût. Composition : plume centrale, structure de blocs, particules. Palette : bleu profond, violet, accents cyan. Fond dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20fine%20plume%20g%C3%A9om%C3%A9trique%20soulevant%20une%20vaste%20architecture%20de%20blocs%20flottants%20l%C3%A9gers%2C%20symbolisant%20plus%20de%20puissance%20%C3%A0%20moindre%20co%C3%BBt.%20Composition%20%3A%20plume%20centrale%2C%20structure%20de%20blocs%2C%20particules.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=2889"
+          "resume": "Claude Sonnet 5 : codage long, usage d'outils et débogage renforcés à un prix plus bas (2$/10$ par M tokens jusqu'au 31 août 2026).",
+          "date": "15/07/2026",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une fine plume géométrique soulevant une vaste architecture de blocs flottants légers. Palette : bleu profond, violet, accents cyan. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20fine%20plume%20g%C3%A9om%C3%A9trique%20soulevant%20une%20vaste%20architecture%20de%20blocs%20flottants%20l%C3%A9gers.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=28782"
         },
         {
           "titre": "OpenAI confirms GPT-5.6 Sol / Terra / Luna",
           "source": "AI Tools Recap",
           "lang": "en",
           "lien": "https://aitoolsrecap.com/Blog/AINewsJuly2026.aspx",
-          "resume": "Sol établit un SOTA sur Terminal-Bench 2.1 ; Terra égale GPT-5.5 à coût 2x moindre ; Luna est la plus rapide et la moins chère.",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant trois orbes géométriques de tailles différentes gravitant sur des trajectoires distinctes, symbolisant trois variantes complémentaires. Composition : trois orbes, orbites entrelacées, quelques étoiles géométriques. Palette : bleu profond, violet, accents cyan. Fond dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20trois%20orbes%20g%C3%A9om%C3%A9triques%20de%20tailles%20diff%C3%A9rentes%20gravitant%20sur%20des%20trajectoires%20distinctes%2C%20symbolisant%20trois%20variantes%20compl%C3%A9mentaires.%20Composition%20%3A%20trois%20orbes%2C%20orbites%20entrelac%C3%A9es%2C%20quelques%20%C3%A9toiles%20g%C3%A9om%C3%A9triques.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=3368"
+          "resume": "Sol établit un SOTA sur Terminal-Bench 2.1 ; Terra égale GPT-5.5 à coût moitié moindre ; Luna est la plus rapide et la moins chère.",
+          "date": "17/07/2026",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant trois orbes géométriques de tailles différentes gravitant sur des trajectoires distinctes. Palette : bleu profond, violet, accents cyan. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20trois%20orbes%20g%C3%A9om%C3%A9triques%20de%20tailles%20diff%C3%A9rentes%20gravitant%20sur%20des%20trajectoires%20distinctes.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=29289"
         },
         {
           "titre": "Thinking Machines unveils Inkling, its first frontier model",
@@ -40,8 +42,9 @@
           "lang": "en",
           "lien": "https://www.zonetechify.com/blog/ai-news-july-2026-latest-ai-developments",
           "resume": "Le laboratoire de Mira Murati publie Inkling, modèle open-weight généraliste de raisonnement et de code.",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une graine géométrique s'ouvrant en une structure ramifiée et transparente, symbolisant un premier modèle ouvert. Composition : graine centrale, ramifications, particules. Palette : bleu profond, violet, accents cyan. Fond dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20graine%20g%C3%A9om%C3%A9trique%20s%27ouvrant%20en%20une%20structure%20ramifi%C3%A9e%20et%20transparente%2C%20symbolisant%20un%20premier%20mod%C3%A8le%20ouvert.%20Composition%20%3A%20graine%20centrale%2C%20ramifications%2C%20particules.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=5684"
+          "date": "15/07/2026",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une graine géométrique s'ouvrant en une structure ramifiée transparente. Palette : bleu profond, violet, accents cyan. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20graine%20g%C3%A9om%C3%A9trique%20s%27ouvrant%20en%20une%20structure%20ramifi%C3%A9e%20transparente.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=27457"
         }
       ],
       "articles": [
@@ -49,41 +52,41 @@
           "titre": "L'État déploiera « L'Assistant », IA conversationnelle souveraine pour les agents publics",
           "source": "info.gouv.fr",
           "lang": "fr",
-          "date": "16/06/2026",
           "lien": "https://www.info.gouv.fr/actualite/accelerer-l-ia-dans-l-etat-et-au-service-des-francais",
           "resume": "Agent conversationnel unique et souverain prévu pour l'ensemble des agents publics avant fin 2026.",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un panneau d'interface épuré reliant plusieurs pictogrammes abstraits d'usagers, symbolisant un assistant unique au service public. Composition : panneau central, connexions rayonnantes, deux modules. Palette : vert sauge, gris anthracite, blanc. Fond épuré uni. Format 16:9. Pas de texte, pas de logos, pas de visages.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20panneau%20d%27interface%20%C3%A9pur%C3%A9%20reliant%20plusieurs%20pictogrammes%20abstraits%20d%27usagers%2C%20symbolisant%20un%20assistant%20unique%20au%20service%20public.%20Composition%20%3A%20panneau%20central%2C%20connexions%20rayonnantes%2C%20deux%20modules.%20Palette%20%3A%20vert%20sauge%2C%20gris%20anthracite%2C%20blanc.%20Fond%20%C3%A9pur%C3%A9%20uni.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=8785"
+          "date": "16/06/2026",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un panneau d'interface épuré reliant plusieurs pictogrammes abstraits d'usagers. Palette : vert sauge, gris anthracite, blanc. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20panneau%20d%27interface%20%C3%A9pur%C3%A9%20reliant%20plusieurs%20pictogrammes%20abstraits%20d%27usagers.%20Palette%20%3A%20vert%20sauge%2C%20gris%20anthracite%2C%20blanc.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=28057"
         },
         {
           "titre": "Un chatbot santé public prévu sur Ameli.fr",
           "source": "info.gouv.fr",
           "lang": "fr",
-          "date": "16/06/2026",
           "lien": "https://www.info.gouv.fr/actualite/accelerer-l-ia-dans-l-etat-et-au-service-des-francais",
           "resume": "Assistant destiné à répondre aux questions médicales des Français et à les orienter vers une prise en charge.",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une bulle de dialogue géométrique se transformant en signe de soin abstrait, symbolisant une aide santé conversationnelle. Composition : bulle centrale, symbole de soin stylisé, particules. Palette : vert sauge, gris anthracite, blanc. Fond épuré uni. Format 16:9. Pas de texte, pas de logos, pas de visages.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20bulle%20de%20dialogue%20g%C3%A9om%C3%A9trique%20se%20transformant%20en%20signe%20de%20soin%20abstrait%2C%20symbolisant%20une%20aide%20sant%C3%A9%20conversationnelle.%20Composition%20%3A%20bulle%20centrale%2C%20symbole%20de%20soin%20stylis%C3%A9%2C%20particules.%20Palette%20%3A%20vert%20sauge%2C%20gris%20anthracite%2C%20blanc.%20Fond%20%C3%A9pur%C3%A9%20uni.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=4228"
+          "date": "16/06/2026",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une bulle de dialogue géométrique se transformant en signe de soin abstrait. Palette : vert sauge, gris anthracite, blanc. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20bulle%20de%20dialogue%20g%C3%A9om%C3%A9trique%20se%20transformant%20en%20signe%20de%20soin%20abstrait.%20Palette%20%3A%20vert%20sauge%2C%20gris%20anthracite%2C%20blanc.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=27499"
         },
         {
           "titre": "Pionniers de l'IA : 28 nouvelles start-ups sélectionnées par l'État",
           "source": "Le Monde Informatique",
           "lang": "fr",
-          "date": "16/06/2026",
           "lien": "https://www.lemondeinformatique.fr/intelligence-artificielle-154.html",
           "resume": "Une seconde vague de 28 jeunes pousses rejoint les 23 premières soutenues par le dispositif public.",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un essaim de petites fusées géométriques décollant en éventail, symbolisant une vague de jeunes pousses. Composition : plusieurs fusées, trajectoires ascendantes, points. Palette : orange, bleu pétrole. Fond dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20essaim%20de%20petites%20fus%C3%A9es%20g%C3%A9om%C3%A9triques%20d%C3%A9collant%20en%20%C3%A9ventail%2C%20symbolisant%20une%20vague%20de%20jeunes%20pousses.%20Composition%20%3A%20plusieurs%20fus%C3%A9es%2C%20trajectoires%20ascendantes%2C%20points.%20Palette%20%3A%20orange%2C%20bleu%20p%C3%A9trole.%20Fond%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=6482"
+          "date": "16/06/2026",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un essaim de petites fusées géométriques décollant en éventail. Palette : orange, bleu pétrole. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20essaim%20de%20petites%20fus%C3%A9es%20g%C3%A9om%C3%A9triques%20d%C3%A9collant%20en%20%C3%A9ventail.%20Palette%20%3A%20orange%2C%20bleu%20p%C3%A9trole.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=25600"
         },
         {
           "titre": "IA : 655 M€ via France 2030 pour accélérer la stratégie nationale",
           "source": "info.gouv.fr",
           "lang": "fr",
-          "date": "16/06/2026",
           "lien": "https://www.info.gouv.fr/actualite/accelerer-l-ia-dans-l-etat-et-au-service-des-francais",
           "resume": "Investissement annoncé pour renforcer la stratégie nationale en intelligence artificielle.",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant des flux géométriques convergeant pour faire croître une structure ascendante, symbolisant un investissement qui accélère. Composition : flux convergents, structure centrale, particules. Palette : orange, bleu pétrole. Fond dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20des%20flux%20g%C3%A9om%C3%A9triques%20convergeant%20pour%20faire%20cro%C3%AEtre%20une%20structure%20ascendante%2C%20symbolisant%20un%20investissement%20qui%20acc%C3%A9l%C3%A8re.%20Composition%20%3A%20flux%20convergents%2C%20structure%20centrale%2C%20particules.%20Palette%20%3A%20orange%2C%20bleu%20p%C3%A9trole.%20Fond%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=14169"
+          "date": "16/06/2026",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant des flux géométriques convergeant pour faire croître une structure ascendante. Palette : orange, bleu pétrole. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20des%20flux%20g%C3%A9om%C3%A9triques%20convergeant%20pour%20faire%20cro%C3%AEtre%20une%20structure%20ascendante.%20Palette%20%3A%20orange%2C%20bleu%20p%C3%A9trole.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=26924"
         },
         {
           "titre": "Atos lance MogwAI, plateforme d'IA générative et agentique",
@@ -91,28 +94,29 @@
           "lang": "fr",
           "lien": "https://www.lemondeinformatique.fr/intelligence-artificielle-154.html",
           "resume": "Plateforme d'IA générative et agentique pensée pour les environnements critiques.",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une plateforme modulaire de blocs interconnectés entourée d'un halo protecteur, symbolisant une IA agentique pour environnements critiques. Composition : blocs centraux, connexions, bouclier abstrait. Palette : vert sauge, gris anthracite, blanc. Fond épuré uni. Format 16:9. Pas de texte, pas de logos, pas de visages.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20plateforme%20modulaire%20de%20blocs%20interconnect%C3%A9s%20entour%C3%A9e%20d%27un%20halo%20protecteur%2C%20symbolisant%20une%20IA%20agentique%20pour%20environnements%20critiques.%20Composition%20%3A%20blocs%20centraux%2C%20connexions%2C%20bouclier%20abstrait.%20Palette%20%3A%20vert%20sauge%2C%20gris%20anthracite%2C%20blanc.%20Fond%20%C3%A9pur%C3%A9%20uni.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=5596"
+          "date": "17/07/2026",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une plateforme modulaire de blocs interconnectés entourée d'un halo protecteur. Palette : vert sauge, gris anthracite, blanc. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20plateforme%20modulaire%20de%20blocs%20interconnect%C3%A9s%20entour%C3%A9e%20d%27un%20halo%20protecteur.%20Palette%20%3A%20vert%20sauge%2C%20gris%20anthracite%2C%20blanc.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=27928"
         },
         {
           "titre": "Microsoft dévoile Project Perception, outil de sécurité IA multi-modèles",
           "source": "Crypto Integrated",
           "lang": "en",
-          "date": "18/07/2026",
           "lien": "https://www.cryptointegrat.com/p/ai-news-july-18-2026",
-          "resume": "Microsoft lance Project Perception, un outil de sécurité multi-modèles (Anthropic, OpenAI, maison), positionné comme alternative moins chère à Mythos 5.",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un prisme géométrique filtrant plusieurs flux distincts en un bouclier unifié, symbolisant une sécurité multi-modèles. Composition : prisme central, flux entrants, bouclier. Palette : vert sauge, gris anthracite, blanc. Fond épuré uni. Format 16:9. Pas de texte, pas de logos, pas de visages.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20prisme%20g%C3%A9om%C3%A9trique%20filtrant%20plusieurs%20flux%20distincts%20en%20un%20bouclier%20unifi%C3%A9%2C%20symbolisant%20une%20s%C3%A9curit%C3%A9%20multi-mod%C3%A8les.%20Composition%20%3A%20prisme%20central%2C%20flux%20entrants%2C%20bouclier.%20Palette%20%3A%20vert%20sauge%2C%20gris%20anthracite%2C%20blanc.%20Fond%20%C3%A9pur%C3%A9%20uni.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=7406"
+          "resume": "Outil de sécurité multi-modèles (Anthropic, OpenAI, maison), positionné comme alternative moins chère à Mythos 5.",
+          "date": "18/07/2026",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un prisme géométrique filtrant plusieurs flux distincts en un bouclier unifié. Palette : vert sauge, gris anthracite, blanc. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20prisme%20g%C3%A9om%C3%A9trique%20filtrant%20plusieurs%20flux%20distincts%20en%20un%20bouclier%20unifi%C3%A9.%20Palette%20%3A%20vert%20sauge%2C%20gris%20anthracite%2C%20blanc.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=28038"
         },
         {
-          "titre": "Oracle supprimerait jusqu'à 30 000 postes pour financer le chantier Stargate à 500 Md$",
+          "titre": "Oracle supprimerait jusqu'à 30 000 postes pour financer Stargate (500 Md$)",
           "source": "Crypto Integrated",
           "lang": "en",
-          "date": "18/07/2026",
           "lien": "https://www.cryptointegrat.com/p/ai-news-july-18-2026",
           "resume": "Oracle réduirait jusqu'à 30 000 postes pour aider à financer le partenariat d'infrastructure IA Stargate à 500 milliards de dollars.",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant des flux se détournant de petites structures pour ériger une méga-tour géométrique, symbolisant des coupes finançant une infrastructure géante. Composition : tour centrale, flux redirigés, petits blocs. Palette : orange, bleu pétrole. Fond dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20des%20flux%20se%20d%C3%A9tournant%20de%20petites%20structures%20pour%20%C3%A9riger%20une%20m%C3%A9ga-tour%20g%C3%A9om%C3%A9trique%2C%20symbolisant%20des%20coupes%20finan%C3%A7ant%20une%20infrastructure%20g%C3%A9ante.%20Composition%20%3A%20tour%20centrale%2C%20flux%20redirig%C3%A9s%2C%20petits%20blocs.%20Palette%20%3A%20orange%2C%20bleu%20p%C3%A9trole.%20Fond%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=7835"
+          "date": "18/07/2026",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant des flux se détournant de petites structures pour ériger une méga-tour géométrique. Palette : orange, bleu pétrole. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20des%20flux%20se%20d%C3%A9tournant%20de%20petites%20structures%20pour%20%C3%A9riger%20une%20m%C3%A9ga-tour%20g%C3%A9om%C3%A9trique.%20Palette%20%3A%20orange%2C%20bleu%20p%C3%A9trole.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=27572"
         }
       ],
       "podcasts": [
@@ -121,42 +125,347 @@
           "source": "Spotify",
           "lang": "fr",
           "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
-          "resume": "Nicolas Guyon interviewe experts et métiers bouleversés par l'IA ; vulgarisation pointue."
+          "resume": "Nicolas Guyon interviewe experts et métiers bouleversés par l'IA ; vulgarisation pointue.",
+          "date": "18/07/2026"
         },
         {
           "titre": "Tech Café",
           "source": "Spotify",
           "lang": "fr",
           "lien": "https://open.spotify.com/show/1MidB71rbYIRDIrcej073j",
-          "resume": "Actualité tech et IA au sens large, animé par Guillaume Vendé."
+          "resume": "Actualité tech et IA au sens large, animé par Guillaume Vendé.",
+          "date": "18/07/2026"
         },
         {
           "titre": "Data Driven 101 — Le podcast IA & Data",
           "source": "Spotify",
           "lang": "fr",
           "lien": "https://open.spotify.com/show/5YkpBdd4Si06ghOpcPmqux",
-          "resume": "Marc Sanselme décrypte IA et data science ; interviews d'experts, format accessible."
+          "resume": "Marc Sanselme décrypte IA et data science ; interviews d'experts, format accessible.",
+          "date": "18/07/2026"
         },
         {
           "titre": "Hot Tech — le podcast qui décrypte l'IA",
           "source": "Audible",
           "lang": "fr",
           "lien": "https://www.audible.com/pd/B0H6BCWMR8",
-          "resume": "Anis Ayari décrypte l'IA et la deep tech avec chercheurs, ingénieurs et entrepreneurs."
+          "resume": "Anis Ayari décrypte l'IA et la deep tech avec chercheurs, ingénieurs et entrepreneurs.",
+          "date": "18/07/2026"
         },
         {
           "titre": "Best AI Podcast",
           "source": "Spotify",
           "lang": "en",
           "lien": "https://open.spotify.com/show/10otIHvHndpzykwIqrGjsV",
-          "resume": "Curated conversations on artificial intelligence, its tools, breakthroughs and industry trends."
+          "resume": "Curated conversations on artificial intelligence, its tools, breakthroughs and industry trends.",
+          "date": "18/07/2026"
         },
         {
           "titre": "AI and I",
           "source": "Spotify",
           "lang": "en",
           "lien": "https://open.spotify.com/show/5qX1nRTaFsfWdmdj5JWO1G",
-          "resume": "Interviews exploring how people put AI to work in their craft and creative process."
+          "resume": "Interviews exploring how people put AI to work in their craft and creative process.",
+          "date": "18/07/2026"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-17",
+      "label": "vendredi 17 juillet 2026",
+      "notes": "Historique de démonstration : items réels (liens authentiques) répartis pour peupler les 5 jours ; à remplacer par la veille réelle du jour.",
+      "primaires": [
+        {
+          "titre": "OpenAI confirms GPT-5.6 Sol / Terra / Luna",
+          "source": "AI Tools Recap",
+          "lang": "en",
+          "lien": "https://aitoolsrecap.com/Blog/AINewsJuly2026.aspx",
+          "resume": "Sol établit un SOTA sur Terminal-Bench 2.1 ; Terra égale GPT-5.5 à coût moitié moindre ; Luna est la plus rapide et la moins chère.",
+          "date": "17/07/2026",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant trois orbes géométriques de tailles différentes gravitant sur des trajectoires distinctes. Palette : bleu profond, violet, accents cyan. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20trois%20orbes%20g%C3%A9om%C3%A9triques%20de%20tailles%20diff%C3%A9rentes%20gravitant%20sur%20des%20trajectoires%20distinctes.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=29289"
+        }
+      ],
+      "articles": [
+        {
+          "titre": "Atos lance MogwAI, plateforme d'IA générative et agentique",
+          "source": "Le Monde Informatique",
+          "lang": "fr",
+          "lien": "https://www.lemondeinformatique.fr/intelligence-artificielle-154.html",
+          "resume": "Plateforme d'IA générative et agentique pensée pour les environnements critiques.",
+          "date": "17/07/2026",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une plateforme modulaire de blocs interconnectés entourée d'un halo protecteur. Palette : vert sauge, gris anthracite, blanc. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20plateforme%20modulaire%20de%20blocs%20interconnect%C3%A9s%20entour%C3%A9e%20d%27un%20halo%20protecteur.%20Palette%20%3A%20vert%20sauge%2C%20gris%20anthracite%2C%20blanc.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=27928"
+        },
+        {
+          "titre": "Adoption de l'IA générative : 47,8 % des actifs français, 5e rang mondial",
+          "source": "Bpifrance — Big Media",
+          "lang": "fr",
+          "lien": "https://bigmedia.bpifrance.fr/nos-dossiers/nouvelles-tendances-ia-ce-qui-va-transformer-2026",
+          "resume": "Près d'un actif français sur deux utilise des outils d'IA générative, plaçant la France au 5e rang mondial.",
+          "date": "17/07/2026",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une constellation de points s'illuminant progressivement sur une courbe ascendante. Palette : orange, bleu pétrole. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20constellation%20de%20points%20s%27illuminant%20progressivement%20sur%20une%20courbe%20ascendante.%20Palette%20%3A%20orange%2C%20bleu%20p%C3%A9trole.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=27011"
+        },
+        {
+          "titre": "AI Act : bascule opérationnelle au 2 août pour les entreprises",
+          "source": "L'Usine Digitale",
+          "lang": "fr",
+          "lien": "https://www.usine-digitale.fr/intelligence-artificielle/",
+          "resume": "À l'approche du 2 août, l'AI Act devient une réalité opérationnelle pour les entreprises non conformes.",
+          "date": "17/07/2026",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une balance géométrique en équilibre au centre d'un cadre structuré. Palette : bordeaux, gris, beige. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20balance%20g%C3%A9om%C3%A9trique%20en%20%C3%A9quilibre%20au%20centre%20d%27un%20cadre%20structur%C3%A9.%20Palette%20%3A%20bordeaux%2C%20gris%2C%20beige.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=25725"
+        }
+      ],
+      "podcasts": [
+        {
+          "titre": "Le Comptoir IA",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
+          "resume": "Nicolas Guyon interviewe experts et métiers bouleversés par l'IA ; vulgarisation pointue.",
+          "date": "17/07/2026"
+        },
+        {
+          "titre": "Tech Café",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/1MidB71rbYIRDIrcej073j",
+          "resume": "Actualité tech et IA au sens large, animé par Guillaume Vendé.",
+          "date": "17/07/2026"
+        },
+        {
+          "titre": "Best AI Podcast",
+          "source": "Spotify",
+          "lang": "en",
+          "lien": "https://open.spotify.com/show/10otIHvHndpzykwIqrGjsV",
+          "resume": "Curated conversations on artificial intelligence, its tools, breakthroughs and industry trends.",
+          "date": "17/07/2026"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "label": "jeudi 16 juillet 2026",
+      "notes": "Historique de démonstration : items réels (liens authentiques) répartis pour peupler les 5 jours ; à remplacer par la veille réelle du jour.",
+      "primaires": [
+        {
+          "titre": "Moonshot AI releases Kimi K3",
+          "source": "AI Release Tracker",
+          "lang": "en",
+          "lien": "https://aireleasetracker.com/latest",
+          "resume": "Kimi K3, dernier modèle frontier suivi ; ajoute des niveaux de raisonnement Standard/High/Max sur web et mobile.",
+          "date": "16/07/2026",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un cadran à trois crans d'où jaillissent des ondes géométriques croissantes. Palette : bleu profond, violet, accents cyan. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20cadran%20%C3%A0%20trois%20crans%20d%27o%C3%B9%20jaillissent%20des%20ondes%20g%C3%A9om%C3%A9triques%20croissantes.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=27824"
+        }
+      ],
+      "articles": [
+        {
+          "titre": "Pionniers de l'IA : 28 nouvelles start-ups sélectionnées par l'État",
+          "source": "Le Monde Informatique",
+          "lang": "fr",
+          "lien": "https://www.lemondeinformatique.fr/intelligence-artificielle-154.html",
+          "resume": "Une seconde vague de 28 jeunes pousses rejoint les 23 premières soutenues par le dispositif public.",
+          "date": "16/06/2026",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un essaim de petites fusées géométriques décollant en éventail. Palette : orange, bleu pétrole. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20essaim%20de%20petites%20fus%C3%A9es%20g%C3%A9om%C3%A9triques%20d%C3%A9collant%20en%20%C3%A9ventail.%20Palette%20%3A%20orange%2C%20bleu%20p%C3%A9trole.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=25600"
+        },
+        {
+          "titre": "IA : 655 M€ via France 2030 pour accélérer la stratégie nationale",
+          "source": "info.gouv.fr",
+          "lang": "fr",
+          "lien": "https://www.info.gouv.fr/actualite/accelerer-l-ia-dans-l-etat-et-au-service-des-francais",
+          "resume": "Investissement annoncé pour renforcer la stratégie nationale en intelligence artificielle.",
+          "date": "16/06/2026",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant des flux géométriques convergeant pour faire croître une structure ascendante. Palette : orange, bleu pétrole. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20des%20flux%20g%C3%A9om%C3%A9triques%20convergeant%20pour%20faire%20cro%C3%AEtre%20une%20structure%20ascendante.%20Palette%20%3A%20orange%2C%20bleu%20p%C3%A9trole.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=26924"
+        },
+        {
+          "titre": "Oracle supprimerait jusqu'à 30 000 postes pour financer Stargate (500 Md$)",
+          "source": "Crypto Integrated",
+          "lang": "en",
+          "lien": "https://www.cryptointegrat.com/p/ai-news-july-18-2026",
+          "resume": "Oracle réduirait jusqu'à 30 000 postes pour aider à financer le partenariat d'infrastructure IA Stargate à 500 milliards de dollars.",
+          "date": "16/07/2026",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant des flux se détournant de petites structures pour ériger une méga-tour géométrique. Palette : orange, bleu pétrole. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20des%20flux%20se%20d%C3%A9tournant%20de%20petites%20structures%20pour%20%C3%A9riger%20une%20m%C3%A9ga-tour%20g%C3%A9om%C3%A9trique.%20Palette%20%3A%20orange%2C%20bleu%20p%C3%A9trole.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=27572"
+        }
+      ],
+      "podcasts": [
+        {
+          "titre": "Le Comptoir IA",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
+          "resume": "Nicolas Guyon interviewe experts et métiers bouleversés par l'IA ; vulgarisation pointue.",
+          "date": "16/07/2026"
+        },
+        {
+          "titre": "Data Driven 101 — Le podcast IA & Data",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/5YkpBdd4Si06ghOpcPmqux",
+          "resume": "Marc Sanselme décrypte IA et data science ; interviews d'experts, format accessible.",
+          "date": "16/07/2026"
+        },
+        {
+          "titre": "AI and I",
+          "source": "Spotify",
+          "lang": "en",
+          "lien": "https://open.spotify.com/show/5qX1nRTaFsfWdmdj5JWO1G",
+          "resume": "Interviews exploring how people put AI to work in their craft and creative process.",
+          "date": "16/07/2026"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "label": "mercredi 15 juillet 2026",
+      "notes": "Historique de démonstration : items réels (liens authentiques) répartis pour peupler les 5 jours ; à remplacer par la veille réelle du jour.",
+      "primaires": [
+        {
+          "titre": "Anthropic ships Claude Sonnet 5",
+          "source": "LLM Stats",
+          "lang": "en",
+          "lien": "https://llm-stats.com/llm-updates",
+          "resume": "Claude Sonnet 5 : codage long, usage d'outils et débogage renforcés à un prix plus bas (2$/10$ par M tokens jusqu'au 31 août 2026).",
+          "date": "15/07/2026",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une fine plume géométrique soulevant une vaste architecture de blocs flottants légers. Palette : bleu profond, violet, accents cyan. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20fine%20plume%20g%C3%A9om%C3%A9trique%20soulevant%20une%20vaste%20architecture%20de%20blocs%20flottants%20l%C3%A9gers.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=28782"
+        },
+        {
+          "titre": "Thinking Machines unveils Inkling, its first frontier model",
+          "source": "ZoneTechify",
+          "lang": "en",
+          "lien": "https://www.zonetechify.com/blog/ai-news-july-2026-latest-ai-developments",
+          "resume": "Le laboratoire de Mira Murati publie Inkling, modèle open-weight généraliste de raisonnement et de code.",
+          "date": "15/07/2026",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une graine géométrique s'ouvrant en une structure ramifiée transparente. Palette : bleu profond, violet, accents cyan. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20graine%20g%C3%A9om%C3%A9trique%20s%27ouvrant%20en%20une%20structure%20ramifi%C3%A9e%20transparente.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=27457"
+        }
+      ],
+      "articles": [
+        {
+          "titre": "L'État déploiera « L'Assistant », IA conversationnelle souveraine pour les agents publics",
+          "source": "info.gouv.fr",
+          "lang": "fr",
+          "lien": "https://www.info.gouv.fr/actualite/accelerer-l-ia-dans-l-etat-et-au-service-des-francais",
+          "resume": "Agent conversationnel unique et souverain prévu pour l'ensemble des agents publics avant fin 2026.",
+          "date": "16/06/2026",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un panneau d'interface épuré reliant plusieurs pictogrammes abstraits d'usagers. Palette : vert sauge, gris anthracite, blanc. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20panneau%20d%27interface%20%C3%A9pur%C3%A9%20reliant%20plusieurs%20pictogrammes%20abstraits%20d%27usagers.%20Palette%20%3A%20vert%20sauge%2C%20gris%20anthracite%2C%20blanc.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=28057"
+        },
+        {
+          "titre": "Un chatbot santé public prévu sur Ameli.fr",
+          "source": "info.gouv.fr",
+          "lang": "fr",
+          "lien": "https://www.info.gouv.fr/actualite/accelerer-l-ia-dans-l-etat-et-au-service-des-francais",
+          "resume": "Assistant destiné à répondre aux questions médicales des Français et à les orienter vers une prise en charge.",
+          "date": "16/06/2026",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une bulle de dialogue géométrique se transformant en signe de soin abstrait. Palette : vert sauge, gris anthracite, blanc. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20bulle%20de%20dialogue%20g%C3%A9om%C3%A9trique%20se%20transformant%20en%20signe%20de%20soin%20abstrait.%20Palette%20%3A%20vert%20sauge%2C%20gris%20anthracite%2C%20blanc.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=27499"
+        }
+      ],
+      "podcasts": [
+        {
+          "titre": "Le Comptoir IA",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
+          "resume": "Nicolas Guyon interviewe experts et métiers bouleversés par l'IA ; vulgarisation pointue.",
+          "date": "15/07/2026"
+        },
+        {
+          "titre": "Hot Tech — le podcast qui décrypte l'IA",
+          "source": "Audible",
+          "lang": "fr",
+          "lien": "https://www.audible.com/pd/B0H6BCWMR8",
+          "resume": "Anis Ayari décrypte l'IA et la deep tech avec chercheurs, ingénieurs et entrepreneurs.",
+          "date": "15/07/2026"
+        },
+        {
+          "titre": "Best AI Podcast",
+          "source": "Spotify",
+          "lang": "en",
+          "lien": "https://open.spotify.com/show/10otIHvHndpzykwIqrGjsV",
+          "resume": "Curated conversations on artificial intelligence, its tools, breakthroughs and industry trends.",
+          "date": "15/07/2026"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "label": "mardi 14 juillet 2026",
+      "notes": "Historique de démonstration : items réels (liens authentiques) répartis pour peupler les 5 jours ; à remplacer par la veille réelle du jour.",
+      "primaires": [],
+      "articles": [
+        {
+          "titre": "Patch Tuesday record : Microsoft corrige 570 failles, dont 3 zero-days",
+          "source": "IT-Connect",
+          "lang": "fr",
+          "lien": "https://www.it-connect.tech/",
+          "resume": "Volume inédit de correctifs (570 failles, 59 critiques, 3 zero-days), lié à une détection assistée par IA.",
+          "date": "14/07/2026",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une grille de multiples petits boucliers géométriques se refermant en cascade. Palette : vert sauge, gris anthracite, blanc. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20grille%20de%20multiples%20petits%20boucliers%20g%C3%A9om%C3%A9triques%20se%20refermant%20en%20cascade.%20Palette%20%3A%20vert%20sauge%2C%20gris%20anthracite%2C%20blanc.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=27798"
+        },
+        {
+          "titre": "Vulnérabilités : 14 alertes critiques recensées cette semaine",
+          "source": "DCOD",
+          "lang": "fr",
+          "lien": "https://dcod.ch/",
+          "resume": "Synthèse de veille des bulletins critiques de la semaine, à recouper avec le périmètre applicatif interne.",
+          "date": "14/07/2026",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un radar géométrique émettant plusieurs signaux d'alerte concentriques. Palette : vert sauge, gris anthracite, blanc. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20radar%20g%C3%A9om%C3%A9trique%20%C3%A9mettant%20plusieurs%20signaux%20d%27alerte%20concentriques.%20Palette%20%3A%20vert%20sauge%2C%20gris%20anthracite%2C%20blanc.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=27401"
+        },
+        {
+          "titre": "Faille SharePoint activement exploitée : la CISA alerte",
+          "source": "Rapid7",
+          "lang": "fr",
+          "lien": "https://www.rapid7.com/blog/",
+          "resume": "Exploitation en conditions réelles d'une vulnérabilité SharePoint ; application immédiate du correctif recommandée.",
+          "date": "14/07/2026",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une fissure géométrique dans une paroi que colmate un motif protecteur, avec un signal d'alerte. Palette : vert sauge, gris anthracite, blanc. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20fissure%20g%C3%A9om%C3%A9trique%20dans%20une%20paroi%20que%20colmate%20un%20motif%20protecteur%2C%20avec%20un%20signal%20d%27alerte.%20Palette%20%3A%20vert%20sauge%2C%20gris%20anthracite%2C%20blanc.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=29349"
+        },
+        {
+          "titre": "AI Act : bascule opérationnelle au 2 août pour les entreprises",
+          "source": "L'Usine Digitale",
+          "lang": "fr",
+          "lien": "https://www.usine-digitale.fr/intelligence-artificielle/",
+          "resume": "À l'approche du 2 août, l'AI Act devient une réalité opérationnelle pour les entreprises non conformes.",
+          "date": "14/07/2026",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une balance géométrique en équilibre au centre d'un cadre structuré. Palette : bordeaux, gris, beige. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20balance%20g%C3%A9om%C3%A9trique%20en%20%C3%A9quilibre%20au%20centre%20d%27un%20cadre%20structur%C3%A9.%20Palette%20%3A%20bordeaux%2C%20gris%2C%20beige.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=25725"
+        }
+      ],
+      "podcasts": [
+        {
+          "titre": "Le Comptoir IA",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
+          "resume": "Nicolas Guyon interviewe experts et métiers bouleversés par l'IA ; vulgarisation pointue.",
+          "date": "14/07/2026"
+        },
+        {
+          "titre": "Tech Café",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/1MidB71rbYIRDIrcej073j",
+          "resume": "Actualité tech et IA au sens large, animé par Guillaume Vendé.",
+          "date": "14/07/2026"
+        },
+        {
+          "titre": "AI and I",
+          "source": "Spotify",
+          "lang": "en",
+          "lien": "https://open.spotify.com/show/5qX1nRTaFsfWdmdj5JWO1G",
+          "resume": "Interviews exploring how people put AI to work in their craft and creative process.",
+          "date": "14/07/2026"
         }
       ]
     }
