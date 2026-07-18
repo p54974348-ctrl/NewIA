@@ -101,14 +101,20 @@
   .post:last-child { border-bottom:none; }
   .post:hover { background:var(--accent-bg); }
   .sec-podcasts .post:hover { background:var(--podcast-bg); }
-  .post-num {
-    flex:0 0 auto; width:1.9rem; height:1.9rem; margin-top:.15rem; border-radius:999px;
-    background:var(--surface-2); color:var(--muted); font-weight:700; font-size:.8rem;
-    display:flex; align-items:center; justify-content:center; font-variant-numeric:tabular-nums;
-    transition:background .15s ease, color .15s ease;
+  .post-thumb {
+    flex:0 0 auto; position:relative; width:72px; height:72px; margin-top:.15rem;
+    border-radius:10px; overflow:hidden; border:1px solid var(--border);
+    background:linear-gradient(135deg, hsl(var(--h,220) 62% 58%), hsl(calc(var(--h,220) + 28) 58% 45%));
+    display:flex; align-items:center; justify-content:center;
   }
-  .post:hover .post-num { background:var(--accent); color:#fff; }
-  .sec-podcasts .post:hover .post-num { background:var(--podcast); color:#fff; }
+  .post-thumb-mono { color:#fff; font-weight:800; font-size:1.6rem; text-transform:uppercase; text-shadow:0 1px 2px rgba(0,0,0,.25); }
+  .post-thumb-img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; background:var(--surface-2); }
+  .post-rankbadge {
+    position:absolute; top:0; left:0; z-index:2; background:rgba(12,18,26,.62); color:#fff;
+    font-size:.66rem; font-weight:700; padding:.06rem .34rem; border-bottom-right-radius:8px;
+    font-variant-numeric:tabular-nums;
+  }
+  @media (max-width:680px){ .post-thumb{ width:58px; height:58px } .post-thumb-mono{ font-size:1.3rem } }
   .post-body { min-width:0; }
   .post-title {
     font-size:1.12rem; line-height:1.35; margin:0 0 .45rem; font-weight:650; color:var(--ink);
@@ -139,7 +145,6 @@
   <main>
     <p class="eyebrow">Veille quotidienne · Intelligence artificielle</p>
     <h1 class="title">Veille IA francophone</h1>
-    <p class="intro">Historique des <strong>5 derniers jours</strong>, un onglet par jour (du plus récent au plus ancien). Chaque jour présente les <strong>10 items les plus pertinents</strong> par volet (les plus lus / consultés). Cliquez un billet pour l'ouvrir.</p>
 
     <div class="nav">
       <div id="tabs" class="tabs" role="tablist" aria-label="Journées de veille"></div>
@@ -172,6 +177,33 @@
     });
   };
 
+  // Teinte déterministe à partir d'une chaîne (pour la vignette générée)
+  function hueOf(s) {
+    s = String(s || '');
+    var h = 0;
+    for (var k = 0; k < s.length; k++) { h = (h * 31 + s.charCodeAt(k)) % 360; }
+    return h;
+  }
+  // Initiale (première lettre/chiffre) pour le monogramme
+  function monoOf(s) {
+    var m = String(s || '?').match(/[A-Za-zÀ-ÿ0-9]/);
+    return m ? m[0].toUpperCase() : '?';
+  }
+
+  // Vignette : image réelle si fournie (avec repli en cas d'échec), sinon monogramme coloré
+  function thumbHTML(it, rank) {
+    var hue = hueOf(it.source || it.titre);
+    var mono = monoOf(it.source || it.titre);
+    var img = it.image
+      ? '<img class="post-thumb-img" src="' + esc(it.image) + '" alt="" loading="lazy" referrerpolicy="no-referrer">'
+      : '';
+    return '<div class="post-thumb" style="--h:' + hue + '">' +
+      '<span class="post-thumb-mono" aria-hidden="true">' + esc(mono) + '</span>' +
+      img +
+      '<span class="post-rankbadge">' + rank + '</span>' +
+    '</div>';
+  }
+
   // Liste éditoriale de billets (façon blog de veille)
   function postsHTML(items, action) {
     var list = (items || []).slice(0, MAX_ITEMS);
@@ -186,7 +218,7 @@
           ' aria-label="' + esc((action || 'Ouvrir') + ' : ' + it.titre) + '"'
         : ' class="post"';
       return '<article' + attrs + '>' +
-        '<span class="post-num">' + (i + 1) + '</span>' +
+        thumbHTML(it, i + 1) +
         '<div class="post-body">' +
           '<h3 class="post-title">' + esc(it.titre) + go + '</h3>' +
           '<p class="post-meta"><span class="tag">' + esc(it.source) + '</span></p>' +
@@ -304,6 +336,11 @@
       var el = e.target.closest('.post.row-link');
       if (el) { e.preventDefault(); openPost(el); }
     });
+    // Repli si une image de vignette échoue (l'événement error ne bulle pas → capture)
+    panels.addEventListener('error', function (e) {
+      var t = e.target;
+      if (t && t.classList && t.classList.contains('post-thumb-img')) { t.remove(); }
+    }, true);
   })();
 
   fetch('data.json?_=' + Date.now(), { cache: 'no-store' })
