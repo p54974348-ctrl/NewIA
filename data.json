@@ -3,65 +3,69 @@
   "days": [
     {
       "date": "2026-07-18",
-      "label": "vendredi 18 juillet 2026",
+      "label": "samedi 18 juillet 2026",
       "articles": [
         {
-          "titre": "Un modèle multimodal open source rivalise avec les leaders",
-          "source": "Actu IA (fictif)",
-          "lien": "https://example.com/article-1",
-          "resume": "Un laboratoire européen publie un modèle libre performant en vision et langage. (fictif)"
+          "titre": "L'État déploiera « L'Assistant », IA conversationnelle souveraine pour les agents publics",
+          "source": "info.gouv.fr",
+          "lien": "https://www.info.gouv.fr/actualite/accelerer-l-ia-dans-l-etat-et-au-service-des-francais",
+          "resume": "Agent conversationnel unique et souverain prévu pour l'ensemble des agents publics avant fin 2026."
         },
         {
-          "titre": "L'AI Act précise ses obligations pour les PME",
-          "source": "Le Numérique (fictif)",
-          "lien": "https://example.com/article-2",
-          "resume": "Nouvelles lignes directrices sur la conformité avant l'échéance d'août. (fictif)"
+          "titre": "Un chatbot santé public prévu sur Ameli.fr",
+          "source": "info.gouv.fr",
+          "lien": "https://www.info.gouv.fr/actualite/accelerer-l-ia-dans-l-etat-et-au-service-des-francais",
+          "resume": "Assistant destiné à répondre aux questions médicales des Français et à orienter vers une prise en charge."
         },
         {
-          "titre": "Une startup française lève 40 M€ pour ses agents IA",
-          "source": "Tech & Co (fictif)",
-          "lien": "https://example.com/article-3",
-          "resume": "Tour de table pour industrialiser des agents autonomes métier. (fictif)"
+          "titre": "Atos lance MogwAI, plateforme d'IA générative et agentique",
+          "source": "Le Monde Informatique",
+          "lien": "https://www.lemondeinformatique.fr/intelligence-artificielle-154.html",
+          "resume": "Plateforme d'IA générative et agentique pensée pour les environnements critiques."
+        },
+        {
+          "titre": "Un fleuron français dévoile un modèle de navigation robotique sans Lidar",
+          "source": "L'Usine Digitale",
+          "lien": "https://www.usine-digitale.fr/intelligence-artificielle/",
+          "resume": "Navigation robotique avec une simple caméra, sans Lidar ni capteur de profondeur."
+        },
+        {
+          "titre": "Adoption de l'IA générative : 47,8 % des actifs français, 5e rang mondial",
+          "source": "Bpifrance — Big Media",
+          "lien": "https://bigmedia.bpifrance.fr/nos-dossiers/nouvelles-tendances-ia-ce-qui-va-transformer-2026",
+          "resume": "Près d'un actif français sur deux utilise des outils d'IA générative, 5e place mondiale."
+        },
+        {
+          "titre": "AI Act : bascule opérationnelle au 2 août pour les entreprises",
+          "source": "L'Usine Digitale",
+          "lien": "https://www.usine-digitale.fr/intelligence-artificielle/",
+          "resume": "À l'approche du 2 août, l'AI Act devient une réalité opérationnelle pour les entreprises non conformes."
         }
       ],
       "podcasts": [
         {
-          "titre": "IA au quotidien — épisode 42",
-          "source": "Audible (fictif)",
-          "lien": "https://example.com/podcast-1",
-          "resume": "Décryptage des usages de l'IA générative en entreprise. (fictif)"
+          "titre": "Hot Tech — le podcast qui décrypte l'IA",
+          "source": "Audible",
+          "lien": "https://www.audible.com/podcast/Hot-Tech-le-podcast-qui-decrypte-lIA/B0H6BCWMR8",
+          "resume": "Anis Ayari décrypte l'IA et la deep tech avec chercheurs, ingénieurs et entrepreneurs."
         },
         {
-          "titre": "Comprendre les modèles de langage",
-          "source": "Audible (fictif)",
-          "lien": "https://example.com/podcast-2",
-          "resume": "Série pédagogique francophone sur le fonctionnement des LLM. (fictif)"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-17",
-      "label": "jeudi 17 juillet 2026",
-      "articles": [
-        {
-          "titre": "Un opérateur télécom français déploie un assistant IA interne",
-          "source": "Journal Tech (fictif)",
-          "lien": "https://example.com/article-4",
-          "resume": "Assistant destiné aux équipes support, entraîné sur la base de connaissances maison. (fictif)"
+          "titre": "Le Comptoir IA",
+          "source": "Sélection Codeur 2026",
+          "lien": "https://www.codeur.com/blog/top-podcast-ia-2026/",
+          "resume": "Nicolas Guyon interviewe experts et métiers bouleversés par l'IA ; vulgarisation pointue."
         },
         {
-          "titre": "La CNIL publie des recommandations sur l'IA et les données",
-          "source": "Data & Droit (fictif)",
-          "lien": "https://example.com/article-5",
-          "resume": "Cadre pratique pour concilier innovation IA et protection des données personnelles. (fictif)"
-        }
-      ],
-      "podcasts": [
+          "titre": "Tech Café",
+          "source": "Sélection Codeur 2026",
+          "lien": "https://www.codeur.com/blog/top-podcast-ia-2026/",
+          "resume": "Actualité tech et IA au sens large, animé par Guillaume Vendé depuis 2014."
+        },
         {
-          "titre": "Les voix de l'IA — spécial souveraineté",
-          "source": "Audible (fictif)",
-          "lien": "https://example.com/podcast-3",
-          "resume": "Débat sur les enjeux de souveraineté numérique et d'IA en Europe. (fictif)"
+          "titre": "Data Driven 101",
+          "source": "Sélection Codeur 2026",
+          "lien": "https://www.codeur.com/blog/top-podcast-ia-2026/",
+          "resume": "Marc Sanselme décrypte IA et data science ; interviews d'experts, format accessible."
         }
       ]
     }
