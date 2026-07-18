@@ -8,23 +8,12 @@
 <meta name="theme-color" content="#fbfcfd" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0e141b" media="(prefers-color-scheme: dark)">
 <title>Veille IA francophone</title>
-<script>
-  // Détection AU CHARGEMENT du mode d'affichage optimal (évite tout flash de rendu)
-  (function () {
-    try {
-      var narrow = window.matchMedia('(max-width: 680px)').matches;
-      var coarse = window.matchMedia('(pointer: coarse)').matches;
-      document.documentElement.setAttribute('data-view', (narrow || coarse) ? 'cards' : 'table');
-    } catch (e) {
-      document.documentElement.setAttribute('data-view', 'table');
-    }
-  })();
-</script>
 <style>
   :root {
     --bg:#fbfcfd; --surface:#ffffff; --surface-2:#f4f6f9; --ink:#16202b;
     --muted:#5a6875; --faint:#8996a3; --border:#e4e9ef; --accent:#2d6be0;
     --accent-ink:#1b4fb0; --accent-bg:#eaf1fd;
+    --podcast:#8a4bd6; --podcast-ink:#6a2fb5; --podcast-bg:#f1e9fb;
     --shadow:0 1px 2px rgba(20,32,43,.04), 0 10px 30px -20px rgba(20,32,43,.35);
   }
   @media (prefers-color-scheme: dark) {
@@ -32,28 +21,26 @@
       --bg:#0e141b; --surface:#151e28; --surface-2:#1b2632; --ink:#e7edf3;
       --muted:#97a3b1; --faint:#6c7885; --border:#26313f; --accent:#5b93f5;
       --accent-ink:#a9c8fb; --accent-bg:#17263c;
+      --podcast:#b28cf0; --podcast-ink:#cbb0f7; --podcast-bg:#231a33;
       --shadow:0 1px 2px rgba(0,0,0,.3), 0 12px 34px -20px rgba(0,0,0,.85);
     }
   }
-  /* Contraste renforcé si demandé par le système */
-  @media (prefers-contrast: more) {
-    :root { --border:#9aa6b2; --muted:#3a4652; }
-  }
+  @media (prefers-contrast: more) { :root { --border:#9aa6b2; --muted:#3a4652; } }
+
   * { box-sizing:border-box; }
   html { -webkit-text-size-adjust:100%; }
   body {
     margin:0; background:var(--bg); color:var(--ink);
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    line-height:1.6; -webkit-font-smoothing:antialiased;
-    overflow-x:hidden; /* jamais de défilement horizontal de page */
+    line-height:1.6; -webkit-font-smoothing:antialiased; overflow-x:hidden;
   }
 
-  main { max-width:1000px; margin:0 auto; padding:clamp(1.25rem,4vw,3.5rem) clamp(1rem,4vw,2rem) 4rem; }
+  main { max-width:820px; margin:0 auto; padding:clamp(1.25rem,4vw,3.5rem) clamp(1rem,4vw,2rem) 4rem; }
   .eyebrow { font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; font-weight:600; color:var(--accent); margin:0 0 .6rem; }
   h1.title { font-size:clamp(1.5rem,4vw,2.2rem); line-height:1.15; letter-spacing:-.02em; margin:0 0 .5rem; text-wrap:balance; }
-  .intro { color:var(--muted); font-size:clamp(.95rem,2.5vw,1.02rem); margin:0 0 1.4rem; max-width:62ch; }
+  .intro { color:var(--muted); font-size:clamp(.95rem,2.5vw,1.02rem); margin:0 0 1.4rem; max-width:64ch; }
 
-  /* ---- Barre de navigation (onglets + filtre), collante en haut ---- */
+  /* ---- Barre onglets + filtre, collante ---- */
   .nav {
     position:sticky; top:0; z-index:10;
     background:color-mix(in srgb, var(--bg) 88%, transparent);
@@ -61,17 +48,13 @@
     margin:0 calc(-1 * clamp(1rem,4vw,2rem)); padding:.6rem clamp(1rem,4vw,2rem) 0;
     border-bottom:1px solid var(--border);
   }
-  @supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))) {
-    .nav { background:var(--bg); }
-  }
+  @supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))) { .nav { background:var(--bg); } }
 
   .tabs { display:flex; gap:.4rem; overflow-x:auto; padding-bottom:.6rem; scrollbar-width:thin; -webkit-overflow-scrolling:touch; }
   .tab {
-    flex:0 0 auto; cursor:pointer; border:1px solid var(--border);
-    background:var(--surface); color:var(--muted);
-    padding:.5rem .9rem; border-radius:999px; font-size:.85rem; font-weight:600;
-    white-space:nowrap; font-variant-numeric:tabular-nums;
-    transition:background .15s ease, color .15s ease, border-color .15s ease;
+    flex:0 0 auto; cursor:pointer; border:1px solid var(--border); background:var(--surface); color:var(--muted);
+    padding:.5rem .9rem; border-radius:999px; font-size:.85rem; font-weight:600; white-space:nowrap;
+    font-variant-numeric:tabular-nums; transition:background .15s ease, color .15s ease, border-color .15s ease;
   }
   .tab:hover { border-color:var(--accent); color:var(--ink); }
   .tab[aria-selected="true"] { background:var(--accent); color:#fff; border-color:var(--accent); }
@@ -80,90 +63,71 @@
   .filter { display:flex; align-items:center; gap:.5rem; flex-wrap:wrap; padding:.6rem 0 .7rem; }
   .filter-label { font-size:.75rem; letter-spacing:.08em; text-transform:uppercase; color:var(--faint); font-weight:600; }
   .segmented { display:inline-flex; background:var(--surface-2); border:1px solid var(--border); border-radius:10px; padding:3px; gap:2px; }
-  .seg {
-    cursor:pointer; border:none; background:transparent; color:var(--muted);
-    padding:.4rem .8rem; border-radius:8px; font-size:.85rem; font-weight:600;
-    transition:background .15s ease, color .15s ease;
-  }
+  .seg { cursor:pointer; border:none; background:transparent; color:var(--muted); padding:.4rem .8rem; border-radius:8px; font-size:.85rem; font-weight:600; transition:background .15s ease, color .15s ease; }
   .seg:hover { color:var(--ink); }
   .seg[aria-pressed="true"] { background:var(--surface); color:var(--accent); box-shadow:var(--shadow); }
-
-  /* Cibles tactiles agrandies sur écrans tactiles (ergonomie) */
   @media (pointer: coarse) {
     .tab { padding:.6rem 1rem; }
     .seg { padding:.6rem 1rem; min-height:44px; display:inline-flex; align-items:center; }
   }
 
-  #panels { margin-top:1.4rem; }
+  #panels { margin-top:1.6rem; }
   .panel { display:none; }
   .panel.active { display:block; animation:fade .2s ease; }
   @keyframes fade { from { opacity:0; transform:translateY(4px); } to { opacity:1; transform:none; } }
-  @media (prefers-reduced-motion:reduce) { .panel.active { animation:none; } .tab, .seg { transition:none; } }
+  @media (prefers-reduced-motion:reduce) { .panel.active { animation:none; } .tab,.seg,.post,.post-num,.post-title,.go { transition:none; } }
 
-  /* Filtre : masque le volet non sélectionné */
   #panels[data-filter="articles"] .sec-podcasts { display:none; }
   #panels[data-filter="podcasts"] .sec-articles { display:none; }
 
-  .panel-date { font-size:.9rem; color:var(--faint); margin:0 0 1.2rem; }
-  h2.section { font-size:1.15rem; margin:1.8rem 0 .5rem; letter-spacing:-.01em; }
-  .section-note { font-size:.78rem; color:var(--faint); margin:0 0 .7rem; }
+  .panel-date { font-size:.9rem; color:var(--faint); margin:0 0 1.4rem; }
 
-  .table-wrap { border:1px solid var(--border); border-radius:12px; box-shadow:var(--shadow); }
-  table { width:100%; border-collapse:collapse; font-size:.9rem; }
-  thead th {
-    text-align:left; background:var(--surface-2); color:var(--muted);
-    font-weight:600; font-size:.75rem; letter-spacing:.05em; text-transform:uppercase;
-    padding:.7rem .9rem; border-bottom:1px solid var(--border); white-space:nowrap;
+  /* ---- En-tête de section (Articles / Podcasts) ---- */
+  .sec { margin-top:2rem; }
+  .sec.sec-articles { margin-top:0; }
+  .sec-head { display:flex; align-items:baseline; gap:.6rem; padding-bottom:.5rem; border-bottom:2px solid var(--ink); margin-bottom:.3rem; }
+  .sec-articles .sec-head { border-color:var(--accent); }
+  .sec-podcasts .sec-head { border-color:var(--podcast); }
+  .sec-head h2 { font-size:1.05rem; margin:0; text-transform:uppercase; letter-spacing:.04em; }
+  .sec-head .count { font-size:.82rem; color:var(--faint); font-variant-numeric:tabular-nums; }
+  .section-note { font-size:.78rem; color:var(--faint); margin:.5rem 0 0; }
+
+  /* ---- Liste éditoriale de billets (inspiration veille/blog) ---- */
+  .posts { display:flex; flex-direction:column; }
+  .post {
+    display:flex; gap:.95rem; padding:1.15rem .35rem; border-bottom:1px solid var(--border);
+    cursor:pointer; transition:background .15s ease;
   }
-  thead th.rang { width:2.5rem; text-align:right; }
-  tbody td { padding:.8rem .9rem; border-bottom:1px solid var(--border); vertical-align:top; }
-  tbody tr:last-child td { border-bottom:none; }
-  td.rang { text-align:right; color:var(--faint); font-variant-numeric:tabular-nums; }
-  td.titre { font-weight:600; color:var(--ink); }
-  td.titre .go { color:var(--faint); font-weight:400; margin-left:.3rem; transition:color .15s ease; }
-  td.source { color:var(--muted); }
-  td.resume { color:var(--muted); }
-  tr.row-link { cursor:pointer; }
-  tr.row-link:hover { background:var(--accent-bg); }
-  tr.row-link:hover .titre { color:var(--accent-ink); }
-  tr.row-link:hover .titre .go { color:var(--accent); }
-  tr.row-link:focus-visible { outline:2px solid var(--accent); outline-offset:-2px; }
-
-  /* =========================================================
-     MODE TABLEAU (écran large / souris) : défilement horizontal
-     interne UNIQUEMENT si nécessaire, jamais la page entière.
-     ========================================================= */
-  html[data-view="table"] .table-wrap { overflow-x:auto; }
-  html[data-view="table"] table { min-width:640px; }
-  html[data-view="table"] td.titre { min-width:180px; }
-  html[data-view="table"] td.source { white-space:nowrap; }
-  html[data-view="table"] td.resume { max-width:320px; }
-
-  /* =========================================================
-     MODE CARTES (mobile / tactile) : chaque ligne devient une
-     carte empilée — zéro défilement horizontal, gros zone tactile.
-     ========================================================= */
-  html[data-view="cards"] .table-wrap { border:none; border-radius:0; box-shadow:none; }
-  html[data-view="cards"] thead { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
-  html[data-view="cards"] table, html[data-view="cards"] tbody, html[data-view="cards"] tr, html[data-view="cards"] td { display:block; width:auto; }
-  html[data-view="cards"] tbody tr {
-    position:relative; background:var(--surface); border:1px solid var(--border);
-    border-radius:14px; box-shadow:var(--shadow); padding:.95rem 1.05rem; margin-bottom:.75rem;
+  .post:last-child { border-bottom:none; }
+  .post:hover { background:var(--accent-bg); }
+  .sec-podcasts .post:hover { background:var(--podcast-bg); }
+  .post-num {
+    flex:0 0 auto; width:1.9rem; height:1.9rem; margin-top:.15rem; border-radius:999px;
+    background:var(--surface-2); color:var(--muted); font-weight:700; font-size:.8rem;
+    display:flex; align-items:center; justify-content:center; font-variant-numeric:tabular-nums;
+    transition:background .15s ease, color .15s ease;
   }
-  html[data-view="cards"] tbody td { border:none; padding:.12rem 0; }
-  html[data-view="cards"] td.rang {
-    position:absolute; top:.85rem; right:.9rem; margin:0; text-align:center;
-    background:var(--accent-bg); color:var(--accent-ink); font-weight:700; font-size:.72rem;
-    min-width:1.6rem; padding:.1rem .45rem; border-radius:999px;
+  .post:hover .post-num { background:var(--accent); color:#fff; }
+  .sec-podcasts .post:hover .post-num { background:var(--podcast); color:#fff; }
+  .post-body { min-width:0; }
+  .post-title {
+    font-size:1.12rem; line-height:1.35; margin:0 0 .45rem; font-weight:650; color:var(--ink);
+    text-wrap:balance; transition:color .15s ease;
   }
-  html[data-view="cards"] td.titre { font-size:1.02rem; line-height:1.3; padding-right:2.6rem; margin-bottom:.15rem; }
-  html[data-view="cards"] td.source { font-size:.82rem; color:var(--faint); }
-  html[data-view="cards"] td.source::before { content:"Source · "; }
-  html[data-view="cards"] td.resume { margin-top:.35rem; font-size:.92rem; }
-  html[data-view="cards"] td.titre .go { color:var(--accent); }
-  html[data-view="cards"] tr.row-link:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+  .post-title .go { color:var(--faint); font-weight:400; margin-left:.25rem; transition:color .15s ease; }
+  .post:hover .post-title { color:var(--accent-ink); }
+  .sec-podcasts .post:hover .post-title { color:var(--podcast-ink); }
+  .post:hover .post-title .go { color:var(--accent); }
+  .post-meta { margin:0 0 .5rem; }
+  .tag {
+    display:inline-block; font-size:.7rem; font-weight:700; letter-spacing:.04em; text-transform:uppercase;
+    color:var(--accent-ink); background:var(--accent-bg); padding:.2rem .55rem; border-radius:6px;
+  }
+  .sec-podcasts .tag { color:var(--podcast-ink); background:var(--podcast-bg); }
+  .post-excerpt { margin:0; color:var(--muted); font-size:.96rem; max-width:66ch; }
+  .post:focus-visible { outline:2px solid var(--accent); outline-offset:-2px; border-radius:8px; }
 
-  .empty { color:var(--faint); font-style:italic; padding:.4rem 0; }
+  .empty { color:var(--faint); font-style:italic; padding:.9rem .35rem; }
   .loading, .error { color:var(--muted); padding:2rem 0; }
   .error { color:#d64545; }
   footer { margin-top:3rem; padding-top:1.3rem; border-top:1px solid var(--border); font-size:.78rem; color:var(--faint); }
@@ -175,7 +139,7 @@
   <main>
     <p class="eyebrow">Veille quotidienne · Intelligence artificielle</p>
     <h1 class="title">Veille IA francophone</h1>
-    <p class="intro">Historique des <strong>5 derniers jours</strong>, un onglet par jour (du plus récent au plus ancien). Chaque jour affiche les <strong>10 items les plus pertinents</strong> par volet (les plus lus / consultés). L'affichage s'adapte automatiquement à votre écran.</p>
+    <p class="intro">Historique des <strong>5 derniers jours</strong>, un onglet par jour (du plus récent au plus ancien). Chaque jour présente les <strong>10 items les plus pertinents</strong> par volet (les plus lus / consultés). Cliquez un billet pour l'ouvrir.</p>
 
     <div class="nav">
       <div id="tabs" class="tabs" role="tablist" aria-label="Journées de veille"></div>
@@ -194,13 +158,13 @@
     </div>
 
     <footer>
-      Veille IA francophone · <code>data.json</code> · 5 derniers jours · 10 items max par volet · affichage adaptatif.
+      Veille IA francophone · <code>data.json</code> · 5 derniers jours · 10 items max par volet.
     </footer>
   </main>
 
 <script>
-  var MAX_ITEMS = 10; // 10 items les plus pertinents par volet
-  var MAX_DAYS = 5;   // 5 derniers jours d'historique
+  var MAX_ITEMS = 10;
+  var MAX_DAYS = 5;
 
   var esc = function (s) {
     return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
@@ -208,28 +172,29 @@
     });
   };
 
-  function tableHTML(items, action) {
+  // Liste éditoriale de billets (façon blog de veille)
+  function postsHTML(items, action) {
     var list = (items || []).slice(0, MAX_ITEMS);
     if (!list.length) {
       return '<p class="empty">Aucune nouveauté récente sur ce volet ce jour-là.</p>';
     }
-    var rows = list.map(function (it, i) {
+    var posts = list.map(function (it, i) {
       var hasLink = !!it.lien;
       var go = hasLink ? ' <span class="go" aria-hidden="true">↗</span>' : '';
       var attrs = hasLink
-        ? ' class="row-link" data-href="' + esc(it.lien) + '" tabindex="0" role="link"' +
+        ? ' class="post row-link" data-href="' + esc(it.lien) + '" tabindex="0" role="link"' +
           ' aria-label="' + esc((action || 'Ouvrir') + ' : ' + it.titre) + '"'
-        : '';
-      return '<tr' + attrs + '>' +
-        '<td class="rang" data-label="Rang">' + (i + 1) + '</td>' +
-        '<td class="titre" data-label="Titre">' + esc(it.titre) + go + '</td>' +
-        '<td class="source" data-label="Source">' + esc(it.source) + '</td>' +
-        '<td class="resume" data-label="Résumé">' + esc(it.resume) + '</td>' +
-      '</tr>';
+        : ' class="post"';
+      return '<article' + attrs + '>' +
+        '<span class="post-num">' + (i + 1) + '</span>' +
+        '<div class="post-body">' +
+          '<h3 class="post-title">' + esc(it.titre) + go + '</h3>' +
+          '<p class="post-meta"><span class="tag">' + esc(it.source) + '</span></p>' +
+          '<p class="post-excerpt">' + esc(it.resume) + '</p>' +
+        '</div>' +
+      '</article>';
     }).join('');
-    return '<div class="table-wrap"><table><thead><tr>' +
-      '<th class="rang">#</th><th>Titre</th><th>Source</th><th>Résumé</th>' +
-      '</tr></thead><tbody>' + rows + '</tbody></table></div>';
+    return '<div class="posts">' + posts + '</div>';
   }
 
   function sectionNote(items) {
@@ -238,6 +203,14 @@
       return '<p class="section-note">' + MAX_ITEMS + ' items les plus pertinents affichés (sur ' + n + ').</p>';
     }
     return '';
+  }
+
+  function sectionHTML(cls, titre, items, action) {
+    var n = Math.min((items || []).length, MAX_ITEMS);
+    return '<section class="sec ' + cls + '">' +
+      '<div class="sec-head"><h2>' + titre + '</h2><span class="count">' + n + ' item' + (n > 1 ? 's' : '') + '</span></div>' +
+      sectionNote(items) + postsHTML(items, action) +
+    '</section>';
   }
 
   function render(data) {
@@ -277,12 +250,8 @@
       panel.setAttribute('aria-labelledby', 'tab-' + id);
       panel.innerHTML =
         '<p class="panel-date">Veille du ' + esc(day.label || day.date) + '</p>' +
-        '<div class="sec-articles">' +
-          '<h2 class="section">Articles</h2>' + sectionNote(day.articles) + tableHTML(day.articles, 'Ouvrir') +
-        '</div>' +
-        '<div class="sec-podcasts">' +
-          '<h2 class="section">Podcasts (Audible)</h2>' + sectionNote(day.podcasts) + tableHTML(day.podcasts, 'Écouter') +
-        '</div>';
+        sectionHTML('sec-articles', 'Articles', day.articles, 'Ouvrir') +
+        sectionHTML('sec-podcasts', 'Podcasts (Audible)', day.podcasts, 'Écouter');
       panels.appendChild(panel);
 
       tab.addEventListener('click', function () { select(id); });
@@ -290,11 +259,11 @@
 
     tabs.addEventListener('keydown', function (e) {
       if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
-      var list = Array.prototype.slice.call(tabs.querySelectorAll('.tab'));
-      var cur = list.indexOf(document.activeElement);
+      var l = Array.prototype.slice.call(tabs.querySelectorAll('.tab'));
+      var cur = l.indexOf(document.activeElement);
       if (cur === -1) return;
-      var next = e.key === 'ArrowRight' ? (cur + 1) % list.length : (cur - 1 + list.length) % list.length;
-      list[next].focus(); list[next].click(); e.preventDefault();
+      var next = e.key === 'ArrowRight' ? (cur + 1) % l.length : (cur - 1 + l.length) % l.length;
+      l[next].focus(); l[next].click(); e.preventDefault();
     });
   }
 
@@ -309,21 +278,7 @@
     });
   }
 
-  // Détection dynamique du mode d'affichage optimal (re-évalué au redimensionnement / rotation)
-  (function () {
-    var mqNarrow = window.matchMedia('(max-width: 680px)');
-    var mqCoarse = window.matchMedia('(pointer: coarse)');
-    function apply() {
-      var view = (mqNarrow.matches || mqCoarse.matches) ? 'cards' : 'table';
-      document.documentElement.setAttribute('data-view', view);
-    }
-    apply();
-    var on = function (mq, fn) { mq.addEventListener ? mq.addEventListener('change', fn) : mq.addListener(fn); };
-    on(mqNarrow, apply); on(mqCoarse, apply);
-    window.addEventListener('orientationchange', apply);
-  })();
-
-  // Filtre + ligne cliquable
+  // Filtre + billet cliquable
   (function () {
     var panels = document.getElementById('panels');
     document.querySelectorAll('.seg').forEach(function (btn) {
@@ -336,18 +291,18 @@
     });
     panels.setAttribute('data-filter', 'all');
 
-    function openRow(row) {
-      var href = row && row.getAttribute('data-href');
+    function openPost(el) {
+      var href = el && el.getAttribute('data-href');
       if (href) window.open(href, '_blank', 'noopener');
     }
     panels.addEventListener('click', function (e) {
-      var row = e.target.closest('tr.row-link');
-      if (row) openRow(row);
+      var el = e.target.closest('.post.row-link');
+      if (el) openPost(el);
     });
     panels.addEventListener('keydown', function (e) {
       if (e.key !== 'Enter' && e.key !== ' ') return;
-      var row = e.target.closest('tr.row-link');
-      if (row) { e.preventDefault(); openRow(row); }
+      var el = e.target.closest('.post.row-link');
+      if (el) { e.preventDefault(); openPost(el); }
     });
   })();
 
