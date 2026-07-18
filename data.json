@@ -1,0 +1,69 @@
+{
+  "generatedAt": "2026-07-18",
+  "days": [
+    {
+      "date": "2026-07-18",
+      "label": "vendredi 18 juillet 2026",
+      "articles": [
+        {
+          "titre": "Un modèle multimodal open source rivalise avec les leaders",
+          "source": "Actu IA (fictif)",
+          "lien": "https://example.com/article-1",
+          "resume": "Un laboratoire européen publie un modèle libre performant en vision et langage. (fictif)"
+        },
+        {
+          "titre": "L'AI Act précise ses obligations pour les PME",
+          "source": "Le Numérique (fictif)",
+          "lien": "https://example.com/article-2",
+          "resume": "Nouvelles lignes directrices sur la conformité avant l'échéance d'août. (fictif)"
+        },
+        {
+          "titre": "Une startup française lève 40 M€ pour ses agents IA",
+          "source": "Tech & Co (fictif)",
+          "lien": "https://example.com/article-3",
+          "resume": "Tour de table pour industrialiser des agents autonomes métier. (fictif)"
+        }
+      ],
+      "podcasts": [
+        {
+          "titre": "IA au quotidien — épisode 42",
+          "source": "Audible (fictif)",
+          "lien": "https://example.com/podcast-1",
+          "resume": "Décryptage des usages de l'IA générative en entreprise. (fictif)"
+        },
+        {
+          "titre": "Comprendre les modèles de langage",
+          "source": "Audible (fictif)",
+          "lien": "https://example.com/podcast-2",
+          "resume": "Série pédagogique francophone sur le fonctionnement des LLM. (fictif)"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-17",
+      "label": "jeudi 17 juillet 2026",
+      "articles": [
+        {
+          "titre": "Un opérateur télécom français déploie un assistant IA interne",
+          "source": "Journal Tech (fictif)",
+          "lien": "https://example.com/article-4",
+          "resume": "Assistant destiné aux équipes support, entraîné sur la base de connaissances maison. (fictif)"
+        },
+        {
+          "titre": "La CNIL publie des recommandations sur l'IA et les données",
+          "source": "Data & Droit (fictif)",
+          "lien": "https://example.com/article-5",
+          "resume": "Cadre pratique pour concilier innovation IA et protection des données personnelles. (fictif)"
+        }
+      ],
+      "podcasts": [
+        {
+          "titre": "Les voix de l'IA — spécial souveraineté",
+          "source": "Audible (fictif)",
+          "lien": "https://example.com/podcast-3",
+          "resume": "Débat sur les enjeux de souveraineté numérique et d'IA en Europe. (fictif)"
+        }
+      ]
+    }
+  ]
+}

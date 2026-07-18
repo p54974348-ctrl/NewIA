@@ -1,6 +1,6 @@
 name: Déploiement GitHub Pages
 
-# Publie index.html sur GitHub Pages à chaque mise à jour sur main.
+# Publie index.html + data.json sur GitHub Pages à chaque mise à jour sur main.
 # Prérequis : Settings → Pages → Source = « GitHub Actions ».
 
 on:
@@ -8,6 +8,7 @@ on:
     branches: [main]
     paths:
       - "index.html"
+      - "data.json"
       - ".github/workflows/deploy-pages.yml"
   workflow_dispatch:
 
@@ -32,10 +33,11 @@ jobs:
       - name: Récupération du dépôt
         uses: actions/checkout@v4
 
-      - name: Préparation du site (index.html uniquement)
+      - name: Préparation du site (index.html + data.json)
         run: |
           mkdir -p _site
           cp index.html _site/index.html
+          cp data.json _site/data.json
 
       - name: Configuration de GitHub Pages
         uses: actions/configure-pages@v5

@@ -31,12 +31,34 @@
   main { max-width:1000px; margin:0 auto; padding:clamp(1.5rem,4vw,3.5rem) clamp(1.1rem,4vw,2rem) 4rem; }
   .eyebrow { font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; font-weight:600; color:var(--accent); margin:0 0 .6rem; }
   h1.title { font-size:clamp(1.6rem,4vw,2.2rem); line-height:1.15; letter-spacing:-.02em; margin:0 0 .5rem; text-wrap:balance; }
-  .intro { color:var(--muted); font-size:1.02rem; margin:0 0 .4rem; max-width:60ch; }
-  .banner {
-    background:var(--warn-bg); color:var(--warn-ink); border-radius:10px;
-    padding:.7rem 1rem; font-size:.86rem; margin:1.2rem 0 2rem; font-weight:500;
+  .intro { color:var(--muted); font-size:1.02rem; margin:0 0 1.6rem; max-width:60ch; }
+
+  /* ---- Onglets (un par jour, du plus récent au plus ancien) ---- */
+  .tabs {
+    display:flex; gap:.4rem; overflow-x:auto; padding-bottom:.5rem;
+    border-bottom:1px solid var(--border); margin-bottom:1.6rem;
+    scrollbar-width:thin;
   }
-  h2.section { font-size:1.2rem; margin:2.2rem 0 .8rem; letter-spacing:-.01em; }
+  .tab {
+    flex:0 0 auto; cursor:pointer; border:1px solid var(--border);
+    background:var(--surface); color:var(--muted);
+    padding:.5rem .9rem; border-radius:999px; font-size:.85rem; font-weight:600;
+    white-space:nowrap; font-variant-numeric:tabular-nums;
+    transition:background .15s ease, color .15s ease, border-color .15s ease;
+  }
+  .tab:hover { border-color:var(--accent); color:var(--ink); }
+  .tab[aria-selected="true"] {
+    background:var(--accent); color:#fff; border-color:var(--accent);
+  }
+  .tab .badge { font-weight:500; opacity:.75; margin-left:.35rem; }
+
+  .panel { display:none; }
+  .panel.active { display:block; animation:fade .2s ease; }
+  @keyframes fade { from { opacity:0; transform:translateY(4px); } to { opacity:1; transform:none; } }
+  @media (prefers-reduced-motion:reduce) { .panel.active { animation:none; } }
+
+  .panel-date { font-size:.9rem; color:var(--faint); margin:0 0 1.2rem; }
+  h2.section { font-size:1.15rem; margin:1.8rem 0 .7rem; letter-spacing:-.01em; }
   .table-wrap { overflow-x:auto; border:1px solid var(--border); border-radius:12px; box-shadow:var(--shadow); }
   table { width:100%; border-collapse:collapse; min-width:640px; font-size:.9rem; }
   thead th {
@@ -52,7 +74,11 @@
   td a { color:var(--accent); text-decoration:none; font-weight:500; }
   td a:hover { text-decoration:underline; }
   td.resume { color:var(--muted); max-width:340px; }
+  .empty { color:var(--faint); font-style:italic; padding:.4rem 0; }
+  .loading, .error { color:var(--muted); padding:2rem 0; }
+  .error { color:#d64545; }
   footer { margin-top:3rem; padding-top:1.3rem; border-top:1px solid var(--border); font-size:.78rem; color:var(--faint); }
+  .tab:focus-visible, .tab:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
 </style>
 </head>
 <body>
@@ -60,77 +86,122 @@
   <main>
     <p class="eyebrow">Veille quotidienne · Intelligence artificielle</p>
     <h1 class="title">Veille IA francophone</h1>
-    <p class="intro" id="intro">Sélection du jour.</p>
+    <p class="intro">Historique des veilles, un onglet par jour (du plus récent au plus ancien). L'onglet le plus récent est affiché par défaut.</p>
 
-    <div class="banner">⚠️ Page de TEST — les données ci-dessous sont <strong>fictives</strong> et servent uniquement à valider la chaîne de publication. Elles seront remplacées par la veille réelle générée automatiquement chaque matin.</div>
-
-    <h2 class="section">Articles</h2>
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr><th>Titre</th><th>Source</th><th>Lien vers l'item</th><th>Résumé</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="titre">Un modèle multimodal open source rivalise avec les leaders</td>
-            <td class="source">Actu IA (fictif)</td>
-            <td><a href="https://example.com/article-1" target="_blank" rel="noopener">Ouvrir</a></td>
-            <td class="resume">Un laboratoire européen publie un modèle libre performant en vision et langage. (donnée fictive)</td>
-          </tr>
-          <tr>
-            <td class="titre">L'AI Act précise ses obligations pour les PME</td>
-            <td class="source">Le Numérique (fictif)</td>
-            <td><a href="https://example.com/article-2" target="_blank" rel="noopener">Ouvrir</a></td>
-            <td class="resume">Nouvelles lignes directrices sur la conformité avant l'échéance d'août. (donnée fictive)</td>
-          </tr>
-          <tr>
-            <td class="titre">Une startup française lève 40 M€ pour ses agents IA</td>
-            <td class="source">Tech &amp; Co (fictif)</td>
-            <td><a href="https://example.com/article-3" target="_blank" rel="noopener">Ouvrir</a></td>
-            <td class="resume">Tour de table pour industrialiser des agents autonomes métier. (donnée fictive)</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <h2 class="section">Podcasts (Audible)</h2>
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr><th>Titre</th><th>Source</th><th>Lien vers l'item</th><th>Résumé</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="titre">IA au quotidien — épisode 42</td>
-            <td class="source">Audible (fictif)</td>
-            <td><a href="https://example.com/podcast-1" target="_blank" rel="noopener">Écouter</a></td>
-            <td class="resume">Décryptage des usages de l'IA générative en entreprise. (donnée fictive)</td>
-          </tr>
-          <tr>
-            <td class="titre">Comprendre les modèles de langage</td>
-            <td class="source">Audible (fictif)</td>
-            <td><a href="https://example.com/podcast-2" target="_blank" rel="noopener">Écouter</a></td>
-            <td class="resume">Série pédagogique francophone sur le fonctionnement des LLM. (donnée fictive)</td>
-          </tr>
-        </tbody>
-      </table>
+    <div id="tabs" class="tabs" role="tablist" aria-label="Journées de veille"></div>
+    <div id="panels">
+      <p class="loading">Chargement de l'historique…</p>
     </div>
 
     <footer>
-      Page générée à titre de test · veille IA francophone.
+      Veille IA francophone · historique conservé dans <code>data.json</code>.
     </footer>
   </main>
 
 <script>
-  // Date du jour en français dans l'intro
-  (function () {
-    try {
-      var d = new Date();
-      var s = d.toLocaleDateString('fr-FR', { weekday:'long', day:'numeric', month:'long', year:'numeric' });
-      document.getElementById('intro').textContent =
-        'Sélection de veille IA du ' + s + ' (données fictives de test).';
-    } catch (e) {}
-  })();
+  var esc = function (s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+      return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c];
+    });
+  };
+
+  function tableHTML(items, action) {
+    if (!items || !items.length) {
+      return '<p class="empty">Aucune nouveauté récente sur ce volet ce jour-là.</p>';
+    }
+    var rows = items.map(function (it) {
+      var lien = it.lien
+        ? '<a href="' + esc(it.lien) + '" target="_blank" rel="noopener">' + (action || 'Ouvrir') + '</a>'
+        : '<span class="empty">—</span>';
+      return '<tr>' +
+        '<td class="titre">' + esc(it.titre) + '</td>' +
+        '<td class="source">' + esc(it.source) + '</td>' +
+        '<td>' + lien + '</td>' +
+        '<td class="resume">' + esc(it.resume) + '</td>' +
+      '</tr>';
+    }).join('');
+    return '<div class="table-wrap"><table><thead><tr>' +
+      '<th>Titre</th><th>Source</th><th>Lien vers l\'item</th><th>Résumé</th>' +
+      '</tr></thead><tbody>' + rows + '</tbody></table></div>';
+  }
+
+  function render(data) {
+    var days = (data && data.days) ? data.days.slice() : [];
+    // Tri décroissant : la date la plus récente en premier
+    days.sort(function (a, b) { return (b.date || '').localeCompare(a.date || ''); });
+
+    var tabs = document.getElementById('tabs');
+    var panels = document.getElementById('panels');
+    tabs.innerHTML = '';
+    panels.innerHTML = '';
+
+    if (!days.length) {
+      panels.innerHTML = '<p class="error">Aucune donnée de veille disponible.</p>';
+      return;
+    }
+
+    days.forEach(function (day, i) {
+      var id = 'jour-' + (day.date || i);
+      var count = (day.articles ? day.articles.length : 0) + (day.podcasts ? day.podcasts.length : 0);
+
+      var tab = document.createElement('button');
+      tab.className = 'tab';
+      tab.setAttribute('role', 'tab');
+      tab.id = 'tab-' + id;
+      tab.setAttribute('aria-controls', 'panel-' + id);
+      tab.setAttribute('aria-selected', i === 0 ? 'true' : 'false');
+      tab.tabIndex = i === 0 ? 0 : -1;
+      tab.innerHTML = esc(day.label || day.date) + '<span class="badge">' + count + '</span>';
+      tabs.appendChild(tab);
+
+      var panel = document.createElement('section');
+      panel.className = 'panel' + (i === 0 ? ' active' : '');
+      panel.id = 'panel-' + id;
+      panel.setAttribute('role', 'tabpanel');
+      panel.setAttribute('aria-labelledby', 'tab-' + id);
+      panel.innerHTML =
+        '<p class="panel-date">Veille du ' + esc(day.label || day.date) + '</p>' +
+        '<h2 class="section">Articles</h2>' + tableHTML(day.articles, 'Ouvrir') +
+        '<h2 class="section">Podcasts (Audible)</h2>' + tableHTML(day.podcasts, 'Écouter');
+      panels.appendChild(panel);
+
+      tab.addEventListener('click', function () { select(id); });
+    });
+
+    // Navigation clavier entre onglets
+    tabs.addEventListener('keydown', function (e) {
+      if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+      var list = Array.prototype.slice.call(tabs.querySelectorAll('.tab'));
+      var cur = list.indexOf(document.activeElement);
+      if (cur === -1) return;
+      var next = e.key === 'ArrowRight' ? (cur + 1) % list.length : (cur - 1 + list.length) % list.length;
+      list[next].focus();
+      list[next].click();
+      e.preventDefault();
+    });
+  }
+
+  function select(id) {
+    var tabs = document.querySelectorAll('.tab');
+    var panels = document.querySelectorAll('.panel');
+    tabs.forEach(function (t) {
+      var on = t.id === 'tab-' + id;
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+      t.tabIndex = on ? 0 : -1;
+    });
+    panels.forEach(function (p) {
+      p.classList.toggle('active', p.id === 'panel-' + id);
+    });
+  }
+
+  // Chargement des données (cache-buster pour éviter un data.json obsolète en cache)
+  fetch('data.json?_=' + Date.now(), { cache: 'no-store' })
+    .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+    .then(render)
+    .catch(function (err) {
+      document.getElementById('panels').innerHTML =
+        '<p class="error">Impossible de charger l\'historique (' + esc(err.message) + ').</p>';
+    });
 </script>
 </body>
 </html>
