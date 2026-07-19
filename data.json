@@ -1,11 +1,31 @@
 {
-  "generatedAt": "2026-07-19T05:10Z",
+  "generatedAt": "2026-07-19",
   "days": [
     {
       "date": "2026-07-19",
       "label": "dimanche 19 juillet 2026",
-      "notes": "Premier passage en production de la routine quotidienne (déclenchée le 19/07 à 05:04 UTC). Fenêtre 24–48 h dominée par Kimi K3 (Moonshot, modèle open-weight géant) — dédup limitée à 2 articles (Boursorama FR + VentureBeat EN). Rapport ONU sur l'IA : 2 articles (source + analyse). Sources primaires : annonces officielles vérifiées les plus récentes (30/06–08/07), la fenêtre 48 h n'ayant pas livré de nouveau billet officiel ce jour. Gemini 3.5 Pro (cible du 17/07) non confirmée et « modèle 2 T de Musk » sans source fiable → exclus. Podcasts : liens Spotify au niveau émission (datation d'épisode non vérifiable ici). Contenu largement commun avec l'édition du 18/07 (week-end calme en annonces).",
+      "notes": "Audit interne. Remplacement de la journee du 19/07 par le second passage de la routine (meme date). Primaires : 2 releases OpenAI du 18/07 (fenetre 24-48h) ajoutees ; les 3 annonces majeures anterieures (30/06-08/07) sont conservees hors fenetre car aucune autre annonce officielle verifiable dans la fenetre (week-end calme). Articles : quotas non atteints (4 FR, 3 EN) - week-end pauvre en publications datees verifiables ; VentureBeat (16/07) et TechCrunch (30/06) hors fenetre stricte mais conserves pour continuite avec l'edition precedente. Podcasts : liens Spotify niveau emission, datation d'episode non verifiable depuis cet environnement. Section 4 : projets et methodes vides - WebFetch bloque par le proxy (403), impossible de verifier licences, activite ou fenetre 7 jours des candidats reperes (OpenClaw, OpenHands, microsoft/agent-framework, guides SDD) ; exclusion par regle d'or plutot que publication invérifiee. B5 : rien de neuf (nominal).",
       "primaires": [
+        {
+          "titre": "OpenAI publie une mise à jour de Codex CLI, son agent de codage en terminal",
+          "source": "GitHub / OpenAI",
+          "lang": "en",
+          "date": "18/07/2026",
+          "lien": "https://github.com/openai/codex",
+          "resume": "Nouvelle version de Codex CLI, l'agent de codage léger écrit en Rust qui s'exécute directement dans le terminal du développeur.",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une fenêtre de terminal stylisée d'où émerge une main mécanique fine assemblant des blocs, symbolisant un agent de codage travaillant dans la console. Composition : une fenêtre principale, deux blocs secondaires. Palette : vert sauge, gris anthracite, blanc. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20fen%C3%AAtre%20de%20terminal%20stylis%C3%A9e%20d%27o%C3%B9%20%C3%A9merge%20une%20main%20m%C3%A9canique%20fine%20assemblant%20des%20blocs%2C%20symbolisant%20un%20agent%20de%20codage%20travaillant%20dans%20la%20console.%20Composition%20%3A%20une%20fen%C3%AAtre%20principale%2C%20deux%20blocs%20secondaires.%20Palette%20%3A%20vert%20sauge%2C%20gris%20anthracite%2C%20blanc.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=8101"
+        },
+        {
+          "titre": "OpenAI met à jour openai-agents-js, framework multi-agents et agents vocaux",
+          "source": "GitHub / OpenAI",
+          "lang": "en",
+          "date": "18/07/2026",
+          "lien": "https://github.com/openai/openai-agents-js",
+          "resume": "Le framework JavaScript d'OpenAI pour les workflows multi-agents et les agents vocaux reçoit une mise à jour publiée le 18 juillet.",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant plusieurs petites navettes géométriques reliées par des fils souples à un module central, symbolisant l'orchestration légère de plusieurs agents. Composition : un module principal, deux navettes secondaires. Palette : vert sauge, gris anthracite, blanc. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20plusieurs%20petites%20navettes%20g%C3%A9om%C3%A9triques%20reli%C3%A9es%20par%20des%20fils%20souples%20%C3%A0%20un%20module%20central%2C%20symbolisant%20l%27orchestration%20l%C3%A9g%C3%A8re%20de%20plusieurs%20agents.%20Composition%20%3A%20un%20module%20principal%2C%20deux%20navettes%20secondaires.%20Palette%20%3A%20vert%20sauge%2C%20gris%20anthracite%2C%20blanc.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=8102"
+        },
         {
           "titre": "Anthropic — Introducing Claude Sonnet 5",
           "source": "Anthropic",
