@@ -134,9 +134,6 @@
   .loading, .error { font-family:"IBM Plex Mono", monospace; font-size:12px; letter-spacing:.06em; color:var(--muted); padding:2rem 0; }
   .error { color:var(--accent); }
 
-  .notes { margin-top:2.2rem; border-top:.5px solid var(--rule); padding-top:.8rem; font-family:"IBM Plex Mono", monospace; font-size:11px; letter-spacing:.06em; color:var(--muted); max-width:72ch; }
-  .notes strong { color:var(--ink); font-weight:500; }
-
   /* ---- Pied de page ---- */
   .foot-rule { border:none; border-top:2.5px solid var(--ink); margin:2.6rem 0 0; }
   footer { display:flex; justify-content:space-between; gap:1rem; flex-wrap:wrap; padding-top:.7rem; font-family:"IBM Plex Mono", monospace; font-size:11px; letter-spacing:.06em; color:var(--muted); }
@@ -318,8 +315,6 @@
       tab.textContent = shortDate(day.date || '');
       tabs.appendChild(tab);
 
-      var notes = day.notes ? '<div class="notes"><strong>notes —</strong> ' + esc(day.notes) + '</div>' : '';
-
       var panel = document.createElement('section');
       panel.className = 'panel' + (i === 0 ? ' active' : ''); panel.id = 'panel-' + id;
       panel.setAttribute('role', 'tabpanel'); panel.setAttribute('aria-labelledby', 'tab-' + id);
@@ -335,8 +330,7 @@
             sectionHTML('sec-projets', 'projets ia', listHTML(day.projets, projRow, MAX_PROJETS)) +
             sectionHTML('sec-methodes', 'méthodes de dev ia', listHTML(day.methodes, methRow, MAX_METHODES)) +
           '</aside>' +
-        '</div>' +
-        notes;
+        '</div>';
       panels.appendChild(panel);
 
       tab.addEventListener('click', function () { select(id); });

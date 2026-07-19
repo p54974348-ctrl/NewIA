@@ -33,7 +33,7 @@ règles de contenu) :
     {
       "date": "AAAA-MM-JJ",
       "label": "dimanche 19 juillet 2026",
-      "notes": "…",                  // notes finales (sans emoji) ou ""
+      "notes": "…",                  // audit interne (quotas, doutes, dédup) — JAMAIS affiché sur la page
       "primaires": [ /* item */ ],   // max 5 — annonces officielles 24–48 h
       "articles":  [ /* item */ ],   // max 10 par langue — 24–48 h
       "podcasts":  [ /* item */ ],   // max 10 par langue — 7 jours
