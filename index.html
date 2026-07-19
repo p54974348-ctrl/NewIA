@@ -7,6 +7,7 @@
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#F6F1E7" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#12100D" media="(prefers-color-scheme: dark)">
+<meta name="description" content="Veille quotidienne francophone sur l'intelligence artificielle : sources primaires, articles, podcasts, projets et méthodes.">
 <title>Veille IA francophone</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,14 +15,22 @@
 <style>
   /* ============ DIRECTION ARTISTIQUE — "Presse technique éditoriale" ============ */
   :root {
-    --bg:#F6F1E7;      /* papier ivoire */
-    --ink:#1A1712;     /* encre */
-    --muted:#5C554A;   /* secondaire / métadonnées */
-    --rule:#C9C0AE;    /* filets */
-    --accent:#D0421B;  /* vermillon — numérotation, filtre actif, tag langue, libellés de section */
+    --bg:#F6F1E7;          /* papier ivoire */
+    --ink:#1A1712;         /* encre */
+    --muted:#5C554A;       /* secondaire — 6.5:1 sur fond clair */
+    --rule:#C9C0AE;        /* filets */
+    --accent:#D0421B;      /* vermillon décoratif : numéros, soulignés, focus */
+    --accent-text:#B0350F; /* vermillon texte : 5.5:1 — libellés, tags, erreurs */
   }
   @media (prefers-color-scheme: dark) {
-    :root { --bg:#12100D; --ink:#EDE6D8; --muted:#9A9184; --rule:#3A352C; --accent:#E05A31; }
+    :root { --bg:#12100D; --ink:#EDE6D8; --muted:#9A9184; --rule:#3A352C;
+            --accent:#E05A31; --accent-text:#E05A31; }
+  }
+  @media (prefers-contrast: more) and (prefers-color-scheme: light) {
+    :root { --rule:#8a8272; --muted:#3d372e; --accent-text:#8f2a0b; }
+  }
+  @media (prefers-contrast: more) and (prefers-color-scheme: dark) {
+    :root { --rule:#6b6354; --muted:#c9c0b1; --accent-text:#ff8a5c; }
   }
 
   * { box-sizing:border-box; }
@@ -33,6 +42,18 @@
     line-height:1.5; -webkit-font-smoothing:antialiased; overflow-x:hidden;
   }
 
+  .sr-only {
+    position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+    overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0;
+  }
+  .skip {
+    position:absolute; left:-9999px; top:0;
+    font-family:"IBM Plex Mono", monospace; font-size:12px; letter-spacing:.06em;
+    background:var(--bg); color:var(--ink); padding:12px 16px; z-index:10;
+    border:.5px solid var(--rule); text-decoration:underline;
+  }
+  .skip:focus { left:8px; top:8px; outline:2px solid var(--accent); outline-offset:2px; }
+
   .page { max-width:1080px; margin:0 auto; padding:clamp(1.1rem,3.5vw,2.6rem) clamp(1rem,3.5vw,2rem) 3rem; }
 
   /* ---- Masthead ---- */
@@ -41,25 +62,28 @@
   .edition { font-family:"IBM Plex Mono", monospace; font-size:12px; letter-spacing:.06em; color:var(--muted); margin:0; white-space:nowrap; }
   .rule-thick { border:none; border-top:2.5px solid var(--ink); margin:0; }
 
-  /* ---- Nav : jours + filtres (liens texte mono, pas de boutons ni pilules) ---- */
+  /* ---- Nav : jours + filtres (liens texte mono — zone tactile étendue ≥ 40px) ---- */
   nav.bar { padding:.75rem 0 .9rem; border-bottom:.5px solid var(--rule); }
-  .navline { display:flex; flex-wrap:wrap; align-items:baseline; gap:.35rem 1.1rem; margin:.2rem 0; }
-  .navlabel { font-family:"IBM Plex Mono", monospace; font-size:11px; letter-spacing:.06em; font-weight:500; color:var(--accent); text-transform:lowercase; }
+  .navline { display:flex; flex-wrap:wrap; align-items:baseline; gap:.35rem .85rem; margin:.2rem 0; }
+  .navlabel { font-family:"IBM Plex Mono", monospace; font-size:12px; letter-spacing:.06em; font-weight:500; color:var(--accent-text); text-transform:lowercase; }
   .txtlink {
     font-family:"IBM Plex Mono", monospace; font-size:12px; letter-spacing:.06em; text-transform:lowercase;
-    background:none; border:none; padding:0 0 2px; cursor:pointer; color:var(--muted);
+    background:none; border:none; cursor:pointer; color:var(--muted);
+    padding:12px 4px 10px; margin:-8px 0 -6px;
     border-bottom:1.5px solid transparent; border-radius:0;
   }
   .txtlink:hover { color:var(--ink); }
   .txtlink[aria-pressed="true"], .txtlink[aria-selected="true"] { color:var(--ink); border-bottom-color:var(--accent); }
   .txtlink:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
   .days { overflow-x:auto; white-space:nowrap; scrollbar-width:thin; }
+  .cache-note { font-family:"IBM Plex Mono", monospace; font-size:12px; letter-spacing:.06em; color:var(--accent-text); margin:1rem 0 0; }
 
   /* ---- Panels / grille journal ---- */
   #panels { margin-top:1.4rem; }
+  #panels:focus { outline:none; }
   .panel { display:none; }
   .panel.active { display:block; }
-  .panel-date { font-family:"IBM Plex Mono", monospace; font-size:11px; letter-spacing:.06em; color:var(--muted); margin:0 0 1.2rem; }
+  .panel-date { font-family:"IBM Plex Mono", monospace; font-size:12px; letter-spacing:.06em; color:var(--muted); margin:0 0 1.2rem; }
 
   .day-grid { display:grid; grid-template-columns:minmax(0,1fr) minmax(240px,320px); gap:0 2.2rem; align-items:start; }
   .col-aside { border-left:.5px solid var(--rule); padding-left:2.2rem; }
@@ -81,30 +105,33 @@
   /* filtre langue (défaut : français uniquement) */
   #panels[data-lang="fr"] .post[data-lang="en"] { display:none; }
   #panels[data-lang="en"] .post[data-lang="fr"] { display:none; }
-  /* projets & méthodes : exemptés du filtre langue (contenu majoritairement en) */
+  /* projets & méthodes : exemptés du filtre langue, avec mention explicite */
   #panels[data-lang] .sec-projets .post, #panels[data-lang] .sec-methodes .post { display:block; }
-  #panels[data-lang] .col-main .sec-projets .post { display:flex; } /* garde-fou si volet déplacé */
+  #panels[data-lang="fr"] .sec-projets .sec-head h2::after,
+  #panels[data-lang="fr"] .sec-methodes .sec-head h2::after,
+  #panels[data-lang="en"] .sec-projets .sec-head h2::after,
+  #panels[data-lang="en"] .sec-methodes .sec-head h2::after { content:" (toutes langues)"; color:var(--muted); }
 
   /* ---- Sections ---- */
-  .sec { margin-top:1.9rem; }
+  .sec { margin-top:1.9rem; counter-reset:post; }
   .sec:first-child { margin-top:0; }
   .sec-head { display:flex; align-items:baseline; justify-content:space-between; gap:.6rem; border-bottom:.5px solid var(--rule); padding-bottom:.3rem; margin-bottom:.1rem; }
   .sec-head h2 {
-    font-family:"IBM Plex Mono", monospace; font-size:11px; letter-spacing:.06em; font-weight:500;
-    text-transform:lowercase; color:var(--accent); margin:0;
+    font-family:"IBM Plex Mono", monospace; font-size:12px; letter-spacing:.06em; font-weight:500;
+    text-transform:lowercase; color:var(--accent-text); margin:0;
   }
-  .sec-head .count { font-family:"IBM Plex Mono", monospace; font-size:11px; letter-spacing:.06em; color:var(--muted); font-variant-numeric:tabular-nums; }
+  .sec-head .count { font-family:"IBM Plex Mono", monospace; font-size:12px; letter-spacing:.06em; color:var(--muted); font-variant-numeric:tabular-nums; }
 
-  /* ---- Entrées : liste numérotée, filets fins, pas de cartes ---- */
-  .post { display:flex; gap:1rem; padding:1rem 0; border-bottom:.5px solid var(--rule); cursor:default; }
-  .post.row-link { cursor:pointer; }
-  .post:last-child { border-bottom:none; }
+  /* ---- Entrées : numérotation en compteur CSS (se renumérote avec les filtres) ---- */
+  .post { display:flex; gap:1rem; padding:1rem 0; border-bottom:.5px solid var(--rule); counter-increment:post; }
+  .post:last-of-type { border-bottom:none; }
   .post-no {
-    flex:0 0 auto; width:2.2ch;
+    flex:0 0 auto; width:2.4ch;
     font-weight:600; font-size:17px; line-height:1.35; color:var(--accent); font-variant-numeric:tabular-nums;
   }
+  .post-no::before { content:counter(post, decimal-leading-zero); }
   .post-thumb {
-    flex:0 0 auto; position:relative; width:118px; height:66px; margin-top:.15rem; /* 16:9 */
+    flex:0 0 auto; position:relative; width:118px; height:66px; margin-top:.15rem;
     border-radius:2px; overflow:hidden; border:.5px solid var(--rule);
     background:var(--bg); display:flex; align-items:center; justify-content:center;
   }
@@ -112,16 +139,18 @@
   .post-thumb-img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
   @media (max-width:720px){ .post-thumb{ width:92px; height:52px } .post-thumb-mono{ font-size:1.15rem } }
   .post-body { min-width:0; }
-  .post-title { font-size:19px; line-height:1.35; font-weight:600; margin:0 0 .3rem; color:var(--ink); text-wrap:balance; }
-  .post.row-link:hover .post-title { text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:3px; }
+  .post-title { font-size:19px; line-height:1.35; font-weight:600; margin:0 0 .3rem; text-wrap:balance; }
+  .post-title a { color:var(--ink); text-decoration:none; }
+  .post-title a::after { content:" ↗"; font-size:.75em; color:var(--accent-text); }
+  .post-title a:hover { text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:3px; }
+  .post-title a:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
   .post-meta {
-    font-family:"IBM Plex Mono", monospace; font-size:11px; letter-spacing:.06em; color:var(--muted);
+    font-family:"IBM Plex Mono", monospace; font-size:12px; letter-spacing:.06em; color:var(--muted);
     margin:0 0 .45rem; overflow-wrap:anywhere;
   }
-  .post-meta .lang { color:var(--accent); font-weight:500; }
+  .post-meta .lang { color:var(--accent-text); font-weight:500; }
   .post-excerpt { margin:0 0 .2rem; font-size:15px; font-weight:400; color:var(--ink); max-width:64ch; }
   .post-excerpt .lbl { font-style:italic; color:var(--muted); }
-  .post:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
 
   /* aside : entrées compactes, sans vignette */
   .col-aside .post { display:block; padding:.85rem 0; }
@@ -130,22 +159,24 @@
   .col-aside .post-meta { margin-top:.3rem; }
   .col-aside .post-excerpt { font-size:14px; }
 
-  .empty { font-family:"IBM Plex Mono", monospace; font-size:11px; letter-spacing:.06em; color:var(--muted); padding:.8rem 0; }
+  .empty { font-family:"IBM Plex Mono", monospace; font-size:12px; letter-spacing:.06em; color:var(--muted); padding:.8rem 0; }
   .loading, .error { font-family:"IBM Plex Mono", monospace; font-size:12px; letter-spacing:.06em; color:var(--muted); padding:2rem 0; }
-  .error { color:var(--accent); }
+  .error { color:var(--accent-text); }
+  noscript p { font-family:"IBM Plex Mono", monospace; font-size:12px; letter-spacing:.06em; padding:2rem 0; }
 
   /* ---- Pied de page ---- */
   .foot-rule { border:none; border-top:2.5px solid var(--ink); margin:2.6rem 0 0; }
-  footer { display:flex; justify-content:space-between; gap:1rem; flex-wrap:wrap; padding-top:.7rem; font-family:"IBM Plex Mono", monospace; font-size:11px; letter-spacing:.06em; color:var(--muted); }
-  footer a { color:var(--muted); text-decoration:underline; text-underline-offset:2px; }
+  footer { display:flex; justify-content:space-between; gap:1rem; flex-wrap:wrap; padding-top:.7rem; font-family:"IBM Plex Mono", monospace; font-size:12px; letter-spacing:.06em; color:var(--muted); }
+  footer a { color:var(--muted); text-decoration:underline; text-underline-offset:2px; padding:10px 2px; margin:-10px 0; }
   footer a:hover { color:var(--ink); }
   footer a:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
 
-  @media (prefers-contrast: more) { :root { --rule:#8a8272; --muted:#3d372e; } }
   @media (prefers-reduced-motion: reduce) { * { transition:none !important; } }
 </style>
 </head>
 <body>
+
+  <a class="skip" href="#panels">Aller au contenu</a>
 
   <div class="page">
     <header class="masthead">
@@ -157,37 +188,44 @@
     <nav class="bar" aria-label="Navigation de la veille">
       <div class="navline days" id="tabs" role="tablist" aria-label="Journées de veille"></div>
       <div class="navline">
-        <span class="navlabel">type</span>
-        <button class="txtlink seg-type" data-filter="all" aria-pressed="true">tout</button>
+        <span class="navlabel" id="lbl-type">type</span>
+        <button class="txtlink seg-type" data-filter="all" aria-pressed="true">tous</button>
         <button class="txtlink seg-type" data-filter="primaires" aria-pressed="false">primaires</button>
         <button class="txtlink seg-type" data-filter="articles" aria-pressed="false">articles</button>
         <button class="txtlink seg-type" data-filter="podcasts" aria-pressed="false">podcasts</button>
         <button class="txtlink seg-type" data-filter="projets" aria-pressed="false">projets</button>
         <button class="txtlink seg-type" data-filter="methodes" aria-pressed="false">méthodes</button>
-        <span class="navlabel" style="margin-left:1.2rem">langue</span>
+        <span class="navlabel" id="lbl-lang" style="margin-left:1.2rem">langue</span>
         <button class="txtlink seg-lang" data-lang="fr" aria-pressed="true">français</button>
         <button class="txtlink seg-lang" data-lang="en" aria-pressed="false">anglais</button>
         <button class="txtlink seg-lang" data-lang="all" aria-pressed="false">toutes</button>
       </div>
     </nav>
 
-    <main id="panels">
-      <p class="loading">chargement de l'historique…</p>
+    <p class="cache-note" id="cache-note" role="status" hidden></p>
+
+    <main id="panels" tabindex="-1">
+      <p class="loading" role="status" aria-live="polite">chargement de l'historique…</p>
     </main>
+
+    <p class="sr-only" id="announce" role="status" aria-live="polite"></p>
+
+    <noscript><p>Ce site nécessite JavaScript pour afficher la veille. Les données brutes restent consultables dans le fichier <a href="data.json">data.json</a>.</p></noscript>
 
     <hr class="foot-rule">
     <footer>
-      <span>data.json · 5 derniers jours affichés (historique 7 jours) · 5 primaires · 10 articles/podcasts par langue · 6 projets · 8 méthodes</span>
+      <span>Veille IA francophone · mise à jour quotidienne · 7 jours d'historique</span>
     </footer>
   </div>
 
 <script>
-  var MAX_PRIMARY = 5;   // sources primaires : max 5 par langue
-  var MAX_ITEMS = 10;    // articles / podcasts : 10 max par langue
-  var MAX_PROJETS = 6;   // projets IA (volet A)
-  var MAX_METHODES = 8;  // méthodes de dev IA (volet B)
-  var MAX_DAYS = 5;      // jours AFFICHÉS (data.json conserve 7 jours d'historique)
-  var LAUNCH_DATE = '2026-07-12'; // date de lancement — base du numéro d'édition
+  var MAX_PRIMARY = 5;
+  var MAX_ITEMS = 10;
+  var MAX_PROJETS = 6;
+  var MAX_METHODES = 8;
+  var MAX_DAYS = 5;
+  var LAUNCH_DATE = '2026-07-12';
+  var CACHE_KEY = 'veille-ia-cache-v1';
 
   var PROJ_CATS = { agents:'agents & orchestration', outils:'outils développeur', rag:'rag & données', apps:'apps auto-hébergeables', autre:'autre' };
   var METH_CATS = { spec:'spec & planification', boucles:'boucles & harness', contexte:'conventions & contexte', workflows:'workflows & intégration', prompting:'techniques de prompting', autre:'autre' };
@@ -199,80 +237,96 @@
       return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c];
     });
   };
+  function safeUrl(u) {
+    if (!u) return null;
+    try {
+      var p = new URL(u, location.href).protocol;
+      return (p === 'https:' || p === 'http:') ? String(u) : null;
+    } catch (e) { return null; }
+  }
   function langOf(it) { return (it && it.lang === 'en') ? 'en' : 'fr'; }
-  function pad2(n) { return (n < 10 ? '0' : '') + n; }
-  function shortDate(iso) {
+  function dateOnly(iso) {
     var d = new Date(iso + 'T12:00:00Z');
-    if (isNaN(d)) return iso;
+    return isNaN(d) ? null : d;
+  }
+  function shortDate(iso) {
+    var d = dateOnly(iso);
+    if (!d) return iso;
     return DOW[d.getUTCDay()] + ' ' + d.getUTCDate() + ' ' + MON[d.getUTCMonth()] + ' ' + d.getUTCFullYear();
   }
+  function tabDate(iso) {
+    var d = dateOnly(iso);
+    if (!d) return iso;
+    return DOW[d.getUTCDay()] + ' ' + d.getUTCDate() + ' ' + MON[d.getUTCMonth()];
+  }
   function monoOf(s) { var m = String(s || '?').match(/[A-Za-zÀ-ÿ0-9]/); return m ? m[0].toUpperCase() : '?'; }
-
   function metaLine(parts) { return parts.filter(Boolean).join(' · '); }
   function langTag(lang) { return '<span class="lang">' + (lang === 'en' ? 'en' : 'fr') + '</span>'; }
 
   function thumbHTML(it) {
-    var img = it.image
-      ? '<img class="post-thumb-img" src="' + esc(it.image) + '" alt="" loading="lazy" referrerpolicy="no-referrer">'
+    var src = safeUrl(it.image);
+    var img = src
+      ? '<img class="post-thumb-img" src="' + esc(src) + '" alt="" loading="lazy" referrerpolicy="no-referrer">'
       : '';
-    return '<div class="post-thumb"><span class="post-thumb-mono" aria-hidden="true">' + esc(monoOf(it.source || it.titre)) + '</span>' + img + '</div>';
+    return '<div class="post-thumb" aria-hidden="true"><span class="post-thumb-mono">' + esc(monoOf(it.source || it.titre)) + '</span>' + img + '</div>';
   }
 
-  function linkAttrs(it, action) {
-    if (!it.lien) return '';
-    return ' data-href="' + esc(it.lien) + '" tabindex="0" role="link" aria-label="' + esc((action || 'Ouvrir') + ' : ' + it.titre) + '"';
+  function titleHTML(it, lang) {
+    var href = safeUrl(it.lien);
+    var langAttr = lang === 'en' ? ' lang="en"' : '';
+    if (!href) return '<h3 class="post-title"' + langAttr + '>' + esc(it.titre) + '</h3>';
+    return '<h3 class="post-title"' + langAttr + '><a href="' + esc(href) + '" target="_blank" rel="noopener noreferrer">' + esc(it.titre) + '</a></h3>';
   }
 
-  function postRow(it, rank, type, action) {
+  function postRow(it, type) {
     var lang = langOf(it);
-    return '<article class="post' + (it.lien ? ' row-link' : '') + '" data-lang="' + lang + '"' + linkAttrs(it, action) + '>' +
-      '<span class="post-no" aria-hidden="true">' + pad2(rank) + '</span>' +
+    return '<article class="post" data-lang="' + lang + '">' +
+      '<span class="post-no" aria-hidden="true"></span>' +
       thumbHTML(it) +
       '<div class="post-body">' +
-        '<h3 class="post-title">' + esc(it.titre) + '</h3>' +
+        titleHTML(it, lang) +
         '<p class="post-meta">' + metaLine([type, esc(it.source), langTag(lang), esc(it.date)]) + '</p>' +
-        '<p class="post-excerpt">' + esc(it.resume) + '</p>' +
+        (it.resume ? '<p class="post-excerpt">' + esc(it.resume) + '</p>' : '') +
       '</div></article>';
   }
 
-  function projRow(it, rank) {
+  function projRow(it) {
     var lang = langOf(it);
     var lic = it.licence ? 'licence : ' + esc(it.licence) : '';
     var stars = (it.stars != null) ? esc(it.stars) + ' étoiles' : '';
-    return '<article class="post' + (it.lien ? ' row-link' : '') + '" data-lang="' + lang + '"' + linkAttrs(it, 'Ouvrir le dépôt') + '>' +
-      '<span class="post-no" aria-hidden="true">' + pad2(rank) + '</span>' +
-      '<h3 class="post-title">' + esc(it.titre) + '</h3>' +
+    return '<article class="post" data-lang="' + lang + '">' +
+      '<span class="post-no" aria-hidden="true"></span>' +
+      titleHTML(it, lang) +
       '<p class="post-meta">' + metaLine([esc(PROJ_CATS[it.categorie] || it.categorie || 'projet'), esc(it.source), langTag(lang), esc(it.date), lic, stars]) + '</p>' +
-      '<p class="post-excerpt">' + esc(it.resume) + '</p>' +
+      (it.resume ? '<p class="post-excerpt">' + esc(it.resume) + '</p>' : '') +
     '</article>';
   }
 
-  function methRow(it, rank) {
+  function methRow(it) {
     var lang = langOf(it);
     var body =
       (it.pratique ? '<p class="post-excerpt"><span class="lbl">pratique —</span> ' + esc(it.pratique) + '</p>' : '') +
       (it.applicabilite ? '<p class="post-excerpt"><span class="lbl">applicabilité —</span> ' + esc(it.applicabilite) + '</p>' : '');
-    return '<article class="post' + (it.lien ? ' row-link' : '') + '" data-lang="' + lang + '"' + linkAttrs(it, 'Ouvrir la ressource') + '>' +
-      '<span class="post-no" aria-hidden="true">' + pad2(rank) + '</span>' +
-      '<h3 class="post-title">' + esc(it.titre) + '</h3>' +
+    return '<article class="post" data-lang="' + lang + '">' +
+      '<span class="post-no" aria-hidden="true"></span>' +
+      titleHTML(it, lang) +
       '<p class="post-meta">' + metaLine([esc(it.type || ''), esc(METH_CATS[it.categorie] || it.categorie || 'méthode'), langTag(lang), esc(it.date), it.maturite ? 'maturité : ' + esc(it.maturite) : '']) + '</p>' +
       body +
     '</article>';
   }
 
-  function postsHTML(items, type, action, maxN) {
+  function postsHTML(items, type, maxN) {
     items = items || [];
     var fr = items.filter(function (it) { return langOf(it) === 'fr'; }).slice(0, maxN);
     var en = items.filter(function (it) { return langOf(it) === 'en'; }).slice(0, maxN);
     if (!fr.length && !en.length) return '<p class="empty">aucun élément pour ce volet.</p>';
-    var all = fr.concat(en);
-    return all.map(function (it, i) { return postRow(it, i + 1, type, action); }).join('');
+    return fr.concat(en).map(function (it) { return postRow(it, type); }).join('');
   }
 
   function listHTML(items, rowFn, maxN) {
     items = (items || []).slice(0, maxN);
     if (!items.length) return '<p class="empty">aucun élément pour ce volet.</p>';
-    return items.map(function (it, i) { return rowFn(it, i + 1); }).join('');
+    return items.map(function (it) { return rowFn(it); }).join('');
   }
 
   function sectionHTML(cls, titre, inner) {
@@ -283,9 +337,40 @@
     '</section>';
   }
 
-  var panels;
+  var panels, currentDay = null;
 
-  function render(data) {
+  /* ---------- État dans l'URL : #AAAA-MM-JJ?type=...&langue=... ---------- */
+  function parseHash() {
+    var h = location.hash.replace(/^#/, '');
+    if (!h) return {};
+    var parts = h.split('?');
+    var state = {};
+    if (/^\d{4}-\d{2}-\d{2}$/.test(parts[0])) state.day = parts[0];
+    if (parts[1]) {
+      parts[1].split('&').forEach(function (kv) {
+        var p = kv.split('=');
+        if (p[0] === 'type') state.type = decodeURIComponent(p[1] || '');
+        if (p[0] === 'langue') state.lang = decodeURIComponent(p[1] || '');
+      });
+    }
+    return state;
+  }
+  function buildHash() {
+    var f = panels.getAttribute('data-filter') || 'all';
+    var l = panels.getAttribute('data-lang') || 'fr';
+    var q = [];
+    if (f !== 'all') q.push('type=' + f);
+    if (l !== 'fr') q.push('langue=' + l);
+    return '#' + (currentDay || '') + (q.length ? '?' + q.join('&') : '');
+  }
+  function syncURL(push) {
+    var h = buildHash();
+    if ('#' + location.hash.replace(/^#/, '') === h) return;
+    if (push) history.pushState(null, '', h);
+    else history.replaceState(null, '', h);
+  }
+
+  function render(data, fromCache) {
     var days = (data && data.days) ? data.days.slice() : [];
     days.sort(function (a, b) { return (b.date || '').localeCompare(a.date || ''); });
     days = days.slice(0, MAX_DAYS);
@@ -295,111 +380,144 @@
     panels.innerHTML = '';
 
     if (!days.length) {
-      panels.innerHTML = '<p class="error">aucune donnée de veille disponible.</p>';
+      panels.innerHTML = '<p class="error" role="status">aucune donnée de veille disponible.</p>';
       return;
     }
 
-    /* numéro d'édition : jours écoulés depuis la date de lancement */
+    if (fromCache) {
+      var note = document.getElementById('cache-note');
+      note.textContent = 'connexion indisponible — affichage de la dernière édition en cache (' + shortDate(days[0].date || '') + ').';
+      note.hidden = false;
+    }
+
     var top = days[0].date || LAUNCH_DATE;
     var no = Math.floor((Date.parse(top) - Date.parse(LAUNCH_DATE)) / 86400000) + 1;
     document.getElementById('edition').textContent = 'n° ' + no + ' — ' + shortDate(top);
 
     days.forEach(function (day, i) {
-      var id = 'jour-' + (day.date || i);
+      var id = day.date || String(i);
 
       var tab = document.createElement('button');
       tab.className = 'txtlink'; tab.setAttribute('role', 'tab'); tab.id = 'tab-' + id;
       tab.setAttribute('aria-controls', 'panel-' + id);
       tab.setAttribute('aria-selected', i === 0 ? 'true' : 'false');
       tab.tabIndex = i === 0 ? 0 : -1;
-      tab.textContent = shortDate(day.date || '');
+      tab.textContent = tabDate(day.date || '');
       tabs.appendChild(tab);
 
       var panel = document.createElement('section');
       panel.className = 'panel' + (i === 0 ? ' active' : ''); panel.id = 'panel-' + id;
       panel.setAttribute('role', 'tabpanel'); panel.setAttribute('aria-labelledby', 'tab-' + id);
       panel.innerHTML =
-        '<p class="panel-date">veille du ' + esc(day.label || day.date) + '</p>' +
+        '<p class="panel-date">veille du ' + esc(day.label || shortDate(day.date)) + '</p>' +
         '<div class="day-grid">' +
           '<div class="col-main">' +
-            sectionHTML('sec-primaires', 'sources primaires', postsHTML(day.primaires, 'primaire', 'Ouvrir', MAX_PRIMARY)) +
-            sectionHTML('sec-articles', 'articles', postsHTML(day.articles, 'article', 'Ouvrir', MAX_ITEMS)) +
-            sectionHTML('sec-podcasts', 'podcasts', postsHTML(day.podcasts, 'podcast', 'Écouter', MAX_ITEMS)) +
+            sectionHTML('sec-primaires', 'sources primaires', postsHTML(day.primaires, 'primaire', MAX_PRIMARY)) +
+            sectionHTML('sec-articles', 'articles', postsHTML(day.articles, 'article', MAX_ITEMS)) +
+            sectionHTML('sec-podcasts', 'podcasts', postsHTML(day.podcasts, 'podcast', MAX_ITEMS)) +
           '</div>' +
-          '<aside class="col-aside">' +
+          '<aside class="col-aside" aria-label="Projets et méthodes">' +
             sectionHTML('sec-projets', 'projets ia', listHTML(day.projets, projRow, MAX_PROJETS)) +
             sectionHTML('sec-methodes', 'méthodes de dev ia', listHTML(day.methodes, methRow, MAX_METHODES)) +
           '</aside>' +
         '</div>';
       panels.appendChild(panel);
 
-      tab.addEventListener('click', function () { select(id); });
+      tab.addEventListener('click', function () { select(id, true); });
     });
 
-    tabs.addEventListener('keydown', function (e) {
+    currentDay = days[0].date || null;
+
+    tabs.onkeydown = function (e) {
       if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
       var l = Array.prototype.slice.call(tabs.querySelectorAll('.txtlink'));
       var cur = l.indexOf(document.activeElement);
       if (cur === -1) return;
       var next = e.key === 'ArrowRight' ? (cur + 1) % l.length : (cur - 1 + l.length) % l.length;
       l[next].focus(); l[next].click(); e.preventDefault();
-    });
+    };
 
-    updateView();
+    /* état initial depuis l'URL (deep-linking) */
+    var st = parseHash();
+    if (st.type && document.querySelector('.seg-type[data-filter="' + st.type + '"]')) setType(st.type);
+    if (st.lang && document.querySelector('.seg-lang[data-lang="' + st.lang + '"]')) setLang(st.lang);
+    if (st.day && document.getElementById('panel-' + st.day)) select(st.day, false);
+    else { updateView(); syncURL(false); }
   }
 
-  function select(id) {
+  function select(id, push) {
     document.querySelectorAll('#tabs .txtlink').forEach(function (t) {
       var on = t.id === 'tab-' + id;
       t.setAttribute('aria-selected', on ? 'true' : 'false'); t.tabIndex = on ? 0 : -1;
     });
     document.querySelectorAll('.panel').forEach(function (p) { p.classList.toggle('active', p.id === 'panel-' + id); });
+    currentDay = id;
+    document.title = 'Veille IA — ' + shortDate(id);
     updateView();
+    syncURL(push);
+  }
+
+  function setType(f) {
+    panels.setAttribute('data-filter', f);
+    document.querySelectorAll('.seg-type').forEach(function (b) {
+      b.setAttribute('aria-pressed', b.getAttribute('data-filter') === f ? 'true' : 'false');
+    });
+  }
+  function setLang(l) {
+    panels.setAttribute('data-lang', l);
+    document.querySelectorAll('.seg-lang').forEach(function (b) {
+      b.setAttribute('aria-pressed', b.getAttribute('data-lang') === l ? 'true' : 'false');
+    });
   }
 
   function updateView() {
     var lang = panels.getAttribute('data-lang') || 'fr';
     var active = panels.querySelector('.panel.active');
     if (!active) return;
+    var total = 0;
     active.querySelectorAll('.sec').forEach(function (sec) {
       var exempt = sec.classList.contains('sec-projets') || sec.classList.contains('sec-methodes');
+      var posts = sec.querySelectorAll('.post');
       var visible = 0;
-      sec.querySelectorAll('.post').forEach(function (p) {
+      posts.forEach(function (p) {
         if (exempt || lang === 'all' || p.getAttribute('data-lang') === lang) visible++;
       });
+      total += visible;
       var c = sec.querySelector('.count');
       if (c) c.textContent = visible;
       var e = sec.querySelector('.sec-empty');
-      if (e) e.hidden = visible !== 0;
+      if (e) e.hidden = visible !== 0 || posts.length === 0;
     });
+    var a = document.getElementById('announce');
+    if (a) a.textContent = total + ' entrée' + (total > 1 ? 's' : '') + ' affichée' + (total > 1 ? 's' : '') + '.';
   }
 
   (function () {
     panels = document.getElementById('panels');
     panels.setAttribute('data-filter', 'all');
-    panels.setAttribute('data-lang', 'fr'); // défaut : francophone uniquement
+    panels.setAttribute('data-lang', 'fr');
 
     document.querySelectorAll('.seg-type').forEach(function (btn) {
       btn.addEventListener('click', function () {
-        panels.setAttribute('data-filter', btn.getAttribute('data-filter'));
-        document.querySelectorAll('.seg-type').forEach(function (b) { b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'); });
-        updateView();
+        setType(btn.getAttribute('data-filter'));
+        updateView(); syncURL(false);
       });
     });
     document.querySelectorAll('.seg-lang').forEach(function (btn) {
       btn.addEventListener('click', function () {
-        panels.setAttribute('data-lang', btn.getAttribute('data-lang'));
-        document.querySelectorAll('.seg-lang').forEach(function (b) { b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'); });
-        updateView();
+        setLang(btn.getAttribute('data-lang'));
+        updateView(); syncURL(false);
       });
     });
 
-    function openPost(el) { var href = el && el.getAttribute('data-href'); if (href) window.open(href, '_blank', 'noopener'); }
-    panels.addEventListener('click', function (e) { var el = e.target.closest('.post.row-link'); if (el) openPost(el); });
-    panels.addEventListener('keydown', function (e) {
-      if (e.key !== 'Enter' && e.key !== ' ') return;
-      var el = e.target.closest('.post.row-link'); if (el) { e.preventDefault(); openPost(el); }
+    window.addEventListener('popstate', function () {
+      var st = parseHash();
+      setType(st.type && document.querySelector('.seg-type[data-filter="' + st.type + '"]') ? st.type : 'all');
+      setLang(st.lang && document.querySelector('.seg-lang[data-lang="' + st.lang + '"]') ? st.lang : 'fr');
+      if (st.day && document.getElementById('panel-' + st.day)) select(st.day, false);
+      else updateView();
     });
+
     panels.addEventListener('error', function (e) {
       var t = e.target;
       if (t && t.classList && t.classList.contains('post-thumb-img')) t.remove();
@@ -408,10 +526,16 @@
 
   fetch('data.json?_=' + Date.now(), { cache: 'no-store' })
     .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
-    .then(render)
+    .then(function (data) {
+      try { localStorage.setItem(CACHE_KEY, JSON.stringify(data)); } catch (e) {}
+      render(data, false);
+    })
     .catch(function (err) {
+      var cached = null;
+      try { cached = JSON.parse(localStorage.getItem(CACHE_KEY)); } catch (e) {}
+      if (cached && cached.days && cached.days.length) { render(cached, true); return; }
       document.getElementById('panels').innerHTML =
-        '<p class="error">impossible de charger l\'historique (' + esc(err.message) + ').</p>';
+        '<p class="error" role="status" aria-live="polite">impossible de charger l\'historique (' + esc(err.message) + '). réessayez plus tard.</p>';
     });
 </script>
 </body>
