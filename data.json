@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-18T06:10Z",
+  "generatedAt": "2026-07-19T05:10Z",
   "days": [
     {
-      "date": "2026-07-18",
-      "label": "samedi 18 juillet 2026",
-      "notes": "Fenêtre stricte 24–48 h peu fournie en annonces officielles NOUVELLES ce jour : les sources primaires retenues (Sonnet 5, Gemini Omni Flash/Nano Banana 2 Lite, Robostral Navigate) sont les annonces officielles vérifiées les plus récentes (30/06–08/07), signalées comme telles. Actualité chaude du jour : Kimi K3 (Moonshot, 16/07) — dédup limitée à 2 articles (Boursorama FR + VentureBeat EN). Rapport ONU sur l'IA : 2 articles (source + analyse). Podcasts : liens Spotify au niveau émission (open.spotify.com/show) — la datation fiable d'un épisode précis dans les 7 jours n'a pas pu être vérifiée dans cet environnement, donc pas de lien d'épisode direct affirmé.",
+      "date": "2026-07-19",
+      "label": "dimanche 19 juillet 2026",
+      "notes": "Premier passage en production de la routine quotidienne (déclenchée le 19/07 à 05:04 UTC). Fenêtre 24–48 h dominée par Kimi K3 (Moonshot, modèle open-weight géant) — dédup limitée à 2 articles (Boursorama FR + VentureBeat EN). Rapport ONU sur l'IA : 2 articles (source + analyse). Sources primaires : annonces officielles vérifiées les plus récentes (30/06–08/07), la fenêtre 48 h n'ayant pas livré de nouveau billet officiel ce jour. Gemini 3.5 Pro (cible du 17/07) non confirmée et « modèle 2 T de Musk » sans source fiable → exclus. Podcasts : liens Spotify au niveau émission (datation d'épisode non vérifiable ici).",
       "primaires": [
         {
           "titre": "Anthropic — Introducing Claude Sonnet 5",
