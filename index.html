@@ -5,200 +5,185 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
 <meta name="color-scheme" content="light dark">
-<meta name="theme-color" content="#fbfcfd" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0e141b" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#F6F1E7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#12100D" media="(prefers-color-scheme: dark)">
 <title>Veille IA francophone</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
+  /* ============ DIRECTION ARTISTIQUE — "Presse technique éditoriale" ============ */
   :root {
-    --bg:#fbfcfd; --surface:#ffffff; --surface-2:#f4f6f9; --ink:#16202b;
-    --muted:#5a6875; --faint:#8996a3; --border:#e4e9ef; --accent:#2d6be0;
-    --accent-ink:#1b4fb0; --accent-bg:#eaf1fd;
-    --podcast:#8a4bd6; --podcast-ink:#6a2fb5; --podcast-bg:#f1e9fb;
-    --primary:#c2410c; --primary-ink:#9a3412; --primary-bg:#fdece3;
-    --en:#0a8a6a; --en-ink:#0a6a52; --en-bg:#e2f5ef;
-    --proj:#0f766e; --proj-ink:#115e59; --proj-bg:#e6f4f2;
-    --meth:#b45309; --meth-ink:#92400e; --meth-bg:#fcf0df;
-    --shadow:0 1px 2px rgba(20,32,43,.04), 0 10px 30px -20px rgba(20,32,43,.35);
+    --bg:#F6F1E7;      /* papier ivoire */
+    --ink:#1A1712;     /* encre */
+    --muted:#5C554A;   /* secondaire / métadonnées */
+    --rule:#C9C0AE;    /* filets */
+    --accent:#D0421B;  /* vermillon — numérotation, filtre actif, tag langue, libellés de section */
   }
   @media (prefers-color-scheme: dark) {
-    :root {
-      --bg:#0e141b; --surface:#151e28; --surface-2:#1b2632; --ink:#e7edf3;
-      --muted:#97a3b1; --faint:#6c7885; --border:#26313f; --accent:#5b93f5;
-      --accent-ink:#a9c8fb; --accent-bg:#17263c;
-      --podcast:#b28cf0; --podcast-ink:#cbb0f7; --podcast-bg:#231a33;
-      --primary:#f08a4b; --primary-ink:#f4b183; --primary-bg:#2a1a10;
-      --en:#4fc9a6; --en-ink:#8fe0c9; --en-bg:#12291f;
-      --proj:#3fc1b0; --proj-ink:#8ee3d6; --proj-bg:#0f2926;
-      --meth:#e0a34a; --meth-ink:#f0c98a; --meth-bg:#2b2010;
-      --shadow:0 1px 2px rgba(0,0,0,.3), 0 12px 34px -20px rgba(0,0,0,.85);
-    }
+    :root { --bg:#12100D; --ink:#EDE6D8; --muted:#9A9184; --rule:#3A352C; --accent:#E05A31; }
   }
-  @media (prefers-contrast: more) { :root { --border:#9aa6b2; --muted:#3a4652; } }
 
   * { box-sizing:border-box; }
   html { -webkit-text-size-adjust:100%; }
   body {
     margin:0; background:var(--bg); color:var(--ink);
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    line-height:1.6; -webkit-font-smoothing:antialiased; overflow-x:hidden;
+    font-family:"Fraunces", Georgia, serif;
+    font-optical-sizing:auto;
+    line-height:1.5; -webkit-font-smoothing:antialiased; overflow-x:hidden;
   }
 
-  main { max-width:820px; margin:0 auto; padding:clamp(1.25rem,4vw,3.5rem) clamp(1rem,4vw,2rem) 4rem; }
-  .eyebrow { font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; font-weight:600; color:var(--accent); margin:0 0 .6rem; }
-  h1.title { font-size:clamp(1.5rem,4vw,2.2rem); line-height:1.15; letter-spacing:-.02em; margin:0 0 .5rem; text-wrap:balance; }
+  .page { max-width:1080px; margin:0 auto; padding:clamp(1.1rem,3.5vw,2.6rem) clamp(1rem,3.5vw,2rem) 3rem; }
 
-  .nav {
-    position:sticky; top:0; z-index:10;
-    background:color-mix(in srgb, var(--bg) 88%, transparent);
-    -webkit-backdrop-filter:saturate(1.4) blur(8px); backdrop-filter:saturate(1.4) blur(8px);
-    margin:0 calc(-1 * clamp(1rem,4vw,2rem)); padding:.6rem clamp(1rem,4vw,2rem) 0;
-    border-bottom:1px solid var(--border);
+  /* ---- Masthead ---- */
+  .masthead { display:flex; align-items:baseline; justify-content:space-between; gap:1rem; flex-wrap:wrap; padding-bottom:.7rem; }
+  .masthead h1 { font-size:clamp(1.7rem,4.5vw,2.5rem); font-weight:600; letter-spacing:-.01em; margin:0; line-height:1.1; }
+  .edition { font-family:"IBM Plex Mono", monospace; font-size:12px; letter-spacing:.06em; color:var(--muted); margin:0; white-space:nowrap; }
+  .rule-thick { border:none; border-top:2.5px solid var(--ink); margin:0; }
+
+  /* ---- Nav : jours + filtres (liens texte mono, pas de boutons ni pilules) ---- */
+  nav.bar { padding:.75rem 0 .9rem; border-bottom:.5px solid var(--rule); }
+  .navline { display:flex; flex-wrap:wrap; align-items:baseline; gap:.35rem 1.1rem; margin:.2rem 0; }
+  .navlabel { font-family:"IBM Plex Mono", monospace; font-size:11px; letter-spacing:.06em; font-weight:500; color:var(--accent); text-transform:lowercase; }
+  .txtlink {
+    font-family:"IBM Plex Mono", monospace; font-size:12px; letter-spacing:.06em; text-transform:lowercase;
+    background:none; border:none; padding:0 0 2px; cursor:pointer; color:var(--muted);
+    border-bottom:1.5px solid transparent; border-radius:0;
   }
-  @supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))) { .nav { background:var(--bg); } }
+  .txtlink:hover { color:var(--ink); }
+  .txtlink[aria-pressed="true"], .txtlink[aria-selected="true"] { color:var(--ink); border-bottom-color:var(--accent); }
+  .txtlink:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+  .days { overflow-x:auto; white-space:nowrap; scrollbar-width:thin; }
 
-  .tabs { display:flex; gap:.4rem; overflow-x:auto; padding-bottom:.6rem; scrollbar-width:thin; -webkit-overflow-scrolling:touch; }
-  .tab {
-    flex:0 0 auto; cursor:pointer; border:1px solid var(--border); background:var(--surface); color:var(--muted);
-    padding:.5rem .9rem; border-radius:999px; font-size:.85rem; font-weight:600; white-space:nowrap;
-    font-variant-numeric:tabular-nums; transition:background .15s ease, color .15s ease, border-color .15s ease;
-  }
-  .tab:hover { border-color:var(--accent); color:var(--ink); }
-  .tab[aria-selected="true"] { background:var(--accent); color:#fff; border-color:var(--accent); }
-  .tab .badge { font-weight:500; opacity:.75; margin-left:.35rem; }
-
-  .filters { display:flex; flex-wrap:wrap; gap:.4rem 1.4rem; padding:.6rem 0 .75rem; }
-  .filter { display:flex; align-items:center; gap:.5rem; }
-  .filter-label { font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; color:var(--faint); font-weight:600; }
-  .segmented { display:inline-flex; background:var(--surface-2); border:1px solid var(--border); border-radius:10px; padding:3px; gap:2px; flex-wrap:wrap; }
-  .seg { cursor:pointer; border:none; background:transparent; color:var(--muted); padding:.4rem .8rem; border-radius:8px; font-size:.85rem; font-weight:600; transition:background .15s ease, color .15s ease; }
-  .seg:hover { color:var(--ink); }
-  .seg[aria-pressed="true"] { background:var(--surface); color:var(--accent); box-shadow:var(--shadow); }
-  @media (pointer: coarse) { .seg { padding:.6rem .9rem; min-height:44px; display:inline-flex; align-items:center; } .tab { padding:.6rem 1rem; } }
-
-  #panels { margin-top:1.6rem; }
+  /* ---- Panels / grille journal ---- */
+  #panels { margin-top:1.4rem; }
   .panel { display:none; }
-  .panel.active { display:block; animation:fade .2s ease; }
-  @keyframes fade { from { opacity:0; transform:translateY(4px); } to { opacity:1; transform:none; } }
-  @media (prefers-reduced-motion:reduce) { .panel.active { animation:none; } .tab,.seg,.post,.post-title,.go { transition:none; } }
+  .panel.active { display:block; }
+  .panel-date { font-family:"IBM Plex Mono", monospace; font-size:11px; letter-spacing:.06em; color:var(--muted); margin:0 0 1.2rem; }
 
-  /* Filtre type (contenu) */
+  .day-grid { display:grid; grid-template-columns:minmax(0,1fr) minmax(240px,320px); gap:0 2.2rem; align-items:start; }
+  .col-aside { border-left:.5px solid var(--rule); padding-left:2.2rem; }
+  @media (max-width:720px) {
+    .day-grid { grid-template-columns:1fr; }
+    .col-aside { border-left:none; padding-left:0; margin-top:2rem; }
+  }
+  /* filtre type : colonnes pleine largeur quand un seul volet est visible */
+  #panels[data-filter="primaires"] .col-aside, #panels[data-filter="articles"] .col-aside, #panels[data-filter="podcasts"] .col-aside { display:none; }
+  #panels[data-filter="primaires"] .day-grid, #panels[data-filter="articles"] .day-grid, #panels[data-filter="podcasts"] .day-grid,
+  #panels[data-filter="projets"] .day-grid, #panels[data-filter="methodes"] .day-grid { grid-template-columns:1fr; }
+  #panels[data-filter="projets"] .col-main, #panels[data-filter="methodes"] .col-main { display:none; }
+  #panels[data-filter="projets"] .col-aside, #panels[data-filter="methodes"] .col-aside { border-left:none; padding-left:0; margin-top:0; }
   #panels[data-filter="primaires"] .sec:not(.sec-primaires) { display:none; }
   #panels[data-filter="articles"] .sec:not(.sec-articles) { display:none; }
   #panels[data-filter="podcasts"] .sec:not(.sec-podcasts) { display:none; }
   #panels[data-filter="projets"] .sec:not(.sec-projets) { display:none; }
   #panels[data-filter="methodes"] .sec:not(.sec-methodes) { display:none; }
-  /* Filtre langue (défaut : français uniquement) */
+  /* filtre langue (défaut : français uniquement) */
   #panels[data-lang="fr"] .post[data-lang="en"] { display:none; }
   #panels[data-lang="en"] .post[data-lang="fr"] { display:none; }
-  /* Projets & Méthodes : exemptés du filtre langue (contenu majoritairement EN) */
-  #panels[data-lang] .sec-projets .post, #panels[data-lang] .sec-methodes .post { display:flex; }
+  /* projets & méthodes : exemptés du filtre langue (contenu majoritairement en) */
+  #panels[data-lang] .sec-projets .post, #panels[data-lang] .sec-methodes .post { display:block; }
+  #panels[data-lang] .col-main .sec-projets .post { display:flex; } /* garde-fou si volet déplacé */
 
-  .panel-date { font-size:.9rem; color:var(--faint); margin:0 0 1.4rem; }
-
-  .sec { margin-top:2rem; }
+  /* ---- Sections ---- */
+  .sec { margin-top:1.9rem; }
   .sec:first-child { margin-top:0; }
-  .sec-head { display:flex; align-items:baseline; gap:.6rem; padding-bottom:.5rem; border-bottom:2px solid var(--ink); margin-bottom:.3rem; }
-  .sec-primaires .sec-head { border-color:var(--primary); }
-  .sec-articles .sec-head { border-color:var(--accent); }
-  .sec-podcasts .sec-head { border-color:var(--podcast); }
-  .sec-projets .sec-head { border-color:var(--proj); }
-  .sec-methodes .sec-head { border-color:var(--meth); }
-  .sec-head h2 { font-size:1.05rem; margin:0; text-transform:uppercase; letter-spacing:.04em; }
-  .sec-head .count { font-size:.82rem; color:var(--faint); font-variant-numeric:tabular-nums; }
-
-  .posts { display:flex; flex-direction:column; }
-  .post {
-    display:flex; gap:.95rem; padding:1.15rem .35rem; border-bottom:1px solid var(--border);
-    cursor:pointer; transition:background .15s ease;
+  .sec-head { display:flex; align-items:baseline; justify-content:space-between; gap:.6rem; border-bottom:.5px solid var(--rule); padding-bottom:.3rem; margin-bottom:.1rem; }
+  .sec-head h2 {
+    font-family:"IBM Plex Mono", monospace; font-size:11px; letter-spacing:.06em; font-weight:500;
+    text-transform:lowercase; color:var(--accent); margin:0;
   }
+  .sec-head .count { font-family:"IBM Plex Mono", monospace; font-size:11px; letter-spacing:.06em; color:var(--muted); font-variant-numeric:tabular-nums; }
+
+  /* ---- Entrées : liste numérotée, filets fins, pas de cartes ---- */
+  .post { display:flex; gap:1rem; padding:1rem 0; border-bottom:.5px solid var(--rule); cursor:default; }
+  .post.row-link { cursor:pointer; }
   .post:last-child { border-bottom:none; }
-  .post:hover { background:var(--accent-bg); }
-  .sec-primaires .post:hover { background:var(--primary-bg); }
-  .sec-podcasts .post:hover { background:var(--podcast-bg); }
-  .sec-projets .post:hover { background:var(--proj-bg); }
-  .sec-methodes .post:hover { background:var(--meth-bg); }
+  .post-no {
+    flex:0 0 auto; width:2.2ch;
+    font-weight:600; font-size:17px; line-height:1.35; color:var(--accent); font-variant-numeric:tabular-nums;
+  }
   .post-thumb {
-    flex:0 0 auto; position:relative; width:128px; height:72px; margin-top:.15rem; /* 16:9 */
-    border-radius:10px; overflow:hidden; border:1px solid var(--border);
-    background:linear-gradient(135deg, hsl(var(--h,220) 62% 58%), hsl(calc(var(--h,220) + 28) 58% 45%));
-    display:flex; align-items:center; justify-content:center;
+    flex:0 0 auto; position:relative; width:118px; height:66px; margin-top:.15rem; /* 16:9 */
+    border-radius:2px; overflow:hidden; border:.5px solid var(--rule);
+    background:var(--bg); display:flex; align-items:center; justify-content:center;
   }
-  .post-thumb-mono { color:#fff; font-weight:800; font-size:1.6rem; text-transform:uppercase; text-shadow:0 1px 2px rgba(0,0,0,.25); }
-  .post-thumb-img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; background:var(--surface-2); }
-  .post-rankbadge {
-    position:absolute; top:0; left:0; z-index:2; background:rgba(12,18,26,.62); color:#fff;
-    font-size:.66rem; font-weight:700; padding:.06rem .34rem; border-bottom-right-radius:8px; font-variant-numeric:tabular-nums;
-  }
-  @media (max-width:680px){ .post-thumb{ width:96px; height:54px } .post-thumb-mono{ font-size:1.3rem } }
+  .post-thumb-mono { color:var(--muted); font-weight:600; font-size:1.45rem; text-transform:uppercase; }
+  .post-thumb-img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+  @media (max-width:720px){ .post-thumb{ width:92px; height:52px } .post-thumb-mono{ font-size:1.15rem } }
   .post-body { min-width:0; }
-  .post-title { font-size:1.12rem; line-height:1.35; margin:0 0 .45rem; font-weight:650; color:var(--ink); text-wrap:balance; transition:color .15s ease; }
-  .post-title .go { color:var(--faint); font-weight:400; margin-left:.25rem; transition:color .15s ease; }
-  .post:hover .post-title { color:var(--accent-ink); }
-  .sec-primaires .post:hover .post-title { color:var(--primary-ink); }
-  .sec-podcasts .post:hover .post-title { color:var(--podcast-ink); }
-  .sec-projets .post:hover .post-title { color:var(--proj-ink); }
-  .sec-methodes .post:hover .post-title { color:var(--meth-ink); }
-  .post:hover .post-title .go { color:var(--accent); }
-  .post-meta { margin:0 0 .5rem; display:flex; align-items:center; gap:.4rem; flex-wrap:wrap; }
-  .tag { display:inline-block; font-size:.7rem; font-weight:700; letter-spacing:.04em; text-transform:uppercase; color:var(--accent-ink); background:var(--accent-bg); padding:.2rem .55rem; border-radius:6px; }
-  .sec-primaires .tag { color:var(--primary-ink); background:var(--primary-bg); }
-  .sec-podcasts .tag { color:var(--podcast-ink); background:var(--podcast-bg); }
-  .sec-projets .tag { color:var(--proj-ink); background:var(--proj-bg); }
-  .sec-methodes .tag { color:var(--meth-ink); background:var(--meth-bg); }
-  .lang-badge { font-size:.64rem; font-weight:700; letter-spacing:.04em; padding:.15rem .4rem; border-radius:5px; border:1px solid var(--border); color:var(--faint); }
-  .lang-badge.lb-en { color:var(--en-ink); background:var(--en-bg); border-color:transparent; }
-  .post-date { font-size:.74rem; color:var(--faint); font-variant-numeric:tabular-nums; }
-  .post-excerpt { margin:0; color:var(--muted); font-size:.96rem; max-width:66ch; }
-  .post:focus-visible { outline:2px solid var(--accent); outline-offset:-2px; border-radius:8px; }
+  .post-title { font-size:19px; line-height:1.35; font-weight:600; margin:0 0 .3rem; color:var(--ink); text-wrap:balance; }
+  .post.row-link:hover .post-title { text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:3px; }
+  .post-meta {
+    font-family:"IBM Plex Mono", monospace; font-size:11px; letter-spacing:.06em; color:var(--muted);
+    margin:0 0 .45rem; overflow-wrap:anywhere;
+  }
+  .post-meta .lang { color:var(--accent); font-weight:500; }
+  .post-excerpt { margin:0 0 .2rem; font-size:15px; font-weight:400; color:var(--ink); max-width:64ch; }
+  .post-excerpt .lbl { font-style:italic; color:var(--muted); }
+  .post:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
 
-  .empty { color:var(--faint); font-style:italic; padding:.9rem .35rem; }
-  .loading, .error { color:var(--muted); padding:2rem 0; }
-  .error { color:#d64545; }
-  .notes { margin-top:2.4rem; padding:1rem 1.1rem; border:1px solid var(--border); border-radius:12px; background:var(--surface-2); font-size:.86rem; color:var(--muted); }
-  .notes strong { color:var(--ink); }
-  footer { margin-top:3rem; padding-top:1.3rem; border-top:1px solid var(--border); font-size:.78rem; color:var(--faint); }
-  .tab:focus-visible, .seg:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+  /* aside : entrées compactes, sans vignette */
+  .col-aside .post { display:block; padding:.85rem 0; }
+  .col-aside .post-no { display:inline; width:auto; font-size:15px; margin-right:.45rem; }
+  .col-aside .post-title { display:inline; font-size:16px; }
+  .col-aside .post-meta { margin-top:.3rem; }
+  .col-aside .post-excerpt { font-size:14px; }
+
+  .empty { font-family:"IBM Plex Mono", monospace; font-size:11px; letter-spacing:.06em; color:var(--muted); padding:.8rem 0; }
+  .loading, .error { font-family:"IBM Plex Mono", monospace; font-size:12px; letter-spacing:.06em; color:var(--muted); padding:2rem 0; }
+  .error { color:var(--accent); }
+
+  .notes { margin-top:2.2rem; border-top:.5px solid var(--rule); padding-top:.8rem; font-family:"IBM Plex Mono", monospace; font-size:11px; letter-spacing:.06em; color:var(--muted); max-width:72ch; }
+  .notes strong { color:var(--ink); font-weight:500; }
+
+  /* ---- Pied de page ---- */
+  .foot-rule { border:none; border-top:2.5px solid var(--ink); margin:2.6rem 0 0; }
+  footer { display:flex; justify-content:space-between; gap:1rem; flex-wrap:wrap; padding-top:.7rem; font-family:"IBM Plex Mono", monospace; font-size:11px; letter-spacing:.06em; color:var(--muted); }
+  footer a { color:var(--muted); text-decoration:underline; text-underline-offset:2px; }
+  footer a:hover { color:var(--ink); }
+  footer a:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+
+  @media (prefers-contrast: more) { :root { --rule:#8a8272; --muted:#3d372e; } }
+  @media (prefers-reduced-motion: reduce) { * { transition:none !important; } }
 </style>
 </head>
 <body>
 
-  <main>
-    <p class="eyebrow">Veille quotidienne · Intelligence artificielle</p>
-    <h1 class="title">Veille IA francophone</h1>
+  <div class="page">
+    <header class="masthead">
+      <h1>Veille IA francophone</h1>
+      <p class="edition"><span id="edition"></span></p>
+    </header>
+    <hr class="rule-thick">
 
-    <div class="nav">
-      <div id="tabs" class="tabs" role="tablist" aria-label="Journées de veille"></div>
-      <div class="filters">
-        <div class="filter">
-          <span class="filter-label">Type</span>
-          <div class="segmented" role="group" aria-label="Filtrer par type de contenu">
-            <button class="seg seg-type" data-filter="all" aria-pressed="true">Tout</button>
-            <button class="seg seg-type" data-filter="primaires" aria-pressed="false">Primaires</button>
-            <button class="seg seg-type" data-filter="articles" aria-pressed="false">Articles</button>
-            <button class="seg seg-type" data-filter="podcasts" aria-pressed="false">Podcasts</button>
-            <button class="seg seg-type" data-filter="projets" aria-pressed="false">Projets</button>
-            <button class="seg seg-type" data-filter="methodes" aria-pressed="false">Méthodes</button>
-          </div>
-        </div>
-        <div class="filter">
-          <span class="filter-label">Langue</span>
-          <div class="segmented" role="group" aria-label="Filtrer par langue">
-            <button class="seg seg-lang" data-lang="fr" aria-pressed="true">Français</button>
-            <button class="seg seg-lang" data-lang="en" aria-pressed="false">Anglais</button>
-            <button class="seg seg-lang" data-lang="all" aria-pressed="false">Toutes</button>
-          </div>
-        </div>
+    <nav class="bar" aria-label="Navigation de la veille">
+      <div class="navline days" id="tabs" role="tablist" aria-label="Journées de veille"></div>
+      <div class="navline">
+        <span class="navlabel">type</span>
+        <button class="txtlink seg-type" data-filter="all" aria-pressed="true">tout</button>
+        <button class="txtlink seg-type" data-filter="primaires" aria-pressed="false">primaires</button>
+        <button class="txtlink seg-type" data-filter="articles" aria-pressed="false">articles</button>
+        <button class="txtlink seg-type" data-filter="podcasts" aria-pressed="false">podcasts</button>
+        <button class="txtlink seg-type" data-filter="projets" aria-pressed="false">projets</button>
+        <button class="txtlink seg-type" data-filter="methodes" aria-pressed="false">méthodes</button>
+        <span class="navlabel" style="margin-left:1.2rem">langue</span>
+        <button class="txtlink seg-lang" data-lang="fr" aria-pressed="true">français</button>
+        <button class="txtlink seg-lang" data-lang="en" aria-pressed="false">anglais</button>
+        <button class="txtlink seg-lang" data-lang="all" aria-pressed="false">toutes</button>
       </div>
-    </div>
+    </nav>
 
-    <div id="panels">
-      <p class="loading">Chargement de l'historique…</p>
-    </div>
+    <main id="panels">
+      <p class="loading">chargement de l'historique…</p>
+    </main>
 
+    <hr class="foot-rule">
     <footer>
-      Veille IA · <code>data.json</code> · 7 derniers jours · Sources primaires (max 5) · Articles &amp; Podcasts (10 max/langue) · Projets IA (max 6) &amp; Méthodes de dev IA (max 8, toutes langues).
+      <span>data.json · 7 derniers jours · 5 primaires · 10 articles/podcasts par langue · 6 projets · 8 méthodes</span>
+      <a href="https://github.com/p54974348-ctrl/NewIA/commits/main/data.json" target="_blank" rel="noopener">archives</a>
     </footer>
-  </main>
+  </div>
 
 <script>
   var MAX_PRIMARY = 5;   // sources primaires : max 5 par langue
@@ -206,9 +191,12 @@
   var MAX_PROJETS = 6;   // projets IA (volet A)
   var MAX_METHODES = 8;  // méthodes de dev IA (volet B)
   var MAX_DAYS = 7;
+  var LAUNCH_DATE = '2026-07-12'; // date de lancement — base du numéro d'édition
 
-  var PROJ_CATS = { agents:'🤖 Agents & orchestration', outils:'💻 Outils développeur', rag:'📊 RAG & données', apps:'📦 Apps auto-hébergeables', autre:'Autre' };
-  var METH_CATS = { spec:'📐 Spec & planification', boucles:'🔁 Boucles & harness', contexte:'📄 Conventions & contexte', workflows:'🔀 Workflows & intégration', prompting:'✍️ Techniques de prompting', autre:'Autre' };
+  var PROJ_CATS = { agents:'agents & orchestration', outils:'outils développeur', rag:'rag & données', apps:'apps auto-hébergeables', autre:'autre' };
+  var METH_CATS = { spec:'spec & planification', boucles:'boucles & harness', contexte:'conventions & contexte', workflows:'workflows & intégration', prompting:'techniques de prompting', autre:'autre' };
+  var DOW = ['dim.','lun.','mar.','mer.','jeu.','ven.','sam.'];
+  var MON = ['janv.','févr.','mars','avr.','mai','juin','juil.','août','sept.','oct.','nov.','déc.'];
 
   var esc = function (s) {
     return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
@@ -216,110 +204,86 @@
     });
   };
   function langOf(it) { return (it && it.lang === 'en') ? 'en' : 'fr'; }
-
-  function hueOf(s) { s = String(s || ''); var h = 0; for (var k = 0; k < s.length; k++) h = (h * 31 + s.charCodeAt(k)) % 360; return h; }
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function shortDate(iso) {
+    var d = new Date(iso + 'T12:00:00Z');
+    if (isNaN(d)) return iso;
+    return DOW[d.getUTCDay()] + ' ' + d.getUTCDate() + ' ' + MON[d.getUTCMonth()] + ' ' + d.getUTCFullYear();
+  }
   function monoOf(s) { var m = String(s || '?').match(/[A-Za-zÀ-ÿ0-9]/); return m ? m[0].toUpperCase() : '?'; }
 
-  function thumbHTML(it, rank) {
+  function metaLine(parts) { return parts.filter(Boolean).join(' · '); }
+  function langTag(lang) { return '<span class="lang">' + (lang === 'en' ? 'en' : 'fr') + '</span>'; }
+
+  function thumbHTML(it) {
     var img = it.image
       ? '<img class="post-thumb-img" src="' + esc(it.image) + '" alt="" loading="lazy" referrerpolicy="no-referrer">'
       : '';
-    return '<div class="post-thumb" style="--h:' + hueOf(it.source || it.titre) + '">' +
-      '<span class="post-thumb-mono" aria-hidden="true">' + esc(monoOf(it.source || it.titre)) + '</span>' +
-      img + '<span class="post-rankbadge">' + rank + '</span></div>';
+    return '<div class="post-thumb"><span class="post-thumb-mono" aria-hidden="true">' + esc(monoOf(it.source || it.titre)) + '</span>' + img + '</div>';
   }
 
-  function postRow(it, rank, action) {
+  function linkAttrs(it, action) {
+    if (!it.lien) return '';
+    return ' data-href="' + esc(it.lien) + '" tabindex="0" role="link" aria-label="' + esc((action || 'Ouvrir') + ' : ' + it.titre) + '"';
+  }
+
+  function postRow(it, rank, type, action) {
     var lang = langOf(it);
-    var hasLink = !!it.lien;
-    var go = hasLink ? ' <span class="go" aria-hidden="true">↗</span>' : '';
-    var cls = 'post' + (hasLink ? ' row-link' : '');
-    var linkAttrs = hasLink
-      ? ' data-href="' + esc(it.lien) + '" tabindex="0" role="link" aria-label="' + esc((action || 'Ouvrir') + ' : ' + it.titre) + '"'
-      : '';
-    var dateHTML = it.date ? '<span class="post-date">📅 ' + esc(it.date) + '</span>' : '';
-    return '<article class="' + cls + '" data-lang="' + lang + '"' + linkAttrs + '>' +
-      thumbHTML(it, rank) +
+    return '<article class="post' + (it.lien ? ' row-link' : '') + '" data-lang="' + lang + '"' + linkAttrs(it, action) + '>' +
+      '<span class="post-no" aria-hidden="true">' + pad2(rank) + '</span>' +
+      thumbHTML(it) +
       '<div class="post-body">' +
-        '<h3 class="post-title">' + esc(it.titre) + go + '</h3>' +
-        '<p class="post-meta"><span class="tag">' + esc(it.source) + '</span>' +
-          '<span class="lang-badge lb-' + lang + '">' + (lang === 'en' ? 'EN' : 'FR') + '</span>' + dateHTML + '</p>' +
+        '<h3 class="post-title">' + esc(it.titre) + '</h3>' +
+        '<p class="post-meta">' + metaLine([type, esc(it.source), langTag(lang), esc(it.date)]) + '</p>' +
         '<p class="post-excerpt">' + esc(it.resume) + '</p>' +
       '</div></article>';
-  }
-
-  function postsHTML(items, action, maxN) {
-    items = items || [];
-    var fr = items.filter(function (it) { return langOf(it) === 'fr'; }).slice(0, maxN);
-    var en = items.filter(function (it) { return langOf(it) === 'en'; }).slice(0, maxN);
-    if (!fr.length && !en.length) return '<p class="empty">Aucun élément pour ce volet.</p>';
-    var html = fr.map(function (it, i) { return postRow(it, i + 1, action); }).join('') +
-               en.map(function (it, i) { return postRow(it, i + 1, action); }).join('');
-    return '<div class="posts">' + html + '</div>';
   }
 
   function projRow(it, rank) {
     var lang = langOf(it);
-    var hasLink = !!it.lien;
-    var go = hasLink ? ' <span class="go" aria-hidden="true">↗</span>' : '';
-    var linkAttrs = hasLink
-      ? ' data-href="' + esc(it.lien) + '" tabindex="0" role="link" aria-label="' + esc('Ouvrir le dépôt : ' + it.titre) + '"'
-      : '';
-    var meta = '<span class="tag">' + esc(PROJ_CATS[it.categorie] || it.categorie || 'Projet') + '</span>' +
-      '<span class="lang-badge lb-' + lang + '">' + (lang === 'en' ? 'EN' : 'FR') + '</span>' +
-      (it.licence ? '<span class="post-date">⚖️ ' + esc(it.licence) + '</span>' : '') +
-      (it.stars != null ? '<span class="post-date">⭐ ' + esc(it.stars) + '</span>' : '') +
-      (it.date ? '<span class="post-date">📅 ' + esc(it.date) + '</span>' : '');
-    return '<article class="post' + (hasLink ? ' row-link' : '') + '" data-lang="' + lang + '"' + linkAttrs + '>' +
-      thumbHTML(it, rank) +
-      '<div class="post-body">' +
-        '<h3 class="post-title">' + esc(it.titre) + go + '</h3>' +
-        '<p class="post-meta">' + meta + '</p>' +
-        '<p class="post-excerpt">' + esc(it.resume) + '</p>' +
-      '</div></article>';
+    var lic = it.licence ? 'licence : ' + esc(it.licence) : '';
+    var stars = (it.stars != null) ? esc(it.stars) + ' étoiles' : '';
+    return '<article class="post' + (it.lien ? ' row-link' : '') + '" data-lang="' + lang + '"' + linkAttrs(it, 'Ouvrir le dépôt') + '>' +
+      '<span class="post-no" aria-hidden="true">' + pad2(rank) + '</span>' +
+      '<h3 class="post-title">' + esc(it.titre) + '</h3>' +
+      '<p class="post-meta">' + metaLine([esc(PROJ_CATS[it.categorie] || it.categorie || 'projet'), esc(it.source), langTag(lang), esc(it.date), lic, stars]) + '</p>' +
+      '<p class="post-excerpt">' + esc(it.resume) + '</p>' +
+    '</article>';
   }
 
   function methRow(it, rank) {
     var lang = langOf(it);
-    var hasLink = !!it.lien;
-    var go = hasLink ? ' <span class="go" aria-hidden="true">↗</span>' : '';
-    var linkAttrs = hasLink
-      ? ' data-href="' + esc(it.lien) + '" tabindex="0" role="link" aria-label="' + esc('Ouvrir la ressource : ' + it.titre) + '"'
-      : '';
-    var meta = '<span class="tag">' + esc(METH_CATS[it.categorie] || it.categorie || 'Méthode') + '</span>' +
-      (it.type ? '<span class="lang-badge">' + esc(String(it.type).toUpperCase()) + '</span>' : '') +
-      '<span class="lang-badge lb-' + lang + '">' + (lang === 'en' ? 'EN' : 'FR') + '</span>' +
-      (it.maturite ? '<span class="post-date">🌡️ ' + esc(it.maturite) + '</span>' : '') +
-      (it.date ? '<span class="post-date">📅 ' + esc(it.date) + '</span>' : '');
     var body =
-      (it.pratique ? '<p class="post-excerpt"><strong>Pratique :</strong> ' + esc(it.pratique) + '</p>' : '') +
-      (it.applicabilite ? '<p class="post-excerpt"><strong>Applicabilité :</strong> ' + esc(it.applicabilite) + '</p>' : '');
-    return '<article class="post' + (hasLink ? ' row-link' : '') + '" data-lang="' + lang + '"' + linkAttrs + '>' +
-      thumbHTML(it, rank) +
-      '<div class="post-body">' +
-        '<h3 class="post-title">' + esc(it.titre) + go + '</h3>' +
-        '<p class="post-meta">' + meta + '</p>' + body +
-      '</div></article>';
+      (it.pratique ? '<p class="post-excerpt"><span class="lbl">pratique —</span> ' + esc(it.pratique) + '</p>' : '') +
+      (it.applicabilite ? '<p class="post-excerpt"><span class="lbl">applicabilité —</span> ' + esc(it.applicabilite) + '</p>' : '');
+    return '<article class="post' + (it.lien ? ' row-link' : '') + '" data-lang="' + lang + '"' + linkAttrs(it, 'Ouvrir la ressource') + '>' +
+      '<span class="post-no" aria-hidden="true">' + pad2(rank) + '</span>' +
+      '<h3 class="post-title">' + esc(it.titre) + '</h3>' +
+      '<p class="post-meta">' + metaLine([esc(it.type || ''), esc(METH_CATS[it.categorie] || it.categorie || 'méthode'), langTag(lang), esc(it.date), it.maturite ? 'maturité : ' + esc(it.maturite) : '']) + '</p>' +
+      body +
+    '</article>';
+  }
+
+  function postsHTML(items, type, action, maxN) {
+    items = items || [];
+    var fr = items.filter(function (it) { return langOf(it) === 'fr'; }).slice(0, maxN);
+    var en = items.filter(function (it) { return langOf(it) === 'en'; }).slice(0, maxN);
+    if (!fr.length && !en.length) return '<p class="empty">aucun élément pour ce volet.</p>';
+    var all = fr.concat(en);
+    return all.map(function (it, i) { return postRow(it, i + 1, type, action); }).join('');
   }
 
   function listHTML(items, rowFn, maxN) {
     items = (items || []).slice(0, maxN);
-    if (!items.length) return '<p class="empty">Aucun élément pour ce volet.</p>';
-    return '<div class="posts">' + items.map(function (it, i) { return rowFn(it, i + 1); }).join('') + '</div>';
+    if (!items.length) return '<p class="empty">aucun élément pour ce volet.</p>';
+    return items.map(function (it, i) { return rowFn(it, i + 1); }).join('');
   }
 
-  function sectionListHTML(cls, titre, items, rowFn, maxN) {
+  function sectionHTML(cls, titre, inner) {
     return '<section class="sec ' + cls + '">' +
       '<div class="sec-head"><h2>' + titre + '</h2><span class="count"></span></div>' +
-      listHTML(items, rowFn, maxN) +
-    '</section>';
-  }
-
-  function sectionHTML(cls, titre, items, action, maxN) {
-    return '<section class="sec ' + cls + '">' +
-      '<div class="sec-head"><h2>' + titre + '</h2><span class="count"></span></div>' +
-      postsHTML(items, action, maxN) +
-      '<p class="empty sec-empty" hidden>Aucune nouveauté pour cette langue sur ce volet.</p>' +
+      inner +
+      '<p class="empty sec-empty" hidden>aucune nouveauté pour cette langue sur ce volet.</p>' +
     '</section>';
   }
 
@@ -335,41 +299,44 @@
     panels.innerHTML = '';
 
     if (!days.length) {
-      panels.innerHTML = '<p class="error">Aucune donnée de veille disponible.</p>';
+      panels.innerHTML = '<p class="error">aucune donnée de veille disponible.</p>';
       return;
     }
 
-    function cap(arr, lang, maxN) { return (arr || []).filter(function (it) { return langOf(it) === lang; }).slice(0, maxN).length; }
+    /* numéro d'édition : jours écoulés depuis la date de lancement */
+    var top = days[0].date || LAUNCH_DATE;
+    var no = Math.floor((Date.parse(top) - Date.parse(LAUNCH_DATE)) / 86400000) + 1;
+    document.getElementById('edition').textContent = 'n° ' + no + ' — ' + shortDate(top);
 
     days.forEach(function (day, i) {
       var id = 'jour-' + (day.date || i);
-      var total =
-        cap(day.primaires, 'fr', MAX_PRIMARY) + cap(day.primaires, 'en', MAX_PRIMARY) +
-        cap(day.articles, 'fr', MAX_ITEMS) + cap(day.articles, 'en', MAX_ITEMS) +
-        cap(day.podcasts, 'fr', MAX_ITEMS) + cap(day.podcasts, 'en', MAX_ITEMS) +
-        Math.min((day.projets || []).length, MAX_PROJETS) +
-        Math.min((day.methodes || []).length, MAX_METHODES);
 
       var tab = document.createElement('button');
-      tab.className = 'tab'; tab.setAttribute('role', 'tab'); tab.id = 'tab-' + id;
+      tab.className = 'txtlink'; tab.setAttribute('role', 'tab'); tab.id = 'tab-' + id;
       tab.setAttribute('aria-controls', 'panel-' + id);
       tab.setAttribute('aria-selected', i === 0 ? 'true' : 'false');
       tab.tabIndex = i === 0 ? 0 : -1;
-      tab.innerHTML = esc(day.label || day.date) + '<span class="badge">' + total + '</span>';
+      tab.textContent = shortDate(day.date || '');
       tabs.appendChild(tab);
 
-      var notes = day.notes ? '<div class="notes"><strong>⚠️ Notes —</strong> ' + esc(day.notes) + '</div>' : '';
+      var notes = day.notes ? '<div class="notes"><strong>notes —</strong> ' + esc(day.notes) + '</div>' : '';
 
       var panel = document.createElement('section');
       panel.className = 'panel' + (i === 0 ? ' active' : ''); panel.id = 'panel-' + id;
       panel.setAttribute('role', 'tabpanel'); panel.setAttribute('aria-labelledby', 'tab-' + id);
       panel.innerHTML =
-        '<p class="panel-date">Veille du ' + esc(day.label || day.date) + '</p>' +
-        sectionHTML('sec-primaires', '🔬 Sources primaires', day.primaires, 'Ouvrir', MAX_PRIMARY) +
-        sectionHTML('sec-articles', '📰 Articles', day.articles, 'Ouvrir', MAX_ITEMS) +
-        sectionHTML('sec-podcasts', '🎙️ Podcasts', day.podcasts, 'Écouter', MAX_ITEMS) +
-        sectionListHTML('sec-projets', '🧩 Projets IA', day.projets, projRow, MAX_PROJETS) +
-        sectionListHTML('sec-methodes', '📐 Méthodes de dev IA', day.methodes, methRow, MAX_METHODES) +
+        '<p class="panel-date">veille du ' + esc(day.label || day.date) + '</p>' +
+        '<div class="day-grid">' +
+          '<div class="col-main">' +
+            sectionHTML('sec-primaires', 'sources primaires', postsHTML(day.primaires, 'primaire', 'Ouvrir', MAX_PRIMARY)) +
+            sectionHTML('sec-articles', 'articles', postsHTML(day.articles, 'article', 'Ouvrir', MAX_ITEMS)) +
+            sectionHTML('sec-podcasts', 'podcasts', postsHTML(day.podcasts, 'podcast', 'Écouter', MAX_ITEMS)) +
+          '</div>' +
+          '<aside class="col-aside">' +
+            sectionHTML('sec-projets', 'projets ia', listHTML(day.projets, projRow, MAX_PROJETS)) +
+            sectionHTML('sec-methodes', 'méthodes de dev ia', listHTML(day.methodes, methRow, MAX_METHODES)) +
+          '</aside>' +
+        '</div>' +
         notes;
       panels.appendChild(panel);
 
@@ -378,7 +345,7 @@
 
     tabs.addEventListener('keydown', function (e) {
       if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
-      var l = Array.prototype.slice.call(tabs.querySelectorAll('.tab'));
+      var l = Array.prototype.slice.call(tabs.querySelectorAll('.txtlink'));
       var cur = l.indexOf(document.activeElement);
       if (cur === -1) return;
       var next = e.key === 'ArrowRight' ? (cur + 1) % l.length : (cur - 1 + l.length) % l.length;
@@ -389,7 +356,7 @@
   }
 
   function select(id) {
-    document.querySelectorAll('.tab').forEach(function (t) {
+    document.querySelectorAll('#tabs .txtlink').forEach(function (t) {
       var on = t.id === 'tab-' + id;
       t.setAttribute('aria-selected', on ? 'true' : 'false'); t.tabIndex = on ? 0 : -1;
     });
@@ -408,7 +375,7 @@
         if (exempt || lang === 'all' || p.getAttribute('data-lang') === lang) visible++;
       });
       var c = sec.querySelector('.count');
-      if (c) c.textContent = visible + ' item' + (visible > 1 ? 's' : '');
+      if (c) c.textContent = visible;
       var e = sec.querySelector('.sec-empty');
       if (e) e.hidden = visible !== 0;
     });
@@ -451,7 +418,7 @@
     .then(render)
     .catch(function (err) {
       document.getElementById('panels').innerHTML =
-        '<p class="error">Impossible de charger l\'historique (' + esc(err.message) + ').</p>';
+        '<p class="error">impossible de charger l\'historique (' + esc(err.message) + ').</p>';
     });
 </script>
 </body>
