@@ -16,6 +16,8 @@
     --podcast:#8a4bd6; --podcast-ink:#6a2fb5; --podcast-bg:#f1e9fb;
     --primary:#c2410c; --primary-ink:#9a3412; --primary-bg:#fdece3;
     --en:#0a8a6a; --en-ink:#0a6a52; --en-bg:#e2f5ef;
+    --proj:#0f766e; --proj-ink:#115e59; --proj-bg:#e6f4f2;
+    --meth:#b45309; --meth-ink:#92400e; --meth-bg:#fcf0df;
     --shadow:0 1px 2px rgba(20,32,43,.04), 0 10px 30px -20px rgba(20,32,43,.35);
   }
   @media (prefers-color-scheme: dark) {
@@ -26,6 +28,8 @@
       --podcast:#b28cf0; --podcast-ink:#cbb0f7; --podcast-bg:#231a33;
       --primary:#f08a4b; --primary-ink:#f4b183; --primary-bg:#2a1a10;
       --en:#4fc9a6; --en-ink:#8fe0c9; --en-bg:#12291f;
+      --proj:#3fc1b0; --proj-ink:#8ee3d6; --proj-bg:#0f2926;
+      --meth:#e0a34a; --meth-ink:#f0c98a; --meth-bg:#2b2010;
       --shadow:0 1px 2px rgba(0,0,0,.3), 0 12px 34px -20px rgba(0,0,0,.85);
     }
   }
@@ -78,12 +82,16 @@
   @media (prefers-reduced-motion:reduce) { .panel.active { animation:none; } .tab,.seg,.post,.post-title,.go { transition:none; } }
 
   /* Filtre type (contenu) */
-  #panels[data-filter="primaires"] .sec-articles, #panels[data-filter="primaires"] .sec-podcasts { display:none; }
-  #panels[data-filter="articles"] .sec-primaires, #panels[data-filter="articles"] .sec-podcasts { display:none; }
-  #panels[data-filter="podcasts"] .sec-primaires, #panels[data-filter="podcasts"] .sec-articles { display:none; }
+  #panels[data-filter="primaires"] .sec:not(.sec-primaires) { display:none; }
+  #panels[data-filter="articles"] .sec:not(.sec-articles) { display:none; }
+  #panels[data-filter="podcasts"] .sec:not(.sec-podcasts) { display:none; }
+  #panels[data-filter="projets"] .sec:not(.sec-projets) { display:none; }
+  #panels[data-filter="methodes"] .sec:not(.sec-methodes) { display:none; }
   /* Filtre langue (défaut : français uniquement) */
   #panels[data-lang="fr"] .post[data-lang="en"] { display:none; }
   #panels[data-lang="en"] .post[data-lang="fr"] { display:none; }
+  /* Projets & Méthodes : exemptés du filtre langue (contenu majoritairement EN) */
+  #panels[data-lang] .sec-projets .post, #panels[data-lang] .sec-methodes .post { display:flex; }
 
   .panel-date { font-size:.9rem; color:var(--faint); margin:0 0 1.4rem; }
 
@@ -93,6 +101,8 @@
   .sec-primaires .sec-head { border-color:var(--primary); }
   .sec-articles .sec-head { border-color:var(--accent); }
   .sec-podcasts .sec-head { border-color:var(--podcast); }
+  .sec-projets .sec-head { border-color:var(--proj); }
+  .sec-methodes .sec-head { border-color:var(--meth); }
   .sec-head h2 { font-size:1.05rem; margin:0; text-transform:uppercase; letter-spacing:.04em; }
   .sec-head .count { font-size:.82rem; color:var(--faint); font-variant-numeric:tabular-nums; }
 
@@ -105,6 +115,8 @@
   .post:hover { background:var(--accent-bg); }
   .sec-primaires .post:hover { background:var(--primary-bg); }
   .sec-podcasts .post:hover { background:var(--podcast-bg); }
+  .sec-projets .post:hover { background:var(--proj-bg); }
+  .sec-methodes .post:hover { background:var(--meth-bg); }
   .post-thumb {
     flex:0 0 auto; position:relative; width:128px; height:72px; margin-top:.15rem; /* 16:9 */
     border-radius:10px; overflow:hidden; border:1px solid var(--border);
@@ -124,11 +136,15 @@
   .post:hover .post-title { color:var(--accent-ink); }
   .sec-primaires .post:hover .post-title { color:var(--primary-ink); }
   .sec-podcasts .post:hover .post-title { color:var(--podcast-ink); }
+  .sec-projets .post:hover .post-title { color:var(--proj-ink); }
+  .sec-methodes .post:hover .post-title { color:var(--meth-ink); }
   .post:hover .post-title .go { color:var(--accent); }
   .post-meta { margin:0 0 .5rem; display:flex; align-items:center; gap:.4rem; flex-wrap:wrap; }
   .tag { display:inline-block; font-size:.7rem; font-weight:700; letter-spacing:.04em; text-transform:uppercase; color:var(--accent-ink); background:var(--accent-bg); padding:.2rem .55rem; border-radius:6px; }
   .sec-primaires .tag { color:var(--primary-ink); background:var(--primary-bg); }
   .sec-podcasts .tag { color:var(--podcast-ink); background:var(--podcast-bg); }
+  .sec-projets .tag { color:var(--proj-ink); background:var(--proj-bg); }
+  .sec-methodes .tag { color:var(--meth-ink); background:var(--meth-bg); }
   .lang-badge { font-size:.64rem; font-weight:700; letter-spacing:.04em; padding:.15rem .4rem; border-radius:5px; border:1px solid var(--border); color:var(--faint); }
   .lang-badge.lb-en { color:var(--en-ink); background:var(--en-bg); border-color:transparent; }
   .post-date { font-size:.74rem; color:var(--faint); font-variant-numeric:tabular-nums; }
@@ -160,6 +176,8 @@
             <button class="seg seg-type" data-filter="primaires" aria-pressed="false">Primaires</button>
             <button class="seg seg-type" data-filter="articles" aria-pressed="false">Articles</button>
             <button class="seg seg-type" data-filter="podcasts" aria-pressed="false">Podcasts</button>
+            <button class="seg seg-type" data-filter="projets" aria-pressed="false">Projets</button>
+            <button class="seg seg-type" data-filter="methodes" aria-pressed="false">Méthodes</button>
           </div>
         </div>
         <div class="filter">
@@ -178,14 +196,19 @@
     </div>
 
     <footer>
-      Veille IA · <code>data.json</code> · 7 derniers jours · Sources primaires (max 5) · Articles &amp; Podcasts (10 max/langue).
+      Veille IA · <code>data.json</code> · 7 derniers jours · Sources primaires (max 5) · Articles &amp; Podcasts (10 max/langue) · Projets IA (max 6) &amp; Méthodes de dev IA (max 8, toutes langues).
     </footer>
   </main>
 
 <script>
   var MAX_PRIMARY = 5;   // sources primaires : max 5 par langue
   var MAX_ITEMS = 10;    // articles / podcasts : 10 max par langue
+  var MAX_PROJETS = 6;   // projets IA (volet A)
+  var MAX_METHODES = 8;  // méthodes de dev IA (volet B)
   var MAX_DAYS = 7;
+
+  var PROJ_CATS = { agents:'🤖 Agents & orchestration', outils:'💻 Outils développeur', rag:'📊 RAG & données', apps:'📦 Apps auto-hébergeables' };
+  var METH_CATS = { spec:'📐 Spec & planification', boucles:'🔁 Boucles & harness', contexte:'📄 Conventions & contexte', workflows:'🔀 Workflows & intégration' };
 
   var esc = function (s) {
     return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
@@ -235,6 +258,63 @@
     return '<div class="posts">' + html + '</div>';
   }
 
+  function projRow(it, rank) {
+    var lang = langOf(it);
+    var hasLink = !!it.lien;
+    var go = hasLink ? ' <span class="go" aria-hidden="true">↗</span>' : '';
+    var linkAttrs = hasLink
+      ? ' data-href="' + esc(it.lien) + '" tabindex="0" role="link" aria-label="' + esc('Ouvrir le dépôt : ' + it.titre) + '"'
+      : '';
+    var meta = '<span class="tag">' + esc(PROJ_CATS[it.categorie] || it.categorie || 'Projet') + '</span>' +
+      '<span class="lang-badge lb-' + lang + '">' + (lang === 'en' ? 'EN' : 'FR') + '</span>' +
+      (it.licence ? '<span class="post-date">⚖️ ' + esc(it.licence) + '</span>' : '') +
+      (it.stars != null ? '<span class="post-date">⭐ ' + esc(it.stars) + '</span>' : '') +
+      (it.date ? '<span class="post-date">📅 ' + esc(it.date) + '</span>' : '');
+    return '<article class="post' + (hasLink ? ' row-link' : '') + '" data-lang="' + lang + '"' + linkAttrs + '>' +
+      thumbHTML(it, rank) +
+      '<div class="post-body">' +
+        '<h3 class="post-title">' + esc(it.titre) + go + '</h3>' +
+        '<p class="post-meta">' + meta + '</p>' +
+        '<p class="post-excerpt">' + esc(it.resume) + '</p>' +
+      '</div></article>';
+  }
+
+  function methRow(it, rank) {
+    var lang = langOf(it);
+    var hasLink = !!it.lien;
+    var go = hasLink ? ' <span class="go" aria-hidden="true">↗</span>' : '';
+    var linkAttrs = hasLink
+      ? ' data-href="' + esc(it.lien) + '" tabindex="0" role="link" aria-label="' + esc('Ouvrir la ressource : ' + it.titre) + '"'
+      : '';
+    var meta = '<span class="tag">' + esc(METH_CATS[it.categorie] || it.categorie || 'Méthode') + '</span>' +
+      (it.type ? '<span class="lang-badge">' + esc(String(it.type).toUpperCase()) + '</span>' : '') +
+      '<span class="lang-badge lb-' + lang + '">' + (lang === 'en' ? 'EN' : 'FR') + '</span>' +
+      (it.maturite ? '<span class="post-date">🌡️ ' + esc(it.maturite) + '</span>' : '') +
+      (it.date ? '<span class="post-date">📅 ' + esc(it.date) + '</span>' : '');
+    var body =
+      (it.pratique ? '<p class="post-excerpt"><strong>Pratique :</strong> ' + esc(it.pratique) + '</p>' : '') +
+      (it.applicabilite ? '<p class="post-excerpt"><strong>Applicabilité :</strong> ' + esc(it.applicabilite) + '</p>' : '');
+    return '<article class="post' + (hasLink ? ' row-link' : '') + '" data-lang="' + lang + '"' + linkAttrs + '>' +
+      thumbHTML(it, rank) +
+      '<div class="post-body">' +
+        '<h3 class="post-title">' + esc(it.titre) + go + '</h3>' +
+        '<p class="post-meta">' + meta + '</p>' + body +
+      '</div></article>';
+  }
+
+  function listHTML(items, rowFn, maxN) {
+    items = (items || []).slice(0, maxN);
+    if (!items.length) return '<p class="empty">Aucun élément pour ce volet.</p>';
+    return '<div class="posts">' + items.map(function (it, i) { return rowFn(it, i + 1); }).join('') + '</div>';
+  }
+
+  function sectionListHTML(cls, titre, items, rowFn, maxN) {
+    return '<section class="sec ' + cls + '">' +
+      '<div class="sec-head"><h2>' + titre + '</h2><span class="count"></span></div>' +
+      listHTML(items, rowFn, maxN) +
+    '</section>';
+  }
+
   function sectionHTML(cls, titre, items, action, maxN) {
     return '<section class="sec ' + cls + '">' +
       '<div class="sec-head"><h2>' + titre + '</h2><span class="count"></span></div>' +
@@ -266,7 +346,9 @@
       var total =
         cap(day.primaires, 'fr', MAX_PRIMARY) + cap(day.primaires, 'en', MAX_PRIMARY) +
         cap(day.articles, 'fr', MAX_ITEMS) + cap(day.articles, 'en', MAX_ITEMS) +
-        cap(day.podcasts, 'fr', MAX_ITEMS) + cap(day.podcasts, 'en', MAX_ITEMS);
+        cap(day.podcasts, 'fr', MAX_ITEMS) + cap(day.podcasts, 'en', MAX_ITEMS) +
+        Math.min((day.projets || []).length, MAX_PROJETS) +
+        Math.min((day.methodes || []).length, MAX_METHODES);
 
       var tab = document.createElement('button');
       tab.className = 'tab'; tab.setAttribute('role', 'tab'); tab.id = 'tab-' + id;
@@ -286,6 +368,8 @@
         sectionHTML('sec-primaires', '🔬 Sources primaires', day.primaires, 'Ouvrir', MAX_PRIMARY) +
         sectionHTML('sec-articles', '📰 Articles', day.articles, 'Ouvrir', MAX_ITEMS) +
         sectionHTML('sec-podcasts', '🎙️ Podcasts', day.podcasts, 'Écouter', MAX_ITEMS) +
+        sectionListHTML('sec-projets', '🧩 Projets IA', day.projets, projRow, MAX_PROJETS) +
+        sectionListHTML('sec-methodes', '📐 Méthodes de dev IA', day.methodes, methRow, MAX_METHODES) +
         notes;
       panels.appendChild(panel);
 
@@ -318,9 +402,10 @@
     var active = panels.querySelector('.panel.active');
     if (!active) return;
     active.querySelectorAll('.sec').forEach(function (sec) {
+      var exempt = sec.classList.contains('sec-projets') || sec.classList.contains('sec-methodes');
       var visible = 0;
       sec.querySelectorAll('.post').forEach(function (p) {
-        if (lang === 'all' || p.getAttribute('data-lang') === lang) visible++;
+        if (exempt || lang === 'all' || p.getAttribute('data-lang') === lang) visible++;
       });
       var c = sec.querySelector('.count');
       if (c) c.textContent = visible + ' item' + (visible > 1 ? 's' : '');
