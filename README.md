@@ -7,7 +7,7 @@ Veille technologique IA quotidienne, publiée automatiquement sur GitHub Pages :
 
 | Élément | Rôle |
 |---|---|
-| `index.html` | Page unique autonome (HTML + CSS + JS inline). Charge `data.json` côté client et affiche les 7 derniers jours. **Ne pas modifier lors de la veille quotidienne.** |
+| `index.html` | Page unique autonome (HTML + CSS + JS inline). Charge `data.json` côté client et affiche les **5 derniers jours** (l'historique complet de 7 jours reste dans `data.json`). **Ne pas modifier lors de la veille quotidienne.** |
 | `data.json` | Données de la veille — le **seul** fichier modifié chaque jour par la routine. |
 | `.github/workflows/deploy-pages.yml` | CI : à chaque push de `index.html` ou `data.json` sur `main`, déploie le site sur GitHub Pages. |
 | Routine Claude (quotidienne, 05:00 UTC) | Recherche web (FR/EN), construit la journée du jour, met à jour `data.json`, commit + push sur `main`, vérifie la publication. |
@@ -29,7 +29,7 @@ règles de contenu) :
 ```jsonc
 {
   "generatedAt": "AAAA-MM-JJ…",     // date ISO de génération
-  "days": [                          // 7 jours max, tri décroissant
+  "days": [                          // 7 jours max conservés (5 affichés), tri décroissant
     {
       "date": "AAAA-MM-JJ",
       "label": "dimanche 19 juillet 2026",
