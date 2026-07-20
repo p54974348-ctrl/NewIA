@@ -1,6 +1,83 @@
 {
-  "generatedAt": "2026-07-19",
+  "generatedAt": "2026-07-20",
   "days": [
+    {
+      "date": "2026-07-20",
+      "label": "lundi 20 juillet 2026",
+      "notes": "Audit interne. Lundi 05h07 UTC : presse du jour non parue, week-end calme - quotas tres en dessous (1 primaire, 1 article FR, 1 article EN). Fenetre etendue a 72h pour couvrir l'avis 26-A-05 de l'Autorite de la concurrence (17/07) et l'analyse CNBC (17/07), evenements majeurs du week-end. Dedup : sujet Kimi K3 deja traite les 18 et 19/07, un seul angle nouveau conserve (bascule open-weight, CNBC) ; avis Adlc = source officielle + 1 analyse (Clubic, date de publication non affichee dans les resultats, champ date omis) ; ppc.land et KultureGeek exclus (dedup / date invisible). Exclus : digests (ThursdAI, aiagentstore, pricepertoken, crescendo, secretsdedata, zonetechify), Grok Build CLI (pas de source directe datee), Alteryx Agent Studio (20/05, hors fenetre), guides SDD/AGENTS.md/Fowler (dates non verifiables). Section 4 vide : WebFetch toujours bloque par le proxy (403), licences/activite/fenetre 7j inverifiables pour les candidats. B5 : rien de neuf (nominal). Podcasts : liens emission Spotify, datation d'episode inverifiable ici.",
+      "primaires": [
+        {
+          "titre": "L'Autorité de la concurrence rend son avis 26-A-05 sur le secteur des agents d'IA",
+          "source": "Autorité de la concurrence",
+          "lang": "fr",
+          "date": "17/07/2026",
+          "lien": "https://www.autoritedelaconcurrence.fr/fr/avis/relatif-au-fonctionnement-concurrentiel-du-secteur-des-agents-dintelligence-artificielle",
+          "resume": "L'avis constate qu'OpenAI, Google et Anthropic detiennent ensemble plus de 84 % du marche des agents d'IA et identifie les barrieres concurrentielles : acces aux modeles, aux donnees de qualite et aux capacites d'inference.",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une balance dont un plateau porte trois grandes formes identiques serrées et l'autre une multitude de petites formes dispersées, symbolisant un marché concentré sous supervision. Composition : une balance principale, deux groupes de formes secondaires. Palette : bordeaux, gris, beige. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20balance%20dont%20un%20plateau%20porte%20trois%20grandes%20formes%20identiques%20serr%C3%A9es%20et%20l%27autre%20une%20multitude%20de%20petites%20formes%20dispers%C3%A9es%2C%20symbolisant%20un%20march%C3%A9%20concentr%C3%A9%20sous%20supervision.%20Composition%20%3A%20une%20balance%20principale%2C%20deux%20groupes%20de%20formes%20secondaires.%20Palette%20%3A%20bordeaux%2C%20gris%2C%20beige.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=9101"
+        }
+      ],
+      "articles": [
+        {
+          "titre": "L'Autorité de la concurrence pointe la mainmise d'OpenAI, Anthropic et Google sur les agents d'IA",
+          "source": "Clubic",
+          "lang": "fr",
+          "lien": "https://www.clubic.com/actualite-621760-l-autorite-de-la-concurrence-pointe-la-mainmise-d-openai-anthropic-et-google-sur-les-agents-d-ia.html",
+          "resume": "Analyse de l'avis : integration des agents dans les ecosystemes existants (Copilot/Office, Gemini/Android, Meta AI/WhatsApp) et risque de verrouillage pour les nouveaux entrants comme Mistral ou Perplexity.",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant trois engrenages massifs imbriqués entraînant une longue chaîne de petits engrenages, symbolisant la dépendance d'un écosystème à quelques acteurs. Composition : trois engrenages principaux, deux files de petits engrenages secondaires. Palette : orange, bleu pétrole. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20trois%20engrenages%20massifs%20imbriqu%C3%A9s%20entra%C3%AEnant%20une%20longue%20cha%C3%AEne%20de%20petits%20engrenages%2C%20symbolisant%20la%20d%C3%A9pendance%20d%27un%20%C3%A9cosyst%C3%A8me%20%C3%A0%20quelques%20acteurs.%20Composition%20%3A%20trois%20engrenages%20principaux%2C%20deux%20files%20de%20petits%20engrenages%20secondaires.%20Palette%20%3A%20orange%2C%20bleu%20p%C3%A9trole.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=9102"
+        },
+        {
+          "titre": "Chinese AI has leveled up, and brought renewed focus on the open weight model shift",
+          "source": "CNBC",
+          "lang": "en",
+          "date": "17/07/2026",
+          "lien": "https://www.cnbc.com/2026/07/17/moonshot-ai-kimi-k3-model-openai-anthropic-china.html",
+          "resume": "Kimi K3 est disponible via l'API de Moonshot et la publication complete des poids est annoncee pour le 27 juillet sous licence MIT modifiee, relancant le debat sur les modeles ouverts face aux laboratoires americains.",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un coffre ouvert d'où s'écoulent des flux réguliers de particules vers plusieurs directions, symbolisant la diffusion des modèles à poids ouverts. Composition : un coffre principal, deux flux secondaires. Palette : orange, bleu pétrole. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20coffre%20ouvert%20d%27o%C3%B9%20s%27%C3%A9coulent%20des%20flux%20r%C3%A9guliers%20de%20particules%20vers%20plusieurs%20directions%2C%20symbolisant%20la%20diffusion%20des%20mod%C3%A8les%20%C3%A0%20poids%20ouverts.%20Composition%20%3A%20un%20coffre%20principal%2C%20deux%20flux%20secondaires.%20Palette%20%3A%20orange%2C%20bleu%20p%C3%A9trole.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=9103"
+        }
+      ],
+      "podcasts": [
+        {
+          "titre": "Comptoir IA",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
+          "resume": "Nicolas Guyon interviewe experts et metiers bouleverses par l'IA ; vulgarisation pointue."
+        },
+        {
+          "titre": "Tech Café",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/1MidB71rbYIRDIrcej073j",
+          "resume": "Actualite tech et IA au sens large, animee par Guillaume Vende."
+        },
+        {
+          "titre": "Data Driven 101 - Le podcast IA & Data",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/5YkpBdd4Si06ghOpcPmqux",
+          "resume": "Marc Sanselme decrypte IA et data science ; interviews d'experts, format accessible."
+        },
+        {
+          "titre": "Best AI Podcast",
+          "source": "Spotify",
+          "lang": "en",
+          "lien": "https://open.spotify.com/show/10otIHvHndpzykwIqrGjsV",
+          "resume": "Curated conversations on artificial intelligence, its tools, breakthroughs and industry trends."
+        },
+        {
+          "titre": "AI and I",
+          "source": "Spotify",
+          "lang": "en",
+          "lien": "https://open.spotify.com/show/5qX1nRTaFsfWdmdj5JWO1G",
+          "resume": "Interviews exploring how people put AI to work in their craft and creative process."
+        }
+      ],
+      "projets": [],
+      "methodes": []
+    },
     {
       "date": "2026-07-19",
       "label": "dimanche 19 juillet 2026",
@@ -624,83 +701,6 @@
           "lien": "https://open.spotify.com/show/5qX1nRTaFsfWdmdj5JWO1G",
           "resume": "Interviews exploring how people put AI to work in their craft and creative process.",
           "date": "14/07/2026"
-        }
-      ],
-      "projets": [],
-      "methodes": []
-    },
-    {
-      "date": "2026-07-13",
-      "label": "lundi 13 juillet 2026",
-      "notes": "Historique de démonstration (7 jours) : items réels avec liens DIRECTS, répartis pour peupler les onglets ; à remplacer par la veille réelle du jour.",
-      "primaires": [
-        {
-          "titre": "Thinking Machines lance Inkling, son premier modèle open-weight",
-          "source": "Thinking Machines",
-          "lang": "en",
-          "lien": "https://thinkingmachines.ai/news/introducing-inkling/",
-          "resume": "Modèle mixture-of-experts de 975 Md de paramètres (41 Md actifs), multimodal ; poids disponibles sur Hugging Face, personnalisable via Tinker.",
-          "date": "15/07/2026",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une graine géométrique s'ouvrant en une structure ramifiée transparente. Palette : bleu profond, violet, accents cyan. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20graine%20g%C3%A9om%C3%A9trique%20s%27ouvrant%20en%20une%20structure%20ramifi%C3%A9e%20transparente.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=27457"
-        }
-      ],
-      "articles": [
-        {
-          "titre": "Microsoft prépare Project Perception, un outil de sécurité IA multi-modèles",
-          "source": "TechRepublic",
-          "lang": "en",
-          "lien": "https://www.techrepublic.com/article/news-microsoft-project-perception-ai-security-tool/",
-          "resume": "Outil combinant des modèles d'Anthropic, OpenAI et Microsoft via un routage intelligent pour détecter et corriger des vulnérabilités à moindre coût, face à Mythos.",
-          "date": "17/07/2026",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un prisme géométrique filtrant plusieurs flux distincts en un bouclier unifié. Palette : vert sauge, gris anthracite, blanc. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20prisme%20g%C3%A9om%C3%A9trique%20filtrant%20plusieurs%20flux%20distincts%20en%20un%20bouclier%20unifi%C3%A9.%20Palette%20%3A%20vert%20sauge%2C%20gris%20anthracite%2C%20blanc.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=28038"
-        },
-        {
-          "titre": "Atos annonce MogwAI, sa plateforme d'IA générative et agentique souveraine",
-          "source": "Atos",
-          "lang": "fr",
-          "lien": "https://atos.net/fr/2026/communiques-de-presse_2026_07_07/atos-annonce-atos-mogwai-sa-plateforme-dia-souveraine",
-          "resume": "Plateforme couvrant toute la chaîne de valeur de l'IA (infrastructure aux usages), architecture agnostique, options SaaS SecNumCloud, on-premise et multicloud.",
-          "date": "07/07/2026",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une plateforme modulaire de blocs interconnectés entourée d'un halo protecteur. Palette : vert sauge, gris anthracite, blanc. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20plateforme%20modulaire%20de%20blocs%20interconnect%C3%A9s%20entour%C3%A9e%20d%27un%20halo%20protecteur.%20Palette%20%3A%20vert%20sauge%2C%20gris%20anthracite%2C%20blanc.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=27928"
-        },
-        {
-          "titre": "AI Act : ce qui change pour les entreprises au 2 août 2026",
-          "source": "Service-Public (Entreprendre)",
-          "lang": "fr",
-          "lien": "https://entreprendre.service-public.gouv.fr/actualites/A18475",
-          "resume": "Le 2 août 2026 active les pouvoirs de sanction et les obligations de transparence (article 50) ; étape clé de conformité pour les systèmes à haut risque.",
-          "date": "02/08/2026",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une balance géométrique en équilibre au centre d'un cadre structuré. Palette : bordeaux, gris, beige. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20balance%20g%C3%A9om%C3%A9trique%20en%20%C3%A9quilibre%20au%20centre%20d%27un%20cadre%20structur%C3%A9.%20Palette%20%3A%20bordeaux%2C%20gris%2C%20beige.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=25725"
-        }
-      ],
-      "podcasts": [
-        {
-          "titre": "Le Comptoir IA",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
-          "resume": "Nicolas Guyon interviewe experts et métiers bouleversés par l'IA ; vulgarisation pointue.",
-          "date": "17/07/2026"
-        },
-        {
-          "titre": "Tech Café",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/1MidB71rbYIRDIrcej073j",
-          "resume": "Actualité tech et IA au sens large, animé par Guillaume Vendé.",
-          "date": "17/07/2026"
-        },
-        {
-          "titre": "Best AI Podcast",
-          "source": "Spotify",
-          "lang": "en",
-          "lien": "https://open.spotify.com/show/10otIHvHndpzykwIqrGjsV",
-          "resume": "Curated conversations on artificial intelligence, its tools, breakthroughs and industry trends.",
-          "date": "17/07/2026"
         }
       ],
       "projets": [],
