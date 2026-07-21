@@ -1,6 +1,81 @@
 {
-  "generatedAt": "2026-07-20",
+  "generatedAt": "2026-07-21",
   "days": [
+    {
+      "date": "2026-07-21",
+      "label": "mardi 21 juillet 2026",
+      "notes": "Audit interne. Aucune annonce officielle verifiable dans la fenetre 24-48h (19-21/07) : primaires vides. Candidats hors fenetre ecartes : Anthropic J-lens/global workspace (06/07, officiel), Gemma 4 12B (03/06, maj furtive 16/07), TechCrunch Vint Cerf (15/07), avis Adlc et CNBC deja traites le 20/07. Sujet du jour : fuite GPT-5.7/GPT-6 (dedup 2 max : LeBigData FR 20/07 + WinCentral EN, date non affichee, champ omis) - rumeur non confirmee par OpenAI, resumes rediges au conditionnel. VentureBeat J-lens : date d'article non affichee, champ omis ; retenu car sujet recherche non encore couvert par la veille. Quotas non atteints (1 FR, 2 EN) : mardi 05h09 UTC, presse du jour non parue. Section 4 vide : verification licences/activite/fenetre impossible (WebFetch 403 via proxy persistant). B5 : rien de neuf (nominal). Podcasts : liens emission Spotify, datation d'episode inverifiable ici.",
+      "primaires": [],
+      "articles": [
+        {
+          "titre": "GPT-6 et GPT-5.7 : une sortie prevue des aout 2026 selon une fuite sur les futurs modeles d'OpenAI",
+          "source": "LeBigData",
+          "lang": "fr",
+          "date": "20/07/2026",
+          "lien": "https://www.lebigdata.fr/gpt-6-et-gpt-5-7-une-sortie-prevue-des-aout-2026-selon-une-fuite-explosive-sur-les-futurs-modeles-dopenai",
+          "resume": "Une fuite evoque un lancement possible de GPT-5.7 et GPT-6 des aout, avec une fenetre de contexte de 1,5 million de tokens et une nouvelle base de pre-entrainement. OpenAI n'a rien confirme.",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant trois sommets successifs dont le plus lointain n'est esquissé qu'en pointillés au-dessus d'une brume, symbolisant une génération de modèles encore à l'état de rumeur. Composition : un sommet principal net, deux sommets secondaires estompés. Palette : bleu profond, violet, accents cyan. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20trois%20sommets%20successifs%20dont%20le%20plus%20lointain%20n%27est%20esquiss%C3%A9%20qu%27en%20pointill%C3%A9s%20au-dessus%20d%27une%20brume%2C%20symbolisant%20une%20g%C3%A9n%C3%A9ration%20de%20mod%C3%A8les%20encore%20%C3%A0%20l%27%C3%A9tat%20de%20rumeur.%20Composition%20%3A%20un%20sommet%20principal%20net%2C%20deux%20sommets%20secondaires%20estomp%C3%A9s.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=10101"
+        },
+        {
+          "titre": "GPT-5.7/GPT-6 leak reveals August launch and 1.5M context window",
+          "source": "WinCentral",
+          "lang": "en",
+          "lien": "https://thewincentral.com/gpt-5-7-gpt-6-leak-august-launch-1-5m-context-window/",
+          "resume": "La meme fuite rapportee cote anglophone : fenetre d'aout, contexte de 1,5 million de tokens, nouvelle fondation de pre-entrainement d'environ 10 000 milliards de parametres. Specifications a traiter comme des rumeurs.",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une fenêtre rectangulaire qui s'agrandit en anneaux concentriques successifs, symbolisant l'extension massive d'une fenêtre de contexte. Composition : une fenêtre principale, deux anneaux secondaires. Palette : bleu profond, violet, accents cyan. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20fen%C3%AAtre%20rectangulaire%20qui%20s%27agrandit%20en%20anneaux%20concentriques%20successifs%2C%20symbolisant%20l%27extension%20massive%20d%27une%20fen%C3%AAtre%20de%20contexte.%20Composition%20%3A%20une%20fen%C3%AAtre%20principale%2C%20deux%20anneaux%20secondaires.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=10102"
+        },
+        {
+          "titre": "Anthropic's new J-lens reveals a silent workspace inside Claude that mirrors a leading theory of consciousness",
+          "source": "VentureBeat",
+          "lang": "en",
+          "lien": "https://venturebeat.com/technology/anthropics-new-j-lens-reveals-a-silent-workspace-inside-claude-that-mirrors-a-leading-theory-of-consciousness",
+          "resume": "Analyse de la recherche d'Anthropic sur le J-lens : un petit sous-espace interne de Claude se comporte comme un espace de travail global, ou transitent les raisonnements multi-etapes avant leur verbalisation. Outil publie en open source.",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant la coupe d'une structure en couches révélant une petite chambre lumineuse en son centre, symbolisant la découverte d'un espace de travail interne caché. Composition : une structure principale en coupe, deux couches secondaires. Palette : bleu nuit, or, ambre. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20la%20coupe%20d%27une%20structure%20en%20couches%20r%C3%A9v%C3%A9lant%20une%20petite%20chambre%20lumineuse%20en%20son%20centre%2C%20symbolisant%20la%20d%C3%A9couverte%20d%27un%20espace%20de%20travail%20interne%20cach%C3%A9.%20Composition%20%3A%20une%20structure%20principale%20en%20coupe%2C%20deux%20couches%20secondaires.%20Palette%20%3A%20bleu%20nuit%2C%20or%2C%20ambre.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=10103"
+        }
+      ],
+      "podcasts": [
+        {
+          "titre": "Comptoir IA",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
+          "resume": "Nicolas Guyon interviewe experts et metiers bouleverses par l'IA ; vulgarisation pointue."
+        },
+        {
+          "titre": "Tech Café",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/1MidB71rbYIRDIrcej073j",
+          "resume": "Actualite tech et IA au sens large, animee par Guillaume Vende."
+        },
+        {
+          "titre": "Data Driven 101 - Le podcast IA & Data",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/5YkpBdd4Si06ghOpcPmqux",
+          "resume": "Marc Sanselme decrypte IA et data science ; interviews d'experts, format accessible."
+        },
+        {
+          "titre": "Best AI Podcast",
+          "source": "Spotify",
+          "lang": "en",
+          "lien": "https://open.spotify.com/show/10otIHvHndpzykwIqrGjsV",
+          "resume": "Curated conversations on artificial intelligence, its tools, breakthroughs and industry trends."
+        },
+        {
+          "titre": "AI and I",
+          "source": "Spotify",
+          "lang": "en",
+          "lien": "https://open.spotify.com/show/5qX1nRTaFsfWdmdj5JWO1G",
+          "resume": "Interviews exploring how people put AI to work in their craft and creative process."
+        }
+      ],
+      "projets": [],
+      "methodes": []
+    },
     {
       "date": "2026-07-20",
       "label": "lundi 20 juillet 2026",
@@ -615,92 +690,6 @@
           "lien": "https://open.spotify.com/show/10otIHvHndpzykwIqrGjsV",
           "resume": "Curated conversations on artificial intelligence, its tools, breakthroughs and industry trends.",
           "date": "15/07/2026"
-        }
-      ],
-      "projets": [],
-      "methodes": []
-    },
-    {
-      "date": "2026-07-14",
-      "label": "mardi 14 juillet 2026",
-      "notes": "Historique de démonstration : articles réels avec liens DIRECTS, répartis pour peupler les 5 jours ; à remplacer par la veille réelle du jour.",
-      "primaires": [
-        {
-          "titre": "OpenAI publie GPT-5.6 (Sol, Terra, Luna), une famille à trois niveaux",
-          "source": "MarkTechPost",
-          "lang": "en",
-          "lien": "https://www.marktechpost.com/2026/07/09/openai-releases-gpt-5-6-a-three-tier-model-family-with-programmatic-tool-calling/",
-          "resume": "Trois variantes : Sol (haut de gamme), Terra (équilibrée, ~moitié du coût de GPT-5.5) et Luna (rapide et économique), avec appel d'outils programmatique.",
-          "date": "09/07/2026",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant trois orbes géométriques de tailles différentes gravitant sur des trajectoires distinctes. Palette : bleu profond, violet, accents cyan. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20trois%20orbes%20g%C3%A9om%C3%A9triques%20de%20tailles%20diff%C3%A9rentes%20gravitant%20sur%20des%20trajectoires%20distinctes.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=29289"
-        }
-      ],
-      "articles": [
-        {
-          "titre": "Microsoft prépare Project Perception, un outil de sécurité IA multi-modèles",
-          "source": "TechRepublic",
-          "lang": "en",
-          "lien": "https://www.techrepublic.com/article/news-microsoft-project-perception-ai-security-tool/",
-          "resume": "Outil combinant des modèles d'Anthropic, OpenAI et Microsoft via un routage intelligent pour détecter et corriger des vulnérabilités à moindre coût, face à Mythos.",
-          "date": "17/07/2026",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un prisme géométrique filtrant plusieurs flux distincts en un bouclier unifié. Palette : vert sauge, gris anthracite, blanc. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20prisme%20g%C3%A9om%C3%A9trique%20filtrant%20plusieurs%20flux%20distincts%20en%20un%20bouclier%20unifi%C3%A9.%20Palette%20%3A%20vert%20sauge%2C%20gris%20anthracite%2C%20blanc.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=28038"
-        },
-        {
-          "titre": "Oracle supprime jusqu'à 30 000 postes dans un virage IA lié à Stargate",
-          "source": "IBTimes UK",
-          "lang": "en",
-          "lien": "https://www.ibtimes.co.uk/oracle-layoffs-30000-jobs-cut-ai-investment-1790276",
-          "resume": "Coupes massives destinées à financer un vaste investissement en centres de données IA, dans le cadre du projet Stargate.",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant des flux se détournant de petites structures pour ériger une méga-tour géométrique. Palette : orange, bleu pétrole. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20des%20flux%20se%20d%C3%A9tournant%20de%20petites%20structures%20pour%20%C3%A9riger%20une%20m%C3%A9ga-tour%20g%C3%A9om%C3%A9trique.%20Palette%20%3A%20orange%2C%20bleu%20p%C3%A9trole.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=27572"
-        },
-        {
-          "titre": "L'État déploiera « L'Assistant », IA conversationnelle souveraine pour les agents publics",
-          "source": "info.gouv.fr",
-          "lang": "fr",
-          "lien": "https://www.info.gouv.fr/actualite/accelerer-l-ia-dans-l-etat-et-au-service-des-francais",
-          "resume": "Agent conversationnel unique et souverain prévu pour l'ensemble des agents publics avant fin 2026.",
-          "date": "16/06/2026",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un panneau d'interface épuré reliant plusieurs pictogrammes abstraits d'usagers. Palette : vert sauge, gris anthracite, blanc. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20panneau%20d%27interface%20%C3%A9pur%C3%A9%20reliant%20plusieurs%20pictogrammes%20abstraits%20d%27usagers.%20Palette%20%3A%20vert%20sauge%2C%20gris%20anthracite%2C%20blanc.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=28057"
-        },
-        {
-          "titre": "Un chatbot santé public prévu sur Ameli.fr",
-          "source": "info.gouv.fr",
-          "lang": "fr",
-          "lien": "https://www.info.gouv.fr/actualite/accelerer-l-ia-dans-l-etat-et-au-service-des-francais",
-          "resume": "Assistant destiné à répondre aux questions médicales des Français et à les orienter vers une prise en charge.",
-          "date": "16/06/2026",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une bulle de dialogue géométrique se transformant en signe de soin abstrait. Palette : vert sauge, gris anthracite, blanc. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20bulle%20de%20dialogue%20g%C3%A9om%C3%A9trique%20se%20transformant%20en%20signe%20de%20soin%20abstrait.%20Palette%20%3A%20vert%20sauge%2C%20gris%20anthracite%2C%20blanc.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=27499"
-        }
-      ],
-      "podcasts": [
-        {
-          "titre": "Le Comptoir IA",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
-          "resume": "Nicolas Guyon interviewe experts et métiers bouleversés par l'IA ; vulgarisation pointue.",
-          "date": "14/07/2026"
-        },
-        {
-          "titre": "Tech Café",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/1MidB71rbYIRDIrcej073j",
-          "resume": "Actualité tech et IA au sens large, animé par Guillaume Vendé.",
-          "date": "14/07/2026"
-        },
-        {
-          "titre": "AI and I",
-          "source": "Spotify",
-          "lang": "en",
-          "lien": "https://open.spotify.com/show/5qX1nRTaFsfWdmdj5JWO1G",
-          "resume": "Interviews exploring how people put AI to work in their craft and creative process.",
-          "date": "14/07/2026"
         }
       ],
       "projets": [],
