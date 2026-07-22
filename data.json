@@ -1,6 +1,103 @@
 {
-  "generatedAt": "2026-07-21",
+  "generatedAt": "2026-07-22",
   "days": [
+    {
+      "date": "2026-07-22",
+      "label": "mercredi 22 juillet 2026",
+      "notes": "Audit interne. Bonne fenetre 24-48h : lancement Google du 21/07 (Gemini 3.6 Flash, 3.5 Flash-Lite, 3.5 Flash Cyber, pre-entrainement Gemini 4 annonce) couvert par blog officiel (primaire) + TechCrunch (analyse) - dedup respectee, 9to5google/gigazine/thurrott/droid-life ecartes (3e+ contenu meme sujet). Dispo Copilot = fait distinct (changelog GitHub officiel, 21/07). Volet UE : lignes directrices transparence publiees le 20/07 (Representation France, officiel) + analyse Usine Digitale (date non affichee, champ omis) ; echeance signature du code le 22/07 18h mentionnee dans les resumes. Quotas partiels (1 FR, 1 EN en articles) : mercredi 05h09 UTC, presse du jour non parue. GPT-Live (OpenAI) repere mais sans date ni lien officiel verifiable : ecarte. Section 4 vide : WebFetch toujours en 403 via le proxy, licences/activite/fenetre 7j inverifiables. B5 : rien de neuf (nominal). Podcasts : liens emission Spotify, datation d'episode inverifiable ici.",
+      "primaires": [
+        {
+          "titre": "Google lance Gemini 3.6 Flash, 3.5 Flash-Lite et 3.5 Flash Cyber, et tease Gemini 4",
+          "source": "blog.google",
+          "lang": "en",
+          "date": "21/07/2026",
+          "lien": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/",
+          "resume": "Gemini 3.6 Flash consomme 17 % de tokens de moins que 3.5 Flash et progresse sur les benchmarks agentiques (1,50/7,50 dollars par million de tokens). Flash Cyber est specialise cybersecurite ; le pre-entrainement de Gemini 4 est lance.",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant trois flèches profilées de longueurs différentes s'élançant d'une même ligne de départ, la plus longue nettement en tête, symbolisant une gamme de modèles déclinée par vitesse et puissance. Composition : une flèche principale, deux flèches secondaires. Palette : bleu profond, violet, accents cyan. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20trois%20fl%C3%A8ches%20profil%C3%A9es%20de%20longueurs%20diff%C3%A9rentes%20s%27%C3%A9lan%C3%A7ant%20d%27une%20m%C3%AAme%20ligne%20de%20d%C3%A9part%2C%20la%20plus%20longue%20nettement%20en%20t%C3%AAte%2C%20symbolisant%20une%20gamme%20de%20mod%C3%A8les%20d%C3%A9clin%C3%A9e%20par%20vitesse%20et%20puissance.%20Composition%20%3A%20une%20fl%C3%A8che%20principale%2C%20deux%20fl%C3%A8ches%20secondaires.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=11101"
+        },
+        {
+          "titre": "Gemini 3.6 Flash disponible dans GitHub Copilot",
+          "source": "GitHub Changelog",
+          "lang": "en",
+          "date": "21/07/2026",
+          "lien": "https://github.blog/changelog/2026-07-21-gemini-3-6-flash-is-now-available-in-github-copilot/",
+          "resume": "Le nouveau modele de Google est accessible des son lancement dans GitHub Copilot, aux cotes des modeles OpenAI et Anthropic.",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une fiche s'enclenchant dans un établi modulaire déjà garni d'outils géométriques, symbolisant l'intégration d'un nouveau moteur dans un atelier de développement. Composition : un établi principal, deux modules secondaires. Palette : vert sauge, gris anthracite, blanc. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20fiche%20s%27enclenchant%20dans%20un%20%C3%A9tabli%20modulaire%20d%C3%A9j%C3%A0%20garni%20d%27outils%20g%C3%A9om%C3%A9triques%2C%20symbolisant%20l%27int%C3%A9gration%20d%27un%20nouveau%20moteur%20dans%20un%20atelier%20de%20d%C3%A9veloppement.%20Composition%20%3A%20un%20%C3%A9tabli%20principal%2C%20deux%20modules%20secondaires.%20Palette%20%3A%20vert%20sauge%2C%20gris%20anthracite%2C%20blanc.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=11102"
+        },
+        {
+          "titre": "La Commission europeenne publie ses lignes directrices sur la transparence des systemes d'IA",
+          "source": "Commission europeenne",
+          "lang": "fr",
+          "date": "20/07/2026",
+          "lien": "https://france.representation.ec.europa.eu/informations-et-evenements/informations/la-commission-publie-ses-lignes-directrices-sur-la-transparence-des-systemes-dia-2026-07-20_fr",
+          "resume": "Mode d'emploi operationnel de l'article 50 de l'AI Act avant son entree en application le 2 aout : information des utilisateurs, signalement des deepfakes, marquage lisible par machine. Adhesion au code de bonnes pratiques ouverte jusqu'au 22 juillet 18h.",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un tampon appliquant une petite étiquette identique sur chaque forme d'un flux de formes générées, symbolisant le marquage systématique des contenus artificiels. Composition : un tampon principal, deux formes étiquetées secondaires. Palette : bordeaux, gris, beige. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20tampon%20appliquant%20une%20petite%20%C3%A9tiquette%20identique%20sur%20chaque%20forme%20d%27un%20flux%20de%20formes%20g%C3%A9n%C3%A9r%C3%A9es%2C%20symbolisant%20le%20marquage%20syst%C3%A9matique%20des%20contenus%20artificiels.%20Composition%20%3A%20un%20tampon%20principal%2C%20deux%20formes%20%C3%A9tiquet%C3%A9es%20secondaires.%20Palette%20%3A%20bordeaux%2C%20gris%2C%20beige.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=11103"
+        }
+      ],
+      "articles": [
+        {
+          "titre": "AI Act : Bruxelles publie le Code de bonnes pratiques sur la transparence des contenus generes par IA",
+          "source": "L'Usine Digitale",
+          "lang": "fr",
+          "lien": "https://www.usine-digitale.fr/intelligence-artificielle/ia-generative/ai-act-bruxelles-publie-le-code-de-bonnes-pratiques-sur-la-transparence-des-contenus-generes-par-intelligence-artificielle.HJMXEVLPDRFYFABBFDD5BNEI2E.html",
+          "resume": "Analyse du code volontaire : marquage et etiquetage des contenus generes, quatre situations couvertes (chatbots, contenus synthetiques, reconnaissance d'emotions, deepfakes), premiers signataires listes avant le 2 aout.",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un filigrane en damier se révélant sur une feuille au passage du faisceau d'une lampe, symbolisant la transparence exigée des contenus générés. Composition : une feuille principale, une lampe et un motif secondaires. Palette : bordeaux, gris, beige. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20filigrane%20en%20damier%20se%20r%C3%A9v%C3%A9lant%20sur%20une%20feuille%20au%20passage%20du%20faisceau%20d%27une%20lampe%2C%20symbolisant%20la%20transparence%20exig%C3%A9e%20des%20contenus%20g%C3%A9n%C3%A9r%C3%A9s.%20Composition%20%3A%20une%20feuille%20principale%2C%20une%20lampe%20et%20un%20motif%20secondaires.%20Palette%20%3A%20bordeaux%2C%20gris%2C%20beige.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=11104"
+        },
+        {
+          "titre": "Google releases three new Gemini models - but no 3.5 Pro",
+          "source": "TechCrunch",
+          "lang": "en",
+          "date": "21/07/2026",
+          "lien": "https://techcrunch.com/2026/07/21/google-releases-three-new-gemini-models-but-no-3-5-pro/",
+          "resume": "Lecture critique du lancement : trois modeles de la gamme Flash mais toujours pas de 3.5 Pro, Google concentrant ses ressources sur le pre-entrainement de Gemini 4.",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un podium à trois emplacements dont la marche centrale est vide, symbolisant une gamme renouvelée où le modèle attendu manque à l'appel. Composition : un podium principal, deux formes posées secondaires. Palette : bleu profond, violet, accents cyan. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20podium%20%C3%A0%20trois%20emplacements%20dont%20la%20marche%20centrale%20est%20vide%2C%20symbolisant%20une%20gamme%20renouvel%C3%A9e%20o%C3%B9%20le%20mod%C3%A8le%20attendu%20manque%20%C3%A0%20l%27appel.%20Composition%20%3A%20un%20podium%20principal%2C%20deux%20formes%20pos%C3%A9es%20secondaires.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=11105"
+        }
+      ],
+      "podcasts": [
+        {
+          "titre": "Comptoir IA",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
+          "resume": "Nicolas Guyon interviewe experts et metiers bouleverses par l'IA ; vulgarisation pointue."
+        },
+        {
+          "titre": "Tech Café",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/1MidB71rbYIRDIrcej073j",
+          "resume": "Actualite tech et IA au sens large, animee par Guillaume Vende."
+        },
+        {
+          "titre": "Data Driven 101 - Le podcast IA & Data",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/5YkpBdd4Si06ghOpcPmqux",
+          "resume": "Marc Sanselme decrypte IA et data science ; interviews d'experts, format accessible."
+        },
+        {
+          "titre": "Best AI Podcast",
+          "source": "Spotify",
+          "lang": "en",
+          "lien": "https://open.spotify.com/show/10otIHvHndpzykwIqrGjsV",
+          "resume": "Curated conversations on artificial intelligence, its tools, breakthroughs and industry trends."
+        },
+        {
+          "titre": "AI and I",
+          "source": "Spotify",
+          "lang": "en",
+          "lien": "https://open.spotify.com/show/5qX1nRTaFsfWdmdj5JWO1G",
+          "resume": "Interviews exploring how people put AI to work in their craft and creative process."
+        }
+      ],
+      "projets": [],
+      "methodes": []
+    },
     {
       "date": "2026-07-21",
       "label": "mardi 21 juillet 2026",
@@ -613,83 +710,6 @@
           "lien": "https://open.spotify.com/show/5qX1nRTaFsfWdmdj5JWO1G",
           "resume": "Interviews exploring how people put AI to work in their craft and creative process.",
           "date": "16/07/2026"
-        }
-      ],
-      "projets": [],
-      "methodes": []
-    },
-    {
-      "date": "2026-07-15",
-      "label": "mercredi 15 juillet 2026",
-      "notes": "Historique de démonstration : articles réels avec liens DIRECTS, répartis pour peupler les 5 jours ; à remplacer par la veille réelle du jour.",
-      "primaires": [
-        {
-          "titre": "Thinking Machines lance Inkling, son premier modèle open-weight",
-          "source": "Thinking Machines",
-          "lang": "en",
-          "lien": "https://thinkingmachines.ai/news/introducing-inkling/",
-          "resume": "Modèle mixture-of-experts de 975 Md de paramètres (41 Md actifs), multimodal ; poids disponibles sur Hugging Face, personnalisable via Tinker.",
-          "date": "15/07/2026",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une graine géométrique s'ouvrant en une structure ramifiée transparente. Palette : bleu profond, violet, accents cyan. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20graine%20g%C3%A9om%C3%A9trique%20s%27ouvrant%20en%20une%20structure%20ramifi%C3%A9e%20transparente.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=27457"
-        },
-        {
-          "titre": "Introducing Claude Sonnet 5",
-          "source": "Anthropic",
-          "lang": "en",
-          "lien": "https://www.anthropic.com/news/claude-sonnet-5",
-          "resume": "Modèle Sonnet le plus agentique d'Anthropic : planification, usage d'outils et code proches d'Opus, à prix réduit (2$/10$ par M tokens jusqu'au 31 août 2026).",
-          "date": "30/06/2026",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une fine plume géométrique soulevant une vaste architecture de blocs flottants légers. Palette : bleu profond, violet, accents cyan. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20fine%20plume%20g%C3%A9om%C3%A9trique%20soulevant%20une%20vaste%20architecture%20de%20blocs%20flottants%20l%C3%A9gers.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=28782"
-        }
-      ],
-      "articles": [
-        {
-          "titre": "Atos annonce MogwAI, sa plateforme d'IA générative et agentique souveraine",
-          "source": "Atos",
-          "lang": "fr",
-          "lien": "https://atos.net/fr/2026/communiques-de-presse_2026_07_07/atos-annonce-atos-mogwai-sa-plateforme-dia-souveraine",
-          "resume": "Plateforme couvrant toute la chaîne de valeur de l'IA (infrastructure aux usages), architecture agnostique, options SaaS SecNumCloud, on-premise et multicloud.",
-          "date": "07/07/2026",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une plateforme modulaire de blocs interconnectés entourée d'un halo protecteur. Palette : vert sauge, gris anthracite, blanc. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20plateforme%20modulaire%20de%20blocs%20interconnect%C3%A9s%20entour%C3%A9e%20d%27un%20halo%20protecteur.%20Palette%20%3A%20vert%20sauge%2C%20gris%20anthracite%2C%20blanc.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=27928"
-        },
-        {
-          "titre": "AI Act : ce qui change pour les entreprises au 2 août 2026",
-          "source": "Service-Public (Entreprendre)",
-          "lang": "fr",
-          "lien": "https://entreprendre.service-public.gouv.fr/actualites/A18475",
-          "resume": "Le 2 août 2026 active les pouvoirs de sanction et les obligations de transparence (article 50) ; étape clé de conformité pour les systèmes à haut risque.",
-          "date": "02/08/2026",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une balance géométrique en équilibre au centre d'un cadre structuré. Palette : bordeaux, gris, beige. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20balance%20g%C3%A9om%C3%A9trique%20en%20%C3%A9quilibre%20au%20centre%20d%27un%20cadre%20structur%C3%A9.%20Palette%20%3A%20bordeaux%2C%20gris%2C%20beige.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=25725"
-        }
-      ],
-      "podcasts": [
-        {
-          "titre": "Le Comptoir IA",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
-          "resume": "Nicolas Guyon interviewe experts et métiers bouleversés par l'IA ; vulgarisation pointue.",
-          "date": "15/07/2026"
-        },
-        {
-          "titre": "Hot Tech — le podcast qui décrypte l'IA",
-          "source": "Audible",
-          "lang": "fr",
-          "lien": "https://www.audible.com/pd/B0H6BCWMR8",
-          "resume": "Anis Ayari décrypte l'IA et la deep tech avec chercheurs, ingénieurs et entrepreneurs.",
-          "date": "15/07/2026"
-        },
-        {
-          "titre": "Best AI Podcast",
-          "source": "Spotify",
-          "lang": "en",
-          "lien": "https://open.spotify.com/show/10otIHvHndpzykwIqrGjsV",
-          "resume": "Curated conversations on artificial intelligence, its tools, breakthroughs and industry trends.",
-          "date": "15/07/2026"
         }
       ],
       "projets": [],
