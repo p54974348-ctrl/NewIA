@@ -1,6 +1,71 @@
 {
-  "generatedAt": "2026-07-22",
+  "generatedAt": "2026-07-23",
   "days": [
+    {
+      "date": "2026-07-23",
+      "label": "jeudi 23 juillet 2026",
+      "notes": "Audit interne. Fenetre 22-23/07 calme cote laboratoires : aucune annonce officielle nouvelle verifiable (candidats ecartes car hors fenetre : Boston Dynamics/Gemini Robotics-ER 1.6 sur Spot, avril 2026 ; extension Project Glasswing d'Anthropic, 2 juin 2026 ; lancement Gemini 3.6 Flash deja traite le 22/07). Primaires vides. Fait du jour : cloture des adhesions au code de bonnes pratiques UE le 22/07 18h et publication de la liste des premiers signataires - 2 contenus FR retenus (agencergpd.eu : liste ; portail-rgpd.com : recommandation de l'autorite neerlandaise), dates de publication non affichees, champs omis. Aucun article EN direct date verifiable (signaux reperes via agregateurs seulement : lobbying Q2 Anthropic/OpenAI, FLI Safety Index - exclus). Quotas tres en dessous (0 primaire, 2 FR, 0 EN) : jeudi 05h08 UTC, presse du jour non parue. Section 4 vide : WebFetch toujours en 403 via le proxy. B5 : rien de neuf (nominal). Podcasts : liens emission Spotify, datation d'episode inverifiable ici.",
+      "primaires": [],
+      "articles": [
+        {
+          "titre": "La Commission europeenne publie la liste complete des entreprises d'IA signataires du Code de bonnes pratiques",
+          "source": "Agence RGPD",
+          "lang": "fr",
+          "lien": "https://agencergpd.eu/la-commission-europeenne-publie-la-liste-complete-des-entreprises-dia-signataires-du-code-de-bonnes-pratiques/",
+          "resume": "Apres la cloture des adhesions le 22 juillet a 18h, la Commission publie la liste des premiers signataires du code sur la transparence des contenus generes par IA, qui beneficieront d'une presomption de conformite avant l'entree en application de l'article 50 le 2 aout.",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une file de formes géométriques distinctes déposant chacune un jeton dans une urne officielle scellée, symbolisant l'adhésion volontaire d'acteurs variés à un cadre commun. Composition : une urne principale, deux formes en file secondaires. Palette : bordeaux, gris, beige. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20file%20de%20formes%20g%C3%A9om%C3%A9triques%20distinctes%20d%C3%A9posant%20chacune%20un%20jeton%20dans%20une%20urne%20officielle%20scell%C3%A9e%2C%20symbolisant%20l%27adh%C3%A9sion%20volontaire%20d%27acteurs%20vari%C3%A9s%20%C3%A0%20un%20cadre%20commun.%20Composition%20%3A%20une%20urne%20principale%2C%20deux%20formes%20en%20file%20secondaires.%20Palette%20%3A%20bordeaux%2C%20gris%2C%20beige.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=12101"
+        },
+        {
+          "titre": "L'autorite neerlandaise conseille d'adherer au code de bonnes pratiques sur la transparence des systemes d'IA",
+          "source": "Portail RGPD",
+          "lang": "fr",
+          "lien": "https://veille.portail-rgpd.com/actu/transparence-intelligence-artificielle-code-conduite-signature/",
+          "resume": "Le regulateur neerlandais recommande aux fournisseurs et deployeurs de systemes d'IA generative d'adherer au code volontaire pour aborder les obligations de transparence applicables a partir du 2 aout 2026.",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un panneau indicateur orientant un flux de petites formes vers un portique ouvert, symbolisant la recommandation institutionnelle d'un chemin de conformité. Composition : un panneau principal, un portique et un flux secondaires. Palette : bordeaux, gris, beige. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20panneau%20indicateur%20orientant%20un%20flux%20de%20petites%20formes%20vers%20un%20portique%20ouvert%2C%20symbolisant%20la%20recommandation%20institutionnelle%20d%27un%20chemin%20de%20conformit%C3%A9.%20Composition%20%3A%20un%20panneau%20principal%2C%20un%20portique%20et%20un%20flux%20secondaires.%20Palette%20%3A%20bordeaux%2C%20gris%2C%20beige.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=12102"
+        }
+      ],
+      "podcasts": [
+        {
+          "titre": "Comptoir IA",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
+          "resume": "Nicolas Guyon interviewe experts et metiers bouleverses par l'IA ; vulgarisation pointue."
+        },
+        {
+          "titre": "Tech Café",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/1MidB71rbYIRDIrcej073j",
+          "resume": "Actualite tech et IA au sens large, animee par Guillaume Vende."
+        },
+        {
+          "titre": "Data Driven 101 - Le podcast IA & Data",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/5YkpBdd4Si06ghOpcPmqux",
+          "resume": "Marc Sanselme decrypte IA et data science ; interviews d'experts, format accessible."
+        },
+        {
+          "titre": "Best AI Podcast",
+          "source": "Spotify",
+          "lang": "en",
+          "lien": "https://open.spotify.com/show/10otIHvHndpzykwIqrGjsV",
+          "resume": "Curated conversations on artificial intelligence, its tools, breakthroughs and industry trends."
+        },
+        {
+          "titre": "AI and I",
+          "source": "Spotify",
+          "lang": "en",
+          "lien": "https://open.spotify.com/show/5qX1nRTaFsfWdmdj5JWO1G",
+          "resume": "Interviews exploring how people put AI to work in their craft and creative process."
+        }
+      ],
+      "projets": [],
+      "methodes": []
+    },
     {
       "date": "2026-07-22",
       "label": "mercredi 22 juillet 2026",
@@ -634,82 +699,6 @@
           "lien": "https://open.spotify.com/show/10otIHvHndpzykwIqrGjsV",
           "resume": "Curated conversations on artificial intelligence, its tools, breakthroughs and industry trends.",
           "date": "17/07/2026"
-        }
-      ],
-      "projets": [],
-      "methodes": []
-    },
-    {
-      "date": "2026-07-16",
-      "label": "jeudi 16 juillet 2026",
-      "notes": "Historique de démonstration : articles réels avec liens DIRECTS, répartis pour peupler les 5 jours ; à remplacer par la veille réelle du jour.",
-      "primaires": [
-        {
-          "titre": "Moonshot AI dévoile Kimi K3, modèle open-weight de 2,8 trillions de paramètres",
-          "source": "Fortune",
-          "lang": "en",
-          "lien": "https://fortune.com/2026/07/16/moonshots-kimi-k3-pushes-chinese-ai-into-fable-level-territory/",
-          "resume": "Kimi K3 débute n°3 du classement Artificial Analysis, derrière Claude Fable 5 et GPT-5.6 Sol ; poids ouverts, fenêtre de 1M de tokens.",
-          "date": "16/07/2026",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un cadran à trois crans d'où jaillissent des ondes géométriques croissantes. Palette : bleu profond, violet, accents cyan. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20cadran%20%C3%A0%20trois%20crans%20d%27o%C3%B9%20jaillissent%20des%20ondes%20g%C3%A9om%C3%A9triques%20croissantes.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=27824"
-        }
-      ],
-      "articles": [
-        {
-          "titre": "L'État déploiera « L'Assistant », IA conversationnelle souveraine pour les agents publics",
-          "source": "info.gouv.fr",
-          "lang": "fr",
-          "lien": "https://www.info.gouv.fr/actualite/accelerer-l-ia-dans-l-etat-et-au-service-des-francais",
-          "resume": "Agent conversationnel unique et souverain prévu pour l'ensemble des agents publics avant fin 2026.",
-          "date": "16/06/2026",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un panneau d'interface épuré reliant plusieurs pictogrammes abstraits d'usagers. Palette : vert sauge, gris anthracite, blanc. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20panneau%20d%27interface%20%C3%A9pur%C3%A9%20reliant%20plusieurs%20pictogrammes%20abstraits%20d%27usagers.%20Palette%20%3A%20vert%20sauge%2C%20gris%20anthracite%2C%20blanc.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=28057"
-        },
-        {
-          "titre": "Un chatbot santé public prévu sur Ameli.fr",
-          "source": "info.gouv.fr",
-          "lang": "fr",
-          "lien": "https://www.info.gouv.fr/actualite/accelerer-l-ia-dans-l-etat-et-au-service-des-francais",
-          "resume": "Assistant destiné à répondre aux questions médicales des Français et à les orienter vers une prise en charge.",
-          "date": "16/06/2026",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une bulle de dialogue géométrique se transformant en signe de soin abstrait. Palette : vert sauge, gris anthracite, blanc. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20bulle%20de%20dialogue%20g%C3%A9om%C3%A9trique%20se%20transformant%20en%20signe%20de%20soin%20abstrait.%20Palette%20%3A%20vert%20sauge%2C%20gris%20anthracite%2C%20blanc.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=27499"
-        },
-        {
-          "titre": "Oracle supprime jusqu'à 30 000 postes dans un virage IA lié à Stargate",
-          "source": "IBTimes UK",
-          "lang": "en",
-          "lien": "https://www.ibtimes.co.uk/oracle-layoffs-30000-jobs-cut-ai-investment-1790276",
-          "resume": "Coupes massives destinées à financer un vaste investissement en centres de données IA, dans le cadre du projet Stargate.",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant des flux se détournant de petites structures pour ériger une méga-tour géométrique. Palette : orange, bleu pétrole. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20des%20flux%20se%20d%C3%A9tournant%20de%20petites%20structures%20pour%20%C3%A9riger%20une%20m%C3%A9ga-tour%20g%C3%A9om%C3%A9trique.%20Palette%20%3A%20orange%2C%20bleu%20p%C3%A9trole.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=27572"
-        }
-      ],
-      "podcasts": [
-        {
-          "titre": "Le Comptoir IA",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
-          "resume": "Nicolas Guyon interviewe experts et métiers bouleversés par l'IA ; vulgarisation pointue.",
-          "date": "16/07/2026"
-        },
-        {
-          "titre": "Data Driven 101 — Le podcast IA & Data",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/5YkpBdd4Si06ghOpcPmqux",
-          "resume": "Marc Sanselme décrypte IA et data science ; interviews d'experts, format accessible.",
-          "date": "16/07/2026"
-        },
-        {
-          "titre": "AI and I",
-          "source": "Spotify",
-          "lang": "en",
-          "lien": "https://open.spotify.com/show/5qX1nRTaFsfWdmdj5JWO1G",
-          "resume": "Interviews exploring how people put AI to work in their craft and creative process.",
-          "date": "16/07/2026"
         }
       ],
       "projets": [],
