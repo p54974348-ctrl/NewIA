@@ -1,6 +1,94 @@
 {
-  "generatedAt": "2026-07-23",
+  "generatedAt": "2026-07-24",
   "days": [
+    {
+      "date": "2026-07-24",
+      "label": "vendredi 24 juillet 2026",
+      "notes": "Audit interne. Deux annonces officielles en fenetre elargie a 72h : partenariat Microsoft-Mistral (annonce officielle Microsoft du 21/07, couverture FR du 22/07) et activation des Apercus IA / Mode IA en France (blog officiel Google France, 22/07). Dedup stricte : Microsoft-Mistral = officiel + 1 analyse (Siecle Digital 22/07) ; economiematin, politiquematin, generation-nt, hyperight, unite.ai, verdict, yahoo, qz, thenextweb, cybernews, techstrong, aimagazine ecartes (3e+ contenu). Google France = officiel + 1 analyse (GinjFo 22/07) ; kulturegeek, leptidigital, macg, journaldunet, blog-nouvelles-technologies ecartes. Articles EN : 0 - toute la couverture EN directe datee portait sur le sujet Microsoft-Mistral deja au plafond de dedup. Quotas partiels (2 primaires, 2 FR, 0 EN) : vendredi 05h08 UTC. Section 4 vide : WebFetch toujours en 403 via le proxy. B5 : rien de neuf (nominal). Podcasts : liens emission Spotify, datation d'episode inverifiable ici.",
+      "primaires": [
+        {
+          "titre": "Microsoft et Mistral AI etendent leur partenariat strategique dans un accord a plusieurs milliards",
+          "source": "Microsoft",
+          "lang": "en",
+          "date": "21/07/2026",
+          "lien": "https://news.microsoft.com/source/2026/07/21/microsoft-and-mistral-expand-strategic-partnership-to-give-enterprises-and-regulated-industries-frontier-ai-they-can-control/",
+          "resume": "Microsoft s'appuiera sur l'infrastructure GPU europeenne de Mistral (systemes NVIDIA Vera Rubin) et integre Medium 3.5 et OCR 4 dans Foundry et Copilot Studio, avec une promesse de souverainete pour les industries regulees.",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un câble massif reliant deux pylônes plantés de part et d'autre d'une mer stylisée, symbolisant une alliance d'infrastructures entre deux continents. Composition : un câble principal, deux pylônes secondaires. Palette : orange, bleu pétrole. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20c%C3%A2ble%20massif%20reliant%20deux%20pyl%C3%B4nes%20plant%C3%A9s%20de%20part%20et%20d%27autre%20d%27une%20mer%20stylis%C3%A9e%2C%20symbolisant%20une%20alliance%20d%27infrastructures%20entre%20deux%20continents.%20Composition%20%3A%20un%20c%C3%A2ble%20principal%2C%20deux%20pyl%C3%B4nes%20secondaires.%20Palette%20%3A%20orange%2C%20bleu%20p%C3%A9trole.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=13101"
+        },
+        {
+          "titre": "Google lance les Apercus IA et le Mode IA dans la recherche en France",
+          "source": "blog.google",
+          "lang": "fr",
+          "date": "22/07/2026",
+          "lien": "https://blog.google/intl/fr-fr/nouveautes-produits/explorez-obtenez-des-reponses/recherche-ia-apercus-mode/",
+          "resume": "Deux ans apres leur lancement mondial, les syntheses generees par Gemini et l'interface conversationnelle arrivent dans la recherche Google en France, sur mobile, ordinateur et dans l'application.",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une loupe dont la lentille projette un encadré de synthèse au-dessus d'une pile de résultats alignés, symbolisant la réponse générée qui surplombe la recherche classique. Composition : une loupe principale, un encadré et une pile secondaires. Palette : vert sauge, gris anthracite, blanc. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20loupe%20dont%20la%20lentille%20projette%20un%20encadr%C3%A9%20de%20synth%C3%A8se%20au-dessus%20d%27une%20pile%20de%20r%C3%A9sultats%20align%C3%A9s%2C%20symbolisant%20la%20r%C3%A9ponse%20g%C3%A9n%C3%A9r%C3%A9e%20qui%20surplombe%20la%20recherche%20classique.%20Composition%20%3A%20une%20loupe%20principale%2C%20un%20encadr%C3%A9%20et%20une%20pile%20secondaires.%20Palette%20%3A%20vert%20sauge%2C%20gris%20anthracite%2C%20blanc.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=13102"
+        }
+      ],
+      "articles": [
+        {
+          "titre": "Microsoft et Mistral AI s'allient dans un mega-accord a plusieurs milliards de dollars",
+          "source": "Siecle Digital",
+          "lang": "fr",
+          "date": "22/07/2026",
+          "lien": "https://siecledigital.fr/2026/07/22/microsoft-et-mistral-ai-sallient-dans-un-mega-accord-a-plusieurs-milliards-de-dollars/",
+          "resume": "Analyse de l'accord : datacenter de Bruyeres-le-Chatel (44 MW) operationnel fin d'ete, second site en Suede, et acces des clients Azure a des serveurs Mistral installes en France plutot qu'aux Etats-Unis.",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une rangée de serveurs plantés comme des bornes sur un territoire hachuré, reliés entre eux par un fil continu, symbolisant l'ancrage local d'une capacité de calcul. Composition : une rangée principale, deux bornes secondaires. Palette : orange, bleu pétrole. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20rang%C3%A9e%20de%20serveurs%20plant%C3%A9s%20comme%20des%20bornes%20sur%20un%20territoire%20hachur%C3%A9%2C%20reli%C3%A9s%20entre%20eux%20par%20un%20fil%20continu%2C%20symbolisant%20l%27ancrage%20local%20d%27une%20capacit%C3%A9%20de%20calcul.%20Composition%20%3A%20une%20rang%C3%A9e%20principale%2C%20deux%20bornes%20secondaires.%20Palette%20%3A%20orange%2C%20bleu%20p%C3%A9trole.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=13103"
+        },
+        {
+          "titre": "Google deploie AI Overviews en France : l'IA s'installe au-dessus des resultats de recherche",
+          "source": "GinjFo",
+          "lang": "fr",
+          "date": "22/07/2026",
+          "lien": "https://www.ginjfo.com/actualites/web/google-deploie-ai-overviews-en-france-lia-sinstalle-au-dessus-des-resultats-de-recherche-20260722",
+          "resume": "La France etait le dernier grand marche prive de ces fonctions, retard explique par le contexte reglementaire autour des droits voisins. Les syntheses IA s'affichent desormais au-dessus des resultats classiques.",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un encadré lumineux surplombant une liste de barres horizontales qui s'estompent vers le bas, symbolisant la synthèse qui prend la place d'honneur au-dessus des résultats. Composition : un encadré principal, deux barres secondaires. Palette : vert sauge, gris anthracite, blanc. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20encadr%C3%A9%20lumineux%20surplombant%20une%20liste%20de%20barres%20horizontales%20qui%20s%27estompent%20vers%20le%20bas%2C%20symbolisant%20la%20synth%C3%A8se%20qui%20prend%20la%20place%20d%27honneur%20au-dessus%20des%20r%C3%A9sultats.%20Composition%20%3A%20un%20encadr%C3%A9%20principal%2C%20deux%20barres%20secondaires.%20Palette%20%3A%20vert%20sauge%2C%20gris%20anthracite%2C%20blanc.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=13104"
+        }
+      ],
+      "podcasts": [
+        {
+          "titre": "Comptoir IA",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
+          "resume": "Nicolas Guyon interviewe experts et metiers bouleverses par l'IA ; vulgarisation pointue."
+        },
+        {
+          "titre": "Tech Café",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/1MidB71rbYIRDIrcej073j",
+          "resume": "Actualite tech et IA au sens large, animee par Guillaume Vende."
+        },
+        {
+          "titre": "Data Driven 101 - Le podcast IA & Data",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/5YkpBdd4Si06ghOpcPmqux",
+          "resume": "Marc Sanselme decrypte IA et data science ; interviews d'experts, format accessible."
+        },
+        {
+          "titre": "Best AI Podcast",
+          "source": "Spotify",
+          "lang": "en",
+          "lien": "https://open.spotify.com/show/10otIHvHndpzykwIqrGjsV",
+          "resume": "Curated conversations on artificial intelligence, its tools, breakthroughs and industry trends."
+        },
+        {
+          "titre": "AI and I",
+          "source": "Spotify",
+          "lang": "en",
+          "lien": "https://open.spotify.com/show/5qX1nRTaFsfWdmdj5JWO1G",
+          "resume": "Interviews exploring how people put AI to work in their craft and creative process."
+        }
+      ],
+      "projets": [],
+      "methodes": []
+    },
     {
       "date": "2026-07-23",
       "label": "jeudi 23 juillet 2026",
@@ -622,83 +710,6 @@
           "lang": "en",
           "lien": "https://open.spotify.com/show/5qX1nRTaFsfWdmdj5JWO1G",
           "resume": "Interviews exploring how people put AI to work in their craft and creative process."
-        }
-      ],
-      "projets": [],
-      "methodes": []
-    },
-    {
-      "date": "2026-07-17",
-      "label": "vendredi 17 juillet 2026",
-      "notes": "Historique de démonstration : articles réels avec liens DIRECTS, répartis pour peupler les 5 jours ; à remplacer par la veille réelle du jour.",
-      "primaires": [
-        {
-          "titre": "Thinking Machines lance Inkling, son premier modèle open-weight",
-          "source": "Thinking Machines",
-          "lang": "en",
-          "lien": "https://thinkingmachines.ai/news/introducing-inkling/",
-          "resume": "Modèle mixture-of-experts de 975 Md de paramètres (41 Md actifs), multimodal ; poids disponibles sur Hugging Face, personnalisable via Tinker.",
-          "date": "15/07/2026",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une graine géométrique s'ouvrant en une structure ramifiée transparente. Palette : bleu profond, violet, accents cyan. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20graine%20g%C3%A9om%C3%A9trique%20s%27ouvrant%20en%20une%20structure%20ramifi%C3%A9e%20transparente.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=27457"
-        }
-      ],
-      "articles": [
-        {
-          "titre": "Microsoft prépare Project Perception, un outil de sécurité IA multi-modèles",
-          "source": "TechRepublic",
-          "lang": "en",
-          "lien": "https://www.techrepublic.com/article/news-microsoft-project-perception-ai-security-tool/",
-          "resume": "Outil combinant des modèles d'Anthropic, OpenAI et Microsoft via un routage intelligent pour détecter et corriger des vulnérabilités à moindre coût, face à Mythos.",
-          "date": "17/07/2026",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un prisme géométrique filtrant plusieurs flux distincts en un bouclier unifié. Palette : vert sauge, gris anthracite, blanc. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20prisme%20g%C3%A9om%C3%A9trique%20filtrant%20plusieurs%20flux%20distincts%20en%20un%20bouclier%20unifi%C3%A9.%20Palette%20%3A%20vert%20sauge%2C%20gris%20anthracite%2C%20blanc.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=28038"
-        },
-        {
-          "titre": "Atos annonce MogwAI, sa plateforme d'IA générative et agentique souveraine",
-          "source": "Atos",
-          "lang": "fr",
-          "lien": "https://atos.net/fr/2026/communiques-de-presse_2026_07_07/atos-annonce-atos-mogwai-sa-plateforme-dia-souveraine",
-          "resume": "Plateforme couvrant toute la chaîne de valeur de l'IA (infrastructure aux usages), architecture agnostique, options SaaS SecNumCloud, on-premise et multicloud.",
-          "date": "07/07/2026",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une plateforme modulaire de blocs interconnectés entourée d'un halo protecteur. Palette : vert sauge, gris anthracite, blanc. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20plateforme%20modulaire%20de%20blocs%20interconnect%C3%A9s%20entour%C3%A9e%20d%27un%20halo%20protecteur.%20Palette%20%3A%20vert%20sauge%2C%20gris%20anthracite%2C%20blanc.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=27928"
-        },
-        {
-          "titre": "AI Act : ce qui change pour les entreprises au 2 août 2026",
-          "source": "Service-Public (Entreprendre)",
-          "lang": "fr",
-          "lien": "https://entreprendre.service-public.gouv.fr/actualites/A18475",
-          "resume": "Le 2 août 2026 active les pouvoirs de sanction et les obligations de transparence (article 50) ; étape clé de conformité pour les systèmes à haut risque.",
-          "date": "02/08/2026",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une balance géométrique en équilibre au centre d'un cadre structuré. Palette : bordeaux, gris, beige. Fond épuré ou dégradé subtil. Format 16:9. Pas de texte, pas de logos, pas de visages.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20balance%20g%C3%A9om%C3%A9trique%20en%20%C3%A9quilibre%20au%20centre%20d%27un%20cadre%20structur%C3%A9.%20Palette%20%3A%20bordeaux%2C%20gris%2C%20beige.%20Fond%20%C3%A9pur%C3%A9%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20logos%2C%20pas%20de%20visages.?width=768&height=432&nologo=true&seed=25725"
-        }
-      ],
-      "podcasts": [
-        {
-          "titre": "Le Comptoir IA",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
-          "resume": "Nicolas Guyon interviewe experts et métiers bouleversés par l'IA ; vulgarisation pointue.",
-          "date": "17/07/2026"
-        },
-        {
-          "titre": "Tech Café",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/1MidB71rbYIRDIrcej073j",
-          "resume": "Actualité tech et IA au sens large, animé par Guillaume Vendé.",
-          "date": "17/07/2026"
-        },
-        {
-          "titre": "Best AI Podcast",
-          "source": "Spotify",
-          "lang": "en",
-          "lien": "https://open.spotify.com/show/10otIHvHndpzykwIqrGjsV",
-          "resume": "Curated conversations on artificial intelligence, its tools, breakthroughs and industry trends.",
-          "date": "17/07/2026"
         }
       ],
       "projets": [],
