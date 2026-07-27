@@ -1,6 +1,73 @@
 {
-  "generatedAt": "2026-07-26",
+  "generatedAt": "2026-07-27",
   "days": [
+    {
+      "date": "2026-07-27",
+      "label": "lundi 27 juillet 2026",
+      "notes": "Audit interne. Evenement du jour : publication des poids ouverts de Kimi K3 (annoncee pour le 27/07 00:00 UTC, soit 5h avant cette execution) - depot officiel Hugging Face moonshotai/Kimi-K3 retenu comme primaire ; la page HF affichait encore le compte a rebours lors de la verification par recherche, le resume reste prudent (publication annoncee, telechargement ~594 Go MXFP4, licence MIT modifiee attendue). Dedup stricte (officiel + 1 analyse) : Next retenu (FR, qualite, date de publication non affichee - champ omis) ; ecartes (3e+ contenu meme sujet) : TechTimes 24-25/07, worldissmall 24/07, pentiminax, eigent, ayinedjimi, plateya, coinacademy, eesel, kimi-k2.org, wan27. Aucune autre annonce officielle verifiable 26-27/07 (lundi 05h11 UTC, presse du jour non parue). Quotas en dessous (1 primaire, 1 FR, 0 EN - la primaire lang=en sert le volet anglophone). Section 4 vide : WebFetch toujours en 403 via le proxy ; le depot HF de Kimi K3 n'est pas duplique en volet A (deja en primaire). B5 : rien de neuf (nominal). Podcasts : liens emission Spotify, datation d'episode inverifiable ici.",
+      "primaires": [
+        {
+          "titre": "Moonshot AI publie les poids ouverts de Kimi K3, plus grand modele open-weight jamais diffuse",
+          "source": "Hugging Face / Moonshot AI",
+          "lang": "en",
+          "date": "27/07/2026",
+          "lien": "https://huggingface.co/moonshotai/Kimi-K3",
+          "resume": "Le modele MoE de 2 800 milliards de parametres (contexte 1M, vision native, architecture Kimi Delta Attention) devient telechargeable : environ 594 Go en MXFP4 sur l'organisation Hugging Face de Moonshot, sous licence de type MIT modifiee.",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant de grandes portes coulissantes s'ouvrant sur une salle de rayonnages lumineux ou chacun peut venir se servir, symbolisant la mise a disposition publique d'un modèle géant. Composition : des portes principales, deux rayonnages secondaires. Palette : bleu profond, violet, accents cyan. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20de%20grandes%20portes%20coulissantes%20s%27ouvrant%20sur%20une%20salle%20de%20rayonnages%20lumineux%20ou%20chacun%20peut%20venir%20se%20servir%2C%20symbolisant%20la%20mise%20a%20disposition%20publique%20d%27un%20mod%C3%A8le%20g%C3%A9ant.%20Composition%20%3A%20des%20portes%20principales%2C%20deux%20rayonnages%20secondaires.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=16101"
+        }
+      ],
+      "articles": [
+        {
+          "titre": "Kimi K3 : ce qu'il faut savoir du modele open source de 2 800 milliards de parametres",
+          "source": "Next",
+          "lang": "fr",
+          "lien": "https://next.ink/248051/kimi-k3-ce-quil-faut-savoir-du-modele-open-source-de-2-800-milliards-de-parametres/",
+          "resume": "Tour d'horizon du plus grand modele open-weight jamais publie : architecture MoE sparse, fenetre d'un million de tokens, positionnement face aux familles Qwen 3 et Llama, et portee du geste d'ouverture pour l'ecosysteme.",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une structure massive faite de blocs détachables dont quelques blocs sont déjà emportés par de petites formes, symbolisant un modèle ouvert que la communauté s'approprie pièce par pièce. Composition : une structure principale, deux blocs emportés secondaires. Palette : bleu profond, violet, accents cyan. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20structure%20massive%20faite%20de%20blocs%20d%C3%A9tachables%20dont%20quelques%20blocs%20sont%20d%C3%A9j%C3%A0%20emport%C3%A9s%20par%20de%20petites%20formes%2C%20symbolisant%20un%20mod%C3%A8le%20ouvert%20que%20la%20communaut%C3%A9%20s%27approprie%20pi%C3%A8ce%20par%20pi%C3%A8ce.%20Composition%20%3A%20une%20structure%20principale%2C%20deux%20blocs%20emport%C3%A9s%20secondaires.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=16102"
+        }
+      ],
+      "podcasts": [
+        {
+          "titre": "Comptoir IA",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
+          "resume": "Nicolas Guyon interviewe experts et metiers bouleverses par l'IA ; vulgarisation pointue."
+        },
+        {
+          "titre": "Tech Café",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/1MidB71rbYIRDIrcej073j",
+          "resume": "Actualite tech et IA au sens large, animee par Guillaume Vende."
+        },
+        {
+          "titre": "Data Driven 101 - Le podcast IA & Data",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/5YkpBdd4Si06ghOpcPmqux",
+          "resume": "Marc Sanselme decrypte IA et data science ; interviews d'experts, format accessible."
+        },
+        {
+          "titre": "Best AI Podcast",
+          "source": "Spotify",
+          "lang": "en",
+          "lien": "https://open.spotify.com/show/10otIHvHndpzykwIqrGjsV",
+          "resume": "Curated conversations on artificial intelligence, its tools, breakthroughs and industry trends."
+        },
+        {
+          "titre": "AI and I",
+          "source": "Spotify",
+          "lang": "en",
+          "lien": "https://open.spotify.com/show/5qX1nRTaFsfWdmdj5JWO1G",
+          "resume": "Interviews exploring how people put AI to work in their craft and creative process."
+        }
+      ],
+      "projets": [],
+      "methodes": []
+    },
     {
       "date": "2026-07-26",
       "label": "dimanche 26 juillet 2026",
@@ -418,83 +485,6 @@
           "resume": "Analyse de la recherche d'Anthropic sur le J-lens : un petit sous-espace interne de Claude se comporte comme un espace de travail global, ou transitent les raisonnements multi-etapes avant leur verbalisation. Outil publie en open source.",
           "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant la coupe d'une structure en couches révélant une petite chambre lumineuse en son centre, symbolisant la découverte d'un espace de travail interne caché. Composition : une structure principale en coupe, deux couches secondaires. Palette : bleu nuit, or, ambre. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
           "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20la%20coupe%20d%27une%20structure%20en%20couches%20r%C3%A9v%C3%A9lant%20une%20petite%20chambre%20lumineuse%20en%20son%20centre%2C%20symbolisant%20la%20d%C3%A9couverte%20d%27un%20espace%20de%20travail%20interne%20cach%C3%A9.%20Composition%20%3A%20une%20structure%20principale%20en%20coupe%2C%20deux%20couches%20secondaires.%20Palette%20%3A%20bleu%20nuit%2C%20or%2C%20ambre.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=10103"
-        }
-      ],
-      "podcasts": [
-        {
-          "titre": "Comptoir IA",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
-          "resume": "Nicolas Guyon interviewe experts et metiers bouleverses par l'IA ; vulgarisation pointue."
-        },
-        {
-          "titre": "Tech Café",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/1MidB71rbYIRDIrcej073j",
-          "resume": "Actualite tech et IA au sens large, animee par Guillaume Vende."
-        },
-        {
-          "titre": "Data Driven 101 - Le podcast IA & Data",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/5YkpBdd4Si06ghOpcPmqux",
-          "resume": "Marc Sanselme decrypte IA et data science ; interviews d'experts, format accessible."
-        },
-        {
-          "titre": "Best AI Podcast",
-          "source": "Spotify",
-          "lang": "en",
-          "lien": "https://open.spotify.com/show/10otIHvHndpzykwIqrGjsV",
-          "resume": "Curated conversations on artificial intelligence, its tools, breakthroughs and industry trends."
-        },
-        {
-          "titre": "AI and I",
-          "source": "Spotify",
-          "lang": "en",
-          "lien": "https://open.spotify.com/show/5qX1nRTaFsfWdmdj5JWO1G",
-          "resume": "Interviews exploring how people put AI to work in their craft and creative process."
-        }
-      ],
-      "projets": [],
-      "methodes": []
-    },
-    {
-      "date": "2026-07-20",
-      "label": "lundi 20 juillet 2026",
-      "notes": "Audit interne. Lundi 05h07 UTC : presse du jour non parue, week-end calme - quotas tres en dessous (1 primaire, 1 article FR, 1 article EN). Fenetre etendue a 72h pour couvrir l'avis 26-A-05 de l'Autorite de la concurrence (17/07) et l'analyse CNBC (17/07), evenements majeurs du week-end. Dedup : sujet Kimi K3 deja traite les 18 et 19/07, un seul angle nouveau conserve (bascule open-weight, CNBC) ; avis Adlc = source officielle + 1 analyse (Clubic, date de publication non affichee dans les resultats, champ date omis) ; ppc.land et KultureGeek exclus (dedup / date invisible). Exclus : digests (ThursdAI, aiagentstore, pricepertoken, crescendo, secretsdedata, zonetechify), Grok Build CLI (pas de source directe datee), Alteryx Agent Studio (20/05, hors fenetre), guides SDD/AGENTS.md/Fowler (dates non verifiables). Section 4 vide : WebFetch toujours bloque par le proxy (403), licences/activite/fenetre 7j inverifiables pour les candidats. B5 : rien de neuf (nominal). Podcasts : liens emission Spotify, datation d'episode inverifiable ici.",
-      "primaires": [
-        {
-          "titre": "L'Autorité de la concurrence rend son avis 26-A-05 sur le secteur des agents d'IA",
-          "source": "Autorité de la concurrence",
-          "lang": "fr",
-          "date": "17/07/2026",
-          "lien": "https://www.autoritedelaconcurrence.fr/fr/avis/relatif-au-fonctionnement-concurrentiel-du-secteur-des-agents-dintelligence-artificielle",
-          "resume": "L'avis constate qu'OpenAI, Google et Anthropic detiennent ensemble plus de 84 % du marche des agents d'IA et identifie les barrieres concurrentielles : acces aux modeles, aux donnees de qualite et aux capacites d'inference.",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une balance dont un plateau porte trois grandes formes identiques serrées et l'autre une multitude de petites formes dispersées, symbolisant un marché concentré sous supervision. Composition : une balance principale, deux groupes de formes secondaires. Palette : bordeaux, gris, beige. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20balance%20dont%20un%20plateau%20porte%20trois%20grandes%20formes%20identiques%20serr%C3%A9es%20et%20l%27autre%20une%20multitude%20de%20petites%20formes%20dispers%C3%A9es%2C%20symbolisant%20un%20march%C3%A9%20concentr%C3%A9%20sous%20supervision.%20Composition%20%3A%20une%20balance%20principale%2C%20deux%20groupes%20de%20formes%20secondaires.%20Palette%20%3A%20bordeaux%2C%20gris%2C%20beige.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=9101"
-        }
-      ],
-      "articles": [
-        {
-          "titre": "L'Autorité de la concurrence pointe la mainmise d'OpenAI, Anthropic et Google sur les agents d'IA",
-          "source": "Clubic",
-          "lang": "fr",
-          "lien": "https://www.clubic.com/actualite-621760-l-autorite-de-la-concurrence-pointe-la-mainmise-d-openai-anthropic-et-google-sur-les-agents-d-ia.html",
-          "resume": "Analyse de l'avis : integration des agents dans les ecosystemes existants (Copilot/Office, Gemini/Android, Meta AI/WhatsApp) et risque de verrouillage pour les nouveaux entrants comme Mistral ou Perplexity.",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant trois engrenages massifs imbriqués entraînant une longue chaîne de petits engrenages, symbolisant la dépendance d'un écosystème à quelques acteurs. Composition : trois engrenages principaux, deux files de petits engrenages secondaires. Palette : orange, bleu pétrole. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20trois%20engrenages%20massifs%20imbriqu%C3%A9s%20entra%C3%AEnant%20une%20longue%20cha%C3%AEne%20de%20petits%20engrenages%2C%20symbolisant%20la%20d%C3%A9pendance%20d%27un%20%C3%A9cosyst%C3%A8me%20%C3%A0%20quelques%20acteurs.%20Composition%20%3A%20trois%20engrenages%20principaux%2C%20deux%20files%20de%20petits%20engrenages%20secondaires.%20Palette%20%3A%20orange%2C%20bleu%20p%C3%A9trole.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=9102"
-        },
-        {
-          "titre": "Chinese AI has leveled up, and brought renewed focus on the open weight model shift",
-          "source": "CNBC",
-          "lang": "en",
-          "date": "17/07/2026",
-          "lien": "https://www.cnbc.com/2026/07/17/moonshot-ai-kimi-k3-model-openai-anthropic-china.html",
-          "resume": "Kimi K3 est disponible via l'API de Moonshot et la publication complete des poids est annoncee pour le 27 juillet sous licence MIT modifiee, relancant le debat sur les modeles ouverts face aux laboratoires americains.",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un coffre ouvert d'où s'écoulent des flux réguliers de particules vers plusieurs directions, symbolisant la diffusion des modèles à poids ouverts. Composition : un coffre principal, deux flux secondaires. Palette : orange, bleu pétrole. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20coffre%20ouvert%20d%27o%C3%B9%20s%27%C3%A9coulent%20des%20flux%20r%C3%A9guliers%20de%20particules%20vers%20plusieurs%20directions%2C%20symbolisant%20la%20diffusion%20des%20mod%C3%A8les%20%C3%A0%20poids%20ouverts.%20Composition%20%3A%20un%20coffre%20principal%2C%20deux%20flux%20secondaires.%20Palette%20%3A%20orange%2C%20bleu%20p%C3%A9trole.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=9103"
         }
       ],
       "podcasts": [
