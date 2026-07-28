@@ -1,6 +1,62 @@
 {
-  "generatedAt": "2026-07-27",
+  "generatedAt": "2026-07-28",
   "days": [
+    {
+      "date": "2026-07-28",
+      "label": "mardi 28 juillet 2026",
+      "notes": "Audit interne. Fenetre 27-28/07 sans nouvelle annonce officielle des laboratoires (les poids Kimi K3, publies avec un jour d'avance le 26/07, ont ete traites hier en primaire) : primaires vides. Fait nouveau retenu sur Kimi K3 : publication du rapport technique et classements independants (2e sur Vals AI, 3e sur Artificial Analysis Intelligence Index, 1er sur Frontend Code Arena) - analyse Geopolitechs, date de publication non affichee, champ omis ; Medium (blog personnel), Yotta Labs, explainx, nodemini ecartes (qualite / 3e+ contenu). Penurie mondiale de puces memoire liee a l'IA reperee via le journal boursier Moneyvox du 27/07 (format digest, exclu) - a suivre pour un article direct date. Articles FR : 0 (digests ia-info, Journal du Geek rubrique, Le Monde Informatique rubrique exclus). Quotas tres en dessous (0 primaire, 0 FR, 1 EN) : mardi 05h10 UTC, presse du jour non parue. Section 4 vide : WebFetch toujours en 403 via le proxy. B5 : rien de neuf (nominal). Podcasts : liens emission Spotify, datation d'episode inverifiable ici.",
+      "primaires": [],
+      "articles": [
+        {
+          "titre": "Kimi K3 : poids ouverts et rapport technique publies, un modele ouvert aux portes du sommet des classements",
+          "source": "Geopolitechs",
+          "lang": "en",
+          "lien": "https://www.geopolitechs.org/p/moonshot-released-kimi-k3-model-weights",
+          "resume": "Moonshot a publie les poids (594 Go, licence MIT modifiee) avec un jour d'avance, accompagnes d'un rapport technique. Les classements independants placent K3 deuxieme sur Vals AI et troisieme sur l'Intelligence Index d'Artificial Analysis, une premiere pour un modele ouvert d'un petit laboratoire.",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une forme ajourée en treillis se hissant sur la deuxième marche d'un podium entre des formes pleines et opaques, symbolisant un modèle ouvert qui rejoint le sommet d'un classement dominé par les systèmes fermés. Composition : un podium principal, deux formes secondaires. Palette : bleu nuit, or, ambre. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20forme%20ajour%C3%A9e%20en%20treillis%20se%20hissant%20sur%20la%20deuxi%C3%A8me%20marche%20d%27un%20podium%20entre%20des%20formes%20pleines%20et%20opaques%2C%20symbolisant%20un%20mod%C3%A8le%20ouvert%20qui%20rejoint%20le%20sommet%20d%27un%20classement%20domin%C3%A9%20par%20les%20syst%C3%A8mes%20ferm%C3%A9s.%20Composition%20%3A%20un%20podium%20principal%2C%20deux%20formes%20secondaires.%20Palette%20%3A%20bleu%20nuit%2C%20or%2C%20ambre.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=17101"
+        }
+      ],
+      "podcasts": [
+        {
+          "titre": "Comptoir IA",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
+          "resume": "Nicolas Guyon interviewe experts et metiers bouleverses par l'IA ; vulgarisation pointue."
+        },
+        {
+          "titre": "Tech Café",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/1MidB71rbYIRDIrcej073j",
+          "resume": "Actualite tech et IA au sens large, animee par Guillaume Vende."
+        },
+        {
+          "titre": "Data Driven 101 - Le podcast IA & Data",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/5YkpBdd4Si06ghOpcPmqux",
+          "resume": "Marc Sanselme decrypte IA et data science ; interviews d'experts, format accessible."
+        },
+        {
+          "titre": "Best AI Podcast",
+          "source": "Spotify",
+          "lang": "en",
+          "lien": "https://open.spotify.com/show/10otIHvHndpzykwIqrGjsV",
+          "resume": "Curated conversations on artificial intelligence, its tools, breakthroughs and industry trends."
+        },
+        {
+          "titre": "AI and I",
+          "source": "Spotify",
+          "lang": "en",
+          "lien": "https://open.spotify.com/show/5qX1nRTaFsfWdmdj5JWO1G",
+          "resume": "Interviews exploring how people put AI to work in their craft and creative process."
+        }
+      ],
+      "projets": [],
+      "methodes": []
+    },
     {
       "date": "2026-07-27",
       "label": "lundi 27 juillet 2026",
@@ -410,81 +466,6 @@
           "resume": "Lecture critique du lancement : trois modeles de la gamme Flash mais toujours pas de 3.5 Pro, Google concentrant ses ressources sur le pre-entrainement de Gemini 4.",
           "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un podium à trois emplacements dont la marche centrale est vide, symbolisant une gamme renouvelée où le modèle attendu manque à l'appel. Composition : un podium principal, deux formes posées secondaires. Palette : bleu profond, violet, accents cyan. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
           "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20podium%20%C3%A0%20trois%20emplacements%20dont%20la%20marche%20centrale%20est%20vide%2C%20symbolisant%20une%20gamme%20renouvel%C3%A9e%20o%C3%B9%20le%20mod%C3%A8le%20attendu%20manque%20%C3%A0%20l%27appel.%20Composition%20%3A%20un%20podium%20principal%2C%20deux%20formes%20pos%C3%A9es%20secondaires.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=11105"
-        }
-      ],
-      "podcasts": [
-        {
-          "titre": "Comptoir IA",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
-          "resume": "Nicolas Guyon interviewe experts et metiers bouleverses par l'IA ; vulgarisation pointue."
-        },
-        {
-          "titre": "Tech Café",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/1MidB71rbYIRDIrcej073j",
-          "resume": "Actualite tech et IA au sens large, animee par Guillaume Vende."
-        },
-        {
-          "titre": "Data Driven 101 - Le podcast IA & Data",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/5YkpBdd4Si06ghOpcPmqux",
-          "resume": "Marc Sanselme decrypte IA et data science ; interviews d'experts, format accessible."
-        },
-        {
-          "titre": "Best AI Podcast",
-          "source": "Spotify",
-          "lang": "en",
-          "lien": "https://open.spotify.com/show/10otIHvHndpzykwIqrGjsV",
-          "resume": "Curated conversations on artificial intelligence, its tools, breakthroughs and industry trends."
-        },
-        {
-          "titre": "AI and I",
-          "source": "Spotify",
-          "lang": "en",
-          "lien": "https://open.spotify.com/show/5qX1nRTaFsfWdmdj5JWO1G",
-          "resume": "Interviews exploring how people put AI to work in their craft and creative process."
-        }
-      ],
-      "projets": [],
-      "methodes": []
-    },
-    {
-      "date": "2026-07-21",
-      "label": "mardi 21 juillet 2026",
-      "notes": "Audit interne. Aucune annonce officielle verifiable dans la fenetre 24-48h (19-21/07) : primaires vides. Candidats hors fenetre ecartes : Anthropic J-lens/global workspace (06/07, officiel), Gemma 4 12B (03/06, maj furtive 16/07), TechCrunch Vint Cerf (15/07), avis Adlc et CNBC deja traites le 20/07. Sujet du jour : fuite GPT-5.7/GPT-6 (dedup 2 max : LeBigData FR 20/07 + WinCentral EN, date non affichee, champ omis) - rumeur non confirmee par OpenAI, resumes rediges au conditionnel. VentureBeat J-lens : date d'article non affichee, champ omis ; retenu car sujet recherche non encore couvert par la veille. Quotas non atteints (1 FR, 2 EN) : mardi 05h09 UTC, presse du jour non parue. Section 4 vide : verification licences/activite/fenetre impossible (WebFetch 403 via proxy persistant). B5 : rien de neuf (nominal). Podcasts : liens emission Spotify, datation d'episode inverifiable ici.",
-      "primaires": [],
-      "articles": [
-        {
-          "titre": "GPT-6 et GPT-5.7 : une sortie prevue des aout 2026 selon une fuite sur les futurs modeles d'OpenAI",
-          "source": "LeBigData",
-          "lang": "fr",
-          "date": "20/07/2026",
-          "lien": "https://www.lebigdata.fr/gpt-6-et-gpt-5-7-une-sortie-prevue-des-aout-2026-selon-une-fuite-explosive-sur-les-futurs-modeles-dopenai",
-          "resume": "Une fuite evoque un lancement possible de GPT-5.7 et GPT-6 des aout, avec une fenetre de contexte de 1,5 million de tokens et une nouvelle base de pre-entrainement. OpenAI n'a rien confirme.",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant trois sommets successifs dont le plus lointain n'est esquissé qu'en pointillés au-dessus d'une brume, symbolisant une génération de modèles encore à l'état de rumeur. Composition : un sommet principal net, deux sommets secondaires estompés. Palette : bleu profond, violet, accents cyan. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20trois%20sommets%20successifs%20dont%20le%20plus%20lointain%20n%27est%20esquiss%C3%A9%20qu%27en%20pointill%C3%A9s%20au-dessus%20d%27une%20brume%2C%20symbolisant%20une%20g%C3%A9n%C3%A9ration%20de%20mod%C3%A8les%20encore%20%C3%A0%20l%27%C3%A9tat%20de%20rumeur.%20Composition%20%3A%20un%20sommet%20principal%20net%2C%20deux%20sommets%20secondaires%20estomp%C3%A9s.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=10101"
-        },
-        {
-          "titre": "GPT-5.7/GPT-6 leak reveals August launch and 1.5M context window",
-          "source": "WinCentral",
-          "lang": "en",
-          "lien": "https://thewincentral.com/gpt-5-7-gpt-6-leak-august-launch-1-5m-context-window/",
-          "resume": "La meme fuite rapportee cote anglophone : fenetre d'aout, contexte de 1,5 million de tokens, nouvelle fondation de pre-entrainement d'environ 10 000 milliards de parametres. Specifications a traiter comme des rumeurs.",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une fenêtre rectangulaire qui s'agrandit en anneaux concentriques successifs, symbolisant l'extension massive d'une fenêtre de contexte. Composition : une fenêtre principale, deux anneaux secondaires. Palette : bleu profond, violet, accents cyan. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20fen%C3%AAtre%20rectangulaire%20qui%20s%27agrandit%20en%20anneaux%20concentriques%20successifs%2C%20symbolisant%20l%27extension%20massive%20d%27une%20fen%C3%AAtre%20de%20contexte.%20Composition%20%3A%20une%20fen%C3%AAtre%20principale%2C%20deux%20anneaux%20secondaires.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=10102"
-        },
-        {
-          "titre": "Anthropic's new J-lens reveals a silent workspace inside Claude that mirrors a leading theory of consciousness",
-          "source": "VentureBeat",
-          "lang": "en",
-          "lien": "https://venturebeat.com/technology/anthropics-new-j-lens-reveals-a-silent-workspace-inside-claude-that-mirrors-a-leading-theory-of-consciousness",
-          "resume": "Analyse de la recherche d'Anthropic sur le J-lens : un petit sous-espace interne de Claude se comporte comme un espace de travail global, ou transitent les raisonnements multi-etapes avant leur verbalisation. Outil publie en open source.",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant la coupe d'une structure en couches révélant une petite chambre lumineuse en son centre, symbolisant la découverte d'un espace de travail interne caché. Composition : une structure principale en coupe, deux couches secondaires. Palette : bleu nuit, or, ambre. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20la%20coupe%20d%27une%20structure%20en%20couches%20r%C3%A9v%C3%A9lant%20une%20petite%20chambre%20lumineuse%20en%20son%20centre%2C%20symbolisant%20la%20d%C3%A9couverte%20d%27un%20espace%20de%20travail%20interne%20cach%C3%A9.%20Composition%20%3A%20une%20structure%20principale%20en%20coupe%2C%20deux%20couches%20secondaires.%20Palette%20%3A%20bleu%20nuit%2C%20or%2C%20ambre.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=10103"
         }
       ],
       "podcasts": [
