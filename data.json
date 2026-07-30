@@ -1,6 +1,73 @@
 {
-  "generatedAt": "2026-07-29",
+  "generatedAt": "2026-07-30",
   "days": [
+    {
+      "date": "2026-07-30",
+      "label": "jeudi 30 juillet 2026",
+      "notes": "Audit interne. Sujet dominant : lettre ouverte Pacing the Frontier signee par plus de 1100 salaries d'OpenAI, Anthropic, Google et Meta (diffusee le 28/07, soutien officiel des entreprises le 29/07) demandant a Washington un mecanisme international de ralentissement verifiable. Pas d'URL officielle directe de la lettre reperable dans les resultats : primaires vides, sujet couvert par la presse. Dedup stricte (2 contenus) : CNN 28/07 (source la plus proche) + France 24 29/07 (volet FR) ; ecartes : TechTimes 28 et 29/07, Journal du Net, Clubic, Brief IA, Generation-NT, Le Grand Continent, byteiota, aitoolsrecap, buildfastwithai (digest). Nombre de signataires : 1100 selon CNN/TechTimes, 1200 selon Clubic/France 24 - les resumes reprennent le chiffre de chaque source. Contexte mentionne par TechTimes (breche Hugging Face par un modele OpenAI) non repris : pas de source directe verifiable. Quotas en dessous (0 primaire, 1 FR, 1 EN) : jeudi 05h09 UTC. Section 4 vide (rien de nouveau verifiable aujourd'hui ; spec MCP et SDK betas deja traites le 29/07). B5 : rien de neuf (nominal). Podcasts : liens emission Spotify, datation d'episode inverifiable ici.",
+      "primaires": [],
+      "articles": [
+        {
+          "titre": "IA : des salaries des plus grands laboratoires demandent aux Etats-Unis de se preparer a ralentir",
+          "source": "CNN",
+          "lang": "en",
+          "date": "28/07/2026",
+          "lien": "https://www.cnn.com/2026/07/28/tech/ai-development-tech-employees-open-letter",
+          "resume": "Plus de 1100 employes d'OpenAI, Anthropic, Google et Meta signent la lettre Pacing the Frontier : ils demandent a Washington de batir un mecanisme international capable de coordonner un ralentissement verifiable si l'IA progresse plus vite que la supervision humaine.",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un levier de frein massif enclenché contre une grande roue lancée dans une descente, symbolisant la demande d'un ralentissement maîtrisé d'une course technologique. Composition : une roue principale, un levier et une pente secondaires. Palette : bordeaux, gris, beige. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20levier%20de%20frein%20massif%20enclench%C3%A9%20contre%20une%20grande%20roue%20lanc%C3%A9e%20dans%20une%20descente%2C%20symbolisant%20la%20demande%20d%27un%20ralentissement%20ma%C3%AEtris%C3%A9%20d%27une%20course%20technologique.%20Composition%20%3A%20une%20roue%20principale%2C%20un%20levier%20et%20une%20pente%20secondaires.%20Palette%20%3A%20bordeaux%2C%20gris%2C%20beige.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=19101"
+        },
+        {
+          "titre": "Inquiets, des cadres de l'IA demandent aux Etats-Unis de les aider a lever le pied",
+          "source": "France 24",
+          "lang": "fr",
+          "date": "29/07/2026",
+          "lien": "https://www.france24.com/fr/%C3%A9co-tech/20260729-ia-petition-openai-anthropic-google-inquiets-etats-unis-auto-amelioration-recursive",
+          "resume": "Plus de 1200 signataires, dont Dario Amodei et des responsables de la recherche d'OpenAI, Meta et Google DeepMind, s'alarment de l'auto-amelioration recursive des modeles et appellent a un ralentissement concerte entre entreprises et nations.",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une multitude de petites formes identiques retenant ensemble l'aiguille d'un grand cadran qui tourne trop vite, symbolisant un appel collectif à temporiser. Composition : un cadran principal, deux groupes de formes secondaires. Palette : bordeaux, gris, beige. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20multitude%20de%20petites%20formes%20identiques%20retenant%20ensemble%20l%27aiguille%20d%27un%20grand%20cadran%20qui%20tourne%20trop%20vite%2C%20symbolisant%20un%20appel%20collectif%20%C3%A0%20temporiser.%20Composition%20%3A%20un%20cadran%20principal%2C%20deux%20groupes%20de%20formes%20secondaires.%20Palette%20%3A%20bordeaux%2C%20gris%2C%20beige.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=19102"
+        }
+      ],
+      "podcasts": [
+        {
+          "titre": "Comptoir IA",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
+          "resume": "Nicolas Guyon interviewe experts et metiers bouleverses par l'IA ; vulgarisation pointue."
+        },
+        {
+          "titre": "Tech Café",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/1MidB71rbYIRDIrcej073j",
+          "resume": "Actualite tech et IA au sens large, animee par Guillaume Vende."
+        },
+        {
+          "titre": "Data Driven 101 - Le podcast IA & Data",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/5YkpBdd4Si06ghOpcPmqux",
+          "resume": "Marc Sanselme decrypte IA et data science ; interviews d'experts, format accessible."
+        },
+        {
+          "titre": "Best AI Podcast",
+          "source": "Spotify",
+          "lang": "en",
+          "lien": "https://open.spotify.com/show/10otIHvHndpzykwIqrGjsV",
+          "resume": "Curated conversations on artificial intelligence, its tools, breakthroughs and industry trends."
+        },
+        {
+          "titre": "AI and I",
+          "source": "Spotify",
+          "lang": "en",
+          "lien": "https://open.spotify.com/show/5qX1nRTaFsfWdmdj5JWO1G",
+          "resume": "Interviews exploring how people put AI to work in their craft and creative process."
+        }
+      ],
+      "projets": [],
+      "methodes": []
+    },
     {
       "date": "2026-07-29",
       "label": "mercredi 29 juillet 2026",
@@ -383,71 +450,6 @@
           "resume": "La France etait le dernier grand marche prive de ces fonctions, retard explique par le contexte reglementaire autour des droits voisins. Les syntheses IA s'affichent desormais au-dessus des resultats classiques.",
           "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un encadré lumineux surplombant une liste de barres horizontales qui s'estompent vers le bas, symbolisant la synthèse qui prend la place d'honneur au-dessus des résultats. Composition : un encadré principal, deux barres secondaires. Palette : vert sauge, gris anthracite, blanc. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
           "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20encadr%C3%A9%20lumineux%20surplombant%20une%20liste%20de%20barres%20horizontales%20qui%20s%27estompent%20vers%20le%20bas%2C%20symbolisant%20la%20synth%C3%A8se%20qui%20prend%20la%20place%20d%27honneur%20au-dessus%20des%20r%C3%A9sultats.%20Composition%20%3A%20un%20encadr%C3%A9%20principal%2C%20deux%20barres%20secondaires.%20Palette%20%3A%20vert%20sauge%2C%20gris%20anthracite%2C%20blanc.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=13104"
-        }
-      ],
-      "podcasts": [
-        {
-          "titre": "Comptoir IA",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
-          "resume": "Nicolas Guyon interviewe experts et metiers bouleverses par l'IA ; vulgarisation pointue."
-        },
-        {
-          "titre": "Tech Café",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/1MidB71rbYIRDIrcej073j",
-          "resume": "Actualite tech et IA au sens large, animee par Guillaume Vende."
-        },
-        {
-          "titre": "Data Driven 101 - Le podcast IA & Data",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/5YkpBdd4Si06ghOpcPmqux",
-          "resume": "Marc Sanselme decrypte IA et data science ; interviews d'experts, format accessible."
-        },
-        {
-          "titre": "Best AI Podcast",
-          "source": "Spotify",
-          "lang": "en",
-          "lien": "https://open.spotify.com/show/10otIHvHndpzykwIqrGjsV",
-          "resume": "Curated conversations on artificial intelligence, its tools, breakthroughs and industry trends."
-        },
-        {
-          "titre": "AI and I",
-          "source": "Spotify",
-          "lang": "en",
-          "lien": "https://open.spotify.com/show/5qX1nRTaFsfWdmdj5JWO1G",
-          "resume": "Interviews exploring how people put AI to work in their craft and creative process."
-        }
-      ],
-      "projets": [],
-      "methodes": []
-    },
-    {
-      "date": "2026-07-23",
-      "label": "jeudi 23 juillet 2026",
-      "notes": "Audit interne. Fenetre 22-23/07 calme cote laboratoires : aucune annonce officielle nouvelle verifiable (candidats ecartes car hors fenetre : Boston Dynamics/Gemini Robotics-ER 1.6 sur Spot, avril 2026 ; extension Project Glasswing d'Anthropic, 2 juin 2026 ; lancement Gemini 3.6 Flash deja traite le 22/07). Primaires vides. Fait du jour : cloture des adhesions au code de bonnes pratiques UE le 22/07 18h et publication de la liste des premiers signataires - 2 contenus FR retenus (agencergpd.eu : liste ; portail-rgpd.com : recommandation de l'autorite neerlandaise), dates de publication non affichees, champs omis. Aucun article EN direct date verifiable (signaux reperes via agregateurs seulement : lobbying Q2 Anthropic/OpenAI, FLI Safety Index - exclus). Quotas tres en dessous (0 primaire, 2 FR, 0 EN) : jeudi 05h08 UTC, presse du jour non parue. Section 4 vide : WebFetch toujours en 403 via le proxy. B5 : rien de neuf (nominal). Podcasts : liens emission Spotify, datation d'episode inverifiable ici.",
-      "primaires": [],
-      "articles": [
-        {
-          "titre": "La Commission europeenne publie la liste complete des entreprises d'IA signataires du Code de bonnes pratiques",
-          "source": "Agence RGPD",
-          "lang": "fr",
-          "lien": "https://agencergpd.eu/la-commission-europeenne-publie-la-liste-complete-des-entreprises-dia-signataires-du-code-de-bonnes-pratiques/",
-          "resume": "Apres la cloture des adhesions le 22 juillet a 18h, la Commission publie la liste des premiers signataires du code sur la transparence des contenus generes par IA, qui beneficieront d'une presomption de conformite avant l'entree en application de l'article 50 le 2 aout.",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une file de formes géométriques distinctes déposant chacune un jeton dans une urne officielle scellée, symbolisant l'adhésion volontaire d'acteurs variés à un cadre commun. Composition : une urne principale, deux formes en file secondaires. Palette : bordeaux, gris, beige. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20file%20de%20formes%20g%C3%A9om%C3%A9triques%20distinctes%20d%C3%A9posant%20chacune%20un%20jeton%20dans%20une%20urne%20officielle%20scell%C3%A9e%2C%20symbolisant%20l%27adh%C3%A9sion%20volontaire%20d%27acteurs%20vari%C3%A9s%20%C3%A0%20un%20cadre%20commun.%20Composition%20%3A%20une%20urne%20principale%2C%20deux%20formes%20en%20file%20secondaires.%20Palette%20%3A%20bordeaux%2C%20gris%2C%20beige.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=12101"
-        },
-        {
-          "titre": "L'autorite neerlandaise conseille d'adherer au code de bonnes pratiques sur la transparence des systemes d'IA",
-          "source": "Portail RGPD",
-          "lang": "fr",
-          "lien": "https://veille.portail-rgpd.com/actu/transparence-intelligence-artificielle-code-conduite-signature/",
-          "resume": "Le regulateur neerlandais recommande aux fournisseurs et deployeurs de systemes d'IA generative d'adherer au code volontaire pour aborder les obligations de transparence applicables a partir du 2 aout 2026.",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un panneau indicateur orientant un flux de petites formes vers un portique ouvert, symbolisant la recommandation institutionnelle d'un chemin de conformité. Composition : un panneau principal, un portique et un flux secondaires. Palette : bordeaux, gris, beige. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20panneau%20indicateur%20orientant%20un%20flux%20de%20petites%20formes%20vers%20un%20portique%20ouvert%2C%20symbolisant%20la%20recommandation%20institutionnelle%20d%27un%20chemin%20de%20conformit%C3%A9.%20Composition%20%3A%20un%20panneau%20principal%2C%20un%20portique%20et%20un%20flux%20secondaires.%20Palette%20%3A%20bordeaux%2C%20gris%2C%20beige.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=12102"
         }
       ],
       "podcasts": [
