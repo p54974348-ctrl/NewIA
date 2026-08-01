@@ -1,6 +1,84 @@
 {
-  "generatedAt": "2026-07-31",
+  "generatedAt": "2026-08-01",
   "days": [
+    {
+      "date": "2026-08-01",
+      "label": "samedi 1er aout 2026",
+      "notes": "Audit interne. Primaire : publication officielle de DeepSeek-V4-Flash-0731 sur Hugging Face le 31/07 (meme architecture 284B MoE / 13B actives que la preview d'avril, post-entrainement refait, module DSpark attache, API en beta publique). Dedup : depot officiel HF (primaire) + 1 analyse (MarkTechPost 31/07) ; digitalapplied, kingy, modemguides, modelfit, developersdigest, digg ecartes. FR : Boursorama 31/07 11h18 (analyse Anthropic : S-1 confidentiel du 01/06, IPO visee octobre, lettre Pacing the Frontier, AI Kill Switch Act du 23/07) - sujet distinct de la couverture du 30/07 (angle strategie/bourse). Ecartes faute de source directe verifiable : divulgation Anthropic du 30/07 (breches lors de tests cyber - pas d'URL officielle reperee), baisse de prix GPT-5.6 de 80 pour cent + acces chercheurs (agregateurs seulement) - a suivre. Quotas en dessous (1 primaire, 1 FR, 1 EN) : samedi 05h09 UTC. Section 4 : projets vides (depot DeepSeek deja en primaire, non duplique) ; methodes vides (rien de nouveau verifiable). B5 : rien de neuf (nominal). Podcasts : liens emission Spotify, datation d'episode inverifiable ici. Demain 02/08 : entree en application de l'article 50 de l'AI Act.",
+      "primaires": [
+        {
+          "titre": "DeepSeek publie DeepSeek-V4-Flash-0731, version officielle re-entrainee de son modele agentique",
+          "source": "Hugging Face / DeepSeek",
+          "lang": "en",
+          "date": "31/07/2026",
+          "lien": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731",
+          "resume": "Meme architecture MoE de 284 milliards de parametres (13 actives) que la preview, mais post-entrainement entierement refait pour l'agentique et le code ; module de decodage speculatif DSpark integre et API V4-Flash en beta publique (0,14 dollar par million de tokens en entree).",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une silhouette de machine identique a elle-meme dont seul le noyau interne, fraichement remplace, rayonne davantage, symbolisant un modele inchange en structure mais re-entraine en profondeur. Composition : une silhouette principale, un noyau et un halo secondaires. Palette : bleu profond, violet, accents cyan. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20silhouette%20de%20machine%20identique%20a%20elle-meme%20dont%20seul%20le%20noyau%20interne%2C%20fraichement%20remplace%2C%20rayonne%20davantage%2C%20symbolisant%20un%20modele%20inchange%20en%20structure%20mais%20re-entraine%20en%20profondeur.%20Composition%20%3A%20une%20silhouette%20principale%2C%20un%20noyau%20et%20un%20halo%20secondaires.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=21101"
+        }
+      ],
+      "articles": [
+        {
+          "titre": "Anthropic, la guerre de l'IA aura-t-elle lieu ?",
+          "source": "Boursorama",
+          "lang": "fr",
+          "date": "31/07/2026",
+          "lien": "https://www.boursorama.com/bourse/actualites/anthropic-la-guerre-de-l-ia-aura-t-elle-lieu-edddd142230ee0e47b8a2faf9bf24c82",
+          "resume": "Analyse du positionnement d'Anthropic : S-1 depose confidentiellement le 1er juin pour une introduction en Bourse visee en octobre sur le Nasdaq, signature de la lettre Pacing the Frontier par Dario Amodei et debat autour de l'AI Kill Switch Act bipartisan.",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un échiquier stylisé où une seule grande pièce fait face à une rangée de pièces identiques, symbolisant un acteur singulier engagé dans une partie serrée. Composition : un échiquier principal, deux groupes de pièces secondaires. Palette : orange, bleu pétrole. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20%C3%A9chiquier%20stylis%C3%A9%20o%C3%B9%20une%20seule%20grande%20pi%C3%A8ce%20fait%20face%20%C3%A0%20une%20rang%C3%A9e%20de%20pi%C3%A8ces%20identiques%2C%20symbolisant%20un%20acteur%20singulier%20engag%C3%A9%20dans%20une%20partie%20serr%C3%A9e.%20Composition%20%3A%20un%20%C3%A9chiquier%20principal%2C%20deux%20groupes%20de%20pi%C3%A8ces%20secondaires.%20Palette%20%3A%20orange%2C%20bleu%20p%C3%A9trole.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=21102"
+        },
+        {
+          "titre": "DeepSeek upgrades DeepSeek-V4-Flash-0731 with major agentic and coding gains",
+          "source": "MarkTechPost",
+          "lang": "en",
+          "date": "31/07/2026",
+          "lien": "https://www.marktechpost.com/2026/07/31/deepseek-upgrades-deepseek-v4-flash-0731-with-major-agentic-and-coding-gains/",
+          "resume": "Lecture technique de la mise a jour : gains issus du seul re-post-entrainement, support natif du format Responses API et adaptation a Codex, avec un tarif agressif de 0,28 dollar par million de tokens en sortie.",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un tracé de parcours en escalier dont les dernières marches deviennent nettement plus hautes, symbolisant des gains marqués sur les tâches d'agent et de code. Composition : un escalier principal, deux marches accentuées secondaires. Palette : bleu profond, violet, accents cyan. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20trac%C3%A9%20de%20parcours%20en%20escalier%20dont%20les%20derni%C3%A8res%20marches%20deviennent%20nettement%20plus%20hautes%2C%20symbolisant%20des%20gains%20marqu%C3%A9s%20sur%20les%20t%C3%A2ches%20d%27agent%20et%20de%20code.%20Composition%20%3A%20un%20escalier%20principal%2C%20deux%20marches%20accentu%C3%A9es%20secondaires.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=21103"
+        }
+      ],
+      "podcasts": [
+        {
+          "titre": "Comptoir IA",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
+          "resume": "Nicolas Guyon interviewe experts et metiers bouleverses par l'IA ; vulgarisation pointue."
+        },
+        {
+          "titre": "Tech Café",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/1MidB71rbYIRDIrcej073j",
+          "resume": "Actualite tech et IA au sens large, animee par Guillaume Vende."
+        },
+        {
+          "titre": "Data Driven 101 - Le podcast IA & Data",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/5YkpBdd4Si06ghOpcPmqux",
+          "resume": "Marc Sanselme decrypte IA et data science ; interviews d'experts, format accessible."
+        },
+        {
+          "titre": "Best AI Podcast",
+          "source": "Spotify",
+          "lang": "en",
+          "lien": "https://open.spotify.com/show/10otIHvHndpzykwIqrGjsV",
+          "resume": "Curated conversations on artificial intelligence, its tools, breakthroughs and industry trends."
+        },
+        {
+          "titre": "AI and I",
+          "source": "Spotify",
+          "lang": "en",
+          "lien": "https://open.spotify.com/show/5qX1nRTaFsfWdmdj5JWO1G",
+          "resume": "Interviews exploring how people put AI to work in their craft and creative process."
+        }
+      ],
+      "projets": [],
+      "methodes": []
+    },
     {
       "date": "2026-07-31",
       "label": "vendredi 31 juillet 2026",
@@ -351,73 +429,6 @@
           "resume": "Premier modele telechargeable de la classe des 3 000 milliards de parametres : 1,4 To de poids en MXFP4 sous licence MIT modifiee. Des tests independants relevent toutefois un taux d'hallucination de 51 pour cent absent des benchmarks de Moonshot.",
           "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un conteneur massif suspendu par une grue au-dessus d'une file de petits chariots en attente, symbolisant la livraison imminente d'un modèle géant à la communauté. Composition : un conteneur principal, deux chariots secondaires. Palette : bleu profond, violet, accents cyan. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
           "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20conteneur%20massif%20suspendu%20par%20une%20grue%20au-dessus%20d%27une%20file%20de%20petits%20chariots%20en%20attente%2C%20symbolisant%20la%20livraison%20imminente%20d%27un%20mod%C3%A8le%20g%C3%A9ant%20%C3%A0%20la%20communaut%C3%A9.%20Composition%20%3A%20un%20conteneur%20principal%2C%20deux%20chariots%20secondaires.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=15102"
-        }
-      ],
-      "podcasts": [
-        {
-          "titre": "Comptoir IA",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
-          "resume": "Nicolas Guyon interviewe experts et metiers bouleverses par l'IA ; vulgarisation pointue."
-        },
-        {
-          "titre": "Tech Café",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/1MidB71rbYIRDIrcej073j",
-          "resume": "Actualite tech et IA au sens large, animee par Guillaume Vende."
-        },
-        {
-          "titre": "Data Driven 101 - Le podcast IA & Data",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/5YkpBdd4Si06ghOpcPmqux",
-          "resume": "Marc Sanselme decrypte IA et data science ; interviews d'experts, format accessible."
-        },
-        {
-          "titre": "Best AI Podcast",
-          "source": "Spotify",
-          "lang": "en",
-          "lien": "https://open.spotify.com/show/10otIHvHndpzykwIqrGjsV",
-          "resume": "Curated conversations on artificial intelligence, its tools, breakthroughs and industry trends."
-        },
-        {
-          "titre": "AI and I",
-          "source": "Spotify",
-          "lang": "en",
-          "lien": "https://open.spotify.com/show/5qX1nRTaFsfWdmdj5JWO1G",
-          "resume": "Interviews exploring how people put AI to work in their craft and creative process."
-        }
-      ],
-      "projets": [],
-      "methodes": []
-    },
-    {
-      "date": "2026-07-25",
-      "label": "samedi 25 juillet 2026",
-      "notes": "Audit interne. Journee dominee par un seul sujet majeur : lancement de Claude Opus 5 par Anthropic le 24/07. Dedup stricte appliquee (source originale + 1 analyse) : annonce officielle anthropic.com (primaire) + analyse MacGeneration (FR, date de publication precise non affichee, champ omis). Ecartes (3e+ contenu meme sujet) : TechCrunch, Bloomberg, Fortune, SiliconANGLE, MacRumors, 9to5Mac, Benzinga, Yahoo Finance, Investing.com FR, Les Affaires, blog AWS (dispo Bedrock). Aucun autre sujet frais verifiable dans la fenetre 24-48h : articles EN 0 (le volet anglophone de la page reste servi par la primaire, lang=en). Quotas tres en dessous mais assumes (1 primaire, 1 FR, 0 EN) : samedi 05h08 UTC. Section 4 vide : WebFetch toujours en 403 via le proxy. B5 : rien de neuf (nominal). Podcasts : liens emission Spotify, datation d'episode inverifiable ici.",
-      "primaires": [
-        {
-          "titre": "Anthropic lance Claude Opus 5, premier modele de sa cinquieme generation Opus",
-          "source": "Anthropic",
-          "lang": "en",
-          "date": "24/07/2026",
-          "lien": "https://www.anthropic.com/news/claude-opus-5",
-          "resume": "Opus 5 approche l'intelligence de pointe de Fable 5 a moitie prix (5/25 dollars par million de tokens), avec un reglage d'effort bas/moyen/haut, un nouveau record sur Frontier-Bench et GDPval-AA, et le statut de modele par defaut sur Claude Max.",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un levier à trois crans adossé à une haute silhouette de montagne dont le sommet s'illumine, symbolisant une puissance de pointe dont on règle l'effort. Composition : un levier principal, une montagne et un halo secondaires. Palette : bleu profond, violet, accents cyan. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20levier%20%C3%A0%20trois%20crans%20adoss%C3%A9%20%C3%A0%20une%20haute%20silhouette%20de%20montagne%20dont%20le%20sommet%20s%27illumine%2C%20symbolisant%20une%20puissance%20de%20pointe%20dont%20on%20r%C3%A8gle%20l%27effort.%20Composition%20%3A%20un%20levier%20principal%2C%20une%20montagne%20et%20un%20halo%20secondaires.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=14101"
-        }
-      ],
-      "articles": [
-        {
-          "titre": "Anthropic donne de la voix a Claude et sort l'artillerie lourde avec Opus 5",
-          "source": "MacGeneration",
-          "lang": "fr",
-          "lien": "https://www.macg.co/intelligence-artificielle/2026/07/anthropic-donne-de-la-voix-claude-et-sort-lartillerie-lourde-avec-opus-5-309977",
-          "resume": "Analyse du lancement : une nouvelle generation au meme tarif que son predecesseur, pensee pour les usages professionnels quotidiens, presentee comme moins sujette aux derives et plus difficile a detourner pour des cyberattaques.",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant trois arcs concentriques émanant d'une fine fente lumineuse sur une surface sobre, symbolisant une machine qui prend la parole. Composition : une fente principale, deux arcs secondaires. Palette : bleu profond, violet, accents cyan. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20trois%20arcs%20concentriques%20%C3%A9manant%20d%27une%20fine%20fente%20lumineuse%20sur%20une%20surface%20sobre%2C%20symbolisant%20une%20machine%20qui%20prend%20la%20parole.%20Composition%20%3A%20une%20fente%20principale%2C%20deux%20arcs%20secondaires.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=14102"
         }
       ],
       "podcasts": [
