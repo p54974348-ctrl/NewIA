@@ -1,6 +1,74 @@
 {
-  "generatedAt": "2026-08-01",
+  "generatedAt": "2026-08-02",
   "days": [
+    {
+      "date": "2026-08-02",
+      "label": "dimanche 2 aout 2026",
+      "notes": "Audit interne. Evenement du jour : entree en application des obligations de transparence de l'article 50 de l'AI Act (reglement UE 2024/1689), deux ans apres l'entree en vigueur du texte. Primaire = page officielle de reference de la Commission (AI Act Service Desk, article 50), datee au jour de l'evenement ; analyse retenue : FocuSur 01/08 (angle editeurs/contenus, URL datee). Dedup respectee (2 contenus) malgre la couverture des jours precedents (22, 29, 31/07) : le fait nouveau est l'application effective. Ecartes : donneespersonnelles, leto, studeria, dpo-partage, studioentete (dates non affichees, 3e+ contenu), Licentium (date non affichee), Sidley (24/06, hors fenetre). Aucune annonce laboratoire 01-02/08 reperee (dimanche). Quotas en dessous (1 primaire, 1 FR, 0 EN - primaire lang=en). Section 4 vide. B5 : rien de neuf (nominal). Podcasts : liens emission Spotify, datation d'episode inverifiable ici.",
+      "primaires": [
+        {
+          "titre": "Les obligations de transparence de l'article 50 de l'AI Act entrent en application dans l'UE",
+          "source": "Commission europeenne",
+          "lang": "en",
+          "date": "02/08/2026",
+          "lien": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-50",
+          "resume": "A compter de ce jour, chatbots et assistants doivent informer l'utilisateur qu'il interagit avec une IA, les deepfakes et contenus synthetiques doivent etre signales, avec un marquage lisible par machine. Sanctions jusqu'a 15 millions d'euros ou 3 pour cent du chiffre d'affaires mondial.",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un grand portique dont la barrière vient de s'ouvrir et où chaque forme qui le franchit reçoit une petite étiquette identique, symbolisant l'entrée en vigueur d'une obligation de transparence pour tous. Composition : un portique principal, deux formes étiquetées secondaires. Palette : bordeaux, gris, beige. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20grand%20portique%20dont%20la%20barri%C3%A8re%20vient%20de%20s%27ouvrir%20et%20o%C3%B9%20chaque%20forme%20qui%20le%20franchit%20re%C3%A7oit%20une%20petite%20%C3%A9tiquette%20identique%2C%20symbolisant%20l%27entr%C3%A9e%20en%20vigueur%20d%27une%20obligation%20de%20transparence%20pour%20tous.%20Composition%20%3A%20un%20portique%20principal%2C%20deux%20formes%20%C3%A9tiquet%C3%A9es%20secondaires.%20Palette%20%3A%20bordeaux%2C%20gris%2C%20beige.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=22101"
+        }
+      ],
+      "articles": [
+        {
+          "titre": "AI Act, article 50 : des le 2 aout 2026, transparence stricte pour les editeurs de contenus IA",
+          "source": "FocuSur",
+          "lang": "fr",
+          "date": "01/08/2026",
+          "lien": "https://www.focusur.fr/societe/2026/08/01/ai-act-article-50-des-le-2-aout-2026-transparence-stricte-pour-les-editeurs-ce-qui-change-pour-vos-contenus-ia/",
+          "resume": "Ce qui change pour les sites et editeurs : signaler les textes d'IA d'interet public, les deepfakes et les interactions avec un chatbot. Les systemes generatifs deja commercialises beneficient d'un delai au 2 decembre pour le marquage lisible par machine.",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un tampon apposant une marque discrète au coin de chaque feuille sortant d'une presse, symbolisant l'étiquetage systématique des contenus édités avec une machine. Composition : une presse principale, un tampon et deux feuilles secondaires. Palette : bordeaux, gris, beige. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20tampon%20apposant%20une%20marque%20discr%C3%A8te%20au%20coin%20de%20chaque%20feuille%20sortant%20d%27une%20presse%2C%20symbolisant%20l%27%C3%A9tiquetage%20syst%C3%A9matique%20des%20contenus%20%C3%A9dit%C3%A9s%20avec%20une%20machine.%20Composition%20%3A%20une%20presse%20principale%2C%20un%20tampon%20et%20deux%20feuilles%20secondaires.%20Palette%20%3A%20bordeaux%2C%20gris%2C%20beige.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=22102"
+        }
+      ],
+      "podcasts": [
+        {
+          "titre": "Comptoir IA",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
+          "resume": "Nicolas Guyon interviewe experts et metiers bouleverses par l'IA ; vulgarisation pointue."
+        },
+        {
+          "titre": "Tech Café",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/1MidB71rbYIRDIrcej073j",
+          "resume": "Actualite tech et IA au sens large, animee par Guillaume Vende."
+        },
+        {
+          "titre": "Data Driven 101 - Le podcast IA & Data",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/5YkpBdd4Si06ghOpcPmqux",
+          "resume": "Marc Sanselme decrypte IA et data science ; interviews d'experts, format accessible."
+        },
+        {
+          "titre": "Best AI Podcast",
+          "source": "Spotify",
+          "lang": "en",
+          "lien": "https://open.spotify.com/show/10otIHvHndpzykwIqrGjsV",
+          "resume": "Curated conversations on artificial intelligence, its tools, breakthroughs and industry trends."
+        },
+        {
+          "titre": "AI and I",
+          "source": "Spotify",
+          "lang": "en",
+          "lien": "https://open.spotify.com/show/5qX1nRTaFsfWdmdj5JWO1G",
+          "resume": "Interviews exploring how people put AI to work in their craft and creative process."
+        }
+      ],
+      "projets": [],
+      "methodes": []
+    },
     {
       "date": "2026-08-01",
       "label": "samedi 1er aout 2026",
@@ -362,73 +430,6 @@
           "resume": "Tour d'horizon du plus grand modele open-weight jamais publie : architecture MoE sparse, fenetre d'un million de tokens, positionnement face aux familles Qwen 3 et Llama, et portee du geste d'ouverture pour l'ecosysteme.",
           "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une structure massive faite de blocs détachables dont quelques blocs sont déjà emportés par de petites formes, symbolisant un modèle ouvert que la communauté s'approprie pièce par pièce. Composition : une structure principale, deux blocs emportés secondaires. Palette : bleu profond, violet, accents cyan. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
           "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20structure%20massive%20faite%20de%20blocs%20d%C3%A9tachables%20dont%20quelques%20blocs%20sont%20d%C3%A9j%C3%A0%20emport%C3%A9s%20par%20de%20petites%20formes%2C%20symbolisant%20un%20mod%C3%A8le%20ouvert%20que%20la%20communaut%C3%A9%20s%27approprie%20pi%C3%A8ce%20par%20pi%C3%A8ce.%20Composition%20%3A%20une%20structure%20principale%2C%20deux%20blocs%20emport%C3%A9s%20secondaires.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=16102"
-        }
-      ],
-      "podcasts": [
-        {
-          "titre": "Comptoir IA",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
-          "resume": "Nicolas Guyon interviewe experts et metiers bouleverses par l'IA ; vulgarisation pointue."
-        },
-        {
-          "titre": "Tech Café",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/1MidB71rbYIRDIrcej073j",
-          "resume": "Actualite tech et IA au sens large, animee par Guillaume Vende."
-        },
-        {
-          "titre": "Data Driven 101 - Le podcast IA & Data",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/5YkpBdd4Si06ghOpcPmqux",
-          "resume": "Marc Sanselme decrypte IA et data science ; interviews d'experts, format accessible."
-        },
-        {
-          "titre": "Best AI Podcast",
-          "source": "Spotify",
-          "lang": "en",
-          "lien": "https://open.spotify.com/show/10otIHvHndpzykwIqrGjsV",
-          "resume": "Curated conversations on artificial intelligence, its tools, breakthroughs and industry trends."
-        },
-        {
-          "titre": "AI and I",
-          "source": "Spotify",
-          "lang": "en",
-          "lien": "https://open.spotify.com/show/5qX1nRTaFsfWdmdj5JWO1G",
-          "resume": "Interviews exploring how people put AI to work in their craft and creative process."
-        }
-      ],
-      "projets": [],
-      "methodes": []
-    },
-    {
-      "date": "2026-07-26",
-      "label": "dimanche 26 juillet 2026",
-      "notes": "Audit interne. Week-end calme cote annonces officielles : Opus 5 (24/07) deja couvert le 25/07 (pas de reapparition sans fait nouveau au niveau annonce), poids ouverts de Kimi K3 attendus demain 27/07. Primaires vides. Deux angles frais retenus en EN : carte systeme d'Opus 5 (TechTimes, 25/07 - fait nouveau : tests gouvernementaux UK, 8 attaques reseau sur 10 menees a bien, plus bas taux de desalignement mesure par Anthropic) et preparation des poids ouverts Kimi K3 (TechTimes, 24/07 - 1,4 To en MXFP4, licence MIT modifiee, taux d'hallucination de 51 pour cent releve par des tests independants). Interconnects (Nathan Lambert) ecarte : date non affichee, 2e contenu du meme sujet garde pour un jour date. Articles FR : 0 - aucun contenu francophone date verifiable ce dimanche matin (digests ia-info/blogdumoderateur exclus). Quotas tres en dessous (0 primaire, 0 FR, 2 EN). Section 4 vide : WebFetch toujours en 403 via le proxy. B5 : rien de neuf (nominal). Podcasts : liens emission Spotify, datation d'episode inverifiable ici.",
-      "primaires": [],
-      "articles": [
-        {
-          "titre": "La carte systeme de Claude Opus 5 revele des tests d'attaque reseau reussis 8 fois sur 10",
-          "source": "TechTimes",
-          "lang": "en",
-          "date": "25/07/2026",
-          "lien": "https://www.techtimes.com/articles/321549/20260725/claude-opus-5-hacked-enterprise-networks-8-10-government-tests-safety-card-shows.htm",
-          "resume": "Selon la carte systeme publiee avec Opus 5, des testeurs gouvernementaux britanniques ont vu le modele mener de bout en bout une attaque de reseau d'entreprise dans 8 essais sur 10, alors que l'audit interne d'Anthropic mesure son plus bas niveau de desalignement.",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un bouclier stylisé examiné sous une grande loupe qui révèle une fissure fine sur sa surface, symbolisant l'évaluation de sûreté qui met au jour une capacité sensible. Composition : un bouclier principal, une loupe et une fissure secondaires. Palette : bleu nuit, or, ambre. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20bouclier%20stylis%C3%A9%20examin%C3%A9%20sous%20une%20grande%20loupe%20qui%20r%C3%A9v%C3%A8le%20une%20fissure%20fine%20sur%20sa%20surface%2C%20symbolisant%20l%27%C3%A9valuation%20de%20s%C3%BBret%C3%A9%20qui%20met%20au%20jour%20une%20capacit%C3%A9%20sensible.%20Composition%20%3A%20un%20bouclier%20principal%2C%20une%20loupe%20et%20une%20fissure%20secondaires.%20Palette%20%3A%20bleu%20nuit%2C%20or%2C%20ambre.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=15101"
-        },
-        {
-          "titre": "Kimi K3 : les poids ouverts arrivent le 27 juillet, avec un risque d'hallucination non documente",
-          "source": "TechTimes",
-          "lang": "en",
-          "date": "24/07/2026",
-          "lien": "https://www.techtimes.com/articles/321499/20260724/kimi-k3-open-weights-drop-july-27-near-frontier-coding-undisclosed-hallucination-risk.htm",
-          "resume": "Premier modele telechargeable de la classe des 3 000 milliards de parametres : 1,4 To de poids en MXFP4 sous licence MIT modifiee. Des tests independants relevent toutefois un taux d'hallucination de 51 pour cent absent des benchmarks de Moonshot.",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un conteneur massif suspendu par une grue au-dessus d'une file de petits chariots en attente, symbolisant la livraison imminente d'un modèle géant à la communauté. Composition : un conteneur principal, deux chariots secondaires. Palette : bleu profond, violet, accents cyan. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20conteneur%20massif%20suspendu%20par%20une%20grue%20au-dessus%20d%27une%20file%20de%20petits%20chariots%20en%20attente%2C%20symbolisant%20la%20livraison%20imminente%20d%27un%20mod%C3%A8le%20g%C3%A9ant%20%C3%A0%20la%20communaut%C3%A9.%20Composition%20%3A%20un%20conteneur%20principal%2C%20deux%20chariots%20secondaires.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=15102"
         }
       ],
       "podcasts": [
