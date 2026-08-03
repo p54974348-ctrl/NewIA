@@ -1,6 +1,71 @@
 {
-  "generatedAt": "2026-08-02",
+  "generatedAt": "2026-08-03",
   "days": [
+    {
+      "date": "2026-08-03",
+      "label": "lundi 3 aout 2026",
+      "notes": "Audit interne. Aucune annonce laboratoire 02-03/08 reperee (week-end, trackers arretes a Opus 5 du 24/07) : primaires vides - l'evenement article 50 a ete traite hier en primaire (reference officielle). Faits nouveaux du jour justifiant la poursuite du sujet : entree en phase repressive (la Commission peut sanctionner), plus de 180 organisations signataires du code de bonnes pratiques, et lecture critique du Digital Omnibus. Dedup : 2 analyses FR aux angles distincts - Next (analyse critique, avance/recul) et Clubic (grand public, ce qui change) ; dates de publication non affichees dans les resultats, champs omis. Ecartes : blogdumoderateur, planetegrandesecoles, esnia, axiom (3e+ contenu / promo). EN : 0 (rien de date verifiable). Quotas en dessous (0 primaire, 2 FR, 0 EN) : lundi 05h11 UTC, presse du jour non parue. Section 4 vide. B5 : rien de neuf (nominal). Podcasts : liens emission Spotify, datation d'episode inverifiable ici.",
+      "primaires": [],
+      "articles": [
+        {
+          "titre": "Le 2 aout, l'AI Act avance et recule a la fois",
+          "source": "Next",
+          "lang": "fr",
+          "lien": "https://next.ink/249636/le-2-aout-lai-act-avance-et-recule-a-la-fois/",
+          "resume": "Analyse du paradoxe du 2 aout : les obligations de transparence de l'article 50 deviennent contraignantes et sanctionnables, pendant que le Digital Omnibus reporte le marquage lisible par machine au 2 decembre pour les systemes deja commercialises.",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un curseur sur un rail gradué, tiré vers l'avant par un câble tendu et retenu vers l'arrière par un ressort, symbolisant une réglementation qui avance et recule à la fois. Composition : un rail principal, un câble et un ressort secondaires. Palette : bordeaux, gris, beige. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20curseur%20sur%20un%20rail%20gradu%C3%A9%2C%20tir%C3%A9%20vers%20l%27avant%20par%20un%20c%C3%A2ble%20tendu%20et%20retenu%20vers%20l%27arri%C3%A8re%20par%20un%20ressort%2C%20symbolisant%20une%20r%C3%A9glementation%20qui%20avance%20et%20recule%20%C3%A0%20la%20fois.%20Composition%20%3A%20un%20rail%20principal%2C%20un%20c%C3%A2ble%20et%20un%20ressort%20secondaires.%20Palette%20%3A%20bordeaux%2C%20gris%2C%20beige.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=23101"
+        },
+        {
+          "titre": "Tres attendu, le Reglement europeen sur l'IA entre en application ce 2 aout : ce qui change pour vous",
+          "source": "Clubic",
+          "lang": "fr",
+          "lien": "https://www.clubic.com/actualite-623773-tres-attendu-le-reglement-europeen-sur-l-ia-entre-en-application-ce-2-aout-voici-ce-qui-change-pour-vous.html",
+          "resume": "L'AI Act entre dans sa phase repressive : chatbots declares sans delai, contenus generes marques, amendes jusqu'a 15 millions d'euros ou 3 pour cent du chiffre d'affaires. Plus de 180 organisations ont deja signe le code de bonnes pratiques de Bruxelles.",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un grand registre ouvert à sa première page sur laquelle un sceau vient tout juste d'être apposé, symbolisant le premier jour d'application d'une règle attendue. Composition : un registre principal, un sceau et une page secondaires. Palette : bordeaux, gris, beige. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20grand%20registre%20ouvert%20%C3%A0%20sa%20premi%C3%A8re%20page%20sur%20laquelle%20un%20sceau%20vient%20tout%20juste%20d%27%C3%AAtre%20appos%C3%A9%2C%20symbolisant%20le%20premier%20jour%20d%27application%20d%27une%20r%C3%A8gle%20attendue.%20Composition%20%3A%20un%20registre%20principal%2C%20un%20sceau%20et%20une%20page%20secondaires.%20Palette%20%3A%20bordeaux%2C%20gris%2C%20beige.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=23102"
+        }
+      ],
+      "podcasts": [
+        {
+          "titre": "Comptoir IA",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
+          "resume": "Nicolas Guyon interviewe experts et metiers bouleverses par l'IA ; vulgarisation pointue."
+        },
+        {
+          "titre": "Tech Café",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/1MidB71rbYIRDIrcej073j",
+          "resume": "Actualite tech et IA au sens large, animee par Guillaume Vende."
+        },
+        {
+          "titre": "Data Driven 101 - Le podcast IA & Data",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/5YkpBdd4Si06ghOpcPmqux",
+          "resume": "Marc Sanselme decrypte IA et data science ; interviews d'experts, format accessible."
+        },
+        {
+          "titre": "Best AI Podcast",
+          "source": "Spotify",
+          "lang": "en",
+          "lien": "https://open.spotify.com/show/10otIHvHndpzykwIqrGjsV",
+          "resume": "Curated conversations on artificial intelligence, its tools, breakthroughs and industry trends."
+        },
+        {
+          "titre": "AI and I",
+          "source": "Spotify",
+          "lang": "en",
+          "lien": "https://open.spotify.com/show/5qX1nRTaFsfWdmdj5JWO1G",
+          "resume": "Interviews exploring how people put AI to work in their craft and creative process."
+        }
+      ],
+      "projets": [],
+      "methodes": []
+    },
     {
       "date": "2026-08-02",
       "label": "dimanche 2 aout 2026",
@@ -363,73 +428,6 @@
           "resume": "Moonshot a publie les poids (594 Go, licence MIT modifiee) avec un jour d'avance, accompagnes d'un rapport technique. Les classements independants placent K3 deuxieme sur Vals AI et troisieme sur l'Intelligence Index d'Artificial Analysis, une premiere pour un modele ouvert d'un petit laboratoire.",
           "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une forme ajourée en treillis se hissant sur la deuxième marche d'un podium entre des formes pleines et opaques, symbolisant un modèle ouvert qui rejoint le sommet d'un classement dominé par les systèmes fermés. Composition : un podium principal, deux formes secondaires. Palette : bleu nuit, or, ambre. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
           "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20forme%20ajour%C3%A9e%20en%20treillis%20se%20hissant%20sur%20la%20deuxi%C3%A8me%20marche%20d%27un%20podium%20entre%20des%20formes%20pleines%20et%20opaques%2C%20symbolisant%20un%20mod%C3%A8le%20ouvert%20qui%20rejoint%20le%20sommet%20d%27un%20classement%20domin%C3%A9%20par%20les%20syst%C3%A8mes%20ferm%C3%A9s.%20Composition%20%3A%20un%20podium%20principal%2C%20deux%20formes%20secondaires.%20Palette%20%3A%20bleu%20nuit%2C%20or%2C%20ambre.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=17101"
-        }
-      ],
-      "podcasts": [
-        {
-          "titre": "Comptoir IA",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
-          "resume": "Nicolas Guyon interviewe experts et metiers bouleverses par l'IA ; vulgarisation pointue."
-        },
-        {
-          "titre": "Tech Café",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/1MidB71rbYIRDIrcej073j",
-          "resume": "Actualite tech et IA au sens large, animee par Guillaume Vende."
-        },
-        {
-          "titre": "Data Driven 101 - Le podcast IA & Data",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/5YkpBdd4Si06ghOpcPmqux",
-          "resume": "Marc Sanselme decrypte IA et data science ; interviews d'experts, format accessible."
-        },
-        {
-          "titre": "Best AI Podcast",
-          "source": "Spotify",
-          "lang": "en",
-          "lien": "https://open.spotify.com/show/10otIHvHndpzykwIqrGjsV",
-          "resume": "Curated conversations on artificial intelligence, its tools, breakthroughs and industry trends."
-        },
-        {
-          "titre": "AI and I",
-          "source": "Spotify",
-          "lang": "en",
-          "lien": "https://open.spotify.com/show/5qX1nRTaFsfWdmdj5JWO1G",
-          "resume": "Interviews exploring how people put AI to work in their craft and creative process."
-        }
-      ],
-      "projets": [],
-      "methodes": []
-    },
-    {
-      "date": "2026-07-27",
-      "label": "lundi 27 juillet 2026",
-      "notes": "Audit interne. Evenement du jour : publication des poids ouverts de Kimi K3 (annoncee pour le 27/07 00:00 UTC, soit 5h avant cette execution) - depot officiel Hugging Face moonshotai/Kimi-K3 retenu comme primaire ; la page HF affichait encore le compte a rebours lors de la verification par recherche, le resume reste prudent (publication annoncee, telechargement ~594 Go MXFP4, licence MIT modifiee attendue). Dedup stricte (officiel + 1 analyse) : Next retenu (FR, qualite, date de publication non affichee - champ omis) ; ecartes (3e+ contenu meme sujet) : TechTimes 24-25/07, worldissmall 24/07, pentiminax, eigent, ayinedjimi, plateya, coinacademy, eesel, kimi-k2.org, wan27. Aucune autre annonce officielle verifiable 26-27/07 (lundi 05h11 UTC, presse du jour non parue). Quotas en dessous (1 primaire, 1 FR, 0 EN - la primaire lang=en sert le volet anglophone). Section 4 vide : WebFetch toujours en 403 via le proxy ; le depot HF de Kimi K3 n'est pas duplique en volet A (deja en primaire). B5 : rien de neuf (nominal). Podcasts : liens emission Spotify, datation d'episode inverifiable ici.",
-      "primaires": [
-        {
-          "titre": "Moonshot AI publie les poids ouverts de Kimi K3, plus grand modele open-weight jamais diffuse",
-          "source": "Hugging Face / Moonshot AI",
-          "lang": "en",
-          "date": "27/07/2026",
-          "lien": "https://huggingface.co/moonshotai/Kimi-K3",
-          "resume": "Le modele MoE de 2 800 milliards de parametres (contexte 1M, vision native, architecture Kimi Delta Attention) devient telechargeable : environ 594 Go en MXFP4 sur l'organisation Hugging Face de Moonshot, sous licence de type MIT modifiee.",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant de grandes portes coulissantes s'ouvrant sur une salle de rayonnages lumineux ou chacun peut venir se servir, symbolisant la mise a disposition publique d'un modèle géant. Composition : des portes principales, deux rayonnages secondaires. Palette : bleu profond, violet, accents cyan. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20de%20grandes%20portes%20coulissantes%20s%27ouvrant%20sur%20une%20salle%20de%20rayonnages%20lumineux%20ou%20chacun%20peut%20venir%20se%20servir%2C%20symbolisant%20la%20mise%20a%20disposition%20publique%20d%27un%20mod%C3%A8le%20g%C3%A9ant.%20Composition%20%3A%20des%20portes%20principales%2C%20deux%20rayonnages%20secondaires.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=16101"
-        }
-      ],
-      "articles": [
-        {
-          "titre": "Kimi K3 : ce qu'il faut savoir du modele open source de 2 800 milliards de parametres",
-          "source": "Next",
-          "lang": "fr",
-          "lien": "https://next.ink/248051/kimi-k3-ce-quil-faut-savoir-du-modele-open-source-de-2-800-milliards-de-parametres/",
-          "resume": "Tour d'horizon du plus grand modele open-weight jamais publie : architecture MoE sparse, fenetre d'un million de tokens, positionnement face aux familles Qwen 3 et Llama, et portee du geste d'ouverture pour l'ecosysteme.",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une structure massive faite de blocs détachables dont quelques blocs sont déjà emportés par de petites formes, symbolisant un modèle ouvert que la communauté s'approprie pièce par pièce. Composition : une structure principale, deux blocs emportés secondaires. Palette : bleu profond, violet, accents cyan. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20structure%20massive%20faite%20de%20blocs%20d%C3%A9tachables%20dont%20quelques%20blocs%20sont%20d%C3%A9j%C3%A0%20emport%C3%A9s%20par%20de%20petites%20formes%2C%20symbolisant%20un%20mod%C3%A8le%20ouvert%20que%20la%20communaut%C3%A9%20s%27approprie%20pi%C3%A8ce%20par%20pi%C3%A8ce.%20Composition%20%3A%20une%20structure%20principale%2C%20deux%20blocs%20emport%C3%A9s%20secondaires.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=16102"
         }
       ],
       "podcasts": [
