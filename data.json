@@ -1,6 +1,84 @@
 {
-  "generatedAt": "2026-08-03",
+  "generatedAt": "2026-08-04",
   "days": [
+    {
+      "date": "2026-08-04",
+      "label": "mardi 4 aout 2026",
+      "notes": "Audit interne 04/08. Aucune annonce officielle de laboratoire verifiee dans la fenetre 02-04/08 (recherches FR et EN: derniere sortie majeure = DeepSeek-V4-Flash du 31/07, deja couverte le 31/07) : section primaires vide, assume. MAI-Realtime (Microsoft) est une fuite TestingCatalog du 02/08, pas une annonce officielle : classee en article EN et non en primaire. Article FR : bilan hebdo Duperrin date du 03/08 (URL datee). Volet A : Inkling-Small (Thinking Machines, 31/07, fenetre 7 jours) retenu, licence Apache 2.0 confirmee par recoupement de plusieurs sources (gHacks, XenoSpectrum, blog Hugging Face) avec une politique d'usage acceptable en surcouche, signalee dans la fiche ; etoiles non verifiables (WebFetch 403 persistant), omises. Volet B : aucun artefact date de moins de 7 jours verifie (contenus spec-driven trouves dates de mars-juin 2026, hors fenetre) : section vide. B5 vide = nominal. Dedup respectee : AI Act article 50 au plafond de 2 contenus (03/08), aucun fait nouveau date 03-04/08 releve, pas de remontee. Quotas non remplis volontairement (regle d'or).",
+      "primaires": [],
+      "articles": [
+        {
+          "titre": "2026.32 : l'infra de l'IA en question, des entreprises moins ingénieuses, les séniors en 2026",
+          "source": "Duperrin.com",
+          "lang": "fr",
+          "date": "03/08/2026",
+          "lien": "https://www.duperrin.com/2026/08/03/2026-32-linfra-de-lia-en-question-des-entreprises-moins-ingenieuses-les-seniors-en-2026/",
+          "resume": "Bilan hebdomadaire de Bertrand Duperrin : la question n'est plus de savoir si les modèles progressent, mais si les organisations, les infrastructures et les montages financiers peuvent transformer cette intelligence en valeur durable — regard critique sur la course aux data centers et l'ingéniosité déclinante des entreprises.",
+          "imagePrompt": "Editorial illustration, business press style, data center infrastructure under scrutiny, balance sheet and server racks, orange and petrol blue palette, flat graphic shapes, no text",
+          "image": "https://image.pollinations.ai/prompt/Editorial%20illustration%2C%20business%20press%20style%2C%20data%20center%20infrastructure%20under%20scrutiny%2C%20balance%20sheet%20and%20server%20racks%2C%20orange%20and%20petrol%20blue%20palette%2C%20flat%20graphic%20shapes%2C%20no%20text?width=768&height=432&nologo=true&seed=8041"
+        },
+        {
+          "titre": "Exclusive: Microsoft tests new MAI Realtime voice model",
+          "source": "TestingCatalog",
+          "lang": "en",
+          "date": "02/08/2026",
+          "lien": "https://www.testingcatalog.com/exclusive-microsoft-tests-new-mai-realtime-voice-model/",
+          "resume": "TestingCatalog révèle « MAI-Realtime », premier modèle vocal full-duplex natif de Microsoft, repéré en préversion cachée dans le MAI Playground : conversation bidirectionnelle (écoute et parle en même temps), 17 langues, outils dont la recherche web, deux voix (Victoria, Grant). Microsoft n'a rien officialisé : ni model card, ni prix, ni calendrier.",
+          "imagePrompt": "Editorial illustration, technology press style, bidirectional sound waves between human and computer, full duplex voice conversation, deep blue violet and cyan palette, flat graphic shapes, no text",
+          "image": "https://image.pollinations.ai/prompt/Editorial%20illustration%2C%20technology%20press%20style%2C%20bidirectional%20sound%20waves%20between%20human%20and%20computer%2C%20full%20duplex%20voice%20conversation%2C%20deep%20blue%20violet%20and%20cyan%20palette%2C%20flat%20graphic%20shapes%2C%20no%20text?width=768&height=432&nologo=true&seed=8042"
+        }
+      ],
+      "podcasts": [
+        {
+          "titre": "Comptoir IA",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
+          "resume": "Émission francophone de référence sur l'IA : entretiens avec des fondateurs, chercheurs et praticiens."
+        },
+        {
+          "titre": "Tech Café",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/1MidB71rbYIRDIrcej073j",
+          "resume": "Magazine tech hebdomadaire en français avec un suivi régulier de l'actualité de l'intelligence artificielle."
+        },
+        {
+          "titre": "Data Driven 101",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/5YkpBdd4Si06ghOpcPmqux",
+          "resume": "Podcast francophone data et IA : cas d'usage concrets en entreprise, retours d'expérience de praticiens."
+        },
+        {
+          "titre": "The Best AI Podcast",
+          "source": "Spotify",
+          "lang": "en",
+          "lien": "https://open.spotify.com/show/10otIHvHndpzykwIqrGjsV",
+          "resume": "Panorama hebdomadaire en anglais des annonces et débats qui structurent l'écosystème IA."
+        },
+        {
+          "titre": "AI & I",
+          "source": "Spotify",
+          "lang": "en",
+          "lien": "https://open.spotify.com/show/5qX1nRTaFsfWdmdj5JWO1G",
+          "resume": "Entretiens approfondis en anglais sur les usages réels des modèles d'IA, animés par Dan Shipper (Every)."
+        }
+      ],
+      "projets": [
+        {
+          "titre": "Inkling-Small (Thinking Machines)",
+          "source": "Hugging Face",
+          "lang": "en",
+          "date": "31/07/2026",
+          "lien": "https://huggingface.co/thinkingmachines/Inkling-Small",
+          "licence": "Apache 2.0 (avec politique d'usage acceptable)",
+          "categorie": "autre",
+          "resume": "Version compacte du modèle ouvert Inkling : 276 Md de paramètres (12 Md actifs), environ 30 % de la taille du grand Inkling pour un niveau proche en raisonnement et en code. Poids publiés sur Hugging Face (BF16, MXFP8, NVFP4) sous Apache 2.0, assortis d'une politique d'usage acceptable propre à Thinking Machines."
+        }
+      ],
+      "methodes": []
+    },
     {
       "date": "2026-08-03",
       "label": "lundi 3 aout 2026",
@@ -413,62 +491,6 @@
           "maturite": "convention émergente"
         }
       ]
-    },
-    {
-      "date": "2026-07-28",
-      "label": "mardi 28 juillet 2026",
-      "notes": "Audit interne. Fenetre 27-28/07 sans nouvelle annonce officielle des laboratoires (les poids Kimi K3, publies avec un jour d'avance le 26/07, ont ete traites hier en primaire) : primaires vides. Fait nouveau retenu sur Kimi K3 : publication du rapport technique et classements independants (2e sur Vals AI, 3e sur Artificial Analysis Intelligence Index, 1er sur Frontend Code Arena) - analyse Geopolitechs, date de publication non affichee, champ omis ; Medium (blog personnel), Yotta Labs, explainx, nodemini ecartes (qualite / 3e+ contenu). Penurie mondiale de puces memoire liee a l'IA reperee via le journal boursier Moneyvox du 27/07 (format digest, exclu) - a suivre pour un article direct date. Articles FR : 0 (digests ia-info, Journal du Geek rubrique, Le Monde Informatique rubrique exclus). Quotas tres en dessous (0 primaire, 0 FR, 1 EN) : mardi 05h10 UTC, presse du jour non parue. Section 4 vide : WebFetch toujours en 403 via le proxy. B5 : rien de neuf (nominal). Podcasts : liens emission Spotify, datation d'episode inverifiable ici.",
-      "primaires": [],
-      "articles": [
-        {
-          "titre": "Kimi K3 : poids ouverts et rapport technique publies, un modele ouvert aux portes du sommet des classements",
-          "source": "Geopolitechs",
-          "lang": "en",
-          "lien": "https://www.geopolitechs.org/p/moonshot-released-kimi-k3-model-weights",
-          "resume": "Moonshot a publie les poids (594 Go, licence MIT modifiee) avec un jour d'avance, accompagnes d'un rapport technique. Les classements independants placent K3 deuxieme sur Vals AI et troisieme sur l'Intelligence Index d'Artificial Analysis, une premiere pour un modele ouvert d'un petit laboratoire.",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une forme ajourée en treillis se hissant sur la deuxième marche d'un podium entre des formes pleines et opaques, symbolisant un modèle ouvert qui rejoint le sommet d'un classement dominé par les systèmes fermés. Composition : un podium principal, deux formes secondaires. Palette : bleu nuit, or, ambre. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20forme%20ajour%C3%A9e%20en%20treillis%20se%20hissant%20sur%20la%20deuxi%C3%A8me%20marche%20d%27un%20podium%20entre%20des%20formes%20pleines%20et%20opaques%2C%20symbolisant%20un%20mod%C3%A8le%20ouvert%20qui%20rejoint%20le%20sommet%20d%27un%20classement%20domin%C3%A9%20par%20les%20syst%C3%A8mes%20ferm%C3%A9s.%20Composition%20%3A%20un%20podium%20principal%2C%20deux%20formes%20secondaires.%20Palette%20%3A%20bleu%20nuit%2C%20or%2C%20ambre.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=17101"
-        }
-      ],
-      "podcasts": [
-        {
-          "titre": "Comptoir IA",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
-          "resume": "Nicolas Guyon interviewe experts et metiers bouleverses par l'IA ; vulgarisation pointue."
-        },
-        {
-          "titre": "Tech Café",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/1MidB71rbYIRDIrcej073j",
-          "resume": "Actualite tech et IA au sens large, animee par Guillaume Vende."
-        },
-        {
-          "titre": "Data Driven 101 - Le podcast IA & Data",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/5YkpBdd4Si06ghOpcPmqux",
-          "resume": "Marc Sanselme decrypte IA et data science ; interviews d'experts, format accessible."
-        },
-        {
-          "titre": "Best AI Podcast",
-          "source": "Spotify",
-          "lang": "en",
-          "lien": "https://open.spotify.com/show/10otIHvHndpzykwIqrGjsV",
-          "resume": "Curated conversations on artificial intelligence, its tools, breakthroughs and industry trends."
-        },
-        {
-          "titre": "AI and I",
-          "source": "Spotify",
-          "lang": "en",
-          "lien": "https://open.spotify.com/show/5qX1nRTaFsfWdmdj5JWO1G",
-          "resume": "Interviews exploring how people put AI to work in their craft and creative process."
-        }
-      ],
-      "projets": [],
-      "methodes": []
     }
   ]
 }
