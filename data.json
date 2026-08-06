@@ -1,6 +1,73 @@
 {
-  "generatedAt": "2026-08-05",
+  "generatedAt": "2026-08-06",
   "days": [
+    {
+      "date": "2026-08-06",
+      "label": "jeudi 6 aout 2026",
+      "notes": "Audit interne 06/08. Aucune annonce officielle de laboratoire verifiee dans la fenetre 04-06/08 : primaires vide, assume. Sujet du jour : la cour d'appel du 9e circuit annule le 04/08 l'injonction Amazon contre l'agent Comet de Perplexity (CFAA) ; plafond de 2 contenus respecte : KultureGeek (FR, date confirmee par metadonnees, ~19 h avant recherche = 05/08) + billet EFF (partie amicus, metadonnees = moins d'un jour = 05/08) ; Eastern Herald et Courthouse News exclus (dedup). Hors fenetre 24-48 h, exclus : Gemini Robotics ER 2 (30/07), divulgation Anthropic 3 organisations compromises (30/07, anthropic.com/news/investigating-incidents-cybersecurity-evals ; Forbes 03/08), rapport Unit 42 DeepSeek/Hermes Agent (31/07-03/08), plan Lloyds 2 Md GBP (30/07). business-ia.com 05/08 : digest type listicle, exclu. Volet A : rien de nouveau date a moins de 7 jours (frameworks trouves dates d'avril-juin ; awesome-lists exclues ; Inkling-Small deja remonte le 04/08). Volet B : rien de date verifiable a moins de 7 jours. B5 vide = nominal. WebFetch toujours bloque (403 proxy), verifications par recoupement de snippets, URL datees et metadonnees de recherche.",
+      "primaires": [],
+      "articles": [
+        {
+          "titre": "Perplexity : l'agent IA de Comet peut de nouveau faire des achats via Amazon",
+          "source": "KultureGeek",
+          "lang": "fr",
+          "date": "05/08/2026",
+          "lien": "https://kulturegeek.fr/news-356567/perplexity-lagent-ia-comet-nouveau-achats-via-amazon",
+          "resume": "La cour d'appel du 9e circuit annule l'injonction obtenue par Amazon en mars : l'agent d'achat du navigateur Comet peut de nouveau commander sur Amazon pour ses utilisateurs. Les juges estiment que ce sont les utilisateurs, et non Perplexity, qui « accèdent » aux serveurs d'Amazon au sens de la loi anti-piratage CFAA.",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un caddie de courses franchissant une barrière levée entre deux colonnes de justice. Composition : une barrière levée, un caddie stylisé, deux colonnes. Palette : bordeaux, gris, beige. Fond épuré uni. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20editoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20representant%20un%20caddie%20de%20courses%20franchissant%20une%20barriere%20levee%20entre%20deux%20colonnes%20de%20justice.%20Composition%20%3A%20une%20barriere%20levee%2C%20un%20caddie%20stylise%2C%20deux%20colonnes.%20Palette%20%3A%20bordeaux%2C%20gris%2C%20beige.%20Fond%20epure%20uni.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20realistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=8061"
+        },
+        {
+          "titre": "Appeals Court Agrees with EFF that Building a Web Browser Doesn't Violate the CFAA",
+          "source": "Electronic Frontier Foundation",
+          "lang": "en",
+          "date": "05/08/2026",
+          "lien": "https://www.eff.org/deeplinks/2026/08/appeals-court-agrees-eff-building-web-browser-doesnt-violate-cfaa",
+          "resume": "L'EFF, partie amicus dans Amazon c. Perplexity, analyse la décision du 9e circuit : le CFAA exige un « accès » non autorisé, or c'est l'utilisateur qui opère l'agent Comet, pas son éditeur. La cour applique la règle de l'interprétation stricte et souligne l'absence quasi totale de jurisprudence sur la responsabilité des agents IA — première décision d'appel fédérale sur ce point.",
+          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une balance de justice dont un plateau porte une fenêtre de navigateur et l'autre une clé, en équilibre. Composition : une balance, une fenêtre de navigateur stylisée, une clé. Palette : bordeaux, gris, beige. Fond épuré uni. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20editoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20representant%20une%20balance%20de%20justice%20dont%20un%20plateau%20porte%20une%20fenetre%20de%20navigateur%20et%20l%27autre%20une%20cle%2C%20en%20equilibre.%20Composition%20%3A%20une%20balance%2C%20une%20fenetre%20de%20navigateur%20stylisee%2C%20une%20cle.%20Palette%20%3A%20bordeaux%2C%20gris%2C%20beige.%20Fond%20epure%20uni.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20realistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=8062"
+        }
+      ],
+      "podcasts": [
+        {
+          "titre": "Comptoir IA",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
+          "resume": "Émission francophone de référence sur l'IA : entretiens avec des fondateurs, chercheurs et praticiens."
+        },
+        {
+          "titre": "Tech Café",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/1MidB71rbYIRDIrcej073j",
+          "resume": "Magazine tech hebdomadaire en français avec un suivi régulier de l'actualité de l'intelligence artificielle."
+        },
+        {
+          "titre": "Data Driven 101",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/5YkpBdd4Si06ghOpcPmqux",
+          "resume": "Podcast francophone data et IA : cas d'usage concrets en entreprise, retours d'expérience de praticiens."
+        },
+        {
+          "titre": "The Best AI Podcast",
+          "source": "Spotify",
+          "lang": "en",
+          "lien": "https://open.spotify.com/show/10otIHvHndpzykwIqrGjsV",
+          "resume": "Panorama hebdomadaire en anglais des annonces et débats qui structurent l'écosystème IA."
+        },
+        {
+          "titre": "AI & I",
+          "source": "Spotify",
+          "lang": "en",
+          "lien": "https://open.spotify.com/show/5qX1nRTaFsfWdmdj5JWO1G",
+          "resume": "Entretiens approfondis en anglais sur les usages réels des modèles d'IA, animés par Dan Shipper (Every)."
+        }
+      ],
+      "projets": [],
+      "methodes": []
+    },
     {
       "date": "2026-08-05",
       "label": "mercredi 5 aout 2026",
@@ -361,73 +428,6 @@
           "resume": "A deux jours de l'echeance, le Digital Omnibus en vigueur depuis le 30 juillet remanie le calendrier d'application. 58 pour cent des TPE/PME francaises utilisent deja l'IA generative et doivent recenser leurs usages pour respecter les obligations de transparence de l'article 50.",
           "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un sablier au sable presque écoulé posé sur une pile de dossiers ouverts, symbolisant les derniers jours avant une obligation réglementaire. Composition : un sablier principal, deux dossiers secondaires. Palette : bordeaux, gris, beige. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
           "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20sablier%20au%20sable%20presque%20%C3%A9coul%C3%A9%20pos%C3%A9%20sur%20une%20pile%20de%20dossiers%20ouverts%2C%20symbolisant%20les%20derniers%20jours%20avant%20une%20obligation%20r%C3%A9glementaire.%20Composition%20%3A%20un%20sablier%20principal%2C%20deux%20dossiers%20secondaires.%20Palette%20%3A%20bordeaux%2C%20gris%2C%20beige.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=20101"
-        }
-      ],
-      "podcasts": [
-        {
-          "titre": "Comptoir IA",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
-          "resume": "Nicolas Guyon interviewe experts et metiers bouleverses par l'IA ; vulgarisation pointue."
-        },
-        {
-          "titre": "Tech Café",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/1MidB71rbYIRDIrcej073j",
-          "resume": "Actualite tech et IA au sens large, animee par Guillaume Vende."
-        },
-        {
-          "titre": "Data Driven 101 - Le podcast IA & Data",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/5YkpBdd4Si06ghOpcPmqux",
-          "resume": "Marc Sanselme decrypte IA et data science ; interviews d'experts, format accessible."
-        },
-        {
-          "titre": "Best AI Podcast",
-          "source": "Spotify",
-          "lang": "en",
-          "lien": "https://open.spotify.com/show/10otIHvHndpzykwIqrGjsV",
-          "resume": "Curated conversations on artificial intelligence, its tools, breakthroughs and industry trends."
-        },
-        {
-          "titre": "AI and I",
-          "source": "Spotify",
-          "lang": "en",
-          "lien": "https://open.spotify.com/show/5qX1nRTaFsfWdmdj5JWO1G",
-          "resume": "Interviews exploring how people put AI to work in their craft and creative process."
-        }
-      ],
-      "projets": [],
-      "methodes": []
-    },
-    {
-      "date": "2026-07-30",
-      "label": "jeudi 30 juillet 2026",
-      "notes": "Audit interne. Sujet dominant : lettre ouverte Pacing the Frontier signee par plus de 1100 salaries d'OpenAI, Anthropic, Google et Meta (diffusee le 28/07, soutien officiel des entreprises le 29/07) demandant a Washington un mecanisme international de ralentissement verifiable. Pas d'URL officielle directe de la lettre reperable dans les resultats : primaires vides, sujet couvert par la presse. Dedup stricte (2 contenus) : CNN 28/07 (source la plus proche) + France 24 29/07 (volet FR) ; ecartes : TechTimes 28 et 29/07, Journal du Net, Clubic, Brief IA, Generation-NT, Le Grand Continent, byteiota, aitoolsrecap, buildfastwithai (digest). Nombre de signataires : 1100 selon CNN/TechTimes, 1200 selon Clubic/France 24 - les resumes reprennent le chiffre de chaque source. Contexte mentionne par TechTimes (breche Hugging Face par un modele OpenAI) non repris : pas de source directe verifiable. Quotas en dessous (0 primaire, 1 FR, 1 EN) : jeudi 05h09 UTC. Section 4 vide (rien de nouveau verifiable aujourd'hui ; spec MCP et SDK betas deja traites le 29/07). B5 : rien de neuf (nominal). Podcasts : liens emission Spotify, datation d'episode inverifiable ici.",
-      "primaires": [],
-      "articles": [
-        {
-          "titre": "IA : des salaries des plus grands laboratoires demandent aux Etats-Unis de se preparer a ralentir",
-          "source": "CNN",
-          "lang": "en",
-          "date": "28/07/2026",
-          "lien": "https://www.cnn.com/2026/07/28/tech/ai-development-tech-employees-open-letter",
-          "resume": "Plus de 1100 employes d'OpenAI, Anthropic, Google et Meta signent la lettre Pacing the Frontier : ils demandent a Washington de batir un mecanisme international capable de coordonner un ralentissement verifiable si l'IA progresse plus vite que la supervision humaine.",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un levier de frein massif enclenché contre une grande roue lancée dans une descente, symbolisant la demande d'un ralentissement maîtrisé d'une course technologique. Composition : une roue principale, un levier et une pente secondaires. Palette : bordeaux, gris, beige. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20levier%20de%20frein%20massif%20enclench%C3%A9%20contre%20une%20grande%20roue%20lanc%C3%A9e%20dans%20une%20descente%2C%20symbolisant%20la%20demande%20d%27un%20ralentissement%20ma%C3%AEtris%C3%A9%20d%27une%20course%20technologique.%20Composition%20%3A%20une%20roue%20principale%2C%20un%20levier%20et%20une%20pente%20secondaires.%20Palette%20%3A%20bordeaux%2C%20gris%2C%20beige.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=19101"
-        },
-        {
-          "titre": "Inquiets, des cadres de l'IA demandent aux Etats-Unis de les aider a lever le pied",
-          "source": "France 24",
-          "lang": "fr",
-          "date": "29/07/2026",
-          "lien": "https://www.france24.com/fr/%C3%A9co-tech/20260729-ia-petition-openai-anthropic-google-inquiets-etats-unis-auto-amelioration-recursive",
-          "resume": "Plus de 1200 signataires, dont Dario Amodei et des responsables de la recherche d'OpenAI, Meta et Google DeepMind, s'alarment de l'auto-amelioration recursive des modeles et appellent a un ralentissement concerte entre entreprises et nations.",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une multitude de petites formes identiques retenant ensemble l'aiguille d'un grand cadran qui tourne trop vite, symbolisant un appel collectif à temporiser. Composition : un cadran principal, deux groupes de formes secondaires. Palette : bordeaux, gris, beige. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20une%20multitude%20de%20petites%20formes%20identiques%20retenant%20ensemble%20l%27aiguille%20d%27un%20grand%20cadran%20qui%20tourne%20trop%20vite%2C%20symbolisant%20un%20appel%20collectif%20%C3%A0%20temporiser.%20Composition%20%3A%20un%20cadran%20principal%2C%20deux%20groupes%20de%20formes%20secondaires.%20Palette%20%3A%20bordeaux%2C%20gris%2C%20beige.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=19102"
         }
       ],
       "podcasts": [
