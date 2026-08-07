@@ -1,6 +1,85 @@
 {
-  "generatedAt": "2026-08-06",
+  "generatedAt": "2026-08-07",
   "days": [
+    {
+      "date": "2026-08-07",
+      "label": "vendredi 7 aout 2026",
+      "notes": "Audit interne 07/08. Sujet dominant : Meta lance Muse Code (agent de codage en terminal, beta Mac/Linux) et Muse Spark 1.2 le 05/08 ; plafond de 2 contenus respecte : annonce officielle (primaire) + analyse The Register du 06/08 (URL datee). Couvertures FR du sujet (Silicon.fr, BDM, MacGeneration, Generation-NT, ITdaily, lefilia) : dates de publication non verifiables au jour pres (WebFetch bloque) et plafond dedup atteint : exclues ; consequence : section articles FR vide, assume. MarkTechPost 05/08 et Forbes 06/08 : au-dela du plafond dedup, exclus. Doctolib (projet recherche IA donnees de sante) : Usine Digitale 17/07 et CNews 01/08 hors fenetre 24-48 h, aucun article date en fenetre : sujet non retenu. Muse Spark 1.2 presente comme open-weights par une source secondaire sans nom de licence verifiable : volet A exclu (regle licence). Volet B : Meta Model Cookbook (depot GitHub public officiel) retenu, date exacte des recettes Muse Code non verifiable, omise ; fraicheur attestee par le lancement du 05/08 auquel les recettes sont liees. B5 vide = nominal. WebFetch toujours bloque (403 proxy).",
+      "primaires": [
+        {
+          "titre": "Introducing Muse Code and Muse Spark 1.2",
+          "source": "Meta AI Research",
+          "lang": "en",
+          "date": "05/08/2026",
+          "lien": "https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2",
+          "resume": "Meta entre sur le marché des agents de codage : Muse Code, agent en terminal (bêta Mac/Linux, modes interactif et headless) capable de planifier, coder et valider dans de grands dépôts en déléguant à des sous-agents parallèles, propulsé par Muse Spark 1.2, co-entraîné avec le harnais (82,9 % sur Terminal-Bench 2.1).",
+          "imagePrompt": "Illustration editoriale minimaliste, style flat design moderne, representant une etincelle stylisee jaillissant d'une fenetre de terminal ouverte. Composition : une fenetre de terminal, une etincelle geometrique, une trainee lumineuse. Palette : bleu profond, violet, accents cyan. Fond epure uni. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages realistes, pas de marques.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20editoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20representant%20une%20etincelle%20stylisee%20jaillissant%20d%27une%20fenetre%20de%20terminal%20ouverte.%20Composition%20%3A%20une%20fenetre%20de%20terminal%2C%20une%20etincelle%20geometrique%2C%20une%20trainee%20lumineuse.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20epure%20uni.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20realistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=8071"
+        }
+      ],
+      "articles": [
+        {
+          "titre": "Meta wants to get inside your terminal with its new coding agent",
+          "source": "The Register",
+          "lang": "en",
+          "date": "06/08/2026",
+          "lien": "https://www.theregister.com/ai-and-ml/2026/08/06/meta-wants-to-get-inside-your-terminal-with-its-new-coding-agent/5283717",
+          "resume": "The Register analyse l'offensive de Meta face à Claude Code et Codex : tarification agressive (1,25 $/M tokens en entrée, tier contributeur plus de 10 fois moins cher contre partage de données) et pari d'un modèle et d'un harnais entraînés ensemble, que Meta recommande de ne pas dissocier.",
+          "imagePrompt": "Illustration editoriale minimaliste, style flat design moderne, representant un bras mecanique sortant d'une fenetre de terminal pour poser une piece d'engrenage. Composition : une fenetre de terminal, un bras mecanique stylise, un engrenage. Palette : vert sauge, gris anthracite, blanc. Fond epure uni. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages realistes, pas de marques.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20editoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20representant%20un%20bras%20mecanique%20sortant%20d%27une%20fenetre%20de%20terminal%20pour%20poser%20une%20piece%20d%27engrenage.%20Composition%20%3A%20une%20fenetre%20de%20terminal%2C%20un%20bras%20mecanique%20stylise%2C%20un%20engrenage.%20Palette%20%3A%20vert%20sauge%2C%20gris%20anthracite%2C%20blanc.%20Fond%20epure%20uni.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20realistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=8072"
+        }
+      ],
+      "podcasts": [
+        {
+          "titre": "Comptoir IA",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
+          "resume": "Émission francophone de référence sur l'IA : entretiens avec des fondateurs, chercheurs et praticiens."
+        },
+        {
+          "titre": "Tech Café",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/1MidB71rbYIRDIrcej073j",
+          "resume": "Magazine tech hebdomadaire en français avec un suivi régulier de l'actualité de l'intelligence artificielle."
+        },
+        {
+          "titre": "Data Driven 101",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/5YkpBdd4Si06ghOpcPmqux",
+          "resume": "Podcast francophone data et IA : cas d'usage concrets en entreprise, retours d'expérience de praticiens."
+        },
+        {
+          "titre": "The Best AI Podcast",
+          "source": "Spotify",
+          "lang": "en",
+          "lien": "https://open.spotify.com/show/10otIHvHndpzykwIqrGjsV",
+          "resume": "Panorama hebdomadaire en anglais des annonces et débats qui structurent l'écosystème IA."
+        },
+        {
+          "titre": "AI & I",
+          "source": "Spotify",
+          "lang": "en",
+          "lien": "https://open.spotify.com/show/5qX1nRTaFsfWdmdj5JWO1G",
+          "resume": "Entretiens approfondis en anglais sur les usages réels des modèles d'IA, animés par Dan Shipper (Every)."
+        }
+      ],
+      "projets": [],
+      "methodes": [
+        {
+          "titre": "Meta Model Cookbook (recettes agentiques Muse Code)",
+          "type": "repo",
+          "lang": "en",
+          "lien": "https://github.com/meta-models/meta-model-cookbook",
+          "categorie": "workflows",
+          "pratique": "Recettes officielles exécutables (notebooks Colab et scripts Python) montrant comment répartir un gros travail entre sous-agents parallèles dans des worktrees git isolés, avec replay déterministe et suivi d'objectifs.",
+          "applicabilite": "Utilisable dès aujourd'hui avec Muse Code (bêta Mac/Linux) et l'API Meta Model ; les patterns multi-agents et worktrees se transposent aux autres agents de codage en terminal.",
+          "maturite": "convention émergente"
+        }
+      ]
+    },
     {
       "date": "2026-08-06",
       "label": "jeudi 6 aout 2026",
@@ -372,62 +451,6 @@
           "resume": "Lecture technique de la mise a jour : gains issus du seul re-post-entrainement, support natif du format Responses API et adaptation a Codex, avec un tarif agressif de 0,28 dollar par million de tokens en sortie.",
           "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un tracé de parcours en escalier dont les dernières marches deviennent nettement plus hautes, symbolisant des gains marqués sur les tâches d'agent et de code. Composition : un escalier principal, deux marches accentuées secondaires. Palette : bleu profond, violet, accents cyan. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
           "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20trac%C3%A9%20de%20parcours%20en%20escalier%20dont%20les%20derni%C3%A8res%20marches%20deviennent%20nettement%20plus%20hautes%2C%20symbolisant%20des%20gains%20marqu%C3%A9s%20sur%20les%20t%C3%A2ches%20d%27agent%20et%20de%20code.%20Composition%20%3A%20un%20escalier%20principal%2C%20deux%20marches%20accentu%C3%A9es%20secondaires.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=21103"
-        }
-      ],
-      "podcasts": [
-        {
-          "titre": "Comptoir IA",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
-          "resume": "Nicolas Guyon interviewe experts et metiers bouleverses par l'IA ; vulgarisation pointue."
-        },
-        {
-          "titre": "Tech Café",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/1MidB71rbYIRDIrcej073j",
-          "resume": "Actualite tech et IA au sens large, animee par Guillaume Vende."
-        },
-        {
-          "titre": "Data Driven 101 - Le podcast IA & Data",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/5YkpBdd4Si06ghOpcPmqux",
-          "resume": "Marc Sanselme decrypte IA et data science ; interviews d'experts, format accessible."
-        },
-        {
-          "titre": "Best AI Podcast",
-          "source": "Spotify",
-          "lang": "en",
-          "lien": "https://open.spotify.com/show/10otIHvHndpzykwIqrGjsV",
-          "resume": "Curated conversations on artificial intelligence, its tools, breakthroughs and industry trends."
-        },
-        {
-          "titre": "AI and I",
-          "source": "Spotify",
-          "lang": "en",
-          "lien": "https://open.spotify.com/show/5qX1nRTaFsfWdmdj5JWO1G",
-          "resume": "Interviews exploring how people put AI to work in their craft and creative process."
-        }
-      ],
-      "projets": [],
-      "methodes": []
-    },
-    {
-      "date": "2026-07-31",
-      "label": "vendredi 31 juillet 2026",
-      "notes": "Audit interne. Fenetre 30-31/07 tres calme : aucune annonce officielle des laboratoires reperee (les trackers s'arretent a Opus 5 du 24/07 et Gemini 3.6 Flash du 21/07) - primaires vides. Fait du jour cote FR : a J-2 de l'article 50, le Digital Omnibus est en vigueur depuis le 30/07 et modifie le calendrier d'application ; article Culture RH retenu (date de publication non affichee, champ omis ; fait nouveau vs 29/07 : entree en vigueur du Digital Omnibus et etat de preparation des TPE/PME - 58 pour cent utilisent deja l'IA generative). EN : rien de date 30-31/07 verifiable (TechCrunch licenciements du 25/07 hors fenetre ; Reuters/OpenAI-Hugging Face sans URL directe ; buildfastwithai digest). Quotas tres en dessous (0 primaire, 1 FR, 0 EN) : vendredi 05h10 UTC, presse du jour non parue. Section 4 vide (rien de nouveau verifiable ; spec MCP traitee le 29/07). B5 : rien de neuf (nominal). Podcasts : liens emission Spotify, datation d'episode inverifiable ici. A surveiller demain : entree en application de l'article 50 le 2 aout et liste definitive des signataires.",
-      "primaires": [],
-      "articles": [
-        {
-          "titre": "AI Act : les obligations des entreprises a compter du 2 aout 2026",
-          "source": "Culture RH",
-          "lang": "fr",
-          "lien": "https://culture-rh.com/ai-act-02-aout-2026/",
-          "resume": "A deux jours de l'echeance, le Digital Omnibus en vigueur depuis le 30 juillet remanie le calendrier d'application. 58 pour cent des TPE/PME francaises utilisent deja l'IA generative et doivent recenser leurs usages pour respecter les obligations de transparence de l'article 50.",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un sablier au sable presque écoulé posé sur une pile de dossiers ouverts, symbolisant les derniers jours avant une obligation réglementaire. Composition : un sablier principal, deux dossiers secondaires. Palette : bordeaux, gris, beige. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20sablier%20au%20sable%20presque%20%C3%A9coul%C3%A9%20pos%C3%A9%20sur%20une%20pile%20de%20dossiers%20ouverts%2C%20symbolisant%20les%20derniers%20jours%20avant%20une%20obligation%20r%C3%A9glementaire.%20Composition%20%3A%20un%20sablier%20principal%2C%20deux%20dossiers%20secondaires.%20Palette%20%3A%20bordeaux%2C%20gris%2C%20beige.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=20101"
         }
       ],
       "podcasts": [
