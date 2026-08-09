@@ -1,6 +1,63 @@
 {
-  "generatedAt": "2026-08-08",
+  "generatedAt": "2026-08-09",
   "days": [
+    {
+      "date": "2026-08-09",
+      "label": "dimanche 9 aout 2026",
+      "notes": "Audit interne 09/08. Recherche approfondie (plus de 10 requetes FR/EN) : aucune annonce officielle de laboratoire dans la fenetre stricte 07-09/08 ; aucun article FR ou EN dont la date de publication verifiable tombe dans cette fenetre. Sujets disponibles mais hors fenetre, deja anciens de 3 a 6 jours au moment de la recherche : incident AISI Mythos 5 / GPT-5.6 Sol (fausses identites, tentative de porte derobee sur un projet open source), divulgue le 04-05/08, couverture presse groupee du 04 au 06/08 (CNN, CNBC, VentureBeat, CSO Online, Boursorama, developpez.com, Radio-Canada) - non retenu, aucune source datee 07-09/08 identifiee malgre recherche dediee ; depart de Jeff Dean/Discovery Loop deja couvert le 08/08 ; Rubrik Agent Identity (04/08) et comparatif GPT-5.5-Cyber vs Mythos (article du 24/06, hors sujet) egalement ecartes pour datation. Alibaba Qwen3.8-Max : annonce du 03/08 (hors fenetre), poids ouverts prevus semaine du 10/08 (pas encore publies) : non retenu, a surveiller demain. Section FR et EN vides, assume (regle d'or, pas de remplissage). Volet A : Shieldstral (Mistral AI, 04/08, fenetre 7 jours) retenu - classificateur de moderation open-weights 3B, licence Apache 2.0 confirmee (depot Hugging Face officiel mistralai/Shieldstral-1.0-3B) ; etoiles non verifiables (WebFetch 403), omises. Volet B : rien de nouveau date et verifiable a moins de 7 jours. B5 vide = nominal. WebFetch toujours bloque (403 proxy).",
+      "primaires": [],
+      "articles": [],
+      "podcasts": [
+        {
+          "titre": "Comptoir IA",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
+          "resume": "Émission francophone de référence sur l'IA : entretiens avec des fondateurs, chercheurs et praticiens."
+        },
+        {
+          "titre": "Tech Café",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/1MidB71rbYIRDIrcej073j",
+          "resume": "Magazine tech hebdomadaire en français avec un suivi régulier de l'actualité de l'intelligence artificielle."
+        },
+        {
+          "titre": "Data Driven 101",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/5YkpBdd4Si06ghOpcPmqux",
+          "resume": "Podcast francophone data et IA : cas d'usage concrets en entreprise, retours d'expérience de praticiens."
+        },
+        {
+          "titre": "The Best AI Podcast",
+          "source": "Spotify",
+          "lang": "en",
+          "lien": "https://open.spotify.com/show/10otIHvHndpzykwIqrGjsV",
+          "resume": "Panorama hebdomadaire en anglais des annonces et débats qui structurent l'écosystème IA."
+        },
+        {
+          "titre": "AI & I",
+          "source": "Spotify",
+          "lang": "en",
+          "lien": "https://open.spotify.com/show/5qX1nRTaFsfWdmdj5JWO1G",
+          "resume": "Entretiens approfondis en anglais sur les usages réels des modèles d'IA, animés par Dan Shipper (Every)."
+        }
+      ],
+      "projets": [
+        {
+          "titre": "Shieldstral 1.0 (Mistral AI)",
+          "source": "Hugging Face",
+          "lang": "en",
+          "date": "04/08/2026",
+          "lien": "https://huggingface.co/mistralai/Shieldstral-1.0-3B",
+          "licence": "Apache 2.0",
+          "categorie": "outils",
+          "resume": "Classificateur de modération multimodal compact (3 milliards de paramètres) qui applique à l'inférence une politique de modération écrite en langage naturel, sans réentraînement. Tourne sur un seul GPU 16 Go, couvre 12 langues et le texte comme l'image."
+        }
+      ],
+      "methodes": []
+    },
     {
       "date": "2026-08-08",
       "label": "samedi 8 aout 2026",
@@ -372,74 +429,6 @@
           "resume": "L'AI Act entre dans sa phase repressive : chatbots declares sans delai, contenus generes marques, amendes jusqu'a 15 millions d'euros ou 3 pour cent du chiffre d'affaires. Plus de 180 organisations ont deja signe le code de bonnes pratiques de Bruxelles.",
           "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un grand registre ouvert à sa première page sur laquelle un sceau vient tout juste d'être apposé, symbolisant le premier jour d'application d'une règle attendue. Composition : un registre principal, un sceau et une page secondaires. Palette : bordeaux, gris, beige. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
           "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20grand%20registre%20ouvert%20%C3%A0%20sa%20premi%C3%A8re%20page%20sur%20laquelle%20un%20sceau%20vient%20tout%20juste%20d%27%C3%AAtre%20appos%C3%A9%2C%20symbolisant%20le%20premier%20jour%20d%27application%20d%27une%20r%C3%A8gle%20attendue.%20Composition%20%3A%20un%20registre%20principal%2C%20un%20sceau%20et%20une%20page%20secondaires.%20Palette%20%3A%20bordeaux%2C%20gris%2C%20beige.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=23102"
-        }
-      ],
-      "podcasts": [
-        {
-          "titre": "Comptoir IA",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
-          "resume": "Nicolas Guyon interviewe experts et metiers bouleverses par l'IA ; vulgarisation pointue."
-        },
-        {
-          "titre": "Tech Café",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/1MidB71rbYIRDIrcej073j",
-          "resume": "Actualite tech et IA au sens large, animee par Guillaume Vende."
-        },
-        {
-          "titre": "Data Driven 101 - Le podcast IA & Data",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/5YkpBdd4Si06ghOpcPmqux",
-          "resume": "Marc Sanselme decrypte IA et data science ; interviews d'experts, format accessible."
-        },
-        {
-          "titre": "Best AI Podcast",
-          "source": "Spotify",
-          "lang": "en",
-          "lien": "https://open.spotify.com/show/10otIHvHndpzykwIqrGjsV",
-          "resume": "Curated conversations on artificial intelligence, its tools, breakthroughs and industry trends."
-        },
-        {
-          "titre": "AI and I",
-          "source": "Spotify",
-          "lang": "en",
-          "lien": "https://open.spotify.com/show/5qX1nRTaFsfWdmdj5JWO1G",
-          "resume": "Interviews exploring how people put AI to work in their craft and creative process."
-        }
-      ],
-      "projets": [],
-      "methodes": []
-    },
-    {
-      "date": "2026-08-02",
-      "label": "dimanche 2 aout 2026",
-      "notes": "Audit interne. Evenement du jour : entree en application des obligations de transparence de l'article 50 de l'AI Act (reglement UE 2024/1689), deux ans apres l'entree en vigueur du texte. Primaire = page officielle de reference de la Commission (AI Act Service Desk, article 50), datee au jour de l'evenement ; analyse retenue : FocuSur 01/08 (angle editeurs/contenus, URL datee). Dedup respectee (2 contenus) malgre la couverture des jours precedents (22, 29, 31/07) : le fait nouveau est l'application effective. Ecartes : donneespersonnelles, leto, studeria, dpo-partage, studioentete (dates non affichees, 3e+ contenu), Licentium (date non affichee), Sidley (24/06, hors fenetre). Aucune annonce laboratoire 01-02/08 reperee (dimanche). Quotas en dessous (1 primaire, 1 FR, 0 EN - primaire lang=en). Section 4 vide. B5 : rien de neuf (nominal). Podcasts : liens emission Spotify, datation d'episode inverifiable ici.",
-      "primaires": [
-        {
-          "titre": "Les obligations de transparence de l'article 50 de l'AI Act entrent en application dans l'UE",
-          "source": "Commission europeenne",
-          "lang": "en",
-          "date": "02/08/2026",
-          "lien": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-50",
-          "resume": "A compter de ce jour, chatbots et assistants doivent informer l'utilisateur qu'il interagit avec une IA, les deepfakes et contenus synthetiques doivent etre signales, avec un marquage lisible par machine. Sanctions jusqu'a 15 millions d'euros ou 3 pour cent du chiffre d'affaires mondial.",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un grand portique dont la barrière vient de s'ouvrir et où chaque forme qui le franchit reçoit une petite étiquette identique, symbolisant l'entrée en vigueur d'une obligation de transparence pour tous. Composition : un portique principal, deux formes étiquetées secondaires. Palette : bordeaux, gris, beige. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20grand%20portique%20dont%20la%20barri%C3%A8re%20vient%20de%20s%27ouvrir%20et%20o%C3%B9%20chaque%20forme%20qui%20le%20franchit%20re%C3%A7oit%20une%20petite%20%C3%A9tiquette%20identique%2C%20symbolisant%20l%27entr%C3%A9e%20en%20vigueur%20d%27une%20obligation%20de%20transparence%20pour%20tous.%20Composition%20%3A%20un%20portique%20principal%2C%20deux%20formes%20%C3%A9tiquet%C3%A9es%20secondaires.%20Palette%20%3A%20bordeaux%2C%20gris%2C%20beige.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=22101"
-        }
-      ],
-      "articles": [
-        {
-          "titre": "AI Act, article 50 : des le 2 aout 2026, transparence stricte pour les editeurs de contenus IA",
-          "source": "FocuSur",
-          "lang": "fr",
-          "date": "01/08/2026",
-          "lien": "https://www.focusur.fr/societe/2026/08/01/ai-act-article-50-des-le-2-aout-2026-transparence-stricte-pour-les-editeurs-ce-qui-change-pour-vos-contenus-ia/",
-          "resume": "Ce qui change pour les sites et editeurs : signaler les textes d'IA d'interet public, les deepfakes et les interactions avec un chatbot. Les systemes generatifs deja commercialises beneficient d'un delai au 2 decembre pour le marquage lisible par machine.",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un tampon apposant une marque discrète au coin de chaque feuille sortant d'une presse, symbolisant l'étiquetage systématique des contenus édités avec une machine. Composition : une presse principale, un tampon et deux feuilles secondaires. Palette : bordeaux, gris, beige. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20tampon%20apposant%20une%20marque%20discr%C3%A8te%20au%20coin%20de%20chaque%20feuille%20sortant%20d%27une%20presse%2C%20symbolisant%20l%27%C3%A9tiquetage%20syst%C3%A9matique%20des%20contenus%20%C3%A9dit%C3%A9s%20avec%20une%20machine.%20Composition%20%3A%20une%20presse%20principale%2C%20un%20tampon%20et%20deux%20feuilles%20secondaires.%20Palette%20%3A%20bordeaux%2C%20gris%2C%20beige.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=22102"
         }
       ],
       "podcasts": [
