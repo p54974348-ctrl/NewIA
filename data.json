@@ -1,6 +1,52 @@
 {
-  "generatedAt": "2026-08-09",
+  "generatedAt": "2026-08-10",
   "days": [
+    {
+      "date": "2026-08-10",
+      "label": "lundi 10 aout 2026",
+      "notes": "Audit interne 10/08. Recherche approfondie (9 requetes FR/EN) : aucune annonce officielle de laboratoire ni article dont la date de publication verifiable tombe dans la fenetre stricte 08-10/08. Candidats ecartes pour datation hors fenetre : Seedance 2.5 de ByteDance (lancement reel confirme le 31/07, malgre des trackers l'indiquant a tort au 08/08 - recoupement multi-sources) ; Rubrik Agent Identity et Shieldstral (04/08, deja couverts respectivement non retenu et le 09/08) ; investissement UE 5 Md EUR calcul IA (03/08) ; Robostral Navigate de Mistral (08/07) ; acces europeen a Mythos evoque par la presse mais rattache a l'episode de suspension export-control de juin, rien de nouveau date. Sections primaires et articles volontairement vides plutot que remplies hors fenetre (regle d'or). Volet A : rien de nouveau date et verifiable a moins de 7 jours (au-dela de Shieldstral deja remonte le 09/08). Volet B : rien de date verifiable a moins de 7 jours malgre recherche dediee (templates/CLAUDE.md trouves non dates). B5 vide = nominal. WebFetch toujours bloque (403 proxy).",
+      "primaires": [],
+      "articles": [],
+      "podcasts": [
+        {
+          "titre": "Comptoir IA",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
+          "resume": "Émission francophone de référence sur l'IA : entretiens avec des fondateurs, chercheurs et praticiens."
+        },
+        {
+          "titre": "Tech Café",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/1MidB71rbYIRDIrcej073j",
+          "resume": "Magazine tech hebdomadaire en français avec un suivi régulier de l'actualité de l'intelligence artificielle."
+        },
+        {
+          "titre": "Data Driven 101",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/5YkpBdd4Si06ghOpcPmqux",
+          "resume": "Podcast francophone data et IA : cas d'usage concrets en entreprise, retours d'expérience de praticiens."
+        },
+        {
+          "titre": "The Best AI Podcast",
+          "source": "Spotify",
+          "lang": "en",
+          "lien": "https://open.spotify.com/show/10otIHvHndpzykwIqrGjsV",
+          "resume": "Panorama hebdomadaire en anglais des annonces et débats qui structurent l'écosystème IA."
+        },
+        {
+          "titre": "AI & I",
+          "source": "Spotify",
+          "lang": "en",
+          "lien": "https://open.spotify.com/show/5qX1nRTaFsfWdmdj5JWO1G",
+          "resume": "Entretiens approfondis en anglais sur les usages réels des modèles d'IA, animés par Dan Shipper (Every)."
+        }
+      ],
+      "projets": [],
+      "methodes": []
+    },
     {
       "date": "2026-08-09",
       "label": "dimanche 9 aout 2026",
@@ -404,71 +450,6 @@
           "resume": "Version compacte du modèle ouvert Inkling : 276 Md de paramètres (12 Md actifs), environ 30 % de la taille du grand Inkling pour un niveau proche en raisonnement et en code. Poids publiés sur Hugging Face (BF16, MXFP8, NVFP4) sous Apache 2.0, assortis d'une politique d'usage acceptable propre à Thinking Machines."
         }
       ],
-      "methodes": []
-    },
-    {
-      "date": "2026-08-03",
-      "label": "lundi 3 aout 2026",
-      "notes": "Audit interne. Aucune annonce laboratoire 02-03/08 reperee (week-end, trackers arretes a Opus 5 du 24/07) : primaires vides - l'evenement article 50 a ete traite hier en primaire (reference officielle). Faits nouveaux du jour justifiant la poursuite du sujet : entree en phase repressive (la Commission peut sanctionner), plus de 180 organisations signataires du code de bonnes pratiques, et lecture critique du Digital Omnibus. Dedup : 2 analyses FR aux angles distincts - Next (analyse critique, avance/recul) et Clubic (grand public, ce qui change) ; dates de publication non affichees dans les resultats, champs omis. Ecartes : blogdumoderateur, planetegrandesecoles, esnia, axiom (3e+ contenu / promo). EN : 0 (rien de date verifiable). Quotas en dessous (0 primaire, 2 FR, 0 EN) : lundi 05h11 UTC, presse du jour non parue. Section 4 vide. B5 : rien de neuf (nominal). Podcasts : liens emission Spotify, datation d'episode inverifiable ici.",
-      "primaires": [],
-      "articles": [
-        {
-          "titre": "Le 2 aout, l'AI Act avance et recule a la fois",
-          "source": "Next",
-          "lang": "fr",
-          "lien": "https://next.ink/249636/le-2-aout-lai-act-avance-et-recule-a-la-fois/",
-          "resume": "Analyse du paradoxe du 2 aout : les obligations de transparence de l'article 50 deviennent contraignantes et sanctionnables, pendant que le Digital Omnibus reporte le marquage lisible par machine au 2 decembre pour les systemes deja commercialises.",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un curseur sur un rail gradué, tiré vers l'avant par un câble tendu et retenu vers l'arrière par un ressort, symbolisant une réglementation qui avance et recule à la fois. Composition : un rail principal, un câble et un ressort secondaires. Palette : bordeaux, gris, beige. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20curseur%20sur%20un%20rail%20gradu%C3%A9%2C%20tir%C3%A9%20vers%20l%27avant%20par%20un%20c%C3%A2ble%20tendu%20et%20retenu%20vers%20l%27arri%C3%A8re%20par%20un%20ressort%2C%20symbolisant%20une%20r%C3%A9glementation%20qui%20avance%20et%20recule%20%C3%A0%20la%20fois.%20Composition%20%3A%20un%20rail%20principal%2C%20un%20c%C3%A2ble%20et%20un%20ressort%20secondaires.%20Palette%20%3A%20bordeaux%2C%20gris%2C%20beige.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=23101"
-        },
-        {
-          "titre": "Tres attendu, le Reglement europeen sur l'IA entre en application ce 2 aout : ce qui change pour vous",
-          "source": "Clubic",
-          "lang": "fr",
-          "lien": "https://www.clubic.com/actualite-623773-tres-attendu-le-reglement-europeen-sur-l-ia-entre-en-application-ce-2-aout-voici-ce-qui-change-pour-vous.html",
-          "resume": "L'AI Act entre dans sa phase repressive : chatbots declares sans delai, contenus generes marques, amendes jusqu'a 15 millions d'euros ou 3 pour cent du chiffre d'affaires. Plus de 180 organisations ont deja signe le code de bonnes pratiques de Bruxelles.",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un grand registre ouvert à sa première page sur laquelle un sceau vient tout juste d'être apposé, symbolisant le premier jour d'application d'une règle attendue. Composition : un registre principal, un sceau et une page secondaires. Palette : bordeaux, gris, beige. Fond épuré uni ou dégradé subtil. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20%C3%A9ditoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20repr%C3%A9sentant%20un%20grand%20registre%20ouvert%20%C3%A0%20sa%20premi%C3%A8re%20page%20sur%20laquelle%20un%20sceau%20vient%20tout%20juste%20d%27%C3%AAtre%20appos%C3%A9%2C%20symbolisant%20le%20premier%20jour%20d%27application%20d%27une%20r%C3%A8gle%20attendue.%20Composition%20%3A%20un%20registre%20principal%2C%20un%20sceau%20et%20une%20page%20secondaires.%20Palette%20%3A%20bordeaux%2C%20gris%2C%20beige.%20Fond%20%C3%A9pur%C3%A9%20uni%20ou%20d%C3%A9grad%C3%A9%20subtil.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20r%C3%A9alistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=23102"
-        }
-      ],
-      "podcasts": [
-        {
-          "titre": "Comptoir IA",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
-          "resume": "Nicolas Guyon interviewe experts et metiers bouleverses par l'IA ; vulgarisation pointue."
-        },
-        {
-          "titre": "Tech Café",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/1MidB71rbYIRDIrcej073j",
-          "resume": "Actualite tech et IA au sens large, animee par Guillaume Vende."
-        },
-        {
-          "titre": "Data Driven 101 - Le podcast IA & Data",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/5YkpBdd4Si06ghOpcPmqux",
-          "resume": "Marc Sanselme decrypte IA et data science ; interviews d'experts, format accessible."
-        },
-        {
-          "titre": "Best AI Podcast",
-          "source": "Spotify",
-          "lang": "en",
-          "lien": "https://open.spotify.com/show/10otIHvHndpzykwIqrGjsV",
-          "resume": "Curated conversations on artificial intelligence, its tools, breakthroughs and industry trends."
-        },
-        {
-          "titre": "AI and I",
-          "source": "Spotify",
-          "lang": "en",
-          "lien": "https://open.spotify.com/show/5qX1nRTaFsfWdmdj5JWO1G",
-          "resume": "Interviews exploring how people put AI to work in their craft and creative process."
-        }
-      ],
-      "projets": [],
       "methodes": []
     }
   ]
