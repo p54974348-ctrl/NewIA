@@ -1,6 +1,52 @@
 {
-  "generatedAt": "2026-08-12",
+  "generatedAt": "2026-08-13",
   "days": [
+    {
+      "date": "2026-08-13",
+      "label": "jeudi 13 aout 2026",
+      "notes": "Audit interne 13/08. Recherche approfondie (7 requetes FR/EN) : aucune annonce officielle de laboratoire ni article dont la date de publication verifiable tombe dans la fenetre stricte 11-13/08. Candidats ecartes pour datation hors fenetre : Astra d'OpenAI (teaser du 01/08, ralentissement annonce le 07/08, rien de nouveau date) ; Qwen3.8-Max d'Alibaba (annonce du 03/08, poids ouverts toujours non publies a ce jour malgre l'annonce initiale pour la semaine du 10/08) ; statistique Unitree 5500 robots livres en 2025 (recyclee depuis janvier 2026 dans plusieurs articles, dont un digest du 12/08 de type listicle, exclu) ; rapport AISI Mythos 5/GPT-5.6 Sol deja couvert le 08-09/08. Sections primaires et articles volontairement vides plutot que remplies hors fenetre (regle d'or). Volet A et B : rien de nouveau date et verifiable a moins de 7 jours (recherche dediee sur les depots agents/outils, resultats sans date de sortie recente identifiable, seulement des mises a jour generiques de projets etablis). B5 vide = nominal. WebFetch toujours bloque (403 proxy).",
+      "primaires": [],
+      "articles": [],
+      "podcasts": [
+        {
+          "titre": "Comptoir IA",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
+          "resume": "Émission francophone de référence sur l'IA : entretiens avec des fondateurs, chercheurs et praticiens."
+        },
+        {
+          "titre": "Tech Café",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/1MidB71rbYIRDIrcej073j",
+          "resume": "Magazine tech hebdomadaire en français avec un suivi régulier de l'actualité de l'intelligence artificielle."
+        },
+        {
+          "titre": "Data Driven 101",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/5YkpBdd4Si06ghOpcPmqux",
+          "resume": "Podcast francophone data et IA : cas d'usage concrets en entreprise, retours d'expérience de praticiens."
+        },
+        {
+          "titre": "The Best AI Podcast",
+          "source": "Spotify",
+          "lang": "en",
+          "lien": "https://open.spotify.com/show/10otIHvHndpzykwIqrGjsV",
+          "resume": "Panorama hebdomadaire en anglais des annonces et débats qui structurent l'écosystème IA."
+        },
+        {
+          "titre": "AI & I",
+          "source": "Spotify",
+          "lang": "en",
+          "lien": "https://open.spotify.com/show/5qX1nRTaFsfWdmdj5JWO1G",
+          "resume": "Entretiens approfondis en anglais sur les usages réels des modèles d'IA, animés par Dan Shipper (Every)."
+        }
+      ],
+      "projets": [],
+      "methodes": []
+    },
     {
       "date": "2026-08-12",
       "label": "mercredi 12 aout 2026",
@@ -405,73 +451,6 @@
           "maturite": "convention émergente"
         }
       ]
-    },
-    {
-      "date": "2026-08-06",
-      "label": "jeudi 6 aout 2026",
-      "notes": "Audit interne 06/08. Aucune annonce officielle de laboratoire verifiee dans la fenetre 04-06/08 : primaires vide, assume. Sujet du jour : la cour d'appel du 9e circuit annule le 04/08 l'injonction Amazon contre l'agent Comet de Perplexity (CFAA) ; plafond de 2 contenus respecte : KultureGeek (FR, date confirmee par metadonnees, ~19 h avant recherche = 05/08) + billet EFF (partie amicus, metadonnees = moins d'un jour = 05/08) ; Eastern Herald et Courthouse News exclus (dedup). Hors fenetre 24-48 h, exclus : Gemini Robotics ER 2 (30/07), divulgation Anthropic 3 organisations compromises (30/07, anthropic.com/news/investigating-incidents-cybersecurity-evals ; Forbes 03/08), rapport Unit 42 DeepSeek/Hermes Agent (31/07-03/08), plan Lloyds 2 Md GBP (30/07). business-ia.com 05/08 : digest type listicle, exclu. Volet A : rien de nouveau date a moins de 7 jours (frameworks trouves dates d'avril-juin ; awesome-lists exclues ; Inkling-Small deja remonte le 04/08). Volet B : rien de date verifiable a moins de 7 jours. B5 vide = nominal. WebFetch toujours bloque (403 proxy), verifications par recoupement de snippets, URL datees et metadonnees de recherche.",
-      "primaires": [],
-      "articles": [
-        {
-          "titre": "Perplexity : l'agent IA de Comet peut de nouveau faire des achats via Amazon",
-          "source": "KultureGeek",
-          "lang": "fr",
-          "date": "05/08/2026",
-          "lien": "https://kulturegeek.fr/news-356567/perplexity-lagent-ia-comet-nouveau-achats-via-amazon",
-          "resume": "La cour d'appel du 9e circuit annule l'injonction obtenue par Amazon en mars : l'agent d'achat du navigateur Comet peut de nouveau commander sur Amazon pour ses utilisateurs. Les juges estiment que ce sont les utilisateurs, et non Perplexity, qui « accèdent » aux serveurs d'Amazon au sens de la loi anti-piratage CFAA.",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant un caddie de courses franchissant une barrière levée entre deux colonnes de justice. Composition : une barrière levée, un caddie stylisé, deux colonnes. Palette : bordeaux, gris, beige. Fond épuré uni. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20editoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20representant%20un%20caddie%20de%20courses%20franchissant%20une%20barriere%20levee%20entre%20deux%20colonnes%20de%20justice.%20Composition%20%3A%20une%20barriere%20levee%2C%20un%20caddie%20stylise%2C%20deux%20colonnes.%20Palette%20%3A%20bordeaux%2C%20gris%2C%20beige.%20Fond%20epure%20uni.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20realistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=8061"
-        },
-        {
-          "titre": "Appeals Court Agrees with EFF that Building a Web Browser Doesn't Violate the CFAA",
-          "source": "Electronic Frontier Foundation",
-          "lang": "en",
-          "date": "05/08/2026",
-          "lien": "https://www.eff.org/deeplinks/2026/08/appeals-court-agrees-eff-building-web-browser-doesnt-violate-cfaa",
-          "resume": "L'EFF, partie amicus dans Amazon c. Perplexity, analyse la décision du 9e circuit : le CFAA exige un « accès » non autorisé, or c'est l'utilisateur qui opère l'agent Comet, pas son éditeur. La cour applique la règle de l'interprétation stricte et souligne l'absence quasi totale de jurisprudence sur la responsabilité des agents IA — première décision d'appel fédérale sur ce point.",
-          "imagePrompt": "Illustration éditoriale minimaliste, style flat design moderne, représentant une balance de justice dont un plateau porte une fenêtre de navigateur et l'autre une clé, en équilibre. Composition : une balance, une fenêtre de navigateur stylisée, une clé. Palette : bordeaux, gris, beige. Fond épuré uni. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages réalistes, pas de marques.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20editoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20representant%20une%20balance%20de%20justice%20dont%20un%20plateau%20porte%20une%20fenetre%20de%20navigateur%20et%20l%27autre%20une%20cle%2C%20en%20equilibre.%20Composition%20%3A%20une%20balance%2C%20une%20fenetre%20de%20navigateur%20stylisee%2C%20une%20cle.%20Palette%20%3A%20bordeaux%2C%20gris%2C%20beige.%20Fond%20epure%20uni.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20realistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=8062"
-        }
-      ],
-      "podcasts": [
-        {
-          "titre": "Comptoir IA",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
-          "resume": "Émission francophone de référence sur l'IA : entretiens avec des fondateurs, chercheurs et praticiens."
-        },
-        {
-          "titre": "Tech Café",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/1MidB71rbYIRDIrcej073j",
-          "resume": "Magazine tech hebdomadaire en français avec un suivi régulier de l'actualité de l'intelligence artificielle."
-        },
-        {
-          "titre": "Data Driven 101",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/5YkpBdd4Si06ghOpcPmqux",
-          "resume": "Podcast francophone data et IA : cas d'usage concrets en entreprise, retours d'expérience de praticiens."
-        },
-        {
-          "titre": "The Best AI Podcast",
-          "source": "Spotify",
-          "lang": "en",
-          "lien": "https://open.spotify.com/show/10otIHvHndpzykwIqrGjsV",
-          "resume": "Panorama hebdomadaire en anglais des annonces et débats qui structurent l'écosystème IA."
-        },
-        {
-          "titre": "AI & I",
-          "source": "Spotify",
-          "lang": "en",
-          "lien": "https://open.spotify.com/show/5qX1nRTaFsfWdmdj5JWO1G",
-          "resume": "Entretiens approfondis en anglais sur les usages réels des modèles d'IA, animés par Dan Shipper (Every)."
-        }
-      ],
-      "projets": [],
-      "methodes": []
     }
   ]
 }
