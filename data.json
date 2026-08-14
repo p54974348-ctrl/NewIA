@@ -1,6 +1,94 @@
 {
-  "generatedAt": "2026-08-13",
+  "generatedAt": "2026-08-14",
   "days": [
+    {
+      "date": "2026-08-14",
+      "label": "vendredi 14 aout 2026",
+      "notes": "Audit interne 14/08. Deux sujets distincts du meme jour (12/08) traites separement (pas de dedup entre eux, ce sont deux laboratoires differents) : (1) DeepSeek publie la version GA de V4-Pro-0813 (1,57 Md de parametres actifs sur 1,57T total), sortie de preview annoncee uniquement via une mise a jour de la page de tarification API, sans communique ni article de blog ; poids MIT sur Hugging Face confirmes disponibles (deepseek-ai/DeepSeek-V4-Pro-0813). (2) xAI (SpaceXAI) publie Grok 4.6, ameliorations agents longue duree, meme tarif que Grok 4.5. Plafond de 2 contenus secondaires par sujet respecte : DeepSeek -> Journal du Web (FR, 13/08) ; Grok 4.6 -> VentureBeat (EN, 13/08). Ecartes (dedup / non date) : 163.com (chinois, hors perimetre linguistique fr/en), Cryptopolitan, BigGo Finance, TechTimes, Simon Willison (technique mais redondant avec JDW), Dataconomy, BusinessToday, americanbazaaronline. Volet A/B : rien de nouveau date et verifiable a moins de 7 jours (guide AGENTS.md/CLAUDE.md trouve = mise a jour d'un contenu evergreen de mai 2026, pas un artefact nouveau ; gist sur l'import @AGENTS.md non date, non retenu par prudence). B5 vide = nominal. WebFetch toujours bloque (403 proxy).",
+      "primaires": [
+        {
+          "titre": "DeepSeek-V4-Pro-0813",
+          "source": "Hugging Face / DeepSeek",
+          "lang": "en",
+          "date": "12/08/2026",
+          "lien": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813",
+          "resume": "Version officielle (GA) de DeepSeek V4-Pro, qui sort de préview après environ quatre mois : gains agentiques marqués (DeepSWE, CyberGym, Terminal-Bench 2.1), 1 million de tokens de contexte, poids publiés sous licence MIT. La bascule s'est faite sans communiqué, via une simple mise à jour de la page de tarification API.",
+          "imagePrompt": "Illustration editoriale minimaliste, style flat design moderne, representant une etiquette de prix qui se detache silencieusement d'un grand socle sans fanfare ni ruban. Composition : un socle de modele, une etiquette de prix qui tombe. Palette : bleu profond, violet, accents cyan. Fond epure uni. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages realistes, pas de marques.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20editoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20representant%20une%20etiquette%20de%20prix%20qui%20se%20detache%20silencieusement%20d%27un%20grand%20socle%20sans%20fanfare%20ni%20ruban.%20Composition%20%3A%20un%20socle%20de%20modele%2C%20une%20etiquette%20de%20prix%20qui%20tombe.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20epure%20uni.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20realistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=8141"
+        },
+        {
+          "titre": "Introducing Grok 4.6",
+          "source": "xAI",
+          "lang": "en",
+          "date": "12/08/2026",
+          "lien": "https://x.ai/news/grok-4-6",
+          "resume": "xAI publie Grok 4.6, qui met l'accent sur les agents longue durée et des tâches interactives et visuelles plus ambitieuses. Contexte inchangé à 500 000 tokens, tarif identique à Grok 4.5 (2 $/6 $ par million de tokens), disponible via l'API xAI et des partenaires comme Cursor et OpenRouter.",
+          "imagePrompt": "Illustration editoriale minimaliste, style flat design moderne, representant une fusee stylisee dont le nez s'allonge et s'affine, symbolisant une nouvelle version plus rapide et plus agile. Composition : une fusee stylisee, une trainee de vitesse. Palette : bleu profond, violet, accents cyan. Fond epure uni. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages realistes, pas de marques.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20editoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20representant%20une%20fusee%20stylisee%20dont%20le%20nez%20s%27allonge%20et%20s%27affine%2C%20symbolisant%20une%20nouvelle%20version%20plus%20rapide%20et%20plus%20agile.%20Composition%20%3A%20une%20fusee%20stylisee%2C%20une%20trainee%20de%20vitesse.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20epure%20uni.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20realistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=8142"
+        }
+      ],
+      "articles": [
+        {
+          "titre": "DeepSeek V4-Pro 0813 : le flagship chinois sort de sa preview à 0,87 $ le million de tokens et défie frontalement les labos américains",
+          "source": "Journal du Web",
+          "lang": "fr",
+          "date": "13/08/2026",
+          "lien": "https://www.journalduweb.org/deepseek-v4-pro-0813-le-flagship-chinois-sort-de-preview-a-087-le-million-de-tokens-et-defie-frontalement-les-labos-americains/",
+          "resume": "Le lancement, fait discrètement via une page de tarification mise à jour, positionne V4-Pro à 0,87 $ par million de tokens en sortie — environ 46 fois moins cher que Claude Fable 5 selon les propres comparatifs de DeepSeek sur dix bancs d'essai agentiques, pour un écart de performance moyen de 5,3 %.",
+          "imagePrompt": "Illustration editoriale minimaliste, style flat design moderne, representant deux balances face a face, l'une tres legere et l'autre lourde, sur un meme comptoir de negoce. Composition : deux balances, un comptoir. Palette : orange, bleu petrole. Fond epure uni. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages realistes, pas de marques.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20editoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20representant%20deux%20balances%20face%20a%20face%2C%20l%27une%20tres%20legere%20et%20l%27autre%20lourde%2C%20sur%20un%20meme%20comptoir%20de%20negoce.%20Composition%20%3A%20deux%20balances%2C%20un%20comptoir.%20Palette%20%3A%20orange%2C%20bleu%20petrole.%20Fond%20epure%20uni.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20realistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=8143"
+        },
+        {
+          "titre": "SpaceXAI debuts Grok 4.6, overtaking Kimi K3's performance and matching GPT-5.6 Sol for world's third best on Artificial Analysis",
+          "source": "VentureBeat",
+          "lang": "en",
+          "date": "13/08/2026",
+          "lien": "https://venturebeat.com/technology/spacexai-debuts-grok-4-6-overtaking-kimi-k3s-performance-and-matching-gpt-5-6-sol-for-worlds-third-best-on-artificial-analysis",
+          "resume": "VentureBeat situe Grok 4.6 sur le classement Artificial Analysis : le modèle dépasse Kimi K3 et rejoint GPT-5.6 Sol à la troisième place mondiale, sorti le même jour que la version officielle de DeepSeek V4-Pro — une coïncidence qui intensifie la guerre des prix entre laboratoires frontière.",
+          "imagePrompt": "Illustration editoriale minimaliste, style flat design moderne, representant deux flambeaux allumes le meme jour sur une ligne d'arrivee commune, symbolisant deux lancements simultanes. Composition : deux flambeaux, une ligne d'arrivee. Palette : bleu profond, violet, accents cyan. Fond epure uni. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages realistes, pas de marques.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20editoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20representant%20deux%20flambeaux%20allumes%20le%20meme%20jour%20sur%20une%20ligne%20d%27arrivee%20commune%2C%20symbolisant%20deux%20lancements%20simultanes.%20Composition%20%3A%20deux%20flambeaux%2C%20une%20ligne%20d%27arrivee.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20epure%20uni.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20realistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=8144"
+        }
+      ],
+      "podcasts": [
+        {
+          "titre": "Comptoir IA",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
+          "resume": "Émission francophone de référence sur l'IA : entretiens avec des fondateurs, chercheurs et praticiens."
+        },
+        {
+          "titre": "Tech Café",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/1MidB71rbYIRDIrcej073j",
+          "resume": "Magazine tech hebdomadaire en français avec un suivi régulier de l'actualité de l'intelligence artificielle."
+        },
+        {
+          "titre": "Data Driven 101",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/5YkpBdd4Si06ghOpcPmqux",
+          "resume": "Podcast francophone data et IA : cas d'usage concrets en entreprise, retours d'expérience de praticiens."
+        },
+        {
+          "titre": "The Best AI Podcast",
+          "source": "Spotify",
+          "lang": "en",
+          "lien": "https://open.spotify.com/show/10otIHvHndpzykwIqrGjsV",
+          "resume": "Panorama hebdomadaire en anglais des annonces et débats qui structurent l'écosystème IA."
+        },
+        {
+          "titre": "AI & I",
+          "source": "Spotify",
+          "lang": "en",
+          "lien": "https://open.spotify.com/show/5qX1nRTaFsfWdmdj5JWO1G",
+          "resume": "Entretiens approfondis en anglais sur les usages réels des modèles d'IA, animés par Dan Shipper (Every)."
+        }
+      ],
+      "projets": [],
+      "methodes": []
+    },
     {
       "date": "2026-08-13",
       "label": "jeudi 13 aout 2026",
@@ -372,85 +460,6 @@
       ],
       "projets": [],
       "methodes": []
-    },
-    {
-      "date": "2026-08-07",
-      "label": "vendredi 7 aout 2026",
-      "notes": "Audit interne 07/08. Sujet dominant : Meta lance Muse Code (agent de codage en terminal, beta Mac/Linux) et Muse Spark 1.2 le 05/08 ; plafond de 2 contenus respecte : annonce officielle (primaire) + analyse The Register du 06/08 (URL datee). Couvertures FR du sujet (Silicon.fr, BDM, MacGeneration, Generation-NT, ITdaily, lefilia) : dates de publication non verifiables au jour pres (WebFetch bloque) et plafond dedup atteint : exclues ; consequence : section articles FR vide, assume. MarkTechPost 05/08 et Forbes 06/08 : au-dela du plafond dedup, exclus. Doctolib (projet recherche IA donnees de sante) : Usine Digitale 17/07 et CNews 01/08 hors fenetre 24-48 h, aucun article date en fenetre : sujet non retenu. Muse Spark 1.2 presente comme open-weights par une source secondaire sans nom de licence verifiable : volet A exclu (regle licence). Volet B : Meta Model Cookbook (depot GitHub public officiel) retenu, date exacte des recettes Muse Code non verifiable, omise ; fraicheur attestee par le lancement du 05/08 auquel les recettes sont liees. B5 vide = nominal. WebFetch toujours bloque (403 proxy).",
-      "primaires": [
-        {
-          "titre": "Introducing Muse Code and Muse Spark 1.2",
-          "source": "Meta AI Research",
-          "lang": "en",
-          "date": "05/08/2026",
-          "lien": "https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2",
-          "resume": "Meta entre sur le marché des agents de codage : Muse Code, agent en terminal (bêta Mac/Linux, modes interactif et headless) capable de planifier, coder et valider dans de grands dépôts en déléguant à des sous-agents parallèles, propulsé par Muse Spark 1.2, co-entraîné avec le harnais (82,9 % sur Terminal-Bench 2.1).",
-          "imagePrompt": "Illustration editoriale minimaliste, style flat design moderne, representant une etincelle stylisee jaillissant d'une fenetre de terminal ouverte. Composition : une fenetre de terminal, une etincelle geometrique, une trainee lumineuse. Palette : bleu profond, violet, accents cyan. Fond epure uni. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages realistes, pas de marques.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20editoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20representant%20une%20etincelle%20stylisee%20jaillissant%20d%27une%20fenetre%20de%20terminal%20ouverte.%20Composition%20%3A%20une%20fenetre%20de%20terminal%2C%20une%20etincelle%20geometrique%2C%20une%20trainee%20lumineuse.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20epure%20uni.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20realistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=8071"
-        }
-      ],
-      "articles": [
-        {
-          "titre": "Meta wants to get inside your terminal with its new coding agent",
-          "source": "The Register",
-          "lang": "en",
-          "date": "06/08/2026",
-          "lien": "https://www.theregister.com/ai-and-ml/2026/08/06/meta-wants-to-get-inside-your-terminal-with-its-new-coding-agent/5283717",
-          "resume": "The Register analyse l'offensive de Meta face à Claude Code et Codex : tarification agressive (1,25 $/M tokens en entrée, tier contributeur plus de 10 fois moins cher contre partage de données) et pari d'un modèle et d'un harnais entraînés ensemble, que Meta recommande de ne pas dissocier.",
-          "imagePrompt": "Illustration editoriale minimaliste, style flat design moderne, representant un bras mecanique sortant d'une fenetre de terminal pour poser une piece d'engrenage. Composition : une fenetre de terminal, un bras mecanique stylise, un engrenage. Palette : vert sauge, gris anthracite, blanc. Fond epure uni. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages realistes, pas de marques.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20editoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20representant%20un%20bras%20mecanique%20sortant%20d%27une%20fenetre%20de%20terminal%20pour%20poser%20une%20piece%20d%27engrenage.%20Composition%20%3A%20une%20fenetre%20de%20terminal%2C%20un%20bras%20mecanique%20stylise%2C%20un%20engrenage.%20Palette%20%3A%20vert%20sauge%2C%20gris%20anthracite%2C%20blanc.%20Fond%20epure%20uni.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20realistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=8072"
-        }
-      ],
-      "podcasts": [
-        {
-          "titre": "Comptoir IA",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
-          "resume": "Émission francophone de référence sur l'IA : entretiens avec des fondateurs, chercheurs et praticiens."
-        },
-        {
-          "titre": "Tech Café",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/1MidB71rbYIRDIrcej073j",
-          "resume": "Magazine tech hebdomadaire en français avec un suivi régulier de l'actualité de l'intelligence artificielle."
-        },
-        {
-          "titre": "Data Driven 101",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/5YkpBdd4Si06ghOpcPmqux",
-          "resume": "Podcast francophone data et IA : cas d'usage concrets en entreprise, retours d'expérience de praticiens."
-        },
-        {
-          "titre": "The Best AI Podcast",
-          "source": "Spotify",
-          "lang": "en",
-          "lien": "https://open.spotify.com/show/10otIHvHndpzykwIqrGjsV",
-          "resume": "Panorama hebdomadaire en anglais des annonces et débats qui structurent l'écosystème IA."
-        },
-        {
-          "titre": "AI & I",
-          "source": "Spotify",
-          "lang": "en",
-          "lien": "https://open.spotify.com/show/5qX1nRTaFsfWdmdj5JWO1G",
-          "resume": "Entretiens approfondis en anglais sur les usages réels des modèles d'IA, animés par Dan Shipper (Every)."
-        }
-      ],
-      "projets": [],
-      "methodes": [
-        {
-          "titre": "Meta Model Cookbook (recettes agentiques Muse Code)",
-          "type": "repo",
-          "lang": "en",
-          "lien": "https://github.com/meta-models/meta-model-cookbook",
-          "categorie": "workflows",
-          "pratique": "Recettes officielles exécutables (notebooks Colab et scripts Python) montrant comment répartir un gros travail entre sous-agents parallèles dans des worktrees git isolés, avec replay déterministe et suivi d'objectifs.",
-          "applicabilite": "Utilisable dès aujourd'hui avec Muse Code (bêta Mac/Linux) et l'API Meta Model ; les patterns multi-agents et worktrees se transposent aux autres agents de codage en terminal.",
-          "maturite": "convention émergente"
-        }
-      ]
     }
   ]
 }
