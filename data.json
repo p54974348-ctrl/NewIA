@@ -1,6 +1,73 @@
 {
-  "generatedAt": "2026-08-14",
+  "generatedAt": "2026-08-15",
   "days": [
+    {
+      "date": "2026-08-15",
+      "label": "samedi 15 aout 2026",
+      "notes": "Audit interne 15/08. Sujet du jour : Microsoft entame la fusion de ses applications Copilot grand public et professionnelle (13-14/08) en une seule application, premiere etape structurelle vers une future super-app annoncee par Satya Nadella ; deploiement mondial mobile/web a partir de mi-aout, Windows/Mac en septembre ; plusieurs fonctions grand public retirees (Copilot Podcasts, Group Chat, Deep Research, Mico). Aucun lien officiel direct (blogs.microsoft.com) identifie malgre recherche dediee : classement en articles uniquement, pas de primaire. Plafond de 2 contenus respecte : Siecle Digital (FR, 14/08) + GeekWire (EN, 14/08). Ecartes (dedup / non date precise) : blog-nouvelles-technologies, generation-nt (13/08, redondant), blogdumoderateur, lecerclepoints, itdaily, nxus, TechCrunch, Fortune, Gizmodo, Archyde, Neowin, Thurrott, WindowsCentral, BigGo Finance, Windows Report. Accord Riot Platforms/Anthropic 9,1 Md dollars (data center Texas) : annonce reelle du 10-11/08, hors fenetre 24-48h, non retenu. Volet A/B : rien de nouveau date et verifiable a moins de 7 jours (service concurrent de l'ex-CEO GitHub date de juillet 2026, hors fenetre). B5 vide = nominal. WebFetch toujours bloque (403 proxy).",
+      "primaires": [],
+      "articles": [
+        {
+          "titre": "Microsoft prépare une « super app » Copilot et commence par fusionner ses deux applications",
+          "source": "Siècle Digital",
+          "lang": "fr",
+          "date": "14/08/2026",
+          "lien": "https://siecledigital.fr/2026/08/14/microsoft-prepare-une-super-app-copilot-et-commence-par-fusionner-ses-deux-applications",
+          "resume": "Microsoft engage la fusion de Copilot grand public et de Microsoft 365 Copilot en une application unique, avec un déploiement mondial prévu à partir du 18 août. Satya Nadella avait annoncé lors des derniers résultats trimestriels que tous les outils Copilot seraient réunis avant fin septembre.",
+          "imagePrompt": "Illustration editoriale minimaliste, style flat design moderne, representant deux fenetres d'application distinctes qui glissent l'une vers l'autre pour ne former qu'une seule fenetre unifiee. Composition : deux fenetres, une fleche de fusion. Palette : vert sauge, gris anthracite, blanc. Fond epure uni. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages realistes, pas de marques.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20editoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20representant%20deux%20fenetres%20d%27application%20distinctes%20qui%20glissent%20l%27une%20vers%20l%27autre%20pour%20ne%20former%20qu%27une%20seule%20fenetre%20unifiee.%20Composition%20%3A%20deux%20fenetres%2C%20une%20fleche%20de%20fusion.%20Palette%20%3A%20vert%20sauge%2C%20gris%20anthracite%2C%20blanc.%20Fond%20epure%20uni.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20realistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=8151"
+        },
+        {
+          "titre": "Microsoft starts merging its Copilot consumer and business apps in advance of 'Super App' rollout",
+          "source": "GeekWire",
+          "lang": "en",
+          "date": "14/08/2026",
+          "lien": "https://www.geekwire.com/2026/microsoft-starts-merging-its-copilot-consumer-and-business-apps-in-advance-of-super-app-rollout/",
+          "resume": "L'application unifiée conserve le nom « Microsoft Copilot » avec une nouvelle icône, fusionnant le chat et la génération d'images grand public avec les outils de travail Microsoft 365 ; l'adresse professionnelle m365.cloud.microsoft basculera vers copilot.cloud.microsoft fin août, avec redirections automatiques.",
+          "imagePrompt": "Illustration editoriale minimaliste, style flat design moderne, representant une cle universelle remplaçant un trousseau de plusieurs cles differentes eparpillees. Composition : une cle universelle, un trousseau eparpille. Palette : vert sauge, gris anthracite, blanc. Fond epure uni. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages realistes, pas de marques.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20editoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20representant%20une%20cle%20universelle%20rempla%C3%A7ant%20un%20trousseau%20de%20plusieurs%20cles%20differentes%20eparpillees.%20Composition%20%3A%20une%20cle%20universelle%2C%20un%20trousseau%20eparpille.%20Palette%20%3A%20vert%20sauge%2C%20gris%20anthracite%2C%20blanc.%20Fond%20epure%20uni.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20realistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=8152"
+        }
+      ],
+      "podcasts": [
+        {
+          "titre": "Comptoir IA",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
+          "resume": "Émission francophone de référence sur l'IA : entretiens avec des fondateurs, chercheurs et praticiens."
+        },
+        {
+          "titre": "Tech Café",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/1MidB71rbYIRDIrcej073j",
+          "resume": "Magazine tech hebdomadaire en français avec un suivi régulier de l'actualité de l'intelligence artificielle."
+        },
+        {
+          "titre": "Data Driven 101",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/5YkpBdd4Si06ghOpcPmqux",
+          "resume": "Podcast francophone data et IA : cas d'usage concrets en entreprise, retours d'expérience de praticiens."
+        },
+        {
+          "titre": "The Best AI Podcast",
+          "source": "Spotify",
+          "lang": "en",
+          "lien": "https://open.spotify.com/show/10otIHvHndpzykwIqrGjsV",
+          "resume": "Panorama hebdomadaire en anglais des annonces et débats qui structurent l'écosystème IA."
+        },
+        {
+          "titre": "AI & I",
+          "source": "Spotify",
+          "lang": "en",
+          "lien": "https://open.spotify.com/show/5qX1nRTaFsfWdmdj5JWO1G",
+          "resume": "Entretiens approfondis en anglais sur les usages réels des modèles d'IA, animés par Dan Shipper (Every)."
+        }
+      ],
+      "projets": [],
+      "methodes": []
+    },
     {
       "date": "2026-08-14",
       "label": "vendredi 14 aout 2026",
@@ -392,73 +459,6 @@
           "resume": "Classificateur de modération multimodal compact (3 milliards de paramètres) qui applique à l'inférence une politique de modération écrite en langage naturel, sans réentraînement. Tourne sur un seul GPU 16 Go, couvre 12 langues et le texte comme l'image."
         }
       ],
-      "methodes": []
-    },
-    {
-      "date": "2026-08-08",
-      "label": "samedi 8 aout 2026",
-      "notes": "Audit interne 08/08. Sujet dominant : depart de Jeff Dean (avec Sanjay Ghemawat, Oriol Vinyals, Quoc Le) de Google le 05/08 pour fonder Discovery Loop (automatisation de la recherche scientifique), avec en parallele le passage de Demis Hassabis au poste de president de Google DeepMind (Koray Kavukcuoglu promu SVP). Evenement du 05/08, hors fenetre stricte 24-48h a la date d'aujourd'hui ; retenu via 2 couvertures de presse elles-memes datees dans la fenetre : Journal du Web (FR, metadonnees = 1 jour avant recherche = 07/08) et GeekWire (EN, metadonnees = 2 jours avant recherche = 06/08, limite haute de la fenetre). Aucun lien direct vers une annonce officielle blog.google identifie (seulement memo interne rapporte par la presse et fil X de Jeff Dean) : pas de primaire retenue, classement en articles uniquement. Plafond de 2 contenus respecte ; CNBC, Axios, TechCrunch, Yahoo Finance, Motley Fool, HPCwire, Quartz, techflowpost.com ecartes (dedup). Aucune autre annonce officielle de laboratoire verifiee dans la fenetre stricte : primaires vide, assume. Volet A/B : rien de nouveau date et verifiable a moins de 7 jours (AGENTS.md/CLAUDE.md : etat des lieux general sans date de publication precise, non retenu). B5 vide = nominal. WebFetch toujours bloque (403 proxy), verifications par recoupement de snippets, URL datees et metadonnees de recherche.",
-      "primaires": [],
-      "articles": [
-        {
-          "titre": "Exode chez Google DeepMind : Hassabis lâche les commandes, Jeff Dean et trois cerveaux de l'IA fondent Discovery Loop",
-          "source": "Journal du Web",
-          "lang": "fr",
-          "date": "07/08/2026",
-          "lien": "https://www.journalduweb.org/exode-google-deepmind-hassabis-discovery-loop/",
-          "resume": "Jeff Dean (scientifique en chef, 27 ans d'ancienneté), Sanjay Ghemawat, Oriol Vinyals et Quoc Le quittent Google pour fonder Discovery Loop, société à mission dédiée à l'automatisation de la découverte scientifique par l'IA. Le même jour, Demis Hassabis cède la direction opérationnelle de Google DeepMind pour devenir président du laboratoire et « chief scientist » d'Alphabet.",
-          "imagePrompt": "Illustration editoriale minimaliste, style flat design moderne, representant deux silhouettes stylisees qui se separent, l'une portant une boucle circulaire ouverte comme symbole de recherche. Composition : deux silhouettes, une boucle circulaire, un chemin qui bifurque. Palette : bleu profond, violet, accents cyan. Fond epure uni. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages realistes, pas de marques.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20editoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20representant%20deux%20silhouettes%20stylisees%20qui%20se%20separent%2C%20l%27une%20portant%20une%20boucle%20circulaire%20ouverte%20comme%20symbole%20de%20recherche.%20Composition%20%3A%20deux%20silhouettes%2C%20une%20boucle%20circulaire%2C%20un%20chemin%20qui%20bifurque.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20epure%20uni.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20realistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=8081"
-        },
-        {
-          "titre": "The startup idea that convinced a UW computer science legend to leave Google after 27 years",
-          "source": "GeekWire",
-          "lang": "en",
-          "date": "06/08/2026",
-          "lien": "https://www.geekwire.com/2026/the-startup-idea-that-convinced-a-uw-computer-science-legend-to-leave-google-after-27-years/",
-          "resume": "GeekWire retrace le projet qui a poussé Jeff Dean à quitter Google : automatiser la boucle expérimentale complète de la recherche scientifique et de l'ingénierie (proposer une expérience, l'exécuter, l'évaluer, itérer), reproduite à grande échelle par apprentissage automatique. Discovery Loop est structurée en société à mission, avec Google comme investisseur fondateur et partenaire cloud, aux côtés de Radical Ventures et Khosla Ventures.",
-          "imagePrompt": "Illustration editoriale minimaliste, style flat design moderne, representant un organigramme abstrait dont une case centrale se detache et devient independante, reliee par un fil fin. Composition : un organigramme simplifie, une case detachee, un fil de connexion. Palette : bleu profond, violet, accents cyan. Fond epure uni. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages realistes, pas de marques.",
-          "image": "https://image.pollinations.ai/prompt/Illustration%20editoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20representant%20un%20organigramme%20abstrait%20dont%20une%20case%20centrale%20se%20detache%20et%20devient%20independante%2C%20reliee%20par%20un%20fil%20fin.%20Composition%20%3A%20un%20organigramme%20simplifie%2C%20une%20case%20detachee%2C%20un%20fil%20de%20connexion.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20epure%20uni.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20realistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=8082"
-        }
-      ],
-      "podcasts": [
-        {
-          "titre": "Comptoir IA",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
-          "resume": "Émission francophone de référence sur l'IA : entretiens avec des fondateurs, chercheurs et praticiens."
-        },
-        {
-          "titre": "Tech Café",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/1MidB71rbYIRDIrcej073j",
-          "resume": "Magazine tech hebdomadaire en français avec un suivi régulier de l'actualité de l'intelligence artificielle."
-        },
-        {
-          "titre": "Data Driven 101",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/5YkpBdd4Si06ghOpcPmqux",
-          "resume": "Podcast francophone data et IA : cas d'usage concrets en entreprise, retours d'expérience de praticiens."
-        },
-        {
-          "titre": "The Best AI Podcast",
-          "source": "Spotify",
-          "lang": "en",
-          "lien": "https://open.spotify.com/show/10otIHvHndpzykwIqrGjsV",
-          "resume": "Panorama hebdomadaire en anglais des annonces et débats qui structurent l'écosystème IA."
-        },
-        {
-          "titre": "AI & I",
-          "source": "Spotify",
-          "lang": "en",
-          "lien": "https://open.spotify.com/show/5qX1nRTaFsfWdmdj5JWO1G",
-          "resume": "Entretiens approfondis en anglais sur les usages réels des modèles d'IA, animés par Dan Shipper (Every)."
-        }
-      ],
-      "projets": [],
       "methodes": []
     }
   ]
