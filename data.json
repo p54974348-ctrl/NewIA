@@ -1,6 +1,84 @@
 {
-  "generatedAt": "2026-08-15",
+  "generatedAt": "2026-08-16",
   "days": [
+    {
+      "date": "2026-08-16",
+      "label": "dimanche 16 aout 2026",
+      "notes": "Audit interne 16/08. Sujet du jour : Alibaba (Qwen) publie les poids ouverts de Qwen3.8-27B (14/08, 15h00 UTC), modele dense vision-langage de 27,8 Md de parametres sous licence Apache 2.0, deployable localement (24 Go de VRAM, ou 9 Go en quantification Unsloth la plus compressee). Plafond de 2 contenus secondaires respecte : The Pingouin (FR, 14/08) + Local AI Zone (EN, 14/08, analyse technique). Ecartes (dedup / hors sujet ou trop anciens) : VentureBeat et MarkTechPost (couvrent Qwen3.8-Max, un modele different, annonce du 03/08, hors fenetre) ; Techmeme, Neomanex, Kingy.ai, explainx.ai, Medium, felloai, techsy.io, orcarouter (plusieurs billets), Wikipedia. Autres sujets reperes mais ecartes pour datation hors fenetre stricte 14-16/08 : defaut gratuit de GPT-5.6 Luna sur ChatGPT (rollout reel debut aout, annonces des 30/07 et 06/08) ; JV Anthropic-Blackstone-Hellman&Friedman Ode With Anthropic (annonce du 05/05, simplement re-signalee dans des digests du 13/08) ; premier trimestre beneficiaire d'Anthropic (projection de mai, reprise en presse le 13/08 sans nouvelle annonce officielle). Volet A : Qwen3.8-27B reste en primaire (modele brut), non duplique en Section 4. Volet B : rien de nouveau date et verifiable a moins de 7 jours. B5 vide = nominal. WebFetch toujours bloque (403 proxy).",
+      "primaires": [
+        {
+          "titre": "Qwen3.8-27B",
+          "source": "Hugging Face / Alibaba Qwen",
+          "lang": "en",
+          "date": "14/08/2026",
+          "lien": "https://huggingface.co/Qwen/Qwen3.8-27B",
+          "resume": "L'équipe Qwen publie les poids ouverts de Qwen3.8-27B, modèle dense vision-langage de 27,8 Md de paramètres sous licence Apache 2.0 : contrôle du raisonnement flexible, fenêtre native de 262k tokens extensible à 1M, déployable sur un seul GPU grand public de 24 Go (dès 9 Go en quantification compressée).",
+          "imagePrompt": "Illustration editoriale minimaliste, style flat design moderne, representant un cristal compact pose sur un socle domestique, dont une facette laisse filtrer une lumiere aussi intense qu'un phare distant. Composition : un cristal, un socle, un phare miniature en arriere-plan. Palette : bleu profond, violet, accents cyan. Fond epure uni. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages realistes, pas de marques.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20editoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20representant%20un%20cristal%20compact%20pose%20sur%20un%20socle%20domestique%2C%20dont%20une%20facette%20laisse%20filtrer%20une%20lumiere%20aussi%20intense%20qu%27un%20phare%20distant.%20Composition%20%3A%20un%20cristal%2C%20un%20socle%2C%20un%20phare%20miniature%20en%20arriere-plan.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20epure%20uni.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20realistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=8161"
+        }
+      ],
+      "articles": [
+        {
+          "titre": "Qwen3.8-27B est sorti : pourquoi ce modèle ouvert était si attendu",
+          "source": "The Pingouin",
+          "lang": "fr",
+          "date": "14/08/2026",
+          "lien": "https://www.thepingouin.com/2026/08/14/qwen3-8-27b-modele-ouvert-sortie/",
+          "resume": "The Pingouin détaille pourquoi Qwen3.8-27B était très attendu : un modèle multimodal exécutable localement sans envoyer un seul token vers le cloud, avec des performances jugées compétitives face à des modèles bien plus volumineux.",
+          "imagePrompt": "Illustration editoriale minimaliste, style flat design moderne, representant une balance ou un petit cube tient tete a une pile de gros blocs empiles. Composition : une balance, un petit cube, une pile de blocs. Palette : bleu profond, violet, accents cyan. Fond epure uni. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages realistes, pas de marques.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20editoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20representant%20une%20balance%20ou%20un%20petit%20cube%20tient%20tete%20a%20une%20pile%20de%20gros%20blocs%20empiles.%20Composition%20%3A%20une%20balance%2C%20un%20petit%20cube%2C%20une%20pile%20de%20blocs.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20epure%20uni.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20realistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=8162"
+        },
+        {
+          "titre": "Qwen3.8-27B: A Comprehensive Technical Analysis",
+          "source": "Local AI Zone",
+          "lang": "en",
+          "date": "14/08/2026",
+          "lien": "https://local-ai-zone.github.io/blog/qwen3-8-27b-comprehensive-analysis.html",
+          "resume": "Analyse technique de l'architecture et des bancs d'essai de Qwen3.8-27B : performances jugées compétitives face à des modèles 10 à 15 fois plus volumineux, tout en restant déployable avec des exigences matérielles pratiques (24 Go de VRAM minimum).",
+          "imagePrompt": "Illustration editoriale minimaliste, style flat design moderne, representant une loupe technique posee sur un petit boitier compact ouvert laissant voir des rouages precis. Composition : une loupe, un boitier ouvert, des rouages. Palette : bleu profond, violet, accents cyan. Fond epure uni. Format 16:9. Pas de texte, pas de lettres, pas de logos, pas de visages realistes, pas de marques.",
+          "image": "https://image.pollinations.ai/prompt/Illustration%20editoriale%20minimaliste%2C%20style%20flat%20design%20moderne%2C%20representant%20une%20loupe%20technique%20posee%20sur%20un%20petit%20boitier%20compact%20ouvert%20laissant%20voir%20des%20rouages%20precis.%20Composition%20%3A%20une%20loupe%2C%20un%20boitier%20ouvert%2C%20des%20rouages.%20Palette%20%3A%20bleu%20profond%2C%20violet%2C%20accents%20cyan.%20Fond%20epure%20uni.%20Format%2016%3A9.%20Pas%20de%20texte%2C%20pas%20de%20lettres%2C%20pas%20de%20logos%2C%20pas%20de%20visages%20realistes%2C%20pas%20de%20marques.?width=768&height=432&nologo=true&seed=8163"
+        }
+      ],
+      "podcasts": [
+        {
+          "titre": "Comptoir IA",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
+          "resume": "Émission francophone de référence sur l'IA : entretiens avec des fondateurs, chercheurs et praticiens."
+        },
+        {
+          "titre": "Tech Café",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/1MidB71rbYIRDIrcej073j",
+          "resume": "Magazine tech hebdomadaire en français avec un suivi régulier de l'actualité de l'intelligence artificielle."
+        },
+        {
+          "titre": "Data Driven 101",
+          "source": "Spotify",
+          "lang": "fr",
+          "lien": "https://open.spotify.com/show/5YkpBdd4Si06ghOpcPmqux",
+          "resume": "Podcast francophone data et IA : cas d'usage concrets en entreprise, retours d'expérience de praticiens."
+        },
+        {
+          "titre": "The Best AI Podcast",
+          "source": "Spotify",
+          "lang": "en",
+          "lien": "https://open.spotify.com/show/10otIHvHndpzykwIqrGjsV",
+          "resume": "Panorama hebdomadaire en anglais des annonces et débats qui structurent l'écosystème IA."
+        },
+        {
+          "titre": "AI & I",
+          "source": "Spotify",
+          "lang": "en",
+          "lien": "https://open.spotify.com/show/5qX1nRTaFsfWdmdj5JWO1G",
+          "resume": "Entretiens approfondis en anglais sur les usages réels des modèles d'IA, animés par Dan Shipper (Every)."
+        }
+      ],
+      "projets": [],
+      "methodes": []
+    },
     {
       "date": "2026-08-15",
       "label": "samedi 15 aout 2026",
@@ -402,63 +480,6 @@
         }
       ],
       "projets": [],
-      "methodes": []
-    },
-    {
-      "date": "2026-08-09",
-      "label": "dimanche 9 aout 2026",
-      "notes": "Audit interne 09/08. Recherche approfondie (plus de 10 requetes FR/EN) : aucune annonce officielle de laboratoire dans la fenetre stricte 07-09/08 ; aucun article FR ou EN dont la date de publication verifiable tombe dans cette fenetre. Sujets disponibles mais hors fenetre, deja anciens de 3 a 6 jours au moment de la recherche : incident AISI Mythos 5 / GPT-5.6 Sol (fausses identites, tentative de porte derobee sur un projet open source), divulgue le 04-05/08, couverture presse groupee du 04 au 06/08 (CNN, CNBC, VentureBeat, CSO Online, Boursorama, developpez.com, Radio-Canada) - non retenu, aucune source datee 07-09/08 identifiee malgre recherche dediee ; depart de Jeff Dean/Discovery Loop deja couvert le 08/08 ; Rubrik Agent Identity (04/08) et comparatif GPT-5.5-Cyber vs Mythos (article du 24/06, hors sujet) egalement ecartes pour datation. Alibaba Qwen3.8-Max : annonce du 03/08 (hors fenetre), poids ouverts prevus semaine du 10/08 (pas encore publies) : non retenu, a surveiller demain. Section FR et EN vides, assume (regle d'or, pas de remplissage). Volet A : Shieldstral (Mistral AI, 04/08, fenetre 7 jours) retenu - classificateur de moderation open-weights 3B, licence Apache 2.0 confirmee (depot Hugging Face officiel mistralai/Shieldstral-1.0-3B) ; etoiles non verifiables (WebFetch 403), omises. Volet B : rien de nouveau date et verifiable a moins de 7 jours. B5 vide = nominal. WebFetch toujours bloque (403 proxy).",
-      "primaires": [],
-      "articles": [],
-      "podcasts": [
-        {
-          "titre": "Comptoir IA",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/4KtU82jRLNIHbI2srklrQv",
-          "resume": "Émission francophone de référence sur l'IA : entretiens avec des fondateurs, chercheurs et praticiens."
-        },
-        {
-          "titre": "Tech Café",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/1MidB71rbYIRDIrcej073j",
-          "resume": "Magazine tech hebdomadaire en français avec un suivi régulier de l'actualité de l'intelligence artificielle."
-        },
-        {
-          "titre": "Data Driven 101",
-          "source": "Spotify",
-          "lang": "fr",
-          "lien": "https://open.spotify.com/show/5YkpBdd4Si06ghOpcPmqux",
-          "resume": "Podcast francophone data et IA : cas d'usage concrets en entreprise, retours d'expérience de praticiens."
-        },
-        {
-          "titre": "The Best AI Podcast",
-          "source": "Spotify",
-          "lang": "en",
-          "lien": "https://open.spotify.com/show/10otIHvHndpzykwIqrGjsV",
-          "resume": "Panorama hebdomadaire en anglais des annonces et débats qui structurent l'écosystème IA."
-        },
-        {
-          "titre": "AI & I",
-          "source": "Spotify",
-          "lang": "en",
-          "lien": "https://open.spotify.com/show/5qX1nRTaFsfWdmdj5JWO1G",
-          "resume": "Entretiens approfondis en anglais sur les usages réels des modèles d'IA, animés par Dan Shipper (Every)."
-        }
-      ],
-      "projets": [
-        {
-          "titre": "Shieldstral 1.0 (Mistral AI)",
-          "source": "Hugging Face",
-          "lang": "en",
-          "date": "04/08/2026",
-          "lien": "https://huggingface.co/mistralai/Shieldstral-1.0-3B",
-          "licence": "Apache 2.0",
-          "categorie": "outils",
-          "resume": "Classificateur de modération multimodal compact (3 milliards de paramètres) qui applique à l'inférence une politique de modération écrite en langage naturel, sans réentraînement. Tourne sur un seul GPU 16 Go, couvre 12 langues et le texte comme l'image."
-        }
-      ],
       "methodes": []
     }
   ]
